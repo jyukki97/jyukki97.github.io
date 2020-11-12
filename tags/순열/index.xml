@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>순열 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>http://jyukki97.github.io/tags/%EC%88%9C%EC%97%B4/</link>
+        <description>순열 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/%EC%88%9C%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]10974 모든 순열</title>
+    <link>http://jyukki97.github.io/2020-03-14-10974/</link>
+    <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-03-14-10974/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/10974
+풀이: [C++]순열  참고
+cin, cout 은 시간초과가 날 수 있으므로 주의하자. 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int n, i; vector&lt;int&gt; v; int main() { scanf(&#34;%d&#34;,&amp;n); for (i = 1; i &lt;= n; i++) v.push_back(i); do { for (int i : v) printf(&#34;%d &#34;,i); printf(&#34;\n&#34;); } while (next_permutation(v.begin(), v.end())); }   ]]></description>
+</item><item>
+    <title>[C&#43;&#43;]순열 </title>
+    <link>http://jyukki97.github.io/2020-01-28-next_permutation/</link>
+    <pubDate>Tue, 28 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-01-28-next_permutation/</guid>
+    <description><![CDATA[순열 ( next_permutation )
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include&lt;iostream&gt;#include&lt;string&gt;#include&lt;algorithm&gt;using namespace std; int main() { string str = &#34;123&#34;; sort(str.begin(), str.end()); do { for (int i = 1; i &lt;= str.size(); ++i) { int n = stoi(str.substr(0, i)); cout &lt;&lt; n &lt;&lt; endl; } }while (next_permutation(str.begin(), str.end())); return 0; }   출력 :
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  1 12 123 1 13 132 2 21 213 2 23 231 3 31 312 3 32 321   ]]></description>
+</item></channel>
+</rss>

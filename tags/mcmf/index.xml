@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>MCMF - Tag - JYUKKI&#39;s BLOG</title>
+        <link>http://jyukki97.github.io/tags/mcmf/</link>
+        <description>MCMF - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/mcmf/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]3056 007</title>
+    <link>http://jyukki97.github.io/2020-04-18-3056/</link>
+    <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-04-18-3056/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/3056
+풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
+비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
+비트마스크가 1, 10, 100, 1000 &hellip;.. 등 1의 갯수가 1개인 것은 첫 번째 지미 본드가 수행한다고 한다.
+비트마스크가 11, 110, 1100, 11000 &hellip;.. 등 1의 갯수가 2개인 것은 두 번째 지미 본드가 수행한다고 한다.
+&hellip;.
+비트마스크를 0 ~ (1 &laquo; n) 까지 순회한다.
+현재의 비트마스크를 i 라고 하자, 그 비트의 중간에 0이 들어있다면, 그 위치에 1을 넣는다.]]></description>
+</item></channel>
+</rss>

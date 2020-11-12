@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>set - Tag - JYUKKI&#39;s BLOG</title>
+        <link>http://jyukki97.github.io/tags/set/</link>
+        <description>set - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/set/" rel="self" type="application/rss+xml" /><item>
+    <title>[C&#43;&#43;]set predicate</title>
+    <link>http://jyukki97.github.io/2020-02-16-setpredicate/</link>
+    <pubDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-16-setpredicate/</guid>
+    <description><![CDATA[set predicate
+set 이라는 컨테이너는 기본적으로 &ldquo;오름차순&rdquo; 으로 정렬된다.
+이를 바꾸기 위해 정렬 기준을 바꿔 주어야한다.
+정렬기준은
+1 2 3 4 5  bool compare(const key_type key_typeA, const key_type key_typeB){ return key_typeA &lt; key_typeB; }   와 같이 bool 형식을 통해 바꿀 수 있다.
+정렬기준을 적용하는 방법은
+1  set&lt;key_type, decltype(&amp;compare)&gt; a(&amp;compare)   과 같이 하면된다.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>문자열 분리 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>http://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%84%EB%A6%AC/</link>
+        <description>문자열 분리 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 30 Jan 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%84%EB%A6%AC/" rel="self" type="application/rss+xml" /><item>
+    <title>[C&#43;&#43;]문자열 분리 </title>
+    <link>http://jyukki97.github.io/2020-01-27-stringstream/</link>
+    <pubDate>Mon, 27 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-01-27-stringstream/</guid>
+    <description><![CDATA[stringstream - 공백을 기준으로 분리 1  stringstream s_stream(string a);   s_stream에 a에 있는 문장을 공백을 기준으로 분리해서 넣는다.
+1  #include &lt;sstream&gt;  사용하기 위해서는 sstream을 include해서 사용하자.
+1 2 3 4 5 6  string a = &#34;a b c d&#34;; stringstream s_stream(a); string c; while(s_stream &gt;&gt; c){ cout &lt;&lt; c &lt;&lt; endl; }   출력 :
+1 2 3 4  a b c d   strtok - 주어진 문자를 기준으로 분리 1  strtok(char* a, char* b);   a를 b를 기준으로 분리한다.]]></description>
+</item><item>
+    <title>[프로그래머스]오픈 채팅방</title>
+    <link>http://jyukki97.github.io/2020-01-30-openchating/</link>
+    <pubDate>Thu, 30 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-01-30-openchating/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 카카오톡 오픈채팅방에서는 친구가 아닌 사람들과 대화를 할 수 있는데, 본래 닉네임이 아닌 가상의 닉네임을 사용하여 채팅방에 들어갈 수 있다.
+신입사원인 김크루는 카카오톡 오픈 채팅방을 개설한 사람을 위해, 다양한 사람들이 들어오고, 나가는 것을 지켜볼 수 있는 관리자창을 만들기로 했다. 채팅방에 누군가 들어오면 다음 메시지가 출력된다.
+[닉네임]님이 들어왔습니다.
+채팅방에서 누군가 나가면 다음 메시지가 출력된다.
+[닉네임]님이 나갔습니다.
+채팅방에서 닉네임을 변경하는 방법은 다음과 같이 두 가지이다.
+ 채팅방을 나간 후, 새로운 닉네임으로 다시 들어간다.]]></description>
+</item></channel>
+</rss>

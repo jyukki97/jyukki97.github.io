@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>[백준]1525 퍼즐 - JYUKKI&#39;s BLOG</title><meta name="Description" content="algorithm"><meta property="og:title" content="[백준]1525 퍼즐" />
+<meta property="og:description" content="algorithm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jyukki97.github.io/2020-04-15-1525/" />
+<meta property="og:image" content="http://jyukki97.github.io/logo.png"/>
+<meta property="article:published_time" content="2020-04-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-15T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://jyukki97.github.io/logo.png"/>
+
+<meta name="twitter:title" content="[백준]1525 퍼즐"/>
+<meta name="twitter:description" content="algorithm"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://jyukki97.github.io/2020-04-15-1525/" /><link rel="prev" href="http://jyukki97.github.io/2020-04-14-1254/" /><link rel="next" href="http://jyukki97.github.io/2020-04-16-1194/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[백준]1525 퍼즐",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/jyukki97.github.io\/2020-04-15-1525\/"
+        },"genre": "post","keywords": "algorithm, C\u002b\u002b, BFS","wordcount":  299 ,
+        "url": "http:\/\/jyukki97.github.io\/2020-04-15-1525\/","datePublished": "2020-04-15T00:00:00+00:00","dateModified": "2020-04-15T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "jyukki"
+            },"description": "algorithm"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="JYUKKI&#39;s BLOG">JYUKKI</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="JYUKKI&#39;s BLOG">JYUKKI</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">[백준]1525 퍼즐</h1><div class="content" id="content"><p><a href="https://www.acmicpc.net/problem/1525">https://www.acmicpc.net/problem/1525</a></p>
+<h1 id="풀이">풀이:</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+</tr>
+</tbody>
+</table>
+<p>이렇게 퍼즐이 배열되어 있다고 가정하자.</p>
+<p>우리는 이것을 012345678 -&gt; int형으로 바꿔 생각하도록 하자.</p>
+<p>이 때, 0이 맨 앞에 나올 경우 무시되므로 0 -&gt; 9 로 바꿔서</p>
+<p>912345678 로 나타내도록 하자.</p>
+<p>우리가 찾아야 하는 퍼즐의 상태는 123456789 이다.</p>
+<p>주어진 퍼즐에서 9를 오른쪽, 왼쪽, 위, 아래 로 옮기면서, 123456789가 되는 지점 까지 BFS를 돌린다.</p>
+<p>만약 모든 종류의 퍼즐을 돌았음에도 123456789를 못찾았다면, -1을 출력한다.</p>
+<h1 id="코드"><strong>코드:</strong></h1>
+<p>사용언어 : c++</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">f</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">m</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">9</span><span class="p">;</span> <span class="n">w</span> <span class="o">=</span> <span class="n">w</span> <span class="o">?</span> <span class="nl">w</span> <span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">w</span><span class="p">,</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">w</span><span class="p">;</span>
+	<span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">;</span>
+	<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">m</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">;</span>
+		<span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+			<span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">());</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">()</span> <span class="o">==</span> <span class="mi">123456789</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">f</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+				<span class="k">break</span><span class="p">;</span>
+			<span class="p">}</span>
+			<span class="n">w</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="sc">&#39;9&#39;</span><span class="p">);</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">w</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span> <span class="n">p</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)),</span> <span class="n">m</span><span class="p">[</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]);</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">w</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">-</span> <span class="mi">3</span><span class="p">]);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span> <span class="n">p</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)),</span> <span class="n">m</span><span class="p">[</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">-</span> <span class="mi">3</span><span class="p">]);</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">w</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span> <span class="n">p</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)),</span> <span class="n">m</span><span class="p">[</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]);</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">w</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">m</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)))</span> <span class="n">p</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)),</span> <span class="n">m</span><span class="p">[</span><span class="n">stoi</span><span class="p">(</span><span class="n">s</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+				<span class="n">swap</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">w</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">w</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span>
+			<span class="p">}</span>
+			<span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+		<span class="p">}</span>
+		<span class="n">q</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">f</span> <span class="o">?</span> <span class="nl">i</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div id="comments"></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

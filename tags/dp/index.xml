@@ -1,0 +1,145 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>DP - Tag - JYUKKI&#39;s BLOG</title>
+        <link>http://jyukki97.github.io/tags/dp/</link>
+        <description>DP - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]3056 007</title>
+    <link>http://jyukki97.github.io/2020-04-18-3056/</link>
+    <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-04-18-3056/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/3056
+풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
+비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
+비트마스크가 1, 10, 100, 1000 &hellip;.. 등 1의 갯수가 1개인 것은 첫 번째 지미 본드가 수행한다고 한다.
+비트마스크가 11, 110, 1100, 11000 &hellip;.. 등 1의 갯수가 2개인 것은 두 번째 지미 본드가 수행한다고 한다.
+&hellip;.
+비트마스크를 0 ~ (1 &laquo; n) 까지 순회한다.
+현재의 비트마스크를 i 라고 하자, 그 비트의 중간에 0이 들어있다면, 그 위치에 1을 넣는다.]]></description>
+</item><item>
+    <title>[백준]1102 발전소</title>
+    <link>http://jyukki97.github.io/2020-04-17-1102/</link>
+    <pubDate>Fri, 17 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-04-17-1102/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1102
+풀이: 발전소의 현재 상태를 2진수로 표현한다.
+ex) YNN -&gt; 100
+l : 발전소의 현재 상태를 2진수로 표현한 값
+z : 발전소가 현재 켜져있는 갯수
+z가 p보다 크거나 같아진다면 반복을 종료한다.
+d[x] : x상태인 발전소를 만드는데 필요한 비용
+d[x] = min(d[x], B(x | (1&laquo;y), z + 1) + a[u][y])
+현재 발전소의 상태에서 안켜진 부분을 키되, 가장 적은 비용으로 킨 후 z를 + 1 한다.
+p값이 0이라면 발전소를 킬 필요가 없으므로 0을 출력]]></description>
+</item><item>
+    <title>[백준]1254 팰린드롬 만들기</title>
+    <link>http://jyukki97.github.io/2020-04-14-1254/</link>
+    <pubDate>Tue, 14 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-04-14-1254/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1254
+풀이: 기준점 i를 잡는다. (초기 i값은 문자열 S의 중간 지점)
+기준점 i와 i - 1을 기준으로 짝수 팰린드롬을 만들 수 있는지 확인한다.
+만들 수 없다면,
+기준점 i를 기준으로 홀수 팰린드롬을 만들 수 있는지 확인한다.
+만들 수 없다면,
+기준점 i를 +1 해준다.
+짝수 팰린드롬을 만들 수 있다면, 2 * ( i - 1 ) 을 출력한다.
+홀수 팰린드롬을 만들 수 있다면, 2 * i - 1 을 출력한다.
+코드: 사용언어 : c++]]></description>
+</item><item>
+    <title>[백준]1915 가장 큰 정사각형</title>
+    <link>http://jyukki97.github.io/2020-03-16-1915/</link>
+    <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-03-16-1915/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1915
+풀이: b[i][t] : i , t 가 오른쪽 아래 꼭짓점인 정사각형의 한 변의 길이
+i, t가 0이라면, 정사각형을 만들 수 없으므로 0
+i, t 의 수가 1이라면,
+b[i][t] = (b[i - 1][t], b[i][t - 1], b[i - 1][t - 1] 의 최솟값) + 1
+넓이 이므로 b[i][t] 중 가장 큰 값을 제곱하여 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a, b[1002][1002], s = 0; int main() { cin &gt;&gt; n &gt;&gt; m; for (i = 0; i &lt; n; i++)	for (t = 0; t &lt; m; t++) { scanf_s(&#34;%1d&#34;,&amp;a); if (a) { if (i &amp;&amp; t) { b[i][t] = b[i - 1][t] &gt; b[i][t - 1] ?]]></description>
+</item><item>
+    <title>[백준]10942 팰린드롬?</title>
+    <link>http://jyukki97.github.io/2020-02-27-10942/</link>
+    <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-27-10942/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/10942
+풀이: DP[i][t] : i 번쨰 수 부터 t 번째 까지 수가 팰린드롬을 이룬다면 1, 아니라면 0
+a[i] == a[t] 라면,
+DP[i][t] = DP[i + 1][t - 1]
+a[i] != a[t] 라면,
+DP[i][t] = 0
+테스트 케이스가 많아 시간초과가 날 수 있으므로 메모이제이션을 하자! 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;string.]]></description>
+</item><item>
+    <title>[백준]1520 내리막 길</title>
+    <link>http://jyukki97.github.io/2020-02-27-1520/</link>
+    <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-27-1520/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1520
+풀이: DP[i][t] : (1,1) ~ (i, t) 까지 내리막으로 갈 수 있는 경우의 수
+현재 값에서 왼쪽, 오른쪽, 위, 아래 값이 각각 현재 값보다 크다면,
+DP[현재] += DP[왼쪽, 오른쪽, 위, 아래] 로 구할 수 있다.
+시간초과가 날 수 있으므로 메모이제이션을 하자! 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  #include &lt;iostream&gt;#include &lt;string.]]></description>
+</item><item>
+    <title>[백준]2618 경찰차</title>
+    <link>http://jyukki97.github.io/2020-02-27-2618/</link>
+    <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-27-2618/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2618
+풀이: DP[i][t] : 첫번째 경찰차가 i 번째 사건을, 두번째 경찰차가 t 번째 사건을 처리했을 때, 이동하는 거리의 합의 최소값
+i 와 t 의 차이가 1 이라면,
+DP[i][t] = DP[i][0 ~ t - 1] (t 번째와 0 ~ t - 1 번째 사이의 거리)까지의 최소값
+1이 아니라면,
+DP[i][t] = DP[i][t - 1] + (t 번째와 t - 1 번째 사이의 거리)
+을 통해 최솟값을 구할 수 있다.
+최솟값을 구한 후, 최솟값을 구한 경로를 역순으로 추적하여, 맡겨진 경찰차의 번호를 구한다.]]></description>
+</item><item>
+    <title>[백준]11049 행렬 곱셈 순서</title>
+    <link>http://jyukki97.github.io/2020-02-26-11049/</link>
+    <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-26-11049/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11049
+풀이: DP[i][t] : i ~ t 까지의 행렬을 곱하는데 필요한 곱셈 연산 횟수의 최솟값
+dp[x][y] = min(dp[x][y], f(x, i) + f(i + 1, y) + a[x] * b[i] * b[y])
+x ~ i 까지의 행렬 곱셈 + (i + 1) ~ y 까지의 행렬 곱셈 + 그 둘의 곱셈
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; long long n, a[502], b[502], dp[502][502] = {}; long long f(int x, int y) { if (x == y || dp[x][y])	return dp[x][y]; dp[x][y] = f(x, x) + f(x + 1, y) + a[x] * b[x] * b[y]; for (int i = x + 1; i &lt; y; i++) dp[x][y] = min(dp[x][y], f(x, i) + f(i + 1, y) + a[x] * b[i] * b[y]); return dp[x][y]; } int main() { cin &gt;&gt; n; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i] &gt;&gt; b[i]; cout &lt;&lt; f(1, n) &lt;&lt; endl; }   ]]></description>
+</item><item>
+    <title>[백준]11066 파일 합치기</title>
+    <link>http://jyukki97.github.io/2020-02-26-11066/</link>
+    <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-26-11066/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11066
+풀이: dp[i][t] = i 장 부터 t 장까지 수록한 파일을 합쳤을 때, 필요한 최소비용
+sum[i] = 1 ~ i 까지의 파일 크기의 합
+dp[i][t] = min(dp[i][t], dp[i][i] ~ dp[i][t - 1] + dp[i + 1][t] ~ dp[t][t]) 로 구할 수 있다.
+겹치는 숫자들이 있으므로,
+dp를 구할 때 마다, dp[i][t] += sum[t] - sum[i - 1] 을 해주어야 한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int T, n, a[502], dp[502][502] = {}, sum[502]; int f(int a, int b) { if (dp[a][b] !]]></description>
+</item><item>
+    <title>[백준]11054 가장 긴 바이토닉 부분 수열</title>
+    <link>http://jyukki97.github.io/2020-02-24-11054/</link>
+    <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://jyukki97.github.io/2020-02-24-11054/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11054
+풀이: b[i] = i 위치 왼쪽에 있는 값들 중 m[i] 보다 작은 수들의 최대 갯수
+s[i] = i 위치 오른쪽에 있는 값들 중 m[i] 보다 작은 수들의 최대 갯수
+가장 긴 수열의 길이 = 모든 i 에 대해 (b[i] + s[i] + 1) 의 최댓값
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m[1001], b[1001], s[1001], ma = 0; int main() { cin &gt;&gt; n; for (int i = 0; i &lt; n; i++) cin &gt;&gt; m[i]; for (int i = n - 2; i &gt;= 0; i--) for (int t = n - 1; t &gt; i; t--) if (m[i] &gt; m[t]) s[i] = max(s[i], s[t] + 1); for (int i = 0; i &lt; n; i++) { for (int t = 0; t &lt; i; t++) if (m[i] &gt; m[t]) b[i] = max(b[i], b[t] + 1); ma = max(ma, b[i] + s[i] + 1); } cout &lt;&lt; ma &lt;&lt; endl; return 0; }   ]]></description>
+</item></channel>
+</rss>
