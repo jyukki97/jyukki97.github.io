@@ -9,11 +9,11 @@
 <meta property="og:description" content="https://www.acmicpc.net/problem/9184
 풀이:  DP함수가 주어져 있으므로 메모이제이션을 하면된다. 단, a, b, c 의 최대 크기가 주어져있지않으므로 20이 넘어간 값은 생략하도록한다. -1, -1, -1 이 입력으로 들어올 경우 루프를 끝날 수 있게 만든다.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  #include &lt;iostream&gt; #include &lt;string.h&gt; using namespace std; int fuc[21][21][21]; int w(int a,int b,int c) { if (a &lt;= 0 || b &lt;= 0 || c &lt;= 0) return 1; if (a &gt; 20 || b &gt; 20 || c &gt; 20) return fuc[20][20][20] = w(20, 20, 20); if (fuc[a][b][c] &gt; -1)	return fuc[a][b][c]; if (a &lt; b &amp;&amp; b &lt; c) return fuc[a][b][c] = w(a, b, c - 1) &#43; w(a, b - 1, c - 1) - w(a, b - 1, c); return	fuc[a][b][c] = w(a - 1, b, c) &#43; w(a - 1, b - 1, c) &#43; w(a - 1, b, c - 1) - w(a - 1, b - 1, c - 1); } int main(void) { int a, b, c; memset(fuc, -1, sizeof(fuc)); while(true){ cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if (a == -1 &amp;&amp; b == -1 &amp;&amp; c == -1) break; cout &lt;&lt; &#34;w(&#34; &lt;&lt; a &lt;&lt; &#34;, &#34; &lt;&lt; b &lt;&lt; &#34;, &#34; &lt;&lt; c &lt;&lt; &#34;) = &#34; &lt;&lt; w(a, b, c) &lt;&lt; endl; } return 0; }   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://jyukki97.github.io/2018-01-12-9184/" />
-<meta property="og:image" content="http://jyukki97.github.io/logo.png"/>
+<meta property="og:url" content="https://jyukki97.github.io/2018-01-12-9184/" />
+<meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://jyukki97.github.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
 <meta name="twitter:title" content="9184 신나는 함수 실행"/>
 <meta name="twitter:description" content="https://www.acmicpc.net/problem/9184
@@ -21,7 +21,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://jyukki97.github.io/2018-01-12-9184/" /><link rel="prev" href="http://jyukki97.github.io/2019-05-31-9251/" /><link rel="next" href="http://jyukki97.github.io/2018-02-04-5218/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.github.io/2018-01-12-9184/" /><link rel="prev" href="https://jyukki97.github.io/2019-05-31-9251/" /><link rel="next" href="https://jyukki97.github.io/2018-02-04-5218/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,9 +29,9 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/jyukki97.github.io\/2018-01-12-9184\/"
+            "@id": "https:\/\/jyukki97.github.io\/2018-01-12-9184\/"
         },"genre": "posts","wordcount":  235 ,
-        "url": "http:\/\/jyukki97.github.io\/2018-01-12-9184\/","publisher": {
+        "url": "https:\/\/jyukki97.github.io\/2018-01-12-9184\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -205,7 +205,7 @@ int main(void) {
                             <a class="link-to-markdown" href="/2018-01-12-9184/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://jyukki97.github.io/2018-01-12-9184/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="http://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.github.io/2018-01-12-9184/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.github.io/2018-01-12-9184/" data-title="9184 신나는 함수 실행"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>별찍기 - Tag - JYUKKI&#39;s BLOG</title>
-        <link>http://jyukki97.github.io/tags/%EB%B3%84%EC%B0%8D%EA%B8%B0/</link>
+        <link>https://jyukki97.github.io/tags/%EB%B3%84%EC%B0%8D%EA%B8%B0/</link>
         <description>별찍기 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://jyukki97.github.io/tags/%EB%B3%84%EC%B0%8D%EA%B8%B0/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B3%84%EC%B0%8D%EA%B8%B0/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]2442 별 찍기 - 5</title>
-    <link>http://jyukki97.github.io/2020-03-12-2442/</link>
+    <link>https://jyukki97.github.io/2020-03-12-2442/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2020-03-12-2442/</guid>
+    <guid>https://jyukki97.github.io/2020-03-12-2442/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2442
 풀이: 1 번째 줄부터 차례대로
 1개

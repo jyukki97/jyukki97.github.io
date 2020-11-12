@@ -1,94 +1,94 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>JYUKKI&#39;s BLOG</title>
-        <link>http://jyukki97.github.io/</link>
+        <link>https://jyukki97.github.io/</link>
         <description>JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</lastBuildDate>
-            <atom:link href="http://jyukki97.github.io/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://jyukki97.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>[C&#43;&#43;]문자열 분리 </title>
-    <link>http://jyukki97.github.io/2020-01-27-stringstream/</link>
+    <link>https://jyukki97.github.io/2020-01-27-stringstream/</link>
     <pubDate>Mon, 27 Jan 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2020-01-27-stringstream/</guid>
+    <guid>https://jyukki97.github.io/2020-01-27-stringstream/</guid>
     <description><![CDATA[stringstream - 공백을 기준으로 분리 1  stringstream s_stream(string a);   s_stream에 a에 있는 문장을 공백을 기준으로 분리해서 넣는다.
 1  #include &lt;sstream&gt;  사용하기 위해서는 sstream을 include해서 사용하자.
 1 2 3 4 5 6  string a = &#34;a b c d&#34;; stringstream s_stream(a); string c; while(s_stream &gt;&gt; c){ cout &lt;&lt; c &lt;&lt; endl; }   출력 :
 1 2 3 4  a b c d   strtok - 주어진 문자를 기준으로 분리 1  strtok(char* a, char* b);   a를 b를 기준으로 분리한다.]]></description>
 </item><item>
     <title>1011 Fly me to the Alpha Centauri</title>
-    <link>http://jyukki97.github.io/2018-01-08-1011/</link>
+    <link>https://jyukki97.github.io/2018-01-08-1011/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-01-08-1011/</guid>
+    <guid>https://jyukki97.github.io/2018-01-08-1011/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1011
 풀이:  거리가 제곱수 일 때(d = s^2), 그 거리 까지 갈 수 있는 최소 작동수에서 최대 거리는 그 수의 제곱근(s) 이다. 최소 작동수는 대칭일때 만들어지므로 제곱수일 때 최소 작동수는 2*s - 1이 된다. 거리가 제곱수가 아니라면, 거리에서 그 거리보다 작은 제곱수를 뺀 나머지로 계산한다. (d - s^2) / s + 1 즉 제곱수 만큼 간 후 남은 거리를 갈 수 있는 최대 거리인 s로 나눈 값에 올림한 값과 같다.]]></description>
 </item><item>
     <title>1016 제곱 ㄴㄴ 수</title>
-    <link>http://jyukki97.github.io/2018-02-05-1016/</link>
+    <link>https://jyukki97.github.io/2018-02-05-1016/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-02-05-1016/</guid>
+    <guid>https://jyukki97.github.io/2018-02-05-1016/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1016
 풀이:  min 수 부터 max 까지 제곱수의 배수가 되는 수를 찾는다. max-min+1 에서 위에서 찾은 제곱수의 배수의 개수를 뺀다.  코드: 사용언어 : Python 3
 1 2 3 4 5 6 7 8 9 10 11  n,m=map(int,input().split()) a,b=0,[0]*1000001 for i in range(2,int(m**.5)+1): q=n if n%(i*i)!=0: q=(n//(i*i)+1)*i*i for t in range(q,m+1,i*i): if b[t-n]==0: b[t-n]=1 a+=1 print(m-n+1-a)   ]]></description>
 </item><item>
     <title>10569 다면체</title>
-    <link>http://jyukki97.github.io/2018-01-28-10569/</link>
+    <link>https://jyukki97.github.io/2018-01-28-10569/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-01-28-10569/</guid>
+    <guid>https://jyukki97.github.io/2018-01-28-10569/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10569
 풀이:  면의수 = 2 - 꼭짓점의 수 + 모서리의 수  코드: 사용언어 : Python 3
 1 2 3 4  t=int(input()) for i in range(t): v,e=map(int, input().split()) print(2-v+e)   ]]></description>
 </item><item>
     <title>1072 게임</title>
-    <link>http://jyukki97.github.io/2018-03-16-1072/</link>
+    <link>https://jyukki97.github.io/2018-03-16-1072/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-03-16-1072/</guid>
+    <guid>https://jyukki97.github.io/2018-03-16-1072/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1072
 풀이:  게임횟수 : x, 이긴게임 : y, 더해야하는 판수 a 100 * y/x + 1 = 100 * y+a/x+a 100 * y/x + 1 = c 로 놓고 c = 100 * y+a/x+a cx + ca = 100y + 100a (c - 100)a = 100y - cx a = (100y - cx) / (c - 100) 이렇게 나온 a값을 올림을 하면 더해야하는 판수가 나오게된다.  코드: 사용언어 : c++]]></description>
 </item><item>
     <title>1075 나누기</title>
-    <link>http://jyukki97.github.io/2018-01-26-1075/</link>
+    <link>https://jyukki97.github.io/2018-01-26-1075/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-01-26-1075/</guid>
+    <guid>https://jyukki97.github.io/2018-01-26-1075/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1075
 풀이:  3자리 이후를 유지한 후 주어진 F로 나누어 지는 최솟값을 구하는 문제 답이 한자리 수일 경우 앞에 0을 붙이는 것을 주의하자.  코드: 사용언어 : Python 3
 1 2 3 4  import math n = int(input()) f = int(input()) print(&#39;%02d&#39; % (((math.ceil(((n//100) * 100) / f) * f) % 100)))   ]]></description>
 </item><item>
     <title>1076 저항</title>
-    <link>http://jyukki97.github.io/2018-01-17-1076/</link>
+    <link>https://jyukki97.github.io/2018-01-17-1076/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-01-17-1076/</guid>
+    <guid>https://jyukki97.github.io/2018-01-17-1076/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1076
 풀이:  저항에 맞는 값을 하나씩 더한 후 마지막 값에 있는 저항에서 10의 index값만큼 제곱을 한 후 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt; #include &lt;string&gt; #include &lt;math.h&gt; using namespace std; string b[10] = { &#34;black&#34;, &#34;brown&#34;, &#34;red&#34;, &#34;orange&#34;, &#34;yellow&#34;, &#34;green&#34;, &#34;blue&#34;, &#34;violet&#34;, &#34;grey&#34;, &#34;white&#34; }; int main(void) { string a[3]; long long temp = 0, go = 0; for (int i = 0; i &lt; 3; i++) cin &gt;&gt; a[i]; for (int i = 0; i &lt; 10; i++) { if (b[i] == a[0]) temp += i * 10; if (b[i] == a[1]) temp += i; if (b[i] == a[2]) go += powl(10, i); } cout &lt;&lt; temp * go &lt;&lt; endl; return 0; }   ]]></description>
 </item><item>
     <title>10808 알파벳 개수</title>
-    <link>http://jyukki97.github.io/2018-02-04-10808/</link>
+    <link>https://jyukki97.github.io/2018-02-04-10808/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-02-04-10808/</guid>
+    <guid>https://jyukki97.github.io/2018-02-04-10808/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10808
 풀이:  알파벳 순서대로 나온 카운트를 계산하여 하나씩 출력  코드: 사용언어 : Python 3
 1 2 3  n=input() for i in range(97,123): print(n.count(chr(i)),end=&#39; &#39;)   ]]></description>
 </item><item>
     <title>1094 막대기</title>
-    <link>http://jyukki97.github.io/2018-01-16-1094/</link>
+    <link>https://jyukki97.github.io/2018-01-16-1094/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-01-16-1094/</guid>
+    <guid>https://jyukki97.github.io/2018-01-16-1094/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1094
 풀이:  자른 막대기 중 주어진 막대기보다 작은 값 중 최댓값을 주어진 막대기에 계속 뺀다. 뺄때마다 카운트를 증가시키면서 반복한다  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; using namespace std; int main(void) { int x, temp = 64, cnt = 0; cin &gt;&gt; x; while (x != 0) { if (x &gt;= temp) { cnt++; x -= temp; } else temp /= 2; } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   ]]></description>
 </item><item>
     <title>10987 모음의 개수</title>
-    <link>http://jyukki97.github.io/2018-02-04-10987/</link>
+    <link>https://jyukki97.github.io/2018-02-04-10987/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://jyukki97.github.io/2018-02-04-10987/</guid>
+    <guid>https://jyukki97.github.io/2018-02-04-10987/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10987
 풀이:  모음의 개수를 출력  코드: 사용언어 : Python 3
 1 2  n=input() print(sum(n.count(i)for i in &#39;aeiou&#39;))   ]]></description>
