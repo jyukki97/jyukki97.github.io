@@ -111,33 +111,75 @@
         <a href="/2020-01-27-stringstream/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%84%EB%A6%AC/">문자열 분리</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-01-08-1011/">1011 Fly me to the Alpha Centauri</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1011
-풀이:  거리가 제곱수 일 때(d = s^2), 그 거리 까지 갈 수 있는 최소 작동수에서 최대 거리는 그 수의 제곱근(s) 이다. 최소 작동수는 대칭일때 만들어지므로 제곱수일 때 최소 작동수는 2*s - 1이 된다. 거리가 제곱수가 아니라면, 거리에서 그 거리보다 작은 제곱수를 뺀 나머지로 계산한다. (d - s^2) / s + 1 즉 제곱수 만큼 간 후 남은 거리를 갈 수 있는 최대 거리인 s로 나눈 값에 올림한 값과 같다.</div><div class="post-footer">
-        <a href="/2018-01-08-1011/">Read More</a></div>
+        <a href="/2020-04-27-1388/">[백준]1388 바닥 장식</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-27">2020-04-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1388
+풀이: 같은 행에 연속된 &lsquo;-&rsquo; 이 몇 쌍이 있는지 센다.
+같은 방식으로
+같은 열에 연속된 &lsquo;|&rsquo; 이 몇 쌍이 있는지 센다.
+두 수를 더하여 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c; string s[105]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; s[i]; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; m; t++) { if (s[i][t] == &#39;-&#39;)if (t == m - 1 || s[i][t + 1] == &#39;|&#39;)c++; if (s[i][t] == &#39;|&#39;)if (i == n - 1 || s[i + 1][t] == &#39;-&#39;)c++; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-04-27-1388/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%8C%8C%EC%8B%B1/">파싱</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-05-1016/">1016 제곱 ㄴㄴ 수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1016
-풀이:  min 수 부터 max 까지 제곱수의 배수가 되는 수를 찾는다. max-min+1 에서 위에서 찾은 제곱수의 배수의 개수를 뺀다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6 7 8 9 10 11  n,m=map(int,input().split()) a,b=0,[0]*1000001 for i in range(2,int(m**.5)+1): q=n if n%(i*i)!=0: q=(n//(i*i)+1)*i*i for t in range(q,m+1,i*i): if b[t-n]==0: b[t-n]=1 a+=1 print(m-n+1-a)   </div><div class="post-footer">
-        <a href="/2018-02-05-1016/">Read More</a></div>
+        <a href="/2020-04-26-1356/">[백준]1356 유진수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-26">2020-04-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1356
+풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
+1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
+.
+.
+.
+1의 자릿수*&hellip;*n-1자릿수 == n 자릿수
+중 앞의 값과 뒤의 값이 같은 것이 하나라도 있다면, YES를
+하나도 없다면 NO를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.</div><div class="post-footer">
+        <a href="/2020-04-26-1356/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-01-28-10569/">10569 다면체</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/10569
-풀이:  면의수 = 2 - 꼭짓점의 수 + 모서리의 수  코드: 사용언어 : Python 3
-1 2 3 4  t=int(input()) for i in range(t): v,e=map(int, input().split()) print(2-v+e)   </div><div class="post-footer">
-        <a href="/2018-01-28-10569/">Read More</a></div>
+        <a href="/2020-04-25-1268/">[백준]1268 임시 반장 정하기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-25">2020-04-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1268
+풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
+1번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 1을 저장한다.
+.
+.
+.
+n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 n을 저장한다.
+전체를 다 탐색 한 후 C를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !</div><div class="post-footer">
+        <a href="/2020-04-25-1268/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-03-16-1072/">1072 게임</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1072
-풀이:  게임횟수 : x, 이긴게임 : y, 더해야하는 판수 a 100 * y/x + 1 = 100 * y+a/x+a 100 * y/x + 1 = c 로 놓고 c = 100 * y+a/x+a cx + ca = 100y + 100a (c - 100)a = 100y - cx a = (100y - cx) / (c - 100) 이렇게 나온 a값을 올림을 하면 더해야하는 판수가 나오게된다.  코드: 사용언어 : c++</div><div class="post-footer">
-        <a href="/2018-03-16-1072/">Read More</a></div>
+        <a href="/2020-04-24-1236/">[백준]1236 성 지키기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-24">2020-04-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1236
+풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 행의 갯수를 Sn이라고 하자.
+각 열에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 열의 갯수를 Sm이라고 하자.
+각 행과 열에는 경비병이 1명씩은 있어야 하므로
+Sn과 Sm 중 최댓값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!</div><div class="post-footer">
+        <a href="/2020-04-24-1236/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%83%90%EC%83%89/">탐색</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-01-26-1075/">1075 나누기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1075
-풀이:  3자리 이후를 유지한 후 주어진 F로 나누어 지는 최솟값을 구하는 문제 답이 한자리 수일 경우 앞에 0을 붙이는 것을 주의하자.  코드: 사용언어 : Python 3
-1 2 3 4  import math n = int(input()) f = int(input()) print(&#39;%02d&#39; % (((math.ceil(((n//100) * 100) / f) * f) % 100)))   </div><div class="post-footer">
-        <a href="/2018-01-26-1075/">Read More</a></div>
+        <a href="/2020-04-23-17265/">[백준]17265 나의 인생에는 수학과 함께</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-23">2020-04-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17265
+풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
+현재 위치가 연산자라면,
+이전까지 연산해왔던 값을 x라고 하자
+연잔자를 ㅁ 라고 하고,
+다음 이동할 곳의 숫자를 y라고 하자.
+현재 위치의 연산자를 이용하여 x ㅁ y 를 연산한 후 다음 숫자로 이동한다.
+현재 위치가 숫자라면, 현재 위치가 학교인지 판단 후
+학교가 아니라면 오른쪽 또는 아래로 이동한다.
+학교라면 현재까지 연산해왔던 값이 지금 저장해 놓은 최댓값보다 크다면 교체한다.
+또한 현재까지 연산해왔던 값이 지금 저장해 놓은 최솟값보다 작다면 교체한다.</div><div class="post-footer">
+        <a href="/2020-04-23-17265/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/">백트래킹</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -154,7 +196,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/10/">10</a>
+                        <a href="/page/75/">75</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

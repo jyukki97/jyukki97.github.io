@@ -11,7 +11,6 @@ featuredalt = ""
 featuredpath = "date"
 linktitle = ""
 title = "[백준]11048 이동하기"
-type = "post"
 
 +++
 

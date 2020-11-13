@@ -11,7 +11,6 @@ featuredalt = ""
 featuredpath = "date"
 linktitle = ""
 title = "[백준]9465 스티커"
-type = "post"
 
 +++
 

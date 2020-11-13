@@ -16,81 +16,140 @@
 1 2 3 4 5 6  string a = &#34;a b c d&#34;; stringstream s_stream(a); string c; while(s_stream &gt;&gt; c){ cout &lt;&lt; c &lt;&lt; endl; }   출력 :
 1 2 3 4  a b c d   strtok - 주어진 문자를 기준으로 분리 1  strtok(char* a, char* b);   a를 b를 기준으로 분리한다.]]></description>
 </item><item>
-    <title>1011 Fly me to the Alpha Centauri</title>
-    <link>https://jyukki97.github.io/2018-01-08-1011/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]1388 바닥 장식</title>
+    <link>https://jyukki97.github.io/2020-04-27-1388/</link>
+    <pubDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-01-08-1011/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1011
-풀이:  거리가 제곱수 일 때(d = s^2), 그 거리 까지 갈 수 있는 최소 작동수에서 최대 거리는 그 수의 제곱근(s) 이다. 최소 작동수는 대칭일때 만들어지므로 제곱수일 때 최소 작동수는 2*s - 1이 된다. 거리가 제곱수가 아니라면, 거리에서 그 거리보다 작은 제곱수를 뺀 나머지로 계산한다. (d - s^2) / s + 1 즉 제곱수 만큼 간 후 남은 거리를 갈 수 있는 최대 거리인 s로 나눈 값에 올림한 값과 같다.]]></description>
+    <guid>https://jyukki97.github.io/2020-04-27-1388/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1388
+풀이: 같은 행에 연속된 &lsquo;-&rsquo; 이 몇 쌍이 있는지 센다.
+같은 방식으로
+같은 열에 연속된 &lsquo;|&rsquo; 이 몇 쌍이 있는지 센다.
+두 수를 더하여 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c; string s[105]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; s[i]; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; m; t++) { if (s[i][t] == &#39;-&#39;)if (t == m - 1 || s[i][t + 1] == &#39;|&#39;)c++; if (s[i][t] == &#39;|&#39;)if (i == n - 1 || s[i + 1][t] == &#39;-&#39;)c++; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
 </item><item>
-    <title>1016 제곱 ㄴㄴ 수</title>
-    <link>https://jyukki97.github.io/2018-02-05-1016/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]1356 유진수</title>
+    <link>https://jyukki97.github.io/2020-04-26-1356/</link>
+    <pubDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-02-05-1016/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1016
-풀이:  min 수 부터 max 까지 제곱수의 배수가 되는 수를 찾는다. max-min+1 에서 위에서 찾은 제곱수의 배수의 개수를 뺀다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6 7 8 9 10 11  n,m=map(int,input().split()) a,b=0,[0]*1000001 for i in range(2,int(m**.5)+1): q=n if n%(i*i)!=0: q=(n//(i*i)+1)*i*i for t in range(q,m+1,i*i): if b[t-n]==0: b[t-n]=1 a+=1 print(m-n+1-a)   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-26-1356/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1356
+풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
+1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
+.
+.
+.
+1의 자릿수*&hellip;*n-1자릿수 == n 자릿수
+중 앞의 값과 뒤의 값이 같은 것이 하나라도 있다면, YES를
+하나도 없다면 NO를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.]]></description>
 </item><item>
-    <title>10569 다면체</title>
-    <link>https://jyukki97.github.io/2018-01-28-10569/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]1268 임시 반장 정하기</title>
+    <link>https://jyukki97.github.io/2020-04-25-1268/</link>
+    <pubDate>Sat, 25 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-01-28-10569/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/10569
-풀이:  면의수 = 2 - 꼭짓점의 수 + 모서리의 수  코드: 사용언어 : Python 3
-1 2 3 4  t=int(input()) for i in range(t): v,e=map(int, input().split()) print(2-v+e)   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-25-1268/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1268
+풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
+1번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 1을 저장한다.
+.
+.
+.
+n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 n을 저장한다.
+전체를 다 탐색 한 후 C를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !]]></description>
 </item><item>
-    <title>1072 게임</title>
-    <link>https://jyukki97.github.io/2018-03-16-1072/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]1236 성 지키기</title>
+    <link>https://jyukki97.github.io/2020-04-24-1236/</link>
+    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-03-16-1072/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1072
-풀이:  게임횟수 : x, 이긴게임 : y, 더해야하는 판수 a 100 * y/x + 1 = 100 * y+a/x+a 100 * y/x + 1 = c 로 놓고 c = 100 * y+a/x+a cx + ca = 100y + 100a (c - 100)a = 100y - cx a = (100y - cx) / (c - 100) 이렇게 나온 a값을 올림을 하면 더해야하는 판수가 나오게된다.  코드: 사용언어 : c++]]></description>
+    <guid>https://jyukki97.github.io/2020-04-24-1236/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1236
+풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 행의 갯수를 Sn이라고 하자.
+각 열에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 열의 갯수를 Sm이라고 하자.
+각 행과 열에는 경비병이 1명씩은 있어야 하므로
+Sn과 Sm 중 최댓값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!]]></description>
 </item><item>
-    <title>1075 나누기</title>
-    <link>https://jyukki97.github.io/2018-01-26-1075/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]17265 나의 인생에는 수학과 함께</title>
+    <link>https://jyukki97.github.io/2020-04-23-17265/</link>
+    <pubDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-01-26-1075/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1075
-풀이:  3자리 이후를 유지한 후 주어진 F로 나누어 지는 최솟값을 구하는 문제 답이 한자리 수일 경우 앞에 0을 붙이는 것을 주의하자.  코드: 사용언어 : Python 3
-1 2 3 4  import math n = int(input()) f = int(input()) print(&#39;%02d&#39; % (((math.ceil(((n//100) * 100) / f) * f) % 100)))   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-23-17265/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/17265
+풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
+현재 위치가 연산자라면,
+이전까지 연산해왔던 값을 x라고 하자
+연잔자를 ㅁ 라고 하고,
+다음 이동할 곳의 숫자를 y라고 하자.
+현재 위치의 연산자를 이용하여 x ㅁ y 를 연산한 후 다음 숫자로 이동한다.
+현재 위치가 숫자라면, 현재 위치가 학교인지 판단 후
+학교가 아니라면 오른쪽 또는 아래로 이동한다.
+학교라면 현재까지 연산해왔던 값이 지금 저장해 놓은 최댓값보다 크다면 교체한다.
+또한 현재까지 연산해왔던 값이 지금 저장해 놓은 최솟값보다 작다면 교체한다.]]></description>
 </item><item>
-    <title>1076 저항</title>
-    <link>https://jyukki97.github.io/2018-01-17-1076/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]1759 암호 만들기</title>
+    <link>https://jyukki97.github.io/2020-04-22-1759/</link>
+    <pubDate>Wed, 22 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-01-17-1076/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1076
-풀이:  저항에 맞는 값을 하나씩 더한 후 마지막 값에 있는 저항에서 10의 index값만큼 제곱을 한 후 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt; #include &lt;string&gt; #include &lt;math.h&gt; using namespace std; string b[10] = { &#34;black&#34;, &#34;brown&#34;, &#34;red&#34;, &#34;orange&#34;, &#34;yellow&#34;, &#34;green&#34;, &#34;blue&#34;, &#34;violet&#34;, &#34;grey&#34;, &#34;white&#34; }; int main(void) { string a[3]; long long temp = 0, go = 0; for (int i = 0; i &lt; 3; i++) cin &gt;&gt; a[i]; for (int i = 0; i &lt; 10; i++) { if (b[i] == a[0]) temp += i * 10; if (b[i] == a[1]) temp += i; if (b[i] == a[2]) go += powl(10, i); } cout &lt;&lt; temp * go &lt;&lt; endl; return 0; }   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-22-1759/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1759
+풀이: C개의 문자들을 사전순으로 정렬한다.
+정렬된 문자열을 L개만큼 출력한다.
+단, 최소 한 개의 모음과 두개의 자음이 있어야한다.
+증가하는 순서로 있어야한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, i, b[20]; char c[20], d[20]; void P(int x, int z) { if (x == n) { int y = 0, t = 0, r = 0; for (; y &lt; x; y++) if (d[y] == &#39;a&#39; || d[y] == &#39;e&#39; || d[y] == &#39;i&#39; || d[y] == &#39;o&#39; || d[y] == &#39;u&#39;)	t++; else r++; if(t &amp;&amp; r&gt;1)	cout &lt;&lt; d &lt;&lt; endl; return; } for (int y = z; y &lt; m; y++)	if (!]]></description>
 </item><item>
-    <title>10808 알파벳 개수</title>
-    <link>https://jyukki97.github.io/2018-02-04-10808/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]2089 -2진수</title>
+    <link>https://jyukki97.github.io/2020-04-21-2089/</link>
+    <pubDate>Tue, 21 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-02-04-10808/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/10808
-풀이:  알파벳 순서대로 나온 카운트를 계산하여 하나씩 출력  코드: 사용언어 : Python 3
-1 2 3  n=input() for i in range(97,123): print(n.count(chr(i)),end=&#39; &#39;)   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-21-2089/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2089
+풀이: 2진수를 구하듯이 구한다.
+-2	13
+​	-6	&hellip;	1
+​	3	&hellip;	0
+​	-1	&hellip;	1
+​	1	&hellip;	1
+13 = 11101(-2)
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; int n; void G(int x) { if (!x)	return; G(x % -2 &lt; 0 ? (x / -2) + 1 : x / -2); if (x % -2 &lt; 0) cout &lt;&lt; -1 * (x % -2); else cout &lt;&lt; x % -2; } int main() { cin &gt;&gt; n; G(n); if (!]]></description>
 </item><item>
-    <title>1094 막대기</title>
-    <link>https://jyukki97.github.io/2018-01-16-1094/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]16637 괄호 추가하기</title>
+    <link>https://jyukki97.github.io/2020-04-20-16637/</link>
+    <pubDate>Mon, 20 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-01-16-1094/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1094
-풀이:  자른 막대기 중 주어진 막대기보다 작은 값 중 최댓값을 주어진 막대기에 계속 뺀다. 뺄때마다 카운트를 증가시키면서 반복한다  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; using namespace std; int main(void) { int x, temp = 64, cnt = 0; cin &gt;&gt; x; while (x != 0) { if (x &gt;= temp) { cnt++; x -= temp; } else temp /= 2; } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-20-16637/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/16637
+풀이: 순서대로 사칙연산을 진행한다.
+이 때, 현재 숫자만 계산하는 것, 현재 숫자 (연산자) 다음 숫자 를 계산하는 것 두 가지로 나누어 생각한다.
+현재 숫자만 계산하는 것은, 이전에 계산했던 숫자 (연산자) 현재 숫자
+두번째 경우는, 이전에 계산했던 숫자 (연산자) ( 현재 숫자 (연산자) 다음 숫자 )
+이렇게 두 가지 경우로 모든 구간을 연산하여 완전탐색을 돌린다.
+정답의 범위가 -2^31 ~ 2^31 이므로 최댓값의 초기값을 0으로 하지않도록 주의하자.
+코드: 사용언어 : c++]]></description>
 </item><item>
-    <title>10987 모음의 개수</title>
-    <link>https://jyukki97.github.io/2018-02-04-10987/</link>
-    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <title>[백준]11382 꼬마 정민</title>
+    <link>https://jyukki97.github.io/2020-04-19-11382/</link>
+    <pubDate>Sun, 19 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2018-02-04-10987/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/10987
-풀이:  모음의 개수를 출력  코드: 사용언어 : Python 3
-1 2  n=input() print(sum(n.count(i)for i in &#39;aeiou&#39;))   ]]></description>
+    <guid>https://jyukki97.github.io/2020-04-19-11382/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11382
+풀이: A, B, C 를 각각 문자열로 변환한다.
+변환된 문자열을 한자리씩 더한다.
+만약 각 자릿수의 숫자가 10이 넘어간다면 다음 자릿수에 올림을 해준다.
+더해진 문자열을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main() { string a, b, c, d; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int m = max(a.]]></description>
 </item></channel>
 </rss>
