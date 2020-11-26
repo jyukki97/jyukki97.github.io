@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>greedy - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/greedy/</link>
+        <link>https://jyukki97.io/tags/greedy/</link>
         <description>greedy - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/greedy/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/greedy/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]9576 책 나눠주기</title>
-    <link>https://jyukki97.github.io/2020-03-30-9576/</link>
+    <link>https://jyukki97.io/2020-03-30-9576/</link>
     <pubDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-30-9576/</guid>
+    <guid>https://jyukki97.io/2020-03-30-9576/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/9576
 풀이: 학생들을 b 를 기준으로 정렬한다.
 a[i] ~ b[i] 까지의 책들 중
@@ -18,10 +18,10 @@ a[i] ~ b[i] 까지의 책들 중
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include&lt;iostream&gt;#include&lt;vector&gt;#include&lt;algorithm&gt;using namespace std; int T,N,M,q,w,s,a[1005]; int main() { cin&gt;&gt;T; while (T--){ cin&gt;&gt;N&gt;&gt;M; fill(a,a+1001,0); vector&lt;pair&lt;int, int&gt;&gt;v; for(s=0;M--;v.push_back({w,q})) cin&gt;&gt;q&gt;&gt;w; sort(v.]]></description>
 </item><item>
     <title>[백준]2217 로프</title>
-    <link>https://jyukki97.github.io/2020-03-22-2217/</link>
+    <link>https://jyukki97.io/2020-03-22-2217/</link>
     <pubDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-22-2217/</guid>
+    <guid>https://jyukki97.io/2020-03-22-2217/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2217
 풀이: a[i] : i 무게를 들 수 있는 로프의 갯수
 로프의 중량보다 가벼운 물체는 들 수 있으므로 중량보다 낮은 값은 전부 +1 씩 해준다.
@@ -31,10 +31,10 @@ i 무게를 들 수 있는 로프의 갯수가 a[i] 개 일 때, a[i] 개의 로
 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int n, m, i, s = 0, a[10002]; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; m; while (m) a[m--]++; } for (i = 1; i &lt; 10001; i++)	s = s &lt; i * a[i] ?]]></description>
 </item><item>
     <title>[백준]1120 문자열</title>
-    <link>https://jyukki97.github.io/2020-03-07-1120/</link>
+    <link>https://jyukki97.io/2020-03-07-1120/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-07-1120/</guid>
+    <guid>https://jyukki97.io/2020-03-07-1120/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1120
 풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
 a 와 b의 (1번째 ~ a의 길이) 의 차이의 개수
@@ -47,10 +47,10 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int main() { int c = 51; string a, b; cin &gt;&gt; a &gt;&gt; b; for (int i = 0; i &lt;= b.]]></description>
 </item><item>
     <title>[백준]1080 행렬</title>
-    <link>https://jyukki97.github.io/2020-03-06-1080/</link>
+    <link>https://jyukki97.io/2020-03-06-1080/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-06-1080/</guid>
+    <guid>https://jyukki97.io/2020-03-06-1080/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1080
 풀이: (0, 0) 부터 하나씩 비교해 나간다.
 만약 A 와 B 의 숫자가 다르다면, 현재 위치부터 3 * 3 전체를 반전시킨다.
@@ -60,10 +60,10 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, M, c = 0, i, t, u, y; int main() { cin &gt;&gt; N &gt;&gt; M; vector&lt;string&gt; a(N), b(N); for (i = 0; i &lt; N; i++) cin &gt;&gt; a[i]; for (i = 0; i &lt; N; i++) cin &gt;&gt; b[i]; for (i = 0; i &lt; N - 2; i++) for (t = 0; t &lt; M - 2; t++) if (a[i][t] !]]></description>
 </item><item>
     <title>[백준]1049 기타줄</title>
-    <link>https://jyukki97.github.io/2020-03-05-1049/</link>
+    <link>https://jyukki97.io/2020-03-05-1049/</link>
     <pubDate>Thu, 05 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-05-1049/</guid>
+    <guid>https://jyukki97.io/2020-03-05-1049/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1049
 풀이: 여러 브랜드 중 6줄 패키지 가격의 최솟값과 낱개 가격의 최솟값을 저장해 놓는다.
 낱개 * 6 보다 패키지 가격이 더 높다면, 패키지로 살 이유가 없으므로 낱개 가격을 출력한다.
@@ -73,10 +73,10 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, M, q, w, a = 1001, b = 1001, dp[102] = { 0 }; int main(void) { cin &gt;&gt; N &gt;&gt; M; for (int i = 0; i &lt; M; i++) { cin &gt;&gt; q &gt;&gt; w; a = min(a, q); b = min(b, w); } for (int i = 1; i &lt;= N; i++) { dp[i] = (((i - 1) / 6) + 1) * a; dp[i] = min(dp[i], dp[i - 1] + b); } cout &lt;&lt; dp[N] &lt;&lt; endl; }   코드: 사용언어 : c++]]></description>
 </item><item>
     <title>[백준]1541 잃어버린 괄호</title>
-    <link>https://jyukki97.github.io/2020-02-24-1541/</link>
+    <link>https://jyukki97.io/2020-02-24-1541/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-24-1541/</guid>
+    <guid>https://jyukki97.io/2020-02-24-1541/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1541
 풀이: 문자열을 하나씩 확인한다.
 + 라면, 괄호를 치지않는다.
@@ -88,10 +88,10 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;string&gt;using namespace std; int main() { string s; vector&lt;int&gt; a; int n = 0; cin &gt;&gt; s; a.]]></description>
 </item><item>
     <title>[백준]1931 회의실배정</title>
-    <link>https://jyukki97.github.io/2020-02-24-1931/</link>
+    <link>https://jyukki97.io/2020-02-24-1931/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-24-1931/</guid>
+    <guid>https://jyukki97.io/2020-02-24-1931/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1931
 풀이: 회의 정보를 배열에 저장한다.
 저장된 배열을 끝나는 시간을 기준으로 정렬한다. (끝나는 시간이 같다면, 시작하는 시간을 기준으로 정렬)
@@ -101,20 +101,20 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int n, ma = 0, e = -1; int main() { cin &gt;&gt; n; vector&lt;pair&lt;int, int&gt;&gt; v(n); for (int i = 0; i &lt; n; i++) cin &gt;&gt; v[i].]]></description>
 </item><item>
     <title>[프로그래머스]조이스틱</title>
-    <link>https://jyukki97.github.io/2020-02-15-joystick/</link>
+    <link>https://jyukki97.io/2020-02-15-joystick/</link>
     <pubDate>Sat, 15 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-15-joystick/</guid>
+    <guid>https://jyukki97.io/2020-02-15-joystick/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다. ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 조이스틱을 각 방향으로 움직이면 아래와 같습니다.
 1 2 3 4  ▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동   예를 들어 아래의 방법으로 JAZ를 만들 수 있습니다.]]></description>
 </item><item>
     <title>[프로그래머스]구명보트</title>
-    <link>https://jyukki97.github.io/2020-02-14-lifeboat/</link>
+    <link>https://jyukki97.io/2020-02-14-lifeboat/</link>
     <pubDate>Fri, 14 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-14-lifeboat/</guid>
+    <guid>https://jyukki97.io/2020-02-14-lifeboat/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 무인도에 갇힌 사람들을 구명보트를 이용하여 구출하려고 합니다. 구명보트는 작아서 한 번에 최대 2명씩 밖에 탈 수 없고, 무게 제한도 있습니다.
 예를 들어, 사람들의 몸무게가 [70kg, 50kg, 80kg, 50kg]이고 구명보트의 무게 제한이 100kg이라면 2번째 사람과 4번째 사람은 같이 탈 수 있지만 1번째 사람과 3번째 사람의 무게의 합은 150kg이므로 구명보트의 무게 제한을 초과하여 같이 탈 수 없습니다.
@@ -122,10 +122,10 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
 사람들의 몸무게를 담은 배열 people과 구명보트의 무게 제한 limit가 매개변수로 주어질 때, 모든 사람을 구출하기 위해 필요한 구명보트 개수의 최솟값을 return 하도록 solution 함수를 작성해주세요.]]></description>
 </item><item>
     <title>[프로그래머스]큰 수 만들기</title>
-    <link>https://jyukki97.github.io/2019-12-28-makebignum/</link>
+    <link>https://jyukki97.io/2019-12-28-makebignum/</link>
     <pubDate>Sat, 28 Dec 2019 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-12-28-makebignum/</guid>
+    <guid>https://jyukki97.io/2019-12-28-makebignum/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다.
 예를 들어, 숫자 1924에서 수 두 개를 제거하면 [19, 12, 14, 92, 94, 24] 를 만들 수 있습니다. 이 중 가장 큰 숫자는 94 입니다.

@@ -9,11 +9,11 @@
 <meta property="og:description" content="https://www.acmicpc.net/problem/14501
 풀이:  남은일이 N일 일때, M일의 상담을 완료하는데 걸리는 기간을 T(M)라고 가정한다. 1일에 상담을 했다면 할 수 있는 상담은 1&#43;T(1) ~ N 까지가 있다. 1&#43;T(1) 일에 상담을 했다면 할 수 있는 삼담은 1 &#43; T(1) &#43; T(1&#43;T(1) ~ N 까지가 있다. N을 넘지않도록 주의하며 반복한 후 받을 수 있는 금액에 최대를 출력한다.  코드: 사용언어 : c&#43;&#43; {% highlight c&#43;&#43; %} #include  using namespace std; int a, b[16], c[16]; int ts(int q) { int max = 0; for (int i = q; i &lt; a; i&#43;&#43;) { int w = c[i] &#43; ts(i &#43; b[i]); if (i &#43; b[i] &gt; a) w = 0; max = max &gt; w ?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jyukki97.github.io/2019-05-25-14501/" />
-<meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
+<meta property="og:url" content="https://jyukki97.io/2019-05-25-14501/" />
+<meta property="og:image" content="https://jyukki97.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki97.io/logo.png"/>
 
 <meta name="twitter:title" content="14501 퇴사"/>
 <meta name="twitter:description" content="https://www.acmicpc.net/problem/14501
@@ -21,7 +21,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.github.io/2019-05-25-14501/" /><link rel="prev" href="https://jyukki97.github.io/2018-01-30-1568/" /><link rel="next" href="https://jyukki97.github.io/2018-01-04-1398/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.io/2019-05-25-14501/" /><link rel="prev" href="https://jyukki97.io/2018-01-30-1568/" /><link rel="next" href="https://jyukki97.io/2018-01-04-1398/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,9 +29,9 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/jyukki97.github.io\/2019-05-25-14501\/"
+            "@id": "https:\/\/jyukki97.io\/2019-05-25-14501\/"
         },"genre": "posts","wordcount":  147 ,
-        "url": "https:\/\/jyukki97.github.io\/2019-05-25-14501\/","publisher": {
+        "url": "https:\/\/jyukki97.io\/2019-05-25-14501\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -173,7 +173,7 @@ return 0;
                             <a class="link-to-markdown" href="/2019-05-25-14501/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.github.io/2019-05-25-14501/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.github.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.io/2019-05-25-14501/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.io/2019-05-25-14501/" data-title="14501 퇴사"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -193,7 +193,7 @@ return 0;
             </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

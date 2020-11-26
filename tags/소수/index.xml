@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>소수 - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/%EC%86%8C%EC%88%98/</link>
+        <link>https://jyukki97.io/tags/%EC%86%8C%EC%88%98/</link>
         <description>소수 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%86%8C%EC%88%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Dec 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/%EC%86%8C%EC%88%98/" rel="self" type="application/rss+xml" /><item>
     <title>[프로그래머스]소수 찾기</title>
-    <link>https://jyukki97.github.io/2019-12-19-findpnum/</link>
+    <link>https://jyukki97.io/2019-12-19-findpnum/</link>
     <pubDate>Thu, 19 Dec 2019 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-12-19-findpnum/</guid>
+    <guid>https://jyukki97.io/2019-12-19-findpnum/</guid>
     <description><![CDATA[https://programmers.co.kr
 풀이:  2이상 n이하의 수들 중 소수의 갯수를 구하여 출력한다.  코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  #include &lt;string&gt;#include &lt;vector&gt;#include &lt;math.h&gt;using namespace std; int solution(int n) { vector&lt;int&gt; q = { 2 }; for (int i = 3;i &lt;= n;i++) { bool w = true; for (int t : q) { if (t &gt; sqrt(i)) { break; } if (i % t == 0) { w = false; break; } } if (w == true) { q.]]></description>

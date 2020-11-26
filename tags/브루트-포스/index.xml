@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>브루트 포스 - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/</link>
+        <link>https://jyukki97.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/</link>
         <description>브루트 포스 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1213 팰린드롬 만들기</title>
-    <link>https://jyukki97.github.io/2020-04-13-1213/</link>
+    <link>https://jyukki97.io/2020-04-13-1213/</link>
     <pubDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-13-1213/</guid>
+    <guid>https://jyukki97.io/2020-04-13-1213/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1213
 풀이: 주어진 문자열에서 알파벳이 각각 몇개 들어있는지 저장한다.
 A~Z 까지 갯수를 확인한 후
@@ -19,10 +19,10 @@ A~Z 까지 갯수를 확인한 후
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;using namespace std; int i, c = -1, f, t, b[26]; string s; int main() { cin &gt;&gt; s; for (; i &lt; s.]]></description>
 </item><item>
     <title>[백준]2503 숫자 야구</title>
-    <link>https://jyukki97.github.io/2020-03-28-2503/</link>
+    <link>https://jyukki97.io/2020-03-28-2503/</link>
     <pubDate>Sat, 28 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-28-2503/</guid>
+    <guid>https://jyukki97.io/2020-03-28-2503/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2503
 풀이: 123 ~ 987 까지의 중복이 없는 숫자를 모두 탐색한다.
 각 숫자를 n개의 질문과 대조하여 틀린점이 없다면 답을 +1 해준다.
@@ -31,10 +31,10 @@ A~Z 까지 갯수를 확인한 후
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;using namespace std; int n, i, a, s[100], b[100]; string c[100], m; void B(int x) { if (x == 3) { int r = 1; for (int t = 0; t &lt; n; t++) { int q = 0, w = 0; for (int y = 0; y &lt; 3; y++) for (int u = 0; u &lt; 3; u++) if (c[t][y] == m[u]) if (y == u)	q++; else w++; if (s[t] !]]></description>
 </item><item>
     <title>[백준]2309 일곱 난쟁이</title>
-    <link>https://jyukki97.github.io/2020-03-12-2309/</link>
+    <link>https://jyukki97.io/2020-03-12-2309/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-12-2309/</guid>
+    <guid>https://jyukki97.io/2020-03-12-2309/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2309
 풀이: 아홉 난쟁이의 키의 합을 S라고 하자.
 아홉 난쟁이 중 랜덤으로 뽑은 두 명의 키의 합을 T라고 하자.
@@ -44,10 +44,10 @@ S - T = 100 이라면
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[9], i, t, s = 0; int main() { for (i = 0; i &lt; 9; i++) { cin &gt;&gt; a[i]; s += a[i]; } sort(a, a + 9); for (i = 0; i &lt; 9; i++) { for (t = i + 1; t &lt; 9; t++)	if (s - a[i] - a[t] == 100)	break; if (s - a[i] - a[t] == 100)	break; } for (s = 0; s &lt; 9; s++)	if (s !]]></description>
 </item><item>
     <title>[백준]1120 문자열</title>
-    <link>https://jyukki97.github.io/2020-03-07-1120/</link>
+    <link>https://jyukki97.io/2020-03-07-1120/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-07-1120/</guid>
+    <guid>https://jyukki97.io/2020-03-07-1120/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1120
 풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
 a 와 b의 (1번째 ~ a의 길이) 의 차이의 개수
@@ -60,10 +60,10 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int main() { int c = 51; string a, b; cin &gt;&gt; a &gt;&gt; b; for (int i = 0; i &lt;= b.]]></description>
 </item><item>
     <title>[백준]1051 숫자 정사각형</title>
-    <link>https://jyukki97.github.io/2020-03-06-1051/</link>
+    <link>https://jyukki97.io/2020-03-06-1051/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-06-1051/</guid>
+    <guid>https://jyukki97.io/2020-03-06-1051/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1051
 풀이: N, M 중 더 작은 값이 정사각형의 한 변의 길이의 최댓값이 된다.
 최댓값을 1씩 줄여 가면서, 만들 수 있는 정사각형이 있는지 확인한다.
@@ -72,10 +72,10 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, M, b, c = 1; int main(void) { cin &gt;&gt; N &gt;&gt; M; vector&lt;string&gt; a(N); for (int i = 0; i &lt; N; i++) cin &gt;&gt; a[i]; b = N &gt; M ?]]></description>
 </item><item>
     <title>[백준]1062 가르침</title>
-    <link>https://jyukki97.github.io/2020-03-06-1062/</link>
+    <link>https://jyukki97.io/2020-03-06-1062/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-06-1062/</guid>
+    <guid>https://jyukki97.io/2020-03-06-1062/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1062
 풀이: a ~ z 중에 K개의 글자를 배웠을 떄,
 N개의 단어 중 몇개의 단어를 읽을 수 있는지 구한 후 그것들 중 최댓값을 출력한다.
@@ -83,10 +83,10 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int N, K, b, c = 0, d, f; vector&lt;string&gt; a; void T(int x, int y) { if (y == K) { d = 0; for (int i = 0; i &lt; N; i++) { f = 1; for (char s : a[i])	if (!]]></description>
 </item><item>
     <title>[백준]14888 연산자 끼워넣기</title>
-    <link>https://jyukki97.github.io/2020-02-24-14888/</link>
+    <link>https://jyukki97.io/2020-02-24-14888/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-24-14888/</guid>
+    <guid>https://jyukki97.io/2020-02-24-14888/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/14888
 풀이: 각 숫자를 순서대로 배열에 넣어놓는다.
 +, -, *, / 를 갯수만큼 각 숫자사이의 끼워넣어 식을 만든다.
@@ -96,10 +96,10 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int n, num[101], op[4]; vector&lt;int&gt; sumn; void o(int a, int b) { if (a == n - 1) { sumn.]]></description>
 </item><item>
     <title>[백준]14889 스타트와 링크</title>
-    <link>https://jyukki97.github.io/2020-02-24-14889/</link>
+    <link>https://jyukki97.io/2020-02-24-14889/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-24-14889/</guid>
+    <guid>https://jyukki97.io/2020-02-24-14889/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/14889
 풀이: n / 2 명의 스타트 팀과 n / 2 팀의 링크팀을 만든다.
 스타트팀만 만든다면, 자동적으로 남는 사람들은 링크팀이된다.
@@ -110,10 +110,10 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m[21][21], mn = 100000, start, link; bool s[21]; void st(int a, int b) { if (a == n / 2) { start = 0; link = 0; for (int i = 0; i &lt; n; i++) if (s[i]) { for (int t = i + 1; t &lt; n; t++) if (s[t]) start += m[i][t] + m[t][i]; } else for (int t = i + 1; t &lt; n; t++) if (!]]></description>
 </item><item>
     <title>[백준]1018 체스판 다시 칠하기</title>
-    <link>https://jyukki97.github.io/2020-02-21-1018/</link>
+    <link>https://jyukki97.io/2020-02-21-1018/</link>
     <pubDate>Fri, 21 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-21-1018/</guid>
+    <guid>https://jyukki97.io/2020-02-21-1018/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1018
 풀이: (0, 0) ~ (8, 8) &hellip;.. (n - 8, m - 8) ~ (n, m) 까지의 모든 8 X 8 체스판을 서치한다.
 체스판이 WBWBWB&hellip; 순서로 되어있는지 확인 후 안되어 있는 칸이 몇 칸인지 찾는다.

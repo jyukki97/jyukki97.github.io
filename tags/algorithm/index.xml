@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>algorithm - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/algorithm/</link>
+        <link>https://jyukki97.io/tags/algorithm/</link>
         <description>algorithm - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1388 바닥 장식</title>
-    <link>https://jyukki97.github.io/2020-04-27-1388/</link>
+    <link>https://jyukki97.io/2020-04-27-1388/</link>
     <pubDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-27-1388/</guid>
+    <guid>https://jyukki97.io/2020-04-27-1388/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1388
 풀이: 같은 행에 연속된 &lsquo;-&rsquo; 이 몇 쌍이 있는지 센다.
 같은 방식으로
@@ -18,10 +18,10 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c; string s[105]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; s[i]; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; m; t++) { if (s[i][t] == &#39;-&#39;)if (t == m - 1 || s[i][t + 1] == &#39;|&#39;)c++; if (s[i][t] == &#39;|&#39;)if (i == n - 1 || s[i + 1][t] == &#39;-&#39;)c++; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
 </item><item>
     <title>[백준]1356 유진수</title>
-    <link>https://jyukki97.github.io/2020-04-26-1356/</link>
+    <link>https://jyukki97.io/2020-04-26-1356/</link>
     <pubDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-26-1356/</guid>
+    <guid>https://jyukki97.io/2020-04-26-1356/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1356
 풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
 1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
@@ -35,10 +35,10 @@
 1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.]]></description>
 </item><item>
     <title>[백준]1268 임시 반장 정하기</title>
-    <link>https://jyukki97.github.io/2020-04-25-1268/</link>
+    <link>https://jyukki97.io/2020-04-25-1268/</link>
     <pubDate>Sat, 25 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-25-1268/</guid>
+    <guid>https://jyukki97.io/2020-04-25-1268/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1268
 풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
 1번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
@@ -53,10 +53,10 @@ n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !]]></description>
 </item><item>
     <title>[백준]1236 성 지키기</title>
-    <link>https://jyukki97.github.io/2020-04-24-1236/</link>
+    <link>https://jyukki97.io/2020-04-24-1236/</link>
     <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-24-1236/</guid>
+    <guid>https://jyukki97.io/2020-04-24-1236/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1236
 풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
 경비병이 없는 행의 갯수를 Sn이라고 하자.
@@ -68,10 +68,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!]]></description>
 </item><item>
     <title>[백준]17265 나의 인생에는 수학과 함께</title>
-    <link>https://jyukki97.github.io/2020-04-23-17265/</link>
+    <link>https://jyukki97.io/2020-04-23-17265/</link>
     <pubDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-23-17265/</guid>
+    <guid>https://jyukki97.io/2020-04-23-17265/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/17265
 풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
 현재 위치가 연산자라면,
@@ -85,10 +85,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 또한 현재까지 연산해왔던 값이 지금 저장해 놓은 최솟값보다 작다면 교체한다.]]></description>
 </item><item>
     <title>[백준]1759 암호 만들기</title>
-    <link>https://jyukki97.github.io/2020-04-22-1759/</link>
+    <link>https://jyukki97.io/2020-04-22-1759/</link>
     <pubDate>Wed, 22 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-22-1759/</guid>
+    <guid>https://jyukki97.io/2020-04-22-1759/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1759
 풀이: C개의 문자들을 사전순으로 정렬한다.
 정렬된 문자열을 L개만큼 출력한다.
@@ -98,10 +98,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, i, b[20]; char c[20], d[20]; void P(int x, int z) { if (x == n) { int y = 0, t = 0, r = 0; for (; y &lt; x; y++) if (d[y] == &#39;a&#39; || d[y] == &#39;e&#39; || d[y] == &#39;i&#39; || d[y] == &#39;o&#39; || d[y] == &#39;u&#39;)	t++; else r++; if(t &amp;&amp; r&gt;1)	cout &lt;&lt; d &lt;&lt; endl; return; } for (int y = z; y &lt; m; y++)	if (!]]></description>
 </item><item>
     <title>[백준]2089 -2진수</title>
-    <link>https://jyukki97.github.io/2020-04-21-2089/</link>
+    <link>https://jyukki97.io/2020-04-21-2089/</link>
     <pubDate>Tue, 21 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-21-2089/</guid>
+    <guid>https://jyukki97.io/2020-04-21-2089/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2089
 풀이: 2진수를 구하듯이 구한다.
 -2	13
@@ -114,10 +114,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; int n; void G(int x) { if (!x)	return; G(x % -2 &lt; 0 ? (x / -2) + 1 : x / -2); if (x % -2 &lt; 0) cout &lt;&lt; -1 * (x % -2); else cout &lt;&lt; x % -2; } int main() { cin &gt;&gt; n; G(n); if (!]]></description>
 </item><item>
     <title>[백준]16637 괄호 추가하기</title>
-    <link>https://jyukki97.github.io/2020-04-20-16637/</link>
+    <link>https://jyukki97.io/2020-04-20-16637/</link>
     <pubDate>Mon, 20 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-20-16637/</guid>
+    <guid>https://jyukki97.io/2020-04-20-16637/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/16637
 풀이: 순서대로 사칙연산을 진행한다.
 이 때, 현재 숫자만 계산하는 것, 현재 숫자 (연산자) 다음 숫자 를 계산하는 것 두 가지로 나누어 생각한다.
@@ -128,10 +128,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 코드: 사용언어 : c++]]></description>
 </item><item>
     <title>[백준]11382 꼬마 정민</title>
-    <link>https://jyukki97.github.io/2020-04-19-11382/</link>
+    <link>https://jyukki97.io/2020-04-19-11382/</link>
     <pubDate>Sun, 19 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-19-11382/</guid>
+    <guid>https://jyukki97.io/2020-04-19-11382/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11382
 풀이: A, B, C 를 각각 문자열로 변환한다.
 변환된 문자열을 한자리씩 더한다.
@@ -141,10 +141,10 @@ Sn과 Sm 중 최댓값을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main() { string a, b, c, d; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int m = max(a.]]></description>
 </item><item>
     <title>[백준]3056 007</title>
-    <link>https://jyukki97.github.io/2020-04-18-3056/</link>
+    <link>https://jyukki97.io/2020-04-18-3056/</link>
     <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-18-3056/</guid>
+    <guid>https://jyukki97.io/2020-04-18-3056/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/3056
 풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
 비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0

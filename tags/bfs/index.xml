@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>BFS - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/bfs/</link>
+        <link>https://jyukki97.io/tags/bfs/</link>
         <description>BFS - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1194 달이 차오른다, 가자</title>
-    <link>https://jyukki97.github.io/2020-04-16-1194/</link>
+    <link>https://jyukki97.io/2020-04-16-1194/</link>
     <pubDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-16-1194/</guid>
+    <guid>https://jyukki97.io/2020-04-16-1194/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1194
 풀이: b[x][y][key] : key를 들고, (x, y) 방문했다면, 1, 방문하지 않았다면 0
 0부터 BFS를 시작한다.
@@ -20,10 +20,10 @@
 출구(&lsquo;1&rsquo;) 를 만난다면 반복을 중단한다.]]></description>
 </item><item>
     <title>[백준]1525 퍼즐</title>
-    <link>https://jyukki97.github.io/2020-04-15-1525/</link>
+    <link>https://jyukki97.io/2020-04-15-1525/</link>
     <pubDate>Wed, 15 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-15-1525/</guid>
+    <guid>https://jyukki97.io/2020-04-15-1525/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1525
 풀이:    0 1 2     3 4 5   6 7 8    이렇게 퍼즐이 배열되어 있다고 가정하자.
 우리는 이것을 012345678 -&gt; int형으로 바꿔 생각하도록 하자.
@@ -33,10 +33,10 @@
 주어진 퍼즐에서 9를 오른쪽, 왼쪽, 위, 아래 로 옮기면서, 123456789가 되는 지점 까지 BFS를 돌린다.]]></description>
 </item><item>
     <title>[백준]5214 환승</title>
-    <link>https://jyukki97.github.io/2020-04-11-5214/</link>
+    <link>https://jyukki97.io/2020-04-11-5214/</link>
     <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-11-5214/</guid>
+    <guid>https://jyukki97.io/2020-04-11-5214/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5214
 풀이: s[i] : i 번째 하이퍼 튜브에 연결 되어 있는 모든 역
 v[i] : i 번 역이 들어있는 하이퍼 튜브
@@ -45,10 +45,10 @@ v[i] : i 번 역이 들어있는 하이퍼 튜브
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, k, i, t, w, d, c[1005], b[100005] = { 1,1 }; int main() { cin &gt;&gt; n &gt;&gt; k &gt;&gt; m; vector&lt;vector&lt;int&gt;&gt; s(m + 1), v(n + 1); queue&lt;int&gt; q; for (q.]]></description>
 </item><item>
     <title>[백준]2589 보물섬</title>
-    <link>https://jyukki97.github.io/2020-04-10-2589/</link>
+    <link>https://jyukki97.io/2020-04-10-2589/</link>
     <pubDate>Fri, 10 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-10-2589/</guid>
+    <guid>https://jyukki97.io/2020-04-10-2589/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2589
 풀이: 모든 L을 전부 찾는다.
 현재 L에서 최단 거리로 가장 먼 거리가
@@ -58,10 +58,10 @@ v[i] : i 번 역이 들어있는 하이퍼 튜브
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, m, i, t, s, y; string c[55]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; c[i]; for (i = 0; i &lt; n; i++)	for (t = 0; t &lt; m; t++, s = y - 1 &gt; s ?]]></description>
 </item><item>
     <title>[백준]5014 스타트링크</title>
-    <link>https://jyukki97.github.io/2020-04-09-5014/</link>
+    <link>https://jyukki97.io/2020-04-09-5014/</link>
     <pubDate>Thu, 09 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-09-5014/</guid>
+    <guid>https://jyukki97.io/2020-04-09-5014/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5014
 풀이: 현재 층 S부터 +U, -D 를 하며 모든 층을 찾아간다.
 만약 찾는 층에 도달했다면 버튼을 몇 번 눌렀는지 출력한다.
@@ -72,20 +72,20 @@ S가 G와 같다면 0을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int F, S, G, U, D, i, s, a, b[1000005]; int main() { cin &gt;&gt; F &gt;&gt; S &gt;&gt; G &gt;&gt; U &gt;&gt; D; queue&lt;int&gt; q; q.]]></description>
 </item><item>
     <title>[백준]2644 촌수계산</title>
-    <link>https://jyukki97.github.io/2020-03-15-2644/</link>
+    <link>https://jyukki97.io/2020-03-15-2644/</link>
     <pubDate>Sun, 15 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-15-2644/</guid>
+    <guid>https://jyukki97.io/2020-03-15-2644/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2644
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;vector&gt;using namespace std; int n, k, e, q, w, m, d[102], b[102]; int main() { cin &gt;&gt; n &gt;&gt; k &gt;&gt; e &gt;&gt; m; vector&lt;vector&lt;int&gt;&gt; a(n + 1); priority_queue&lt;pair&lt;int, int&gt;&gt; p; while(m--) { cin &gt;&gt; q &gt;&gt; w; a[q].]]></description>
 </item><item>
     <title>[백준]2583 영역 구하기</title>
-    <link>https://jyukki97.github.io/2020-03-14-2583/</link>
+    <link>https://jyukki97.io/2020-03-14-2583/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-14-2583/</guid>
+    <guid>https://jyukki97.io/2020-03-14-2583/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2583
 풀이: 직사각형이 들어있는 곳을 1,
 없는곳을 0으로 해놓은 배열을 만든다.
@@ -98,10 +98,10 @@ S가 G와 같다면 0을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, k, i, t, a[102][102], x1, x2, yl, y2, s = 0, b[5002]; void A(int x, int y) { a[x][y] = 1, b[s - 1]++; if (x &gt; 0 &amp;&amp; !]]></description>
 </item><item>
     <title>[백준]2468 안전 영역</title>
-    <link>https://jyukki97.github.io/2020-03-13-2468/</link>
+    <link>https://jyukki97.io/2020-03-13-2468/</link>
     <pubDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-13-2468/</guid>
+    <guid>https://jyukki97.io/2020-03-13-2468/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2468
 풀이: 물의 높이가 h 일 때,
 지역의 높이가 h보다 작거나 같다면 잠겨있는 지역이라고 한다.
@@ -115,10 +115,10 @@ S가 G와 같다면 0을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  #include &lt;iostream&gt;#define F(i,n)for(int i=0;i&lt;n;i++) using namespace std; int n, m = 0, a[102][102], b[102][102], s, r = 0; void A(int x, int y) { b[x][y] = 0; if (x &gt; 0 &amp;&amp; b[x - 1][y])	A(x - 1, y); if (y &gt; 0 &amp;&amp; b[x][y - 1])	A(x, y - 1); if (x + 1 &lt; n &amp;&amp; b[x + 1][y])	A(x + 1, y); if (y + 1 &lt; n &amp;&amp; b[x][y + 1])	A(x, y + 1); } int main() { cin &gt;&gt; n; F(i,n)F(t,n){ cin &gt;&gt; a[i][t]; m = m &lt; a[i][t] ?]]></description>
 </item><item>
     <title>[백준]11724 연결 요소의 개수</title>
-    <link>https://jyukki97.github.io/2020-03-12-11724/</link>
+    <link>https://jyukki97.io/2020-03-12-11724/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-12-11724/</guid>
+    <guid>https://jyukki97.io/2020-03-12-11724/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11724
 풀이: 방문하지 않은 정점과 연결된 모든 정점을 방문표시하고, 요소의 개수를 +1 해준다.
 더이상 방문할 정점이 없을때까지 반복한다.
@@ -126,10 +126,10 @@ S가 G와 같다면 0을 출력한다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int n, m, i, t, c = 0, b[1002]; vector&lt;vector&lt;int&gt;&gt; a; void T(int x) { if (b[x]) return; b[x] = 1; for (int o : a[x])	T(o); } int main() { cin &gt;&gt; n &gt;&gt; m; a.]]></description>
 </item><item>
     <title>[백준]1697 숨바꼭질</title>
-    <link>https://jyukki97.github.io/2020-02-29-1697/</link>
+    <link>https://jyukki97.io/2020-02-29-1697/</link>
     <pubDate>Sat, 29 Feb 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-29-1697/</guid>
+    <guid>https://jyukki97.io/2020-02-29-1697/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1697
 풀이: 현재 위치를 x라고 할 때, x + 1, x - 1, x * 2 위치를 BFS 를 통해 하나씩 찾아간다.
 동생의 위치와 같아진다면 몇번 이동했는지 출력한다.

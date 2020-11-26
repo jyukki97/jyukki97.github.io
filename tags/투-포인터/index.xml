@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>투 포인터 - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/</link>
+        <link>https://jyukki97.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/</link>
         <description>투 포인터 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1806 부분합</title>
-    <link>https://jyukki97.github.io/2020-03-30-1806/</link>
+    <link>https://jyukki97.io/2020-03-30-1806/</link>
     <pubDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-30-1806/</guid>
+    <guid>https://jyukki97.io/2020-03-30-1806/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1806
 풀이: a[i] : 0 ~ i 번째 수 까지의 합
 a[i] 와 a[t] 로 시작한다.

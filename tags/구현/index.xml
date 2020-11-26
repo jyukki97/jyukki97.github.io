@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>구현 - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</link>
+        <link>https://jyukki97.io/tags/%EA%B5%AC%ED%98%84/</link>
         <description>구현 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10708 크리스마스 파티</title>
-    <link>https://jyukki97.github.io/2020-03-29-10708/</link>
+    <link>https://jyukki97.io/2020-03-29-10708/</link>
     <pubDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-29-10708/</guid>
+    <guid>https://jyukki97.io/2020-03-29-10708/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10708
 풀이: 게임을 진행한다.
 적은 대상이 타겟이라면 적은 사람을 +1 타겟이 아니라면 타겟인 사람을 +1 해준다.
@@ -17,20 +17,20 @@
 1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c, a[102], b[102]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; m; i++) cin &gt;&gt; a[i]; for (i = 0; i &lt; m; i++) for (t = 0; t &lt; n; b[c==a[i]?]]></description>
 </item><item>
     <title>[백준]5533 유니크</title>
-    <link>https://jyukki97.github.io/2020-03-26-5533/</link>
+    <link>https://jyukki97.io/2020-03-26-5533/</link>
     <pubDate>Thu, 26 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-26-5533/</guid>
+    <guid>https://jyukki97.io/2020-03-26-5533/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5533
 풀이: 각 플레이어가 3번의 게임에서 얻은 총 점수를 입력으로 주어진 순서대로 출력한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, a[201][3], i, t, b[3][101], s; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; 3; b[t][a[i][t++]]++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, s = 0) { for (t = 0; t &lt; 3; t++) s += b[t][a[i][t]] &gt; 1 ?]]></description>
 </item><item>
     <title>[백준]2822 점수 계산</title>
-    <link>https://jyukki97.github.io/2020-03-21-2822/</link>
+    <link>https://jyukki97.io/2020-03-21-2822/</link>
     <pubDate>Sat, 21 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-21-2822/</guid>
+    <guid>https://jyukki97.io/2020-03-21-2822/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2822
 풀이: 첫째 줄에 참가자의 총점을 출력한다.
 둘째 줄에는 어떤 문제가 최종 점수에 포함되는지를 공백으로 구분하여 출력한다.
@@ -38,10 +38,10 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int n, m, k, s = 0; int main() { vector&lt;pair&lt;int, int&gt;&gt;a; for (int i = 1; i &lt; 9; i++) { cin &gt;&gt; n; if (i &gt;= 6) { m = 151; for (int t = 0; t &lt; 5; t++) if (a[t].]]></description>
 </item><item>
     <title>[백준]10707 수도요금</title>
-    <link>https://jyukki97.github.io/2020-03-17-10707/</link>
+    <link>https://jyukki97.io/2020-03-17-10707/</link>
     <pubDate>Tue, 17 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-17-10707/</guid>
+    <guid>https://jyukki97.io/2020-03-17-10707/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10707
 풀이: X사의 1리터당 요금 * 한 달간의 수도의 양
 Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도의 양 - 기본요금이 되는 사용량의 상한))
@@ -50,10 +50,10 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
 1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; int a, b, c, d ,p; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; p; a *= p, b += p &lt; c ?]]></description>
 </item><item>
     <title>[백준]5063 TGN</title>
-    <link>https://jyukki97.github.io/2020-03-17-5063/</link>
+    <link>https://jyukki97.io/2020-03-17-5063/</link>
     <pubDate>Tue, 17 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-17-5063/</guid>
+    <guid>https://jyukki97.io/2020-03-17-5063/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5063
 풀이: 광고를 했을 때의 수익 - 광고 비용 이 광고를 했을 떄 얻을 수 있는 순이익이다.
 즉, 광고를 하지않았을 때의 수익과 광고를 했을 때 얻을 수 있는 순 이익을 비교하여,
@@ -62,10 +62,10 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int T, k, n, m; int main() { cin &gt;&gt; T; while (T--) { cin &gt;&gt; k &gt;&gt; n &gt;&gt; m; n -= m; if (k == n)	cout &lt;&lt; &#34;does not matter&#34; &lt;&lt; endl; else if (k &lt; n) cout &lt;&lt; &#34;advertise&#34; &lt;&lt; endl; else cout &lt;&lt; &#34;do not advertise&#34; &lt;&lt; endl; } }   ]]></description>
 </item><item>
     <title>[백준]5597 과제 안 내신 분..?</title>
-    <link>https://jyukki97.github.io/2020-03-16-5597/</link>
+    <link>https://jyukki97.io/2020-03-16-5597/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-16-5597/</guid>
+    <guid>https://jyukki97.io/2020-03-16-5597/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5597
 풀이: 과제를 낸 28 명을 기록한다.
 30 명 중 기록이 안돼어있는 학생 2명을 출력한다.
@@ -73,20 +73,20 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
 1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a[31], i = 28, b; int main() { while (i--) { cin &gt;&gt; b; a[b] = 1; } for (i = 1; i &lt;= 30; i++)	if (!a[i])	cout &lt;&lt; i &lt;&lt; endl; }   ]]></description>
 </item><item>
     <title>[백준]10797 10부제</title>
-    <link>https://jyukki97.github.io/2020-03-14-10797/</link>
+    <link>https://jyukki97.io/2020-03-14-10797/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-14-10797/</guid>
+    <guid>https://jyukki97.io/2020-03-14-10797/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10797
 풀이: 날짜의 일의 자리 숫자와 자동차의 일의 자리 숫자가 같다면 차량의 대수를 +1 해준다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, m, i, s = 0; int main() { cin &gt;&gt; n; for (i = 0; i &lt; 5; i++) { cin &gt;&gt; m; if (n == m)	s++; } cout &lt;&lt; s &lt;&lt; endl; }   ]]></description>
 </item><item>
     <title>[백준]2003 수들의 합 2</title>
-    <link>https://jyukki97.github.io/2020-03-14-2003/</link>
+    <link>https://jyukki97.io/2020-03-14-2003/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-14-2003/</guid>
+    <guid>https://jyukki97.io/2020-03-14-2003/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2003
 풀이: A[i] 부터 A[j] 까지 하나씩 더해가는 값을 s라고 하자.
 만약, s가 m과 같다면, 경우의 수를 +1 해준다.
@@ -96,10 +96,10 @@ i가 n이 될때까지 반복 후 경우의 수를 출력해준다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[10002], s, c = 0; int main() { scanf(&#34;%d%d&#34;,&amp;n,&amp;m); for (i = 0; i &lt; n; i++)	scanf(&#34;%d&#34;,&amp;a[i]); for (i = 0; i &lt; n; i++) { s = 0; for (t = i; t &lt; n; t++) { s += a[t]; if (s == m) c++; if (s &gt;= m)	break; } } printf(&#34;%d\n&#34;,c); }   ]]></description>
 </item><item>
     <title>[백준]5543 상근날드</title>
-    <link>https://jyukki97.github.io/2020-03-12-5543/</link>
+    <link>https://jyukki97.io/2020-03-12-5543/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-12-5543/</guid>
+    <guid>https://jyukki97.io/2020-03-12-5543/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5543
 풀이: 햅버거 중 가장 싼 것 + 음료 중 가장 싼 것 - 50원
 코드: 사용언어 : c++

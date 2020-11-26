@@ -9,11 +9,11 @@
 <meta property="og:description" content="https://www.acmicpc.net/problem/2688
 풀이:  a[t][y] : t &#43; 1 개의 자릿수에서의 줄어들지 않는 수의 갯수 a[t][y] = a[t][y - 1] &#43; a[t - 1][y] 앞자리의 갯수가 1 증가할 때 마다 이전 자릿수의 개수를 더해가는 방식으로 구한다. 최종 자릿수 9가되면 모든 수가 누적되어 있으므로 출력한다.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt; using namespace std; long long a[65][10] = { 1,2,3,4,5,6,7,8,9,10,0 }; int main(void) { int T, n; cin &gt;&gt; T; for (int i = 0; i &lt; T; i&#43;&#43;) { cin &gt;&gt; n; for (int t = 1; t &lt; n; t&#43;&#43;) { a[t][0] = 1; for (int y = 1; y &lt; 10; y&#43;&#43;) { a[t][y] = a[t][y - 1] &#43; a[t - 1][y]; } } cout &lt;&lt; a[n - 1][9] &lt;&lt; endl; } return 0; }   사간 초과 풀이:  처음 풀이를 할 때 저번 1038 감소하는 수를 푸는 것처럼 하나하나 만들어 가면서 카운트를 하려 했으나 시간초과가 난다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jyukki97.github.io/2017-12-24-2688/" />
-<meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
+<meta property="og:url" content="https://jyukki97.io/2017-12-24-2688/" />
+<meta property="og:image" content="https://jyukki97.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki97.io/logo.png"/>
 
 <meta name="twitter:title" content="2688 줄어들지 않아"/>
 <meta name="twitter:description" content="https://www.acmicpc.net/problem/2688
@@ -21,7 +21,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.github.io/2017-12-24-2688/" /><link rel="prev" href="https://jyukki97.github.io/2017-12-25-2743/" /><link rel="next" href="https://jyukki97.github.io/2017-12-30-2616/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.io/2017-12-24-2688/" /><link rel="prev" href="https://jyukki97.io/2017-12-25-2743/" /><link rel="next" href="https://jyukki97.io/2017-12-30-2616/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,9 +29,9 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/jyukki97.github.io\/2017-12-24-2688\/"
+            "@id": "https:\/\/jyukki97.io\/2017-12-24-2688\/"
         },"genre": "posts","wordcount":  299 ,
-        "url": "https:\/\/jyukki97.github.io\/2017-12-24-2688\/","publisher": {
+        "url": "https:\/\/jyukki97.io\/2017-12-24-2688\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -266,7 +266,7 @@ int main(void) {
                             <a class="link-to-markdown" href="/2017-12-24-2688/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.github.io/2017-12-24-2688/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.github.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.io/2017-12-24-2688/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.io/2017-12-24-2688/" data-title="2688 줄어들지 않아"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -286,7 +286,7 @@ int main(void) {
             </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

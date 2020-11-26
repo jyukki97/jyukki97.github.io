@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>MCMF - Tag - JYUKKI&#39;s BLOG</title>
-        <link>https://jyukki97.github.io/tags/mcmf/</link>
+        <link>https://jyukki97.io/tags/mcmf/</link>
         <description>MCMF - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/mcmf/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.io/tags/mcmf/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]3056 007</title>
-    <link>https://jyukki97.github.io/2020-04-18-3056/</link>
+    <link>https://jyukki97.io/2020-04-18-3056/</link>
     <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-18-3056/</guid>
+    <guid>https://jyukki97.io/2020-04-18-3056/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/3056
 풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
 비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
