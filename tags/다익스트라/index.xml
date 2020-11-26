@@ -1,0 +1,37 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>다익스트라 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/</link>
+        <description>다익스트라 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]1916 최소비용 구하기</title>
+    <link>https://jyukki97.github.io/2020-03-14-1916/</link>
+    <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-14-1916/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1916
+풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, u, d[1002], s, e, c, b[1002]; int main() { cin &gt;&gt; n &gt;&gt; m; priority_queue&lt;pair&lt;int, int&gt;&gt; p; vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; a(n + 1); while (m--) { cin &gt;&gt; s &gt;&gt; e &gt;&gt; c; a[s].]]></description>
+</item><item>
+    <title>[백준]1238 파티</title>
+    <link>https://jyukki97.github.io/2020-03-09-1238/</link>
+    <pubDate>Mon, 09 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-09-1238/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1238
+풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;using namespace std; int V, E, k, u, v, w, i, t, d1[1002], d2[1002], b[1002], s = 0; int main() { cin &gt;&gt; V &gt;&gt; E &gt;&gt; k; priority_queue&lt;pair&lt;int, int&gt;&gt; p; vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt;a(V + 1); for (i = 0; i &lt; E; i++) { cin &gt;&gt; u &gt;&gt; v &gt;&gt; w; a[u].]]></description>
+</item><item>
+    <title>[백준]1261 알고스팟</title>
+    <link>https://jyukki97.github.io/2020-03-08-1261/</link>
+    <pubDate>Sun, 08 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-08-1261/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1261
+풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;using namespace std; int N, M, b[102][102], q, w, e, dp[102][102]; int main() { cin &gt;&gt; M &gt;&gt; N; fill(dp[0], dp[0] + 10201, 987654321); vector&lt;string&gt; v(N); priority_queue&lt;pair&lt;int, pair&lt;int, int&gt;&gt;&gt; p; p.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,113 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Level 2 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/level-2/</link>
+        <description>Level 2 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/level-2/" rel="self" type="application/rss+xml" /><item>
+    <title>[프로그래머스]카카오프렌즈 컬러링북</title>
+    <link>https://jyukki97.github.io/2020-03-14-coloringbook/</link>
+    <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-14-coloringbook/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 카카오 프렌즈 컬러링북 출판사의 편집자인 어피치는 네오에게 컬러링북에 들어갈 원화를 그려달라고 부탁하여 여러 장의 그림을 받았다. 여러 장의 그림을 난이도 순으로 컬러링북에 넣고 싶었던 어피치는 영역이 많으면 색칠하기가 까다로워 어려워진다는 사실을 발견하고 그림의 난이도를 영역의 수로 정의하였다. (영역이란 상하좌우로 연결된 같은 색상의 공간을 의미한다.)
+그림에 몇 개의 영역이 있는지와 가장 큰 영역의 넓이는 얼마인지 계산하는 프로그램을 작성해보자.
+위의 그림은 총 12개 영역으로 이루어져 있으며, 가장 넓은 영역은 어피치의 얼굴면으로 넓이는 120이다.]]></description>
+</item><item>
+    <title>[프로그래머스]예상 대진표</title>
+    <link>https://jyukki97.github.io/2020-03-04-listofmatches/</link>
+    <pubDate>Wed, 04 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-04-listofmatches/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: △△ 게임대회가 개최되었습니다. 이 대회는 N명이 참가하고, 토너먼트 형식으로 진행됩니다. N명의 참가자는 각각 1부터 N번을 차례대로 배정받습니다. 그리고, 1번↔2번, 3번↔4번, &hellip; , N-1번↔N번의 참가자끼리 게임을 진행합니다. 각 게임에서 이긴 사람은 다음 라운드에 진출할 수 있습니다. 이때, 다음 라운드에 진출할 참가자의 번호는 다시 1번부터 N/2번을 차례대로 배정받습니다. 만약 1번↔2번 끼리 겨루는 게임에서 2번이 승리했다면 다음 라운드에서 1번을 부여받고, 3번↔4번에서 겨루는 게임에서 3번이 승리했다면 다음 라운드에서 2번을 부여받게 됩니다. 게임은 최종 한 명이 남을 때까지 진행됩니다.]]></description>
+</item><item>
+    <title>[프로그래머스]조이스틱</title>
+    <link>https://jyukki97.github.io/2020-02-15-joystick/</link>
+    <pubDate>Sat, 15 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-15-joystick/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다. ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
+조이스틱을 각 방향으로 움직이면 아래와 같습니다.
+1 2 3 4  ▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동   예를 들어 아래의 방법으로 JAZ를 만들 수 있습니다.]]></description>
+</item><item>
+    <title>[프로그래머스]구명보트</title>
+    <link>https://jyukki97.github.io/2020-02-14-lifeboat/</link>
+    <pubDate>Fri, 14 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-14-lifeboat/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 무인도에 갇힌 사람들을 구명보트를 이용하여 구출하려고 합니다. 구명보트는 작아서 한 번에 최대 2명씩 밖에 탈 수 없고, 무게 제한도 있습니다.
+예를 들어, 사람들의 몸무게가 [70kg, 50kg, 80kg, 50kg]이고 구명보트의 무게 제한이 100kg이라면 2번째 사람과 4번째 사람은 같이 탈 수 있지만 1번째 사람과 3번째 사람의 무게의 합은 150kg이므로 구명보트의 무게 제한을 초과하여 같이 탈 수 없습니다.
+구명보트를 최대한 적게 사용하여 모든 사람을 구출하려고 합니다.
+사람들의 몸무게를 담은 배열 people과 구명보트의 무게 제한 limit가 매개변수로 주어질 때, 모든 사람을 구출하기 위해 필요한 구명보트 개수의 최솟값을 return 하도록 solution 함수를 작성해주세요.]]></description>
+</item><item>
+    <title>[프로그래머스]압축</title>
+    <link>https://jyukki97.github.io/2020-02-13-compression/</link>
+    <pubDate>Thu, 13 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-13-compression/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 신입사원 어피치는 카카오톡으로 전송되는 메시지를 압축하여 전송 효율을 높이는 업무를 맡게 되었다. 메시지를 압축하더라도 전달되는 정보가 바뀌어서는 안 되므로, 압축 전의 정보를 완벽하게 복원 가능한 무손실 압축 알고리즘을 구현하기로 했다.
+어피치는 여러 압축 알고리즘 중에서 성능이 좋고 구현이 간단한 LZW(Lempel–Ziv–Welch) 압축을 구현하기로 했다. LZW 압축은 1983년 발표된 알고리즘으로, 이미지 파일 포맷인 GIF 등 다양한 응용에서 사용되었다.
+LZW 압축은 다음 과정을 거친다.
+ 길이가 1인 모든 단어를 포함하도록 사전을 초기화한다.]]></description>
+</item><item>
+    <title>[프로그래머스]캐시</title>
+    <link>https://jyukki97.github.io/2020-02-12-cache/</link>
+    <pubDate>Wed, 12 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-12-cache/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 지도개발팀에서 근무하는 제이지는 지도에서 도시 이름을 검색하면 해당 도시와 관련된 맛집 게시물들을 데이터베이스에서 읽어 보여주는 서비스를 개발하고 있다. 이 프로그램의 테스팅 업무를 담당하고 있는 어피치는 서비스를 오픈하기 전 각 로직에 대한 성능 측정을 수행하였는데, 제이지가 작성한 부분 중 데이터베이스에서 게시물을 가져오는 부분의 실행시간이 너무 오래 걸린다는 것을 알게 되었다. 어피치는 제이지에게 해당 로직을 개선하라고 닦달하기 시작하였고, 제이지는 DB 캐시를 적용하여 성능 개선을 시도하고 있지만 캐시 크기를 얼마로 해야 효율적인지 몰라 난감한 상황이다.]]></description>
+</item><item>
+    <title>[프로그래머스]가장 큰 수</title>
+    <link>https://jyukki97.github.io/2020-02-01-biggestnum/</link>
+    <pubDate>Sat, 01 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-01-biggestnum/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.
+예를 들어, 주어진 정수가 [6, 10, 2]라면 [6102, 6210, 1062, 1026, 2610, 2106]를 만들 수 있고, 이중 가장 큰 수는 6210입니다.
+0 또는 양의 정수가 담긴 배열 numbers가 매개변수로 주어질 때, 순서를 재배치하여 만들 수 있는 가장 큰 수를 문자열로 바꾸어 return 하도록 solution 함수를 작성해주세요.
+풀이: int 배열을 string으로 바꿔서 정렬한다.]]></description>
+</item><item>
+    <title>[프로그래머스]소수 찾기</title>
+    <link>https://jyukki97.github.io/2020-01-31-findprimnum/</link>
+    <pubDate>Fri, 31 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-01-31-findprimnum/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 한자리 숫자가 적힌 종이 조각이 흩어져있습니다. 흩어진 종이 조각을 붙여 소수를 몇 개 만들 수 있는지 알아내려 합니다.
+각 종이 조각에 적힌 숫자가 적힌 문자열 numbers가 주어졌을 때, 종이 조각으로 만들 수 있는 소수가 몇 개인지 return 하도록 solution 함수를 완성해주세요.
+풀이: 문자열 numbers로 만들 수 있는 모든 순열을 set에 넣는다. (중복된 숫자를 거르기 위함)
+set에 들어있는 수들을 모두 순회하여 소수라면 answer값을 +1 해준다.
+(맨 처음에 sort를 하지않을 경우 실패가 뜨는데 왜 그런지는 잘 모르겠다.]]></description>
+</item><item>
+    <title>[프로그래머스]오픈 채팅방</title>
+    <link>https://jyukki97.github.io/2020-01-30-openchating/</link>
+    <pubDate>Thu, 30 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-01-30-openchating/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 카카오톡 오픈채팅방에서는 친구가 아닌 사람들과 대화를 할 수 있는데, 본래 닉네임이 아닌 가상의 닉네임을 사용하여 채팅방에 들어갈 수 있다.
+신입사원인 김크루는 카카오톡 오픈 채팅방을 개설한 사람을 위해, 다양한 사람들이 들어오고, 나가는 것을 지켜볼 수 있는 관리자창을 만들기로 했다. 채팅방에 누군가 들어오면 다음 메시지가 출력된다.
+[닉네임]님이 들어왔습니다.
+채팅방에서 누군가 나가면 다음 메시지가 출력된다.
+[닉네임]님이 나갔습니다.
+채팅방에서 닉네임을 변경하는 방법은 다음과 같이 두 가지이다.
+ 채팅방을 나간 후, 새로운 닉네임으로 다시 들어간다.]]></description>
+</item><item>
+    <title>[프로그래머스]소수 만들기</title>
+    <link>https://jyukki97.github.io/2020-01-29-makeprimenum/</link>
+    <pubDate>Wed, 29 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-01-29-makeprimenum/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 주어진 숫자 중 3개의 수를 더했을 때 소수가 되는 경우의 개수를 구하려고 합니다. 숫자들이 들어있는 배열 nums가 매개변수로 주어질 때, nums에 있는 숫자들 중 서로 다른 3개를 골라 더했을 때 소수가 되는 경우의 개수를 return 하도록 solution 함수를 완성해주세요.
+풀이: 3개의 숫자를 더한 값이 소수인지 아닌지 판별 후 소수라면 answer을 +1 해준다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;vector&gt;#include &lt;iostream&gt;#include &lt;math.]]></description>
+</item></channel>
+</rss>

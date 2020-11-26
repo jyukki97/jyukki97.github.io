@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>이분탐색 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89/</link>
+        <description>이분탐색 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89/" rel="self" type="application/rss+xml" /><item>
+    <title>[프로그래머스]입국심사</title>
+    <link>https://jyukki97.github.io/2020-02-16-immigration/</link>
+    <pubDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-02-16-immigration/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: n명이 입국심사를 위해 줄을 서서 기다리고 있습니다. 각 입국심사대에 있는 심사관마다 심사하는데 걸리는 시간은 다릅니다.
+처음에 모든 심사대는 비어있습니다. 한 심사대에서는 동시에 한 명만 심사를 할 수 있습니다. 가장 앞에 서 있는 사람은 비어 있는 심사대로 가서 심사를 받을 수 있습니다. 하지만 더 빨리 끝나는 심사대가 있으면 기다렸다가 그곳으로 가서 심사를 받을 수도 있습니다.
+모든 사람이 심사를 받는데 걸리는 시간을 최소로 하고 싶습니다.
+입국심사를 기다리는 사람 수 n, 각 심사관이 한 명을 심사하는데 걸리는 시간이 담긴 배열 times가 매개변수로 주어질 때, 모든 사람이 심사를 받는데 걸리는 시간의 최솟값을 return 하도록 solution 함수를 작성해주세요.]]></description>
+</item><item>
+    <title>[프로그래머스]예산</title>
+    <link>https://jyukki97.github.io/2020-01-03-budget_level3/</link>
+    <pubDate>Fri, 03 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-01-03-budget_level3/</guid>
+    <description><![CDATA[https://programmers.co.kr
+문제: 국가의 역할 중 하나는 여러 지방의 예산요청을 심사하여 국가의 예산을 분배하는 것입니다. 국가예산의 총액은 미리 정해져 있어서 모든 예산요청을 배정해 주기는 어려울 수도 있습니다. 그래서 정해진 총액 이하에서 가능한 한 최대의 총 예산을 다음과 같은 방법으로 배정합니다.
+1 2 3  1. 모든 요청이 배정될 수 있는 경우에는 요청한 금액을 그대로 배정합니다. 2. 모든 요청이 배정될 수 없는 경우에는 특정한 정수 상한액을 계산하여 그 이상인 예산요청에는 모두 상한액을 배정합니다.]]></description>
+</item></channel>
+</rss>

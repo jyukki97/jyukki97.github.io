@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>그래프 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84/</link>
+        <description>그래프 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 11 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]5214 환승</title>
+    <link>https://jyukki97.github.io/2020-04-11-5214/</link>
+    <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-04-11-5214/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/5214
+풀이: s[i] : i 번째 하이퍼 튜브에 연결 되어 있는 모든 역
+v[i] : i 번 역이 들어있는 하이퍼 튜브
+1부터 bfs를 돌아 N번째 역에 도착할 때 지나온 역의 갯수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, k, i, t, w, d, c[1005], b[100005] = { 1,1 }; int main() { cin &gt;&gt; n &gt;&gt; k &gt;&gt; m; vector&lt;vector&lt;int&gt;&gt; s(m + 1), v(n + 1); queue&lt;int&gt; q; for (q.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>투 포인터 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/</link>
+        <description>투 포인터 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]1806 부분합</title>
+    <link>https://jyukki97.github.io/2020-03-30-1806/</link>
+    <pubDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-03-30-1806/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1806
+풀이: a[i] : 0 ~ i 번째 수 까지의 합
+a[i] 와 a[t] 로 시작한다.
+a[t] - a[i] 가 S 보다 크거나 같다면, t - i 길이의 부분합이 S 이상이 됨을 알 수 있다.
+t를 1 줄이고 한번 더 반복한다.
+만약, a[t] - a[i] 가 S 보다 작다면, i++, t++ 해준다.
+t값이 N보다 커질때까지 반복한다.
+구한 길이를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int N, S, i, t, s = 0, a[100005]; int main() { cin &gt;&gt; N &gt;&gt; S; for (i = 1; i &lt;= N; i++) { cin &gt;&gt; t; a[i] = a[i - 1] + t; } for (i = 0, t = N; t &lt;= N;) if (a[t] - a[i] &gt;= S)	s = t - i, t--; else i++,t++; cout &lt;&lt; s &lt;&lt; endl; }   ]]></description>
+</item></channel>
+</rss>
