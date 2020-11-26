@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>백트래킹 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>백트래킹 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/</link>
-        <description>백트래킹 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>백트래킹 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]17265 나의 인생에는 수학과 함께</title>
     <link>https://jyukki97.github.io/2020-04-23-17265/</link>
     <pubDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-23-17265/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/17265
 풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
@@ -24,7 +24,7 @@
     <title>[백준]1759 암호 만들기</title>
     <link>https://jyukki97.github.io/2020-04-22-1759/</link>
     <pubDate>Wed, 22 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-22-1759/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1759
 풀이: C개의 문자들을 사전순으로 정렬한다.
@@ -37,7 +37,7 @@
     <title>[백준]9663 N-Queen</title>
     <link>https://jyukki97.github.io/2020-02-23-9663/</link>
     <pubDate>Sun, 23 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-23-9663/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/9663
 풀이: https://jyukki97.github.io/blog/2020-02-23-nqueen/ 을 참고

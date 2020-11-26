@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>세그먼트 트리 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>세그먼트 트리 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/</link>
-        <description>세그먼트 트리 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>세그먼트 트리 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]11505 구간 곱 구하기</title>
     <link>https://jyukki97.github.io/2020-03-22-11505/</link>
     <pubDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-22-11505/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11505
 풀이: [백준]2042 구간 합 구하기 참고
@@ -17,7 +17,7 @@ cin, cout 은 시간초과가 나므로 주의 코드: 사용언어 : c++
     <title>[백준]2042 구간 합 구하기</title>
     <link>https://jyukki97.github.io/2020-03-22-2042/</link>
     <pubDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-22-2042/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2042
 풀이: https://www.acmicpc.net/blog/view/9 참고
@@ -31,7 +31,7 @@ a 가 2 라면, 2 ~ 5 까지의 모든 수의 합을 출력한다.
     <title>[백준]2357 최솟값과 최댓값</title>
     <link>https://jyukki97.github.io/2020-03-22-2357/</link>
     <pubDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-22-2357/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2357
 풀이: [백준]2042 구간 합 구하기 참고

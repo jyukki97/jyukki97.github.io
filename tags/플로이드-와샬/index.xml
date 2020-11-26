@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>플로이드-와샬 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>플로이드-와샬 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC/</link>
-        <description>플로이드-와샬 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>플로이드-와샬 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]11403 경로 찾기</title>
     <link>https://jyukki97.github.io/2020-03-13-11403/</link>
     <pubDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-13-11403/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11403
 풀이: [C++]플로이드-와샬 알고리즘(Floyd-Warshall Algorithm) 참고
@@ -17,7 +17,7 @@
     <title>[백준]1389 케빈 베이컨의 6단계 법칙</title>
     <link>https://jyukki97.github.io/2020-03-10-1389/</link>
     <pubDate>Tue, 10 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-10-1389/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1389
 풀이: [C++]플로이드-와샬 알고리즘(Floyd-Warshall Algorithm) 참고

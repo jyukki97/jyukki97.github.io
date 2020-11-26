@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>스택 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>스택 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%8A%A4%ED%83%9D/</link>
-        <description>스택 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>스택 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%8A%A4%ED%83%9D/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10799 쇠막대기</title>
     <link>https://jyukki97.github.io/2020-03-13-10799/</link>
     <pubDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-13-10799/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10799
 풀이: [프로그래머스]쇠막대기 참고
@@ -17,7 +17,7 @@
     <title>[백준]6549 히스토그램에서 가장 큰 직사각형</title>
     <link>https://jyukki97.github.io/2020-02-25-6549/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-6549/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/6549
 풀이: 값을 하나씩 받아온다.
@@ -32,7 +32,7 @@ max(현재 max값, 스택의 탑값 * (스택의 탑 바로 전 값의 위치와
     <title>[프로그래머스]쇠막대기</title>
     <link>https://jyukki97.github.io/2020-01-17-ironbar/</link>
     <pubDate>Fri, 17 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-01-17-ironbar/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 여러 개의 쇠막대기를 레이저로 절단하려고 합니다. 효율적인 작업을 위해서 쇠막대기를 아래에서 위로 겹쳐 놓고, 레이저를 위에서 수직으로 발사하여 쇠막대기들을 자릅니다. 쇠막대기와 레이저의 배치는 다음 조건을 만족합니다.
@@ -41,7 +41,7 @@ max(현재 max값, 스택의 탑값 * (스택의 탑 바로 전 값의 위치와
     <title>[프로그래머스]탑</title>
     <link>https://jyukki97.github.io/2020-01-16-tower/</link>
     <pubDate>Thu, 16 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-01-16-tower/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 수평 직선에 탑 N대를 세웠습니다. 모든 탑의 꼭대기에는 신호를 송/수신하는 장치를 설치했습니다. 발사한 신호는 신호를 보낸 탑보다 높은 탑에서만 수신합니다. 또한, 한 번 수신된 신호는 다른 탑으로 송신되지 않습니다.
@@ -50,7 +50,7 @@ max(현재 max값, 스택의 탑값 * (스택의 탑 바로 전 값의 위치와
     <title>[프로그래머스]짝지어 제거하기</title>
     <link>https://jyukki97.github.io/2020-01-01-removemating/</link>
     <pubDate>Wed, 01 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-01-01-removemating/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 짝지어 제거하기는, 알파벳 소문자로 이루어진 문자열을 가지고 시작합니다. 먼저 문자열에서 같은 알파벳이 2개 붙어 있는 짝을 찾습니다. 그다음, 그 둘을 제거한 뒤, 앞뒤로 문자열을 이어 붙입니다. 이 과정을 반복해서 문자열을 모두 제거한다면 짝지어 제거하기가 종료됩니다. 문자열 S가 주어졌을 때, 짝지어 제거하기를 성공적으로 수행할 수 있는지 반환하는 함수를 완성해 주세요. 성공적으로 수행할 수 있으면 1을, 아닐 경우 0을 리턴해주면 됩니다.
@@ -60,7 +60,7 @@ b aa baa → bb aa → aa →]]></description>
     <title>[프로그래머스]올바른 괄호</title>
     <link>https://jyukki97.github.io/2019-12-30-correctpare/</link>
     <pubDate>Mon, 30 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-30-correctpare/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 괄호가 바르게 짝지어졌다는 것은 &lsquo;(&rsquo; 문자로 열렸으면 반드시 짝지어서 &lsquo;)&rsquo; 문자로 닫혀야 한다는 뜻입니다. 예를 들어
@@ -71,7 +71,7 @@ b aa baa → bb aa → aa →]]></description>
     <title>[프로그래머스]주식가격</title>
     <link>https://jyukki97.github.io/2019-12-27-stockprice/</link>
     <pubDate>Fri, 27 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-27-stockprice/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 초 단위로 기록된 주식가격이 담긴 배열 prices가 매개변수로 주어질 때, 가격이 떨어지지 않은 기간은 몇 초인지를 return 하도록 solution 함수를 완성하세요.
@@ -82,7 +82,7 @@ b aa baa → bb aa → aa →]]></description>
     <title>[프로그래머스]프린터</title>
     <link>https://jyukki97.github.io/2019-12-27-printer/</link>
     <pubDate>Fri, 27 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-27-printer/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 일반적인 프린터는 인쇄 요청이 들어온 순서대로 인쇄합니다. 그렇기 때문에 중요한 문서가 나중에 인쇄될 수 있습니다. 이런 문제를 보완하기 위해 중요도가 높은 문서를 먼저 인쇄하는 프린터를 개발했습니다. 이 새롭게 개발한 프린터는 아래와 같은 방식으로 인쇄 작업을 수행합니다.
@@ -91,7 +91,7 @@ b aa baa → bb aa → aa →]]></description>
     <title>[프로그래머스]기능개발</title>
     <link>https://jyukki97.github.io/2019-12-26-fdevelopment/</link>
     <pubDate>Thu, 26 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-26-fdevelopment/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 프로그래머스 팀에서는 기능 개선 작업을 수행 중입니다. 각 기능은 진도가 100%일 때 서비스에 반영할 수 있습니다.

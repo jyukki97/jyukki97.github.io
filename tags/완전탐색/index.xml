@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>완전탐색 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>완전탐색 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/</link>
-        <description>완전탐색 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>완전탐색 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 13 Jan 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/" rel="self" type="application/rss+xml" /><item>
     <title>[프로그래머스]모의고사</title>
     <link>https://jyukki97.github.io/2020-01-13-mocktest/</link>
     <pubDate>Mon, 13 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-01-13-mocktest/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 수포자는 수학을 포기한 사람의 준말입니다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 합니다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍습니다.
@@ -16,7 +16,7 @@
     <title>[프로그래머스]카펫</title>
     <link>https://jyukki97.github.io/2019-12-30-carpet/</link>
     <pubDate>Mon, 30 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-30-carpet/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: Leo는 카펫을 사러 갔다가 아래 그림과 같이 중앙에는 빨간색으로 칠해져 있고 모서리는 갈색으로 칠해져 있는 격자 모양 카펫을 봤습니다.
@@ -27,7 +27,7 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 빨간색 격자의 수 red�
     <title>[프로그래머스]숫자 야구</title>
     <link>https://jyukki97.github.io/2019-12-29-numbaseball/</link>
     <pubDate>Sun, 29 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-12-29-numbaseball/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 숫자 야구 게임이란 2명이 서로가 생각한 숫자를 맞추는 게임입니다. 게임해보기

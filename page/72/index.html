@@ -40,17 +40,17 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
                             <i class="fas fa-times-circle fa-fw"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a>
             </div>
@@ -68,11 +68,11 @@
         </div>
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
                     <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
                             <i class="fas fa-search fa-fw"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
                             <i class="fas fa-times-circle fa-fw"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-mobile">
@@ -80,9 +80,9 @@
                         </span>
                     </div>
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        取消
+                        Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -104,36 +104,36 @@
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2017-12-24-2688/">2688 줄어들지 않아</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2688
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2688
 풀이:  a[t][y] : t + 1 개의 자릿수에서의 줄어들지 않는 수의 갯수 a[t][y] = a[t][y - 1] + a[t - 1][y] 앞자리의 갯수가 1 증가할 때 마다 이전 자릿수의 개수를 더해가는 방식으로 구한다. 최종 자릿수 9가되면 모든 수가 누적되어 있으므로 출력한다.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt; using namespace std; long long a[65][10] = { 1,2,3,4,5,6,7,8,9,10,0 }; int main(void) { int T, n; cin &gt;&gt; T; for (int i = 0; i &lt; T; i++) { cin &gt;&gt; n; for (int t = 1; t &lt; n; t++) { a[t][0] = 1; for (int y = 1; y &lt; 10; y++) { a[t][y] = a[t][y - 1] + a[t - 1][y]; } } cout &lt;&lt; a[n - 1][9] &lt;&lt; endl; } return 0; }   사간 초과 풀이:  처음 풀이를 할 때 저번 1038 감소하는 수를 푸는 것처럼 하나하나 만들어 가면서 카운트를 하려 했으나 시간초과가 난다.</div><div class="post-footer">
-        <a href="/2017-12-24-2688/">阅读全文</a></div>
+        <a href="/2017-12-24-2688/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2017-12-25-2743/">2743 단어 길이 재기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2743
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2743
 풀이:  단어의 길이를 출력  코드: 1 2 3 4 5 6 7 8  #include &lt;iostream&gt; #include &lt;string&gt; using namespace std; int main(void) { string a; cin &gt;&gt; a; cout &lt;&lt; a.length() &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2017-12-25-2743/">阅读全文</a></div>
+        <a href="/2017-12-25-2743/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-01-06-2749/">2749 피보나치 수3</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2749
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2749
 풀이:  코드 설명은 피보나치 코드 참고 참고의 문제와는 다르게 매우 큰 수가 들어온다. 피보나치를 n으로 나누면 주기가 생성되는데 주기로 끊어서 풀도록 한다.  코드: 1 2 3 4 5 6 7 8 9  #include &lt;iostream&gt; using namespace std; long long a[3] = { 0,1 }, n; int main() { cin &gt;&gt; n; for (int i = 2; i &lt;= n % 1500000; i++) a[i % 3] = (a[(i - 1) % 3] + a[(i - 2) % 3]) % 1000000; cout &lt;&lt; a[(n % 1500000) % 3] &lt;&lt; endl; }   참고: https://www.</div><div class="post-footer">
-        <a href="/2018-01-06-2749/">阅读全文</a></div>
+        <a href="/2018-01-06-2749/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-02-02-2858/">2858 기숙사 바닥</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2858
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2858
 풀이:  전체 사각형의 면적으로 가로 세로를 찾은 후 그 가로 세로에서 2를 뺀것의 넓이가 안쪽 갈색의 면적과 같다면 그 가로 세로가 각각 L, W 라고 할 수 있다.  코드: 사용언어 : Python 3
 1 2 3 4 5  r,b=map(int,input().split()) for i in range(3,(r+b)//2): if((r+b)%i==0 and (i-2)*(((r+b)/i)-2)==b): print(((r+b)//i),i) break   </div><div class="post-footer">
-        <a href="/2018-02-02-2858/">阅读全文</a></div>
+        <a href="/2018-02-02-2858/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-03-16-2896/">2896 무알콜 칵테일</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2896
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2896
 풀이:  주스의 비율을 주스의 양으로 나눈 값이 가장 작은 주스를 찾는다. 주스의 비율에서 주스의 양 * 1번에서 구한 값 을 출력한다.  코드: 사용언어 : Python 3
 1 2 3 4  a,b,c=map(int,input().split()) d,e,f=map(int,input().split()) g=min(a/d,b/e,c/f) print(&#34;%.4f %.4f %.4f&#34;%(a-d*g,b-e*g,c-f*g))   </div><div class="post-footer">
-        <a href="/2018-03-16-2896/">阅读全文</a></div>
+        <a href="/2018-03-16-2896/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-01-09-2902/">2902 KMP는 왜 KMP일까?</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">发布于 <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2902
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2902
 풀이:  대문자를 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt; #include &lt;string&gt; using namespace std; string a; int main(void) { cin &gt;&gt; a; for (int i = 0; i &lt; a.length(); i++) { if (a[i] &gt; 64 &amp;&amp; a[i] &lt; 91) cout &lt;&lt; a[i]; } cout &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2018-01-09-2902/">阅读全文</a></div>
+        <a href="/2018-01-09-2902/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -166,17 +166,17 @@
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"data":{"id-1":"JYUKKI's BLOG"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"data":{"id-1":"JYUKKI's BLOG"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
             window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
             gtag('config', 'UA-137248174-1', { 'anonymize_ip': true });
         </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-137248174-1" async></script></body>

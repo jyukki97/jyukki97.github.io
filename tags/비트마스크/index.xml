@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>비트마스크 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>비트마스크 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/</link>
-        <description>비트마스크 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>비트마스크 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]3056 007</title>
     <link>https://jyukki97.github.io/2020-04-18-3056/</link>
     <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-18-3056/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/3056
 풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
@@ -21,7 +21,7 @@
     <title>[백준]1102 발전소</title>
     <link>https://jyukki97.github.io/2020-04-17-1102/</link>
     <pubDate>Fri, 17 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-17-1102/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1102
 풀이: 발전소의 현재 상태를 2진수로 표현한다.
@@ -37,7 +37,7 @@ p값이 0이라면 발전소를 킬 필요가 없으므로 0을 출력]]></descr
     <title>[백준]11723 집합</title>
     <link>https://jyukki97.github.io/2020-03-04-11723/</link>
     <pubDate>Wed, 04 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-04-11723/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11723
 풀이: [C++]비트연산자 참고
@@ -52,7 +52,7 @@ empty : 비트값을 0으로 바꿔주어, 공집합으로 만들어놓는다.
     <title>[C&#43;&#43;]비트연산자</title>
     <link>https://jyukki97.github.io/2020-02-28-bitoperator/</link>
     <pubDate>Fri, 28 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-28-bitoperator/</guid>
     <description><![CDATA[비트연산자
 비트연산자 DP문제를 푸는데 있어, 연산속도를 빠르게 하기 위해 사용 &laquo; , &raquo; 시프트 연산자. 비트의 자리를 옮겨줌 ex)
@@ -70,7 +70,7 @@ empty : 비트값을 0으로 바꿔주어, 공집합으로 만들어놓는다.
     <title>[백준]2718 타일 채우기</title>
     <link>https://jyukki97.github.io/2017-12-16-2718/</link>
     <pubDate>Sat, 16 Dec 2017 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2017-12-16-2718/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2718
 풀이:  a[t] 는 4 x t 크기의 타일을 채울 수 있는 경우의 수 a[t] = a[t - 1] + a[t - 2] * 5 + a[t - 3] - a[t - 4];  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[30] = { 1,5,11,36 }; int main(void) { int T,n,cnt; cnt = 5; cin &gt;&gt; T; for (int i = 0; i &lt; T; i++) { cin &gt;&gt; n; if (a[n - 1] == 0) for (int t = cnt-1; t &lt; n; t++) { a[t] = a[t - 1] + a[t - 2] * 5 + a[t - 3] - a[t - 4]; } cout &lt;&lt; a[n - 1] &lt;&lt; endl; cnt = max(cnt, n); } return 0; }   ]]></description>

@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>최소 스패닝 트리 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>최소 스패닝 트리 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/</link>
-        <description>최소 스패닝 트리 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>최소 스패닝 트리 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1922 네트워크 연결</title>
     <link>https://jyukki97.github.io/2020-03-16-1922/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-16-1922/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1922
 풀이: [백준]1197 최소 스패닝 트리 참고
@@ -17,7 +17,7 @@
     <title>[백준]1197 최소 스패닝 트리</title>
     <link>https://jyukki97.github.io/2020-03-07-1197/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-07-1197/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1197
 풀이: 배열 v를 현재 만들어진 트리에 들어있는 노드들의 집합 이라고 하자.

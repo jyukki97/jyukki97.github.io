@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>별 찍기 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>별 찍기 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/</link>
-        <description>별 찍기 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>별 찍기 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 23 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10996 별 찍기 - 21</title>
     <link>https://jyukki97.github.io/2020-03-23-10996/</link>
     <pubDate>Mon, 23 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-23-10996/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10996
 풀이: 지그제그로 n번 별을 찍는다.
@@ -17,7 +17,7 @@
     <title>[백준]2523 별 찍기 - 13</title>
     <link>https://jyukki97.github.io/2020-03-23-2523/</link>
     <pubDate>Mon, 23 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-23-2523/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2523
 풀이: 증가하는 순서로 별을찍다가 n+1 번쨰 줄부터 감소하는 순서로 별을 찍는다.
@@ -27,7 +27,7 @@
     <title>[백준]10991 별 찍기 - 16</title>
     <link>https://jyukki97.github.io/2020-03-16-10991/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-16-10991/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10991
 풀이: N개의 줄에 N개의 글자를 출력한다.
@@ -44,7 +44,7 @@ i번째 줄에는 N-i개의 &quot; &ldquo;와 i개의 &ldquo;* &ldquo;을
     <title>[백준]10992 별 찍기 - 17</title>
     <link>https://jyukki97.github.io/2020-03-16-10992/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-16-10992/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10992
 풀이: 첫줄에 1개, 마지막줄에 2 * N - 1개

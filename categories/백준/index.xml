@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>백준 - 分类 - JYUKKI&#39;s BLOG</title>
+        <title>백준 - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/%EB%B0%B1%EC%A4%80/</link>
-        <description>백준 - 分类 - JYUKKI&#39;s BLOG</description>
+        <description>백준 - Category - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/%EB%B0%B1%EC%A4%80/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1388 바닥 장식</title>
     <link>https://jyukki97.github.io/2020-04-27-1388/</link>
     <pubDate>Mon, 27 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-27-1388/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1388
 풀이: 같은 행에 연속된 &lsquo;-&rsquo; 이 몇 쌍이 있는지 센다.
@@ -20,7 +20,7 @@
     <title>[백준]1356 유진수</title>
     <link>https://jyukki97.github.io/2020-04-26-1356/</link>
     <pubDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-26-1356/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1356
 풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
@@ -37,7 +37,7 @@
     <title>[백준]1268 임시 반장 정하기</title>
     <link>https://jyukki97.github.io/2020-04-25-1268/</link>
     <pubDate>Sat, 25 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-25-1268/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1268
 풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
@@ -55,7 +55,7 @@ n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
     <title>[백준]1236 성 지키기</title>
     <link>https://jyukki97.github.io/2020-04-24-1236/</link>
     <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-24-1236/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1236
 풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
@@ -70,7 +70,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]17265 나의 인생에는 수학과 함께</title>
     <link>https://jyukki97.github.io/2020-04-23-17265/</link>
     <pubDate>Thu, 23 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-23-17265/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/17265
 풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
@@ -87,7 +87,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]1759 암호 만들기</title>
     <link>https://jyukki97.github.io/2020-04-22-1759/</link>
     <pubDate>Wed, 22 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-22-1759/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1759
 풀이: C개의 문자들을 사전순으로 정렬한다.
@@ -100,7 +100,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]2089 -2진수</title>
     <link>https://jyukki97.github.io/2020-04-21-2089/</link>
     <pubDate>Tue, 21 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-21-2089/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2089
 풀이: 2진수를 구하듯이 구한다.
@@ -116,7 +116,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]16637 괄호 추가하기</title>
     <link>https://jyukki97.github.io/2020-04-20-16637/</link>
     <pubDate>Mon, 20 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-20-16637/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/16637
 풀이: 순서대로 사칙연산을 진행한다.
@@ -130,7 +130,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]11382 꼬마 정민</title>
     <link>https://jyukki97.github.io/2020-04-19-11382/</link>
     <pubDate>Sun, 19 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-19-11382/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11382
 풀이: A, B, C 를 각각 문자열로 변환한다.
@@ -143,7 +143,7 @@ Sn과 Sm 중 최댓값을 출력한다.
     <title>[백준]3056 007</title>
     <link>https://jyukki97.github.io/2020-04-18-3056/</link>
     <pubDate>Sat, 18 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-04-18-3056/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/3056
 풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률

@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>구현 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>구현 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</link>
-        <description>구현 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>구현 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10708 크리스마스 파티</title>
     <link>https://jyukki97.github.io/2020-03-29-10708/</link>
     <pubDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-29-10708/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10708
 풀이: 게임을 진행한다.
@@ -19,7 +19,7 @@
     <title>[백준]5533 유니크</title>
     <link>https://jyukki97.github.io/2020-03-26-5533/</link>
     <pubDate>Thu, 26 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-26-5533/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5533
 풀이: 각 플레이어가 3번의 게임에서 얻은 총 점수를 입력으로 주어진 순서대로 출력한다.
@@ -29,7 +29,7 @@
     <title>[백준]2822 점수 계산</title>
     <link>https://jyukki97.github.io/2020-03-21-2822/</link>
     <pubDate>Sat, 21 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-21-2822/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2822
 풀이: 첫째 줄에 참가자의 총점을 출력한다.
@@ -40,7 +40,7 @@
     <title>[백준]10707 수도요금</title>
     <link>https://jyukki97.github.io/2020-03-17-10707/</link>
     <pubDate>Tue, 17 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-17-10707/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10707
 풀이: X사의 1리터당 요금 * 한 달간의 수도의 양
@@ -52,7 +52,7 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
     <title>[백준]5063 TGN</title>
     <link>https://jyukki97.github.io/2020-03-17-5063/</link>
     <pubDate>Tue, 17 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-17-5063/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5063
 풀이: 광고를 했을 때의 수익 - 광고 비용 이 광고를 했을 떄 얻을 수 있는 순이익이다.
@@ -64,7 +64,7 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
     <title>[백준]5597 과제 안 내신 분..?</title>
     <link>https://jyukki97.github.io/2020-03-16-5597/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-16-5597/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5597
 풀이: 과제를 낸 28 명을 기록한다.
@@ -75,7 +75,7 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
     <title>[백준]10797 10부제</title>
     <link>https://jyukki97.github.io/2020-03-14-10797/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-14-10797/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10797
 풀이: 날짜의 일의 자리 숫자와 자동차의 일의 자리 숫자가 같다면 차량의 대수를 +1 해준다.
@@ -85,7 +85,7 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
     <title>[백준]2003 수들의 합 2</title>
     <link>https://jyukki97.github.io/2020-03-14-2003/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-14-2003/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2003
 풀이: A[i] 부터 A[j] 까지 하나씩 더해가는 값을 s라고 하자.
@@ -98,7 +98,7 @@ i가 n이 될때까지 반복 후 경우의 수를 출력해준다.
     <title>[백준]5543 상근날드</title>
     <link>https://jyukki97.github.io/2020-03-12-5543/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-12-5543/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5543
 풀이: 햅버거 중 가장 싼 것 + 음료 중 가장 싼 것 - 50원

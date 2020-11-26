@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>다익스트라 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>다익스트라 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/</link>
-        <description>다익스트라 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>다익스트라 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1916 최소비용 구하기</title>
     <link>https://jyukki97.github.io/2020-03-14-1916/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-14-1916/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1916
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -17,7 +17,7 @@
     <title>[백준]1238 파티</title>
     <link>https://jyukki97.github.io/2020-03-09-1238/</link>
     <pubDate>Mon, 09 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-09-1238/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1238
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -27,7 +27,7 @@
     <title>[백준]1261 알고스팟</title>
     <link>https://jyukki97.github.io/2020-03-08-1261/</link>
     <pubDate>Sun, 08 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-08-1261/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1261
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고

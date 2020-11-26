@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>최단 경로 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>최단 경로 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C/</link>
-        <description>최단 경로 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>최단 경로 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 03 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]11404 웜홀</title>
     <link>https://jyukki97.github.io/2020-03-03-11404/</link>
     <pubDate>Tue, 03 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-03-11404/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11404
 풀이: [C++]플로이드-와샬 알고리즘(Bellman-Ford Algorithm) 참고
@@ -17,7 +17,7 @@
     <title>[백준]1865 웜홀</title>
     <link>https://jyukki97.github.io/2020-03-03-1865/</link>
     <pubDate>Tue, 03 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-03-1865/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1865
 풀이: [C++]벨만-포드 알고리즘(Bellman-Ford Algorithm) 참고
@@ -27,7 +27,7 @@
     <title>[백준]11657 타임머신</title>
     <link>https://jyukki97.github.io/2020-03-02-11657/</link>
     <pubDate>Mon, 02 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-02-11657/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11657
 풀이: [C++]벨만-포드 알고리즘(Bellman-Ford Algorithm) 참고
@@ -37,7 +37,7 @@
     <title>[백준]9370 미확인 도착지</title>
     <link>https://jyukki97.github.io/2020-03-02-9370/</link>
     <pubDate>Mon, 02 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-02-9370/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/9370
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -51,7 +51,7 @@ s -&gt; h -&gt; g -&gt; x
     <title>[백준]1504 최단 경로</title>
     <link>https://jyukki97.github.io/2020-03-01-1504/</link>
     <pubDate>Sun, 01 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-01-1504/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1504
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -67,7 +67,7 @@ s -&gt; h -&gt; g -&gt; x
     <title>[백준]1753 최단 경로</title>
     <link>https://jyukki97.github.io/2020-03-01-1753/</link>
     <pubDate>Sun, 01 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-03-01-1753/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1753
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -77,7 +77,7 @@ s -&gt; h -&gt; g -&gt; x
     <title>[C&#43;&#43;]플로이드-와샬 알고리즘(Floyd-Warshall Algorithm)</title>
     <link>https://jyukki97.github.io/2020-02-27-floydwarshall/</link>
     <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-27-floydwarshall/</guid>
     <description><![CDATA[플로이드-와샬 알고리즘(Floyd-Warshall Algorithm)
 플로이드-와샬 알고리즘(Floyd-Warshall Algorithm) 한번의 실행으로 &ldquo;모든 노드&rdquo; 간 최단 경로를 구하는 알고리즘. 시간복잡도 $$ O(n^3) $$
@@ -88,7 +88,7 @@ s -&gt; h -&gt; g -&gt; x
     <title>[C&#43;&#43;]벨만-포드 알고리즘(Bellman-Ford Algorithm)</title>
     <link>https://jyukki97.github.io/2020-02-25-bellmanford/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-bellmanford/</guid>
     <description><![CDATA[벨만-포드 알고리즘(Bellman-Ford Algorithm)
 벨만-포드 알고리즘(Bellman-Ford Algorithm) 특정 노드에서부터 모든 노드로 가는 최단 경로를 구하는 알고리즘. 그래프에 &ldquo;음수 사이클&quot;이 있는 경우 찾아낼 수 있음. 시간복잡도는 O(nm) 음수 사이클 음수 사이클이 있는지 판단하기 위해서는 n번의 라운드를 추가로 진행해 주면된다. 만약, n번째 라운드에서도 감소하는 경우가 있다면, 음수 사이클이 있다고 판단할 수 있다. 코드 1 2 3 4 5 6  for (i = 0; i &lt;= V; i++) d.push_back(INF); d[x] = 0; for(int i = 1; i &lt;= n - 1; i++) for(auto t : edge(a,b,c)) // a 에서 b로 가는 간선, 가중치 c  d[b] = min(d[b], d[a] + c);   ]]></description>
@@ -96,7 +96,7 @@ s -&gt; h -&gt; g -&gt; x
     <title>[C&#43;&#43;]다익스트라 알고리즘(Dijkstra Algorithm)</title>
     <link>https://jyukki97.github.io/2020-02-24-dijkstra/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-24-dijkstra/</guid>
     <description><![CDATA[다익스트라 알고리즘(Dijkstra Algorithm)
 다익스트라 알고리즘(Dijkstra Algorithm) 특정 노드에서부터 모든 노드로 가는 최단 경로를 구하는 알고리즘. 가중치가 음수인 간선이 없는 경우에만 사용할 수 있다. 시간복잡도 : O(n + mlog m) (n : 노드의 개수, m : 간선의 갯수) 코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  for (i = 0; i &lt;= V; i++) d.push_back(INF); d[k] = 0; p.push({ 0, k }); while (!]]></description>

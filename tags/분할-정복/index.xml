@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>분할 정복 - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>분할 정복 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%B6%84%ED%95%A0-%EC%A0%95%EB%B3%B5/</link>
-        <description>분할 정복 - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>분할 정복 - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B6%84%ED%95%A0-%EC%A0%95%EB%B3%B5/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1780 종이의 개수</title>
     <link>https://jyukki97.github.io/2020-02-25-1780/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-1780/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1780
 풀이: [백준]2630 색종이 만들기 참고
@@ -17,7 +17,7 @@
     <title>[백준]1992 쿼드트리</title>
     <link>https://jyukki97.github.io/2020-02-25-1992/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-1992/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1992
 풀이: [백준]2630 색종이 만들기 참고
@@ -27,7 +27,7 @@
     <title>[백준]2630 색종이 만들기</title>
     <link>https://jyukki97.github.io/2020-02-25-2630/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-2630/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2630
 풀이: n을 2로 나누어 가며 1로 이루어진 곳인지 0으로 이루어진 곳인지 판단한다.
@@ -39,7 +39,7 @@
     <title>[백준]6549 히스토그램에서 가장 큰 직사각형</title>
     <link>https://jyukki97.github.io/2020-02-25-6549/</link>
     <pubDate>Tue, 25 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-25-6549/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/6549
 풀이: 값을 하나씩 받아온다.
@@ -54,7 +54,7 @@ max(현재 max값, 스택의 탑값 * (스택의 탑 바로 전 값의 위치와
     <title>[백준]11729 하노이 탑 이동 순서</title>
     <link>https://jyukki97.github.io/2020-02-18-11729/</link>
     <pubDate>Tue, 18 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2020-02-18-11729/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11729
 풀이: https://jyukki97.github.io/blog/2020-02-18-towerofhanoi/ 를 참고

@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Python - 标签 - JYUKKI&#39;s BLOG</title>
+        <title>Python - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/python/</link>
-        <description>Python - 标签 - JYUKKI&#39;s BLOG</description>
+        <description>Python - Tag - JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 16 Jun 2019 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10757 큰 수 A&#43;B</title>
     <link>https://jyukki97.github.io/2019-06-16-10757/</link>
     <pubDate>Sun, 16 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-16-10757/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10757
 풀이:  두 수를 입력받은 후 더해서 출력한다.  코드: 사용언어 : Python 3
@@ -16,7 +16,7 @@
     <title>[백준]10826 피보나치 수 4</title>
     <link>https://jyukki97.github.io/2019-06-15-10826/</link>
     <pubDate>Sat, 15 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-15-10826/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10826
 풀이:  n을 입력받는다 n번째 피보나치 수를 출력한다  코드: 사용언어 : Python 3
@@ -25,7 +25,7 @@
     <title>[백준]11050 이항 계수 1</title>
     <link>https://jyukki97.github.io/2019-06-14-11050/</link>
     <pubDate>Fri, 14 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-14-11050/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11050
 풀이:  n, k 를 입력받고, nCk를 출력한다  코드: 사용언어 : Python 3
@@ -34,7 +34,7 @@
     <title>[백준]11365 !밀비 급일</title>
     <link>https://jyukki97.github.io/2019-06-13-11365/</link>
     <pubDate>Thu, 13 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-13-11365/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11365
 풀이:  문자열을 입력받고, 그 문자열을 뒤집어서 출력한다. 문자열이 END라면 반복을 중지한다.  코드: 사용언어 : Python 3
@@ -43,7 +43,7 @@
     <title>[백준]10952 A&#43;B - 5</title>
     <link>https://jyukki97.github.io/2019-06-12-10952/</link>
     <pubDate>Wed, 12 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-12-10952/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10952
 풀이:  반복 횟수를 무한히 한 후 입력받은 두 수의 합을 출력 입력받은 두 수가 0 0 이라면 반복문을 빠져나간다.  코드: 사용언어 : Python 3
@@ -52,7 +52,7 @@
     <title>[백준]15552 빠른 A&#43;B</title>
     <link>https://jyukki97.github.io/2019-06-11-15552/</link>
     <pubDate>Tue, 11 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-11-15552/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/15552
 풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력 간단한 문제이지만 매우 많은 테스트케이스의 수가 있으므로 input() 대신 sys.stdin().readline()을 사용한다.  코드: 사용언어 : Python 3
@@ -61,7 +61,7 @@
     <title>[백준]10950 A&#43;B - 3</title>
     <link>https://jyukki97.github.io/2019-06-10-10950/</link>
     <pubDate>Mon, 10 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-10-10950/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10950
 풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력  코드: 사용언어 : Python 3
@@ -70,7 +70,7 @@
     <title>[백준]2164 카드2</title>
     <link>https://jyukki97.github.io/2019-06-07-2164/</link>
     <pubDate>Fri, 07 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2019-06-07-2164/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2164
 풀이:  카드의 갯수가 2 ^ i 개일 경우 남게 되는 카드의 번호는 2 ^ i 이다. 카드의 갯수가 (2 ^ i) + n 개 일 경우 남게 되는 카드의 번호는 2 * n 이다.  코드: 사용언어 : Python 3
@@ -79,7 +79,7 @@
     <title>[백준]1712 손익분기점</title>
     <link>https://jyukki97.github.io/2018-03-16-1712/</link>
     <pubDate>Fri, 16 Mar 2018 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2018-03-16-1712/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1712
 풀이:  고정비용을 노트북 가격에서 생산비인 가변 비용을 뺀 값으로 나눈 몫을 출력한다. 만약 가변비용이 노트북의 가격보다 높다면 -1을 출력한다.  코드: 사용언어 : Python 3
@@ -88,7 +88,7 @@
     <title>[백준]1919 애너그램 만들기</title>
     <link>https://jyukki97.github.io/2018-02-05-1919/</link>
     <pubDate>Mon, 05 Feb 2018 00:00:00 &#43;0000</pubDate>
-    <author>作者</author>
+    <author>Author</author>
     <guid>https://jyukki97.github.io/2018-02-05-1919/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1919
 풀이:  a~z까지의 알파벳 중 문자열에 나온 개수를 확인 후 그 차이를 출력한다.  코드: 사용언어 : Python 3
