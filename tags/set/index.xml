@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>set - Tag - JYUKKI&#39;s BLOG</title>
+        <title>set - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/set/</link>
-        <description>set - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/set/" rel="self" type="application/rss+xml" /><item>
+        <description>set - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/set/" rel="self" type="application/rss+xml" /><item>
     <title>[C&#43;&#43;]set predicate</title>
     <link>https://jyukki97.github.io/2020-02-16-setpredicate/</link>
     <pubDate>Sun, 16 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-16-setpredicate/</guid>
     <description><![CDATA[set predicate
 set 이라는 컨테이너는 기본적으로 &ldquo;오름차순&rdquo; 으로 정렬된다.

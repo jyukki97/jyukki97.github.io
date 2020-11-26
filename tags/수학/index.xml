@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>수학 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>수학 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%88%98%ED%95%99/</link>
-        <description>수학 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%88%98%ED%95%99/" rel="self" type="application/rss+xml" /><item>
+        <description>수학 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%88%98%ED%95%99/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1356 유진수</title>
     <link>https://jyukki97.github.io/2020-04-26-1356/</link>
     <pubDate>Sun, 26 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-26-1356/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1356
 풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
@@ -24,7 +24,7 @@
     <title>[백준]1334 다음 팰린드롬 수</title>
     <link>https://jyukki97.github.io/2020-04-12-1334/</link>
     <pubDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-12-1334/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1334
 풀이: 문자열 S를 받아온다.
@@ -41,7 +41,7 @@ A는 이미 펠린드롬 수 인데, 이 수가 S보다 크다면 A를 그대로
     <title>[백준]2864 5와 6의 차이</title>
     <link>https://jyukki97.github.io/2020-03-18-2864/</link>
     <pubDate>Wed, 18 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-18-2864/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2864
 풀이: 두 정수 A 와 B 의 숫자 중
@@ -53,7 +53,7 @@ A는 이미 펠린드롬 수 인데, 이 수가 S보다 크다면 A를 그대로
     <title>[백준]1024 수열의 합</title>
     <link>https://jyukki97.github.io/2020-03-06-1024/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-06-1024/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1024
 풀이: 길이가 적어도 L인 수열은 다음과 같이 나타낼 수 있다.
@@ -64,7 +64,7 @@ L * n + Σ k (k = 1 ~ L - 1) = N
     <title>[백준]1057 토너먼트</title>
     <link>https://jyukki97.github.io/2020-03-04-1057/</link>
     <pubDate>Wed, 04 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-04-1057/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1057
 풀이: ​	1	2
@@ -80,7 +80,7 @@ L * n + Σ k (k = 1 ~ L - 1) = N
     <title>[백준]1074 집합</title>
     <link>https://jyukki97.github.io/2020-03-04-1074/</link>
     <pubDate>Wed, 04 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-04-1074/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1074
 풀이: 배열의 크기를 점차 줄여가면서,
@@ -96,7 +96,7 @@ ex)
     <title>[백준]1676 팩도리얼 0의 개수</title>
     <link>https://jyukki97.github.io/2020-02-24-1676/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-1676/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1676
 풀이: 뒤에서 0이 나오려면 팩토리얼을 곱할때, 5 가 곱해져야한다.
@@ -109,7 +109,7 @@ ex)
     <title>[백준]9375 패션왕 신해빈</title>
     <link>https://jyukki97.github.io/2020-02-24-9375/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-9375/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/9375
 풀이: 프로그래머스]위장 을 참고
@@ -119,7 +119,7 @@ ex)
     <title>[프로그래머스]2016년</title>
     <link>https://jyukki97.github.io/2019-12-13-2016%EB%85%84/</link>
     <pubDate>Fri, 13 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2019-12-13-2016%EB%85%84/</guid>
     <description><![CDATA[https://programmers.co.kr
 풀이:  매 달 날짜를 계산하여 원하는 날짜의 요일을 구한다,  주의사항:  2016년은 윤년이다. 1월 1일은 금요일이다.  코드: 사용언어 : c++
@@ -128,7 +128,7 @@ ex)
     <title>[백준]10757 큰 수 A&#43;B</title>
     <link>https://jyukki97.github.io/2019-06-16-10757/</link>
     <pubDate>Sun, 16 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2019-06-16-10757/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10757
 풀이:  두 수를 입력받은 후 더해서 출력한다.  코드: 사용언어 : Python 3

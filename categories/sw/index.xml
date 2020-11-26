@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>sw - Category - JYUKKI&#39;s BLOG</title>
+        <title>sw - 分类 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/sw/</link>
-        <description>sw - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Nov 2017 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/sw/" rel="self" type="application/rss+xml" /><item>
+        <description>sw - 分类 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 21 Nov 2017 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/sw/" rel="self" type="application/rss+xml" /><item>
     <title>[sw]사다리</title>
     <link>https://jyukki97.github.io/2017-11-21-sw-1210/</link>
     <pubDate>Tue, 21 Nov 2017 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2017-11-21-sw-1210/</guid>
     <description><![CDATA[https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14ABYKADACFAYh&amp;
 풀이:  int[100][100] 배열에 사다리를 저장 사다리 끝에 있는 도착점을 찾음 사다리 위로 올라가며 옆에 길이 있나 확인 맨 위에 x값을 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int lineup(int n[100][100], int yc, int xc, bool left, bool right) { if (yc == 0) return xc; if (xc &gt; 0 &amp;&amp; right == false &amp;&amp; n[yc][xc - 1] == 1) return lineup(n, yc, xc - 1,true,false); else if (xc &lt; 99 &amp;&amp; left==false &amp;&amp; n[yc][xc + 1] == 1) return lineup(n, yc, xc + 1,false,true); else return lineup(n, yc - 1, xc,false,false); } int main(void) { for (int t = 1; t &lt; 11; t++) { int a; cin &gt;&gt; a; int line[100][100]; int count; for (int i = 0; i &lt; 100; i++) { for (int y = 0; y &lt; 100; y++) { cin &gt;&gt; line[i][y]; } } for (int i = 0; i &lt; 100; i++) { if (line[99][i] == 2) { count = i; break; } } cout &lt;&lt; &#34;#&#34; &lt;&lt; t &lt;&lt; &#34; &#34; &lt;&lt; lineup(line, 98, count, false, false) &lt;&lt; endl; } return 0; } }   ]]></description>

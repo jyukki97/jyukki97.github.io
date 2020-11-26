@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>덱 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>덱 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%8D%B1/</link>
-        <description>덱 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%8D%B1/" rel="self" type="application/rss+xml" /><item>
+        <description>덱 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%8D%B1/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]5430 AC</title>
     <link>https://jyukki97.github.io/2020-02-24-5430/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-5430/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5430
 풀이: 배열안에 들어있는 원소를

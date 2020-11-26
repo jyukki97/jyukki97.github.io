@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>트리 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>트리 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%ED%8A%B8%EB%A6%AC/</link>
-        <description>트리 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%8A%B8%EB%A6%AC/" rel="self" type="application/rss+xml" /><item>
+        <description>트리 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 05 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%8A%B8%EB%A6%AC/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1068 트리</title>
     <link>https://jyukki97.github.io/2020-03-05-1068/</link>
     <pubDate>Thu, 05 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-05-1068/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1068
 풀이: v[i] : i의 자식 노드들이 들어있다.

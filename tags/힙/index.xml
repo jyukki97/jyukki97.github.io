@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>힙 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>힙 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%ED%9E%99/</link>
-        <description>힙 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%9E%99/" rel="self" type="application/rss+xml" /><item>
+        <description>힙 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%ED%9E%99/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]11286 절댓값 힘</title>
     <link>https://jyukki97.github.io/2020-02-26-11286/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-11286/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11286
 풀이: 0이 나온다면, 배열에 있는 값중 절댓값이 가장 작은 값을 출력한다.(절댓값이 같다면, 가장 작은 값을 출력한다.) 그 값을 배열에서 제외시킨다.
@@ -19,7 +19,7 @@ cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사�
     <title>[백준]1655 가운데를 말해요</title>
     <link>https://jyukki97.github.io/2020-02-26-1655/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-1655/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1655
 풀이: 하나씩 숫자를 받아온다.
@@ -33,7 +33,7 @@ cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사�
     <title>[프로그래머스]라면공장</title>
     <link>https://jyukki97.github.io/2020-01-27-ramenfactory/</link>
     <pubDate>Mon, 27 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-01-27-ramenfactory/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 라면 공장에서는 하루에 밀가루를 1톤씩 사용합니다. 원래 밀가루를 공급받던 공장의 고장으로 앞으로 k일 이후에야 밀가루를 공급받을 수 있기 때문에 해외 공장에서 밀가루를 수입해야 합니다.
@@ -43,7 +43,7 @@ cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사�
     <title>[프로그래머스]더 맵게</title>
     <link>https://jyukki97.github.io/2020-01-19-morespicy/</link>
     <pubDate>Sun, 19 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-01-19-morespicy/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo는 스코빌 지수가 가장 낮은 두 개의 음식을 아래와 같이 특별한 방법으로 섞어 새로운 음식을 만듭니다.
@@ -52,7 +52,7 @@ cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사�
     <title>[프로그래머스]이중우선순위큐</title>
     <link>https://jyukki97.github.io/2020-01-04-priorityqueue/</link>
     <pubDate>Sat, 04 Jan 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-01-04-priorityqueue/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 이중 우선순위 큐는 다음 연산을 할 수 있는 자료구조를 말합니다.

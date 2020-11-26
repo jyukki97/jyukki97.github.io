@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>BFS - Tag - JYUKKI&#39;s BLOG</title>
+        <title>BFS - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/bfs/</link>
-        <description>BFS - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
+        <description>BFS - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1194 달이 차오른다, 가자</title>
     <link>https://jyukki97.github.io/2020-04-16-1194/</link>
     <pubDate>Thu, 16 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-16-1194/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1194
 풀이: b[x][y][key] : key를 들고, (x, y) 방문했다면, 1, 방문하지 않았다면 0
@@ -22,7 +22,7 @@
     <title>[백준]1525 퍼즐</title>
     <link>https://jyukki97.github.io/2020-04-15-1525/</link>
     <pubDate>Wed, 15 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-15-1525/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1525
 풀이:    0 1 2     3 4 5   6 7 8    이렇게 퍼즐이 배열되어 있다고 가정하자.
@@ -35,7 +35,7 @@
     <title>[백준]5214 환승</title>
     <link>https://jyukki97.github.io/2020-04-11-5214/</link>
     <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-11-5214/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5214
 풀이: s[i] : i 번째 하이퍼 튜브에 연결 되어 있는 모든 역
@@ -47,7 +47,7 @@ v[i] : i 번 역이 들어있는 하이퍼 튜브
     <title>[백준]2589 보물섬</title>
     <link>https://jyukki97.github.io/2020-04-10-2589/</link>
     <pubDate>Fri, 10 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-10-2589/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2589
 풀이: 모든 L을 전부 찾는다.
@@ -60,7 +60,7 @@ v[i] : i 번 역이 들어있는 하이퍼 튜브
     <title>[백준]5014 스타트링크</title>
     <link>https://jyukki97.github.io/2020-04-09-5014/</link>
     <pubDate>Thu, 09 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-09-5014/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5014
 풀이: 현재 층 S부터 +U, -D 를 하며 모든 층을 찾아간다.
@@ -74,7 +74,7 @@ S가 G와 같다면 0을 출력한다.
     <title>[백준]2644 촌수계산</title>
     <link>https://jyukki97.github.io/2020-03-15-2644/</link>
     <pubDate>Sun, 15 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-15-2644/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2644
 풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
@@ -84,7 +84,7 @@ S가 G와 같다면 0을 출력한다.
     <title>[백준]2583 영역 구하기</title>
     <link>https://jyukki97.github.io/2020-03-14-2583/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-14-2583/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2583
 풀이: 직사각형이 들어있는 곳을 1,
@@ -100,7 +100,7 @@ S가 G와 같다면 0을 출력한다.
     <title>[백준]2468 안전 영역</title>
     <link>https://jyukki97.github.io/2020-03-13-2468/</link>
     <pubDate>Fri, 13 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-13-2468/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2468
 풀이: 물의 높이가 h 일 때,
@@ -117,7 +117,7 @@ S가 G와 같다면 0을 출력한다.
     <title>[백준]11724 연결 요소의 개수</title>
     <link>https://jyukki97.github.io/2020-03-12-11724/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-12-11724/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11724
 풀이: 방문하지 않은 정점과 연결된 모든 정점을 방문표시하고, 요소의 개수를 +1 해준다.
@@ -128,7 +128,7 @@ S가 G와 같다면 0을 출력한다.
     <title>[백준]1697 숨바꼭질</title>
     <link>https://jyukki97.github.io/2020-02-29-1697/</link>
     <pubDate>Sat, 29 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-29-1697/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1697
 풀이: 현재 위치를 x라고 할 때, x + 1, x - 1, x * 2 위치를 BFS 를 통해 하나씩 찾아간다.

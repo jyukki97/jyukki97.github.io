@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>브루트 포스 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>브루트 포스 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/</link>
-        <description>브루트 포스 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/" rel="self" type="application/rss+xml" /><item>
+        <description>브루트 포스 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1213 팰린드롬 만들기</title>
     <link>https://jyukki97.github.io/2020-04-13-1213/</link>
     <pubDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-13-1213/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1213
 풀이: 주어진 문자열에서 알파벳이 각각 몇개 들어있는지 저장한다.
@@ -21,7 +21,7 @@ A~Z 까지 갯수를 확인한 후
     <title>[백준]2503 숫자 야구</title>
     <link>https://jyukki97.github.io/2020-03-28-2503/</link>
     <pubDate>Sat, 28 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-28-2503/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2503
 풀이: 123 ~ 987 까지의 중복이 없는 숫자를 모두 탐색한다.
@@ -33,7 +33,7 @@ A~Z 까지 갯수를 확인한 후
     <title>[백준]2309 일곱 난쟁이</title>
     <link>https://jyukki97.github.io/2020-03-12-2309/</link>
     <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-12-2309/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2309
 풀이: 아홉 난쟁이의 키의 합을 S라고 하자.
@@ -46,7 +46,7 @@ S - T = 100 이라면
     <title>[백준]1120 문자열</title>
     <link>https://jyukki97.github.io/2020-03-07-1120/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-07-1120/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1120
 풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
@@ -62,7 +62,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1051 숫자 정사각형</title>
     <link>https://jyukki97.github.io/2020-03-06-1051/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-06-1051/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1051
 풀이: N, M 중 더 작은 값이 정사각형의 한 변의 길이의 최댓값이 된다.
@@ -74,7 +74,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1062 가르침</title>
     <link>https://jyukki97.github.io/2020-03-06-1062/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-06-1062/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1062
 풀이: a ~ z 중에 K개의 글자를 배웠을 떄,
@@ -85,7 +85,7 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
     <title>[백준]14888 연산자 끼워넣기</title>
     <link>https://jyukki97.github.io/2020-02-24-14888/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-14888/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/14888
 풀이: 각 숫자를 순서대로 배열에 넣어놓는다.
@@ -98,7 +98,7 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
     <title>[백준]14889 스타트와 링크</title>
     <link>https://jyukki97.github.io/2020-02-24-14889/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-14889/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/14889
 풀이: n / 2 명의 스타트 팀과 n / 2 팀의 링크팀을 만든다.
@@ -112,7 +112,7 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
     <title>[백준]1018 체스판 다시 칠하기</title>
     <link>https://jyukki97.github.io/2020-02-21-1018/</link>
     <pubDate>Fri, 21 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-21-1018/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1018
 풀이: (0, 0) ~ (8, 8) &hellip;.. (n - 8, m - 8) ~ (n, m) 까지의 모든 8 X 8 체스판을 서치한다.

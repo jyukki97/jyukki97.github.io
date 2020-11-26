@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>이분 탐색 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>이분 탐색 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/</link>
-        <description>이분 탐색 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/" rel="self" type="application/rss+xml" /><item>
+        <description>이분 탐색 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]10815 숫자 카드</title>
     <link>https://jyukki97.github.io/2020-03-14-10815/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-14-10815/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10815
 풀이: [C++]lower_bound, upper_bound 참고
@@ -17,7 +17,7 @@ cin, cout 은 시간초과가 날 수 있으므로 주의하자. 코드: 사용�
     <title>[백준]10816 숫자 카드2</title>
     <link>https://jyukki97.github.io/2020-02-26-10816/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-10816/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10816
 풀이: 배열에 숫자 카드들을 넣는다.
@@ -33,7 +33,7 @@ cout과 cin 을 쓰면 시간초과가 나므로 주의하자. 코드: 사용언
     <title>[백준]1654 랜선 자르기</title>
     <link>https://jyukki97.github.io/2020-02-26-1654/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-1654/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1654
 풀이: 배열을 받아온다.
@@ -49,7 +49,7 @@ cout과 cin 을 쓰면 시간초과가 나므로 주의하자. 코드: 사용언
     <title>[백준]2110 공유기 설치</title>
     <link>https://jyukki97.github.io/2020-02-26-2110/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-2110/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2110
 풀이: [백준]1654 랜선 자르기 참고
@@ -62,7 +62,7 @@ cout과 cin 을 쓰면 시간초과가 나므로 주의하자. 코드: 사용언
     <title>[백준]2805 나무 자르기</title>
     <link>https://jyukki97.github.io/2020-02-26-2805/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-2805/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2805
 풀이: [백준]1654 랜선 자르기 참고
@@ -72,7 +72,7 @@ m값이 배열의 값보다 작은데 a[i] - m을 할 경우 -값이 나오므�
     <title>[백준]k번째 수</title>
     <link>https://jyukki97.github.io/2020-02-26-1300/</link>
     <pubDate>Wed, 26 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-26-1300/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1300
 풀이: [백준]1654 랜선 자르기 참고
@@ -84,7 +84,7 @@ int형 사이즈를 넘어가니 long long으로 바꿔주자. 코드: 사용언
     <title>[C&#43;&#43;]lower_bound, upper_bound</title>
     <link>https://jyukki97.github.io/2020-02-19-bound/</link>
     <pubDate>Wed, 19 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-19-bound/</guid>
     <description><![CDATA[lower_bound, upper_bound
 - 기본적으로 두개 모두 &ldquo;이진 탐색(Binary Serch)&rdquo; 기반의 탐색방법 lower_bound 1  lower_bound(arr, arr + n, key);   - key 값의 가장 낮은 위치를 찾는다. - key 값이 없다면 key 값보다 큰 가장 작은 정수의 위치를 반환한다. - 반환값이 &ldquo;iterator&rdquo; 이다. upper_bound 1  upper_bound(arr, arr + n, key);   - key 값을 초과하는 가장 첫번째 원소의 위치. - 반환값이 &ldquo;iterator&rdquo; 이다. ]]></description>

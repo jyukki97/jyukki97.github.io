@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>문자열 - Tag - JYUKKI&#39;s BLOG</title>
+        <title>문자열 - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/</link>
-        <description>문자열 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
+        <description>문자열 - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]1334 다음 팰린드롬 수</title>
     <link>https://jyukki97.github.io/2020-04-12-1334/</link>
     <pubDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-12-1334/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1334
 풀이: 문자열 S를 받아온다.
@@ -24,7 +24,7 @@ A는 이미 펠린드롬 수 인데, 이 수가 S보다 크다면 A를 그대로
     <title>[백준]11586 지영 공주님의 마법 거울</title>
     <link>https://jyukki97.github.io/2020-04-04-11586/</link>
     <pubDate>Sat, 04 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-04-04-11586/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/11586
 풀이: 문자열을
@@ -38,7 +38,7 @@ k가 3일 경우 상하 반전
     <title>[백준]5598 카이사르 암호</title>
     <link>https://jyukki97.github.io/2020-03-19-5598/</link>
     <pubDate>Thu, 19 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-19-5598/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/5598
 풀이: 입력받은 카이사르 단어를 원래 단어로 고친 걸 출력한다.
@@ -48,7 +48,7 @@ k가 3일 경우 상하 반전
     <title>[백준]2864 5와 6의 차이</title>
     <link>https://jyukki97.github.io/2020-03-18-2864/</link>
     <pubDate>Wed, 18 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-18-2864/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2864
 풀이: 두 정수 A 와 B 의 숫자 중
@@ -60,7 +60,7 @@ k가 3일 경우 상하 반전
     <title>[백준]10988 팰린드롬인지 확인하기</title>
     <link>https://jyukki97.github.io/2020-03-16-10988/</link>
     <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-16-10988/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/10988
 풀이: 팰린드롬 : 기러기, 토마토 등 뒤집어도 같은단어 주어진 단어가 팰린드롬이라면 1, 아니라면 0을 출력한다.
@@ -70,7 +70,7 @@ k가 3일 경우 상하 반전
     <title>[백준]1120 문자열</title>
     <link>https://jyukki97.github.io/2020-03-07-1120/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-07-1120/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1120
 풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
@@ -86,7 +86,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1159 농구 경기</title>
     <link>https://jyukki97.github.io/2020-03-07-1159/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-07-1159/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1159
 풀이: 각 선수의 성의 첫글자를 확인한다.
@@ -100,7 +100,7 @@ a~ z 까지 확인한다.
     <title>[백준]1062 가르침</title>
     <link>https://jyukki97.github.io/2020-03-06-1062/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-06-1062/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1062
 풀이: a ~ z 중에 K개의 글자를 배웠을 떄,
@@ -111,7 +111,7 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
     <title>[프로그래머스]문자열 내 마음대로 정렬하기</title>
     <link>https://jyukki97.github.io/2020-02-10-stringsort/</link>
     <pubDate>Mon, 10 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-10-stringsort/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 문자열로 구성된 리스트 strings와, 정수 n이 주어졌을 때, 각 문자열의 인덱스 n번째 글자를 기준으로 오름차순 정렬하려 합니다. 예를 들어 strings가 [sun, bed, car]이고 n이 1이면 각 단어의 인덱스 1의 문자 u, e, a로 strings를 정렬합니다.
@@ -122,7 +122,7 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
     <title>[C&#43;&#43;]transform</title>
     <link>https://jyukki97.github.io/2020-02-07-transform/</link>
     <pubDate>Fri, 07 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-07-transform/</guid>
     <description><![CDATA[transform
 1  #include&lt;algorithm&gt;  사용하기 위해서는 algorithm을 include해준다.

@@ -1,13 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>greedy - Tag - JYUKKI&#39;s BLOG</title>
+        <title>greedy - 标签 - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/greedy/</link>
-        <description>greedy - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/greedy/" rel="self" type="application/rss+xml" /><item>
+        <description>greedy - 标签 - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/greedy/" rel="self" type="application/rss+xml" /><item>
     <title>[백준]9576 책 나눠주기</title>
     <link>https://jyukki97.github.io/2020-03-30-9576/</link>
     <pubDate>Mon, 30 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-30-9576/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/9576
 풀이: 학생들을 b 를 기준으로 정렬한다.
@@ -20,7 +20,7 @@ a[i] ~ b[i] 까지의 책들 중
     <title>[백준]2217 로프</title>
     <link>https://jyukki97.github.io/2020-03-22-2217/</link>
     <pubDate>Sun, 22 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-22-2217/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/2217
 풀이: a[i] : i 무게를 들 수 있는 로프의 갯수
@@ -33,7 +33,7 @@ i 무게를 들 수 있는 로프의 갯수가 a[i] 개 일 때, a[i] 개의 로
     <title>[백준]1120 문자열</title>
     <link>https://jyukki97.github.io/2020-03-07-1120/</link>
     <pubDate>Sat, 07 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-07-1120/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1120
 풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
@@ -49,7 +49,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1080 행렬</title>
     <link>https://jyukki97.github.io/2020-03-06-1080/</link>
     <pubDate>Fri, 06 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-06-1080/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1080
 풀이: (0, 0) 부터 하나씩 비교해 나간다.
@@ -62,7 +62,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1049 기타줄</title>
     <link>https://jyukki97.github.io/2020-03-05-1049/</link>
     <pubDate>Thu, 05 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-03-05-1049/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1049
 풀이: 여러 브랜드 중 6줄 패키지 가격의 최솟값과 낱개 가격의 최솟값을 저장해 놓는다.
@@ -75,7 +75,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
     <title>[백준]1541 잃어버린 괄호</title>
     <link>https://jyukki97.github.io/2020-02-24-1541/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-1541/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1541
 풀이: 문자열을 하나씩 확인한다.
@@ -90,7 +90,7 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
     <title>[백준]1931 회의실배정</title>
     <link>https://jyukki97.github.io/2020-02-24-1931/</link>
     <pubDate>Mon, 24 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-24-1931/</guid>
     <description><![CDATA[https://www.acmicpc.net/problem/1931
 풀이: 회의 정보를 배열에 저장한다.
@@ -103,7 +103,7 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
     <title>[프로그래머스]조이스틱</title>
     <link>https://jyukki97.github.io/2020-02-15-joystick/</link>
     <pubDate>Sat, 15 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-15-joystick/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다. ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
@@ -113,7 +113,7 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
     <title>[프로그래머스]구명보트</title>
     <link>https://jyukki97.github.io/2020-02-14-lifeboat/</link>
     <pubDate>Fri, 14 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2020-02-14-lifeboat/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 무인도에 갇힌 사람들을 구명보트를 이용하여 구출하려고 합니다. 구명보트는 작아서 한 번에 최대 2명씩 밖에 탈 수 없고, 무게 제한도 있습니다.
@@ -124,7 +124,7 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
     <title>[프로그래머스]큰 수 만들기</title>
     <link>https://jyukki97.github.io/2019-12-28-makebignum/</link>
     <pubDate>Sat, 28 Dec 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
+    <author>作者</author>
     <guid>https://jyukki97.github.io/2019-12-28-makebignum/</guid>
     <description><![CDATA[https://programmers.co.kr
 문제: 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다.
