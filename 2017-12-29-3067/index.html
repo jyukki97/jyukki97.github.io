@@ -9,11 +9,11 @@
 <meta property="og:description" content="https://www.acmicpc.net/problem/3067
 풀이:  출처의 문제와 같으므로 출처를 참고.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt; using namespace std; int main(void) { int T, a, num; cin &gt;&gt; T; for (int y = 0; y &lt; T; y&#43;&#43;) { int coin[10001] = { 0 }; cin &gt;&gt; a; int *q = new int[a]; for (int i = 0; i &lt; a; i&#43;&#43;) cin &gt;&gt; q[i]; cin &gt;&gt; num; for (int i = 0; i &lt;= num; i&#43;&#43;) { if (i%q[0] == 0) coin[i]&#43;&#43;; } for (int i = 1; i &lt; a; i&#43;&#43;) { for (int t = q[i]; t &lt;= num; t&#43;&#43;) coin[t] &#43;= coin[t - q[i]]; } cout &lt;&lt; coin[num] &lt;&lt; endl; } return 0; }   **출처 : 2293 동전1 ** https://jyukki97." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jyukki97.io/2017-12-29-3067/" />
-<meta property="og:image" content="https://jyukki97.io/logo.png"/>
+<meta property="og:url" content="https://jyukki.github.io/2017-12-29-3067/" />
+<meta property="og:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jyukki97.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:title" content="3067 Coins"/>
 <meta name="twitter:description" content="https://www.acmicpc.net/problem/3067
@@ -21,7 +21,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.io/2017-12-29-3067/" /><link rel="prev" href="https://jyukki97.io/2018-03-16-3474/" /><link rel="next" href="https://jyukki97.io/2018-02-06-3049/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki.github.io/2017-12-29-3067/" /><link rel="prev" href="https://jyukki.github.io/2018-03-16-3474/" /><link rel="next" href="https://jyukki.github.io/2018-02-06-3049/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,9 +29,9 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/jyukki97.io\/2017-12-29-3067\/"
+            "@id": "https:\/\/jyukki.github.io\/2017-12-29-3067\/"
         },"genre": "posts","wordcount":  144 ,
-        "url": "https:\/\/jyukki97.io\/2017-12-29-3067\/","publisher": {
+        "url": "https:\/\/jyukki.github.io\/2017-12-29-3067\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -208,7 +208,7 @@ int main(void)
                             <a class="link-to-markdown" href="/2017-12-29-3067/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.io/2017-12-29-3067/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki.github.io/2017-12-29-3067/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki.github.io/2017-12-29-3067/" data-title="3067 Coins"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>

@@ -9,11 +9,11 @@
 <meta property="og:description" content="https://www.acmicpc.net/problem/9764
 풀이:  a[i][t] : 정수 i를 나타낼 때, 처음 더하는 수가 t인 경우의 수 a[i][t]는 i에서 t만큼 뺀 수에서 t보다 큰 수를 더한 값과 동일하다. 예를들어 5 : 1 &#43; 4 = 2 &#43; 3 = 5 로 나타낼 수 있는데 맨 앞자리를 1을 고를 경우 4의 앞자리가 1보다 큰 경우의 수를 모두 더한값과 같다. 이와 동일하게 2,3,4,5를 모두 할 경우 5의 경우의 수는 3개가 나오게 된다.  주의 사항:  n의 경우의 수를 구할 때 값이 매우 커지므로 100999로 나눈 나머지로 출력한다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jyukki97.io/2017-12-27-9764/" />
-<meta property="og:image" content="https://jyukki97.io/logo.png"/>
+<meta property="og:url" content="https://jyukki.github.io/2017-12-27-9764/" />
+<meta property="og:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jyukki97.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:title" content="9764 서로 다른 자연수의 합"/>
 <meta name="twitter:description" content="https://www.acmicpc.net/problem/9764
@@ -21,7 +21,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.io/2017-12-27-9764/" /><link rel="next" href="https://jyukki97.io/2018-01-27-9550/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki.github.io/2017-12-27-9764/" /><link rel="next" href="https://jyukki.github.io/2018-01-27-9550/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,9 +29,9 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/jyukki97.io\/2017-12-27-9764\/"
+            "@id": "https:\/\/jyukki.github.io\/2017-12-27-9764\/"
         },"genre": "posts","wordcount":  244 ,
-        "url": "https:\/\/jyukki97.io\/2017-12-27-9764\/","publisher": {
+        "url": "https:\/\/jyukki.github.io\/2017-12-27-9764\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -217,7 +217,7 @@ int main(void) {
                             <a class="link-to-markdown" href="/2017-12-27-9764/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.io/2017-12-27-9764/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki.github.io/2017-12-27-9764/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki.github.io/2017-12-27-9764/" data-title="9764 서로 다른 자연수의 합"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>

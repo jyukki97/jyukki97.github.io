@@ -11,11 +11,11 @@
 https://www.acmicpc.net/problem/11048
 풀이:  a[i][t] 는 i행 t열로 갈 때 사탕의 최대 갯수 a[i][t] 는 위에서 올때와 왼쪽에서 올때 중 최대값으로 구할 수 있다. a[i][t] &#43;= max(a[i - 1][t], a[i][t - 1]);  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[1002][1002] = { 0 }; int main(void) { int n, m; cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i&#43;&#43;) { for (int t = 1; t &lt;= m; t&#43;&#43;) { cin &gt;&gt; a[i][t]; } } for (int i = 1; i &lt;= n; i&#43;&#43;) { for (int t = 1; t &lt;= m; t&#43;&#43;) { a[i][t] &#43;= max(a[i - 1][t], a[i][t - 1]); } } cout &lt;&lt; a[n][m] &lt;&lt; endl; return 0; }   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jyukki97.io/2017-11-30-11048/" />
-<meta property="og:image" content="https://jyukki97.io/logo.png"/>
+<meta property="og:url" content="https://jyukki.github.io/2017-11-30-11048/" />
+<meta property="og:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://jyukki97.io/logo.png"/>
+<meta name="twitter:image" content="https://jyukki.github.io/logo.png"/>
 
 <meta name="twitter:title" content="11048 이동하기"/>
 <meta name="twitter:description" content="&#43;&#43;&#43; author = &ldquo;jyukki&rdquo; categories = [&ldquo;백준&rdquo;] tags = [&ldquo;algorithm&rdquo;, &ldquo;C&#43;&#43;&rdquo;, &ldquo;DP&rdquo;] date = &ldquo;2017-11-30&rdquo; description = &ldquo;algorithm&rdquo; featured = &quot;&quot; featuredalt = &quot;&quot; featuredpath = &ldquo;date&rdquo; linktitle = &quot;&quot; title = &ldquo;[백준]11048 이동하기&rdquo;
@@ -25,7 +25,7 @@ https://www.acmicpc.net/problem/11048
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki97.io/2017-11-30-11048/" /><link rel="prev" href="https://jyukki97.io/2018-02-04-11656/" /><link rel="next" href="https://jyukki97.io/2018-02-01-11006/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jyukki.github.io/2017-11-30-11048/" /><link rel="prev" href="https://jyukki.github.io/2018-02-04-11656/" /><link rel="next" href="https://jyukki.github.io/2018-02-01-11006/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -33,9 +33,9 @@ https://www.acmicpc.net/problem/11048
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/jyukki97.io\/2017-11-30-11048\/"
+            "@id": "https:\/\/jyukki.github.io\/2017-11-30-11048\/"
         },"genre": "posts","wordcount":  171 ,
-        "url": "https:\/\/jyukki97.io\/2017-11-30-11048\/","publisher": {
+        "url": "https:\/\/jyukki.github.io\/2017-11-30-11048\/","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -198,7 +198,7 @@ title = &ldquo;[백준]11048 이동하기&rdquo;</p>
                             <a class="link-to-markdown" href="/2017-11-30-11048/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki97.io/2017-11-30-11048/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki97.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://jyukki.github.io/2017-11-30-11048/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://jyukki.github.io/2017-11-30-11048/" data-title="11048 이동하기"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
