@@ -3,7 +3,7 @@
         <title>Learn - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/learn/</link>
         <description>Learn - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/learn/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/learn/" rel="self" type="application/rss+xml" /><item>
     <title>[C&#43;&#43;]위상 정렬(Topological Sort)</title>
     <link>https://jyukki97.github.io/2020-03-14-topologicalsort/</link>
     <pubDate>Sat, 14 Mar 2020 00:00:00 &#43;0000</pubDate>
