@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-04-27T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-24T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,31 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-06-1015/">[백준]1015 수열 정렬</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1015
+풀이: 배열 A를 정렬한 배열을 배열 B라고 하자.
+현재 위치가 i 일 때, A[i] 값이 배열 B의 어디에 위치해 있는지 찾아서 출력한다.
+ex)
+A
+2 3 1
+B
+1 2 3
+답:
+1 2 0
+수의 중복이 있을 수 있으므로 주의하자. 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, a[52], b[52], d[52], c; int main(void) { cin &gt;&gt; N; for (int i = 0; i &lt; N; i++) { cin &gt;&gt; a[i]; b[i] = a[i]; } sort(a, a + N); for (int i = 0; i &lt; N; i++) { c = lower_bound(a, a + N, b[i]) - a; while (d[c])	c++; cout &lt;&lt; c &lt;&lt; &#34; &#34;; d[c] = 1; } cout &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-06-1015/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-06-1024/">[백준]1024 수열의 합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1024
+풀이: 길이가 적어도 L인 수열은 다음과 같이 나타낼 수 있다.
+1  n	n + 1	n + 2	...	n + L - 2	n + L - 1   즉, 길이가 L인 수열들의 합은
+L * n + Σ k (k = 1 ~ L - 1) = N
+( N - Σ k (k = 1 ~ L - 1) ) % L == 0</div><div class="post-footer">
+        <a href="/2020-03-06-1024/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-06-1051/">[백준]1051 숫자 정사각형</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1051
 풀이: N, M 중 더 작은 값이 정사각형의 한 변의 길이의 최댓값이 된다.
@@ -142,31 +167,6 @@ b[i] = max(b[i 건물을 짓는데 필요한 건물들])
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int T, N, K, q, e, w, a[1002], m, n, b[1002]; vector&lt;vector&lt;int&gt;&gt; v; int A(int x) { if (b[x] !</div><div class="post-footer">
         <a href="/2020-03-05-1005/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC/">위상정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-05-1049/">[백준]1049 기타줄</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1049
-풀이: 여러 브랜드 중 6줄 패키지 가격의 최솟값과 낱개 가격의 최솟값을 저장해 놓는다.
-낱개 * 6 보다 패키지 가격이 더 높다면, 패키지로 살 이유가 없으므로 낱개 가격을 출력한다.
-필요한 줄의 갯수가 6개 이하라면, 낱개 가격과 패키지 가격 중 낮은 가격을 출력한다.
-둘 다 아니라면, (전체를 패키지로 사는 것) 과 (6개로 나눠지는 만큼 패키지로 사고 나머지는 낱개로 사는 것) 둘 중 낮은 가격을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, M, q, w, a = 1001, b = 1001, dp[102] = { 0 }; int main(void) { cin &gt;&gt; N &gt;&gt; M; for (int i = 0; i &lt; M; i++) { cin &gt;&gt; q &gt;&gt; w; a = min(a, q); b = min(b, w); } for (int i = 1; i &lt;= N; i++) { dp[i] = (((i - 1) / 6) + 1) * a; dp[i] = min(dp[i], dp[i - 1] + b); } cout &lt;&lt; dp[N] &lt;&lt; endl; }   코드: 사용언어 : c++</div><div class="post-footer">
-        <a href="/2020-03-05-1049/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-05-1068/">[백준]1068 트리</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1068
-풀이: v[i] : i의 자식 노드들이 들어있다.
-삭제 해야하는 노드가 w 라면,
-w를 큐에 푸쉬한다.
-w의 자식노드를 큐에 푸쉬한 후 w를 삭제한다.
-자식노드가 없어질 때까지 반복한다.
-v[ 0 ~ N - 1 ] 까지 모두 순환한다.
-노드가 현제 존재하며, 자식노드가 없다면, 리프 노드이므로 +1 해준다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  #include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;vector&gt;using namespace std; int N, a; bool b[52], c; int main(void) { cin &gt;&gt; N; vector&lt;vector&lt;int&gt;&gt; v(N); queue&lt;int&gt; q; for (int i = 0; i &lt; N; i++) { cin &gt;&gt; a; if(a !</div><div class="post-footer">
-        <a href="/2020-03-05-1068/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%8A%B8%EB%A6%AC/">트리</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -197,7 +197,7 @@ v[ 0 ~ N - 1 ] 까지 모두 순환한다.
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/75/">75</a>
+                        <a href="/page/76/">76</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-04-27T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-24T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,26 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-12-4963/">[백준]4963 섬의 개수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-12">2020-03-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/4963
+풀이: 모든 지도를 순회한다.
+만약 지도의 한 부분이 땅이라면,
+연결된 모든 땅을 바다로 바꾼 후 섬의 개수를 +1 해준다.
+지도의 모든 부분이 바다로 바뀔때까지 반복한다.
+섬의 개수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[52][52], c; void I(int x, int y) { a[x][y] = 0; if (x &gt; 0 &amp;&amp; y &gt; 0 &amp;&amp; a[x - 1][y - 1]) I(x - 1, y - 1); if (x &gt; 0 &amp;&amp; a[x - 1][y]) I(x - 1, y); if (x &gt; 0 &amp;&amp; y + 1 &lt; n &amp;&amp; a[x - 1][y + 1]) I(x - 1, y + 1); if (y &gt; 0 &amp;&amp; a[x][y - 1]) I(x, y - 1); if (y + 1 &lt; n &amp;&amp; a[x][y + 1]) I(x, y + 1); if (x + 1 &lt; m &amp;&amp; y &gt; 0 &amp;&amp; a[x + 1][y - 1]) I(x + 1, y - 1); if (x + 1 &lt; m &amp;&amp; a[x + 1][y]) I(x + 1, y); if (x + 1 &lt; m &amp;&amp; y + 1 &lt; n &amp;&amp; a[x + 1][y + 1]) I(x + 1, y + 1); } int main() { while (1) { cin &gt;&gt; n &gt;&gt; m; c = 0; if (!</div><div class="post-footer">
+        <a href="/2020-03-12-4963/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-12-5543/">[백준]5543 상근날드</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-12">2020-03-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5543
+풀이: 햅버거 중 가장 싼 것 + 음료 중 가장 싼 것 - 50원
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a,b,c,d,e; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; e; a = a &lt; b ? a : b; a = a &lt; c ? a : c; d = d &lt; e ?</div><div class="post-footer">
+        <a href="/2020-03-12-5543/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-11-1225/">[백준]1225 이상한 곱셈</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-11">2020-03-11</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1225
 풀이: 123 * 45
@@ -145,28 +165,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;using namespace std; int V, E, k, u, v, w, i, t, d1[1002], d2[1002], b[1002], s = 0; int main() { cin &gt;&gt; V &gt;&gt; E &gt;&gt; k; priority_queue&lt;pair&lt;int, int&gt;&gt; p; vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt;a(V + 1); for (i = 0; i &lt; E; i++) { cin &gt;&gt; u &gt;&gt; v &gt;&gt; w; a[u].</div><div class="post-footer">
         <a href="/2020-03-09-1238/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/">다익스트라</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-08-1261/">[백준]1261 알고스팟</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-08">2020-03-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1261
-풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;using namespace std; int N, M, b[102][102], q, w, e, dp[102][102]; int main() { cin &gt;&gt; M &gt;&gt; N; fill(dp[0], dp[0] + 10201, 987654321); vector&lt;string&gt; v(N); priority_queue&lt;pair&lt;int, pair&lt;int, int&gt;&gt;&gt; p; p.</div><div class="post-footer">
-        <a href="/2020-03-08-1261/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/">다익스트라</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-07-1120/">[백준]1120 문자열</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1120
-풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
-a 와 b의 (1번째 ~ a의 길이) 의 차이의 개수
-.
-.
-.
-a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개수
-중 가장 작은것을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int main() { int c = 51; string a, b; cin &gt;&gt; a &gt;&gt; b; for (int i = 0; i &lt;= b.</div><div class="post-footer">
-        <a href="/2020-03-07-1120/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -197,7 +195,7 @@ a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/75/">75</a>
+                        <a href="/page/76/">76</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

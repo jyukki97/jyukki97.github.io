@@ -2,14 +2,17 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://jyukki97.github.io/2020-12-24-12778/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/2020-12-24-12779/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/tags/algorithm/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/tags/c&#43;&#43;/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/categories/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/posts/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/tags/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://jyukki97.github.io/categories/%EB%B0%B1%EC%A4%80/</loc><lastmod>2020-12-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://jyukki97.github.io/2020-04-27-1388/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/tags/algorithm/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/tags/c&#43;&#43;/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/categories/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/posts/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/tags/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/categories/%EB%B0%B1%EC%A4%80/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/tags/%ED%8C%8C%EC%8B%B1/</loc><lastmod>2020-04-27T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/2020-04-26-1356/</loc><lastmod>2020-04-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/tags/%EC%88%98%ED%95%99/</loc><lastmod>2020-04-26T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -57,7 +60,6 @@
             <loc>https://jyukki97.github.io/tags/greedy/</loc><lastmod>2020-03-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/tags/%ED%88%AC-%ED%8F%AC%EC%9D%B8%ED%84%B0/</loc><lastmod>2020-03-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/2020-03-29-10708/</loc><lastmod>2020-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</loc><lastmod>2020-03-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/2020-03-28-16483/</loc><lastmod>2020-03-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/2020-03-28-17945/</loc><lastmod>2020-03-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://jyukki97.github.io/2020-03-28-2503/</loc><lastmod>2020-03-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

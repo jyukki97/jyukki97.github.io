@@ -3,7 +3,20 @@
         <title>구현 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</link>
         <description>구현 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]12778 CTP공국으로 이민 가자</title>
+    <link>https://jyukki97.github.io/2020-12-24-12778/</link>
+    <pubDate>Thu, 24 Dec 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-12-24-12778/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/12778
+풀이: 만약 C라면,
+문자열을 숫자로 출력한다.
+만약 N이라면,
+숫자를 문자열로 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt;using namespace std; int main() { int a, i, n; char b; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a &gt;&gt; b; if (b == &#39;C&#39;) { for (i = 0; i &lt; a; i++) { char c; cin &gt;&gt; c; cout &lt;&lt; (int)(c - &#39;A&#39; + 1) &lt;&lt; &#34; &#34;; } } else { for (i = 0; i &lt; a; i++) { int c; cin &gt;&gt; c; cout &lt;&lt; (char)(&#39;A&#39; + c - 1) &lt;&lt; &#34; &#34;; } } cout &lt;&lt; endl; } }   ]]></description>
+</item><item>
     <title>[백준]10708 크리스마스 파티</title>
     <link>https://jyukki97.github.io/2020-03-29-10708/</link>
     <pubDate>Sun, 29 Mar 2020 00:00:00 &#43;0000</pubDate>
