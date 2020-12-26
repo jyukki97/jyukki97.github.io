@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-24T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,50 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-26-1356/">[백준]1356 유진수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-26">2020-04-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1356
+풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
+1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
+.
+.
+.
+1의 자릿수*&hellip;*n-1자릿수 == n 자릿수
+중 앞의 값과 뒤의 값이 같은 것이 하나라도 있다면, YES를
+하나도 없다면 NO를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.</div><div class="post-footer">
+        <a href="/2020-04-26-1356/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-25-1268/">[백준]1268 임시 반장 정하기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-25">2020-04-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1268
+풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
+1번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 1을 저장한다.
+.
+.
+.
+n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
+그 값이 S보다 많다면 S를 교체하고 C에 n을 저장한다.
+전체를 다 탐색 한 후 C를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !</div><div class="post-footer">
+        <a href="/2020-04-25-1268/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-24-1236/">[백준]1236 성 지키기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-24">2020-04-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1236
+풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 행의 갯수를 Sn이라고 하자.
+각 열에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 열의 갯수를 Sm이라고 하자.
+각 행과 열에는 경비병이 1명씩은 있어야 하므로
+Sn과 Sm 중 최댓값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!</div><div class="post-footer">
+        <a href="/2020-04-24-1236/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%83%90%EC%83%89/">탐색</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-04-23-17265/">[백준]17265 나의 인생에는 수학과 함께</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-23">2020-04-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17265
 풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
@@ -142,41 +186,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; int n; void G(int x) { if (!x)	return; G(x % -2 &lt; 0 ? (x / -2) + 1 : x / -2); if (x % -2 &lt; 0) cout &lt;&lt; -1 * (x % -2); else cout &lt;&lt; x % -2; } int main() { cin &gt;&gt; n; G(n); if (!</div><div class="post-footer">
         <a href="/2020-04-21-2089/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-20-16637/">[백준]16637 괄호 추가하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-20">2020-04-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/16637
-풀이: 순서대로 사칙연산을 진행한다.
-이 때, 현재 숫자만 계산하는 것, 현재 숫자 (연산자) 다음 숫자 를 계산하는 것 두 가지로 나누어 생각한다.
-현재 숫자만 계산하는 것은, 이전에 계산했던 숫자 (연산자) 현재 숫자
-두번째 경우는, 이전에 계산했던 숫자 (연산자) ( 현재 숫자 (연산자) 다음 숫자 )
-이렇게 두 가지 경우로 모든 구간을 연산하여 완전탐색을 돌린다.
-정답의 범위가 -2^31 ~ 2^31 이므로 최댓값의 초기값을 0으로 하지않도록 주의하자.
-코드: 사용언어 : c++</div><div class="post-footer">
-        <a href="/2020-04-20-16637/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-19-11382/">[백준]11382 꼬마 정민</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11382
-풀이: A, B, C 를 각각 문자열로 변환한다.
-변환된 문자열을 한자리씩 더한다.
-만약 각 자릿수의 숫자가 10이 넘어간다면 다음 자릿수에 올림을 해준다.
-더해진 문자열을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main() { string a, b, c, d; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int m = max(a.</div><div class="post-footer">
-        <a href="/2020-04-19-11382/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-18-3056/">[백준]3056 007</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-18">2020-04-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/3056
-풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
-비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
-비트마스크가 1, 10, 100, 1000 &hellip;.. 등 1의 갯수가 1개인 것은 첫 번째 지미 본드가 수행한다고 한다.
-비트마스크가 11, 110, 1100, 11000 &hellip;.. 등 1의 갯수가 2개인 것은 두 번째 지미 본드가 수행한다고 한다.
-&hellip;.
-비트마스크를 0 ~ (1 &laquo; n) 까지 순회한다.
-현재의 비트마스크를 i 라고 하자, 그 비트의 중간에 0이 들어있다면, 그 위치에 1을 넣는다.</div><div class="post-footer">
-        <a href="/2020-04-18-3056/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a>,&nbsp;<a href="/tags/mcmf/">MCMF</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

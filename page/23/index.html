@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-24T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,40 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1159/">[백준]1159 농구 경기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1159
+풀이: 각 선수의 성의 첫글자를 확인한다.
+a ~ z 까지의 배열 에서 첫글자에 해당하는 배열을 +1 해준다.
+a~ z 까지 확인한다.
+5명 이상인 글자는 출력한다.
+만약, 출력한 글자가 없다면, &ldquo;PREDAJA&rdquo; 를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;using namespace std; int N, a[26], b = 0, i = 26; int main() { cin &gt;&gt; N; while(N--) { string s; cin &gt;&gt; s; a[122 - s[0]]++; } while(i--) if (a[i] &gt; 4) { b = 1; cout &lt;&lt; char(122 - i); } if (!</div><div class="post-footer">
+        <a href="/2020-03-07-1159/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1182/">[백준]1182 부분수열의 합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1182
+풀이: N개의 정수로 이루어진 수열을 a라고 했을 때,
+a의 부분수열을 모두 탐색하여 그 합이 S가 되는 갯수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int N, S, a[22], s = 0; void B(int x, int y) { if (x &gt; -1 &amp;&amp; y == S)	s++; while(++x &lt; N)	B(x, y + a[x]); } int main() { cin &gt;&gt; N &gt;&gt; S; for (int i = 0; i &lt; N; i++)	cin &gt;&gt; a[i]; B(-1, 0); cout &lt;&lt; s &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-07-1182/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1197/">[백준]1197 최소 스패닝 트리</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1197
+풀이: 배열 v를 현재 만들어진 트리에 들어있는 노드들의 집합 이라고 하자.
+시작할 때 배열 v에 1 하나만 넣고 시작한다.
+배열 v를 모두 순회하여 현재 트리에서 뻗어갈 수 있고, 가중치가 가장 작은 간선을 찾는다.
+간선을 연결 한 후 연결된 노드를 배열 v에 저장한다.
+배열 v에 모든 정점이 들어올때까지 반복한다.
+트리에 모든 가중치를 더해 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;vector&gt;using namespace std; typedef pair&lt;int, int&gt; P; int N, E, q, w, e, b[10002] = { 1,1 }; vector&lt;priority_queue&lt;P, vector&lt;P&gt;, greater&lt;P&gt;&gt;&gt; a; int main() { cin &gt;&gt; N &gt;&gt; E; a.</div><div class="post-footer">
+        <a href="/2020-03-07-1197/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/">최소 스패닝 트리</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-06-1015/">[백준]1015 수열 정렬</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1015
 풀이: 배열 A를 정렬한 배열을 배열 B라고 하자.
@@ -137,36 +171,6 @@ L * n + Σ k (k = 1 ~ L - 1) = N
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, M, b, c = 1; int main(void) { cin &gt;&gt; N &gt;&gt; M; vector&lt;string&gt; a(N); for (int i = 0; i &lt; N; i++) cin &gt;&gt; a[i]; b = N &gt; M ?</div><div class="post-footer">
         <a href="/2020-03-06-1051/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1062/">[백준]1062 가르침</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1062
-풀이: a ~ z 중에 K개의 글자를 배웠을 떄,
-N개의 단어 중 몇개의 단어를 읽을 수 있는지 구한 후 그것들 중 최댓값을 출력한다.
-a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int N, K, b, c = 0, d, f; vector&lt;string&gt; a; void T(int x, int y) { if (y == K) { d = 0; for (int i = 0; i &lt; N; i++) { f = 1; for (char s : a[i])	if (!</div><div class="post-footer">
-        <a href="/2020-03-06-1062/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1080/">[백준]1080 행렬</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1080
-풀이: (0, 0) 부터 하나씩 비교해 나간다.
-만약 A 와 B 의 숫자가 다르다면, 현재 위치부터 3 * 3 전체를 반전시킨다.
-반전 시켰다면, 뒤집은 횟수를 +1 해준다.
-순환이 끝난 후 행렬 A 와 B 가 다르다면 -1을 같다면 뒤집은 횟수를 출력해준다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, M, c = 0, i, t, u, y; int main() { cin &gt;&gt; N &gt;&gt; M; vector&lt;string&gt; a(N), b(N); for (i = 0; i &lt; N; i++) cin &gt;&gt; a[i]; for (i = 0; i &lt; N; i++) cin &gt;&gt; b[i]; for (i = 0; i &lt; N - 2; i++) for (t = 0; t &lt; M - 2; t++) if (a[i][t] !</div><div class="post-footer">
-        <a href="/2020-03-06-1080/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-05-1005/">[백준]1005 ACM Craft</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1005
-풀이: b[i] : i 건물을 짓는데 드는 최소시간
-b[i] = max(b[i 건물을 짓는데 필요한 건물들])
--&gt; 바로 전 단계의 건물 중 건설시간이 오래 걸리는 것을 짓는다면, 그 시간동안 다른 건물은 다 지을 수 있기 떄문에, max값만 생각한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int T, N, K, q, e, w, a[1002], m, n, b[1002]; vector&lt;vector&lt;int&gt;&gt; v; int A(int x) { if (b[x] !</div><div class="post-footer">
-        <a href="/2020-03-05-1005/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC/">위상정렬</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
