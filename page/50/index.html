@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,13 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2019-12-25-turnnnum/">[프로그래머스]자연수 뒤집어 배열로 만들기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-25">2019-12-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열을 리턴한다.  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;stdio.h&gt;#include &lt;stdbool.h&gt;#include &lt;stdlib.h&gt; int* solution(long long n) { // 리턴할 값은 메모리를 동적 할당해주세요.  int* answer = (int*)malloc(sizeof(int)*12 + 1); int c = 0; while (n) { answer[c] = n % 10; n /= 10; c++; } return answer; }   </div><div class="post-footer">
+        <a href="/2019-12-25-turnnnum/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2019-12-24-sumpnum/">[프로그래머스]자릿수 더하기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-24">2019-12-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
 풀이:  자연수 n의 각 자릿수의 합을 구해서 리턴한다.  코드: 사용언어 : c++
@@ -137,13 +144,6 @@
 풀이:  문자열 s의 가운데 글자를 리턴한다. 만약 문자열 s의 길이가 짝수라면 가운데 두 글자를 반환한다  코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; string solution(string s) { string answer; if (s.length() % 2 == 0) { answer = s[s.length() / 2 - 1]; answer += s[s.length() / 2]; } else { answer = s[s.</div><div class="post-footer">
         <a href="/2019-12-21-middlenum/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-12-21-caesarcipher/">[프로그래머스]시저 암호</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-21">2019-12-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-풀이:  문자열 s를 n만큼 밀어서 나온 다른 알파벳의 결과값을 리턴한다. 중간에 공백문자가 있을 수 있으니 주의한다. &lsquo;z&rsquo;를 밀 경우 &lsquo;A&rsquo;가 아니라 &lsquo;a&rsquo;가 나와야 하므로 주의한다.  코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; string solution(string s, int n) { for (int i = 0;i &lt; s.</div><div class="post-footer">
-        <a href="/2019-12-21-caesarcipher/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

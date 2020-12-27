@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,11 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2017-12-24-2688/">2688 줄어들지 않아</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2688
+풀이:  a[t][y] : t + 1 개의 자릿수에서의 줄어들지 않는 수의 갯수 a[t][y] = a[t][y - 1] + a[t - 1][y] 앞자리의 갯수가 1 증가할 때 마다 이전 자릿수의 개수를 더해가는 방식으로 구한다. 최종 자릿수 9가되면 모든 수가 누적되어 있으므로 출력한다.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt; using namespace std; long long a[65][10] = { 1,2,3,4,5,6,7,8,9,10,0 }; int main(void) { int T, n; cin &gt;&gt; T; for (int i = 0; i &lt; T; i++) { cin &gt;&gt; n; for (int t = 1; t &lt; n; t++) { a[t][0] = 1; for (int y = 1; y &lt; 10; y++) { a[t][y] = a[t][y - 1] + a[t - 1][y]; } } cout &lt;&lt; a[n - 1][9] &lt;&lt; endl; } return 0; }   사간 초과 풀이:  처음 풀이를 할 때 저번 1038 감소하는 수를 푸는 것처럼 하나하나 만들어 가면서 카운트를 하려 했으나 시간초과가 난다.</div><div class="post-footer">
+        <a href="/2017-12-24-2688/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2017-12-25-2743/">2743 단어 길이 재기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2743
 풀이:  단어의 길이를 출력  코드: 1 2 3 4 5 6 7 8  #include &lt;iostream&gt; #include &lt;string&gt; using namespace std; int main(void) { string a; cin &gt;&gt; a; cout &lt;&lt; a.length() &lt;&lt; endl; }   </div><div class="post-footer">
@@ -129,12 +134,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2902
 풀이:  대문자를 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt; #include &lt;string&gt; using namespace std; string a; int main(void) { cin &gt;&gt; a; for (int i = 0; i &lt; a.length(); i++) { if (a[i] &gt; 64 &amp;&amp; a[i] &lt; 91) cout &lt;&lt; a[i]; } cout &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2018-01-09-2902/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-04-2903/">2903 중앙 이동 알고리즘</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/2903
-풀이:  N 단계를 진행할 경우 ((2^N) +1)^2 만큼 점의 개수가 생긴다.  코드: 사용언어 : Python 3
-1  print(((2**int(input()))+1)**2)   </div><div class="post-footer">
-        <a href="/2018-02-04-2903/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

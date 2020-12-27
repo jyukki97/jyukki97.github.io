@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-02-04-10808/">10808 알파벳 개수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/10808
+풀이:  알파벳 순서대로 나온 카운트를 계산하여 하나씩 출력  코드: 사용언어 : Python 3
+1 2 3  n=input() for i in range(97,123): print(n.count(chr(i)),end=&#39; &#39;)   </div><div class="post-footer">
+        <a href="/2018-02-04-10808/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-01-16-1094/">1094 막대기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1094
 풀이:  자른 막대기 중 주어진 막대기보다 작은 값 중 최댓값을 주어진 막대기에 계속 뺀다. 뺄때마다 카운트를 증가시키면서 반복한다  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; using namespace std; int main(void) { int x, temp = 64, cnt = 0; cin &gt;&gt; x; while (x != 0) { if (x &gt;= temp) { cnt++; x -= temp; } else temp /= 2; } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   </div><div class="post-footer">
@@ -131,12 +137,6 @@
 https://www.acmicpc.net/problem/11048
 풀이:  a[i][t] 는 i행 t열로 갈 때 사탕의 최대 갯수 a[i][t] 는 위에서 올때와 왼쪽에서 올때 중 최대값으로 구할 수 있다. a[i][t] += max(a[i - 1][t], a[i][t - 1]);  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[1002][1002] = { 0 }; int main(void) { int n, m; cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) { for (int t = 1; t &lt;= m; t++) { cin &gt;&gt; a[i][t]; } } for (int i = 1; i &lt;= n; i++) { for (int t = 1; t &lt;= m; t++) { a[i][t] += max(a[i - 1][t], a[i][t - 1]); } } cout &lt;&lt; a[n][m] &lt;&lt; endl; return 0; }   </div><div class="post-footer">
         <a href="/2017-11-30-11048/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-04-11656/">11656 접미사 배열</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/11656
-풀이:  접미사를 모두 리스트에 넣는다. 리스트를 사전순으로 정렬하고 출력한다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6 7  n=input() l=[] for i in range(len(n)): l.append(n[i:]) l.sort() for i in range(len(n)): print(l[i])   </div><div class="post-footer">
-        <a href="/2018-02-04-11656/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
