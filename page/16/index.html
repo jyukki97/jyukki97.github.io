@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-17-11655/">[백준]11655 ROT13</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-17">2020-03-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11655
+풀이: ROT13으로 암호화한 내용을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int main() { string s; getline(cin, s); for (char c : s)	printf(&#34;%c&#34;, c &lt; 65 ? c : (c &lt; 97 &amp;&amp; c &gt; 77) || c &gt; 109 ? c - 13 : c + 13); cout &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-17-11655/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-17-2566/">[백준]2566 최댓값</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-17">2020-03-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2566
 풀이: 9 * 9 칸에 있는 숫자들 중 최댓값과 그 위치를 출력한다.
@@ -144,21 +152,6 @@
 1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int main() { string a; bool b = true; cin &gt;&gt; a; for (int i = 0; i &lt; a.size() / 2; i++)	if (a[i] != a[a.size() - i - 1]) b = false; if (b)	cout &lt;&lt; &#34;1&#34; &lt;&lt; endl; else cout &lt;&lt; &#34;0&#34; &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2020-03-16-10988/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-16-10991/">[백준]10991 별 찍기 - 16</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10991
-풀이: N개의 줄에 N개의 글자를 출력한다.
-첫 줄에는 N-1개의 &quot; &ldquo;와 1개의 &ldquo;* &ldquo;을
-두 번째 줄에는 N-2개의 &quot; &ldquo;와 2개의 &ldquo;* &ldquo;을
-.
-.
-.
-i번째 줄에는 N-i개의 &quot; &ldquo;와 i개의 &ldquo;* &ldquo;을
-출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int N, i, t; int main() { cin &gt;&gt; N; for (i = 0; i &lt; N; i++) { for (t = 1; t &lt; N - i; t++)	cout &lt;&lt; &#34; &#34;; for (; t &lt;= N; t++) cout &lt;&lt; &#34;* &#34;; cout &lt;&lt; endl; } }   </div><div class="post-footer">
-        <a href="/2020-03-16-10991/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/">별 찍기</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

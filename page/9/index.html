@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-26T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-26-5586/">[백준]5586 JOI와 IOI</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-26">2020-03-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5586
+풀이: 문자열에 포함되어 있는 JOI의 개수, 둘째 줄에 IOI의 개수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int a, b, i; string s; int main() { cin &gt;&gt; s; for (i = 0; i &lt; s.size() - 2; i++) if (s.substr(i, 3) == &#34;JOI&#34;)	a++; else if (s.substr(i, 3) == &#34;IOI&#34;)	b++; printf(&#34;%d\n%d&#34;, a, b); }   </div><div class="post-footer">
+        <a href="/2020-03-26-5586/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-25-10995/">[백준]10995 별 찍기 - 20</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10995
 풀이: 주어진 규칙대로 별을 찍는다.
@@ -144,15 +152,6 @@ i번째 글자와 size() - i - 1 번째 글자가 같은지
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a, b, i, s = 0, t = 0; int main() { for (i = 0; i &lt; 10; i++) { cin &gt;&gt; a &gt;&gt; b; s += b - a, t = t &lt; s ? s : t; } cout &lt;&lt; t &lt;&lt; endl;	}   </div><div class="post-footer">
         <a href="/2020-03-25-2460/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-25-5532/">[백준]5532 방학 숙제</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5532
-풀이: 국어를 풀어야 하는 날짜와 수학을 풀어야 하는 날짜를 각각 a, b라고 했을 때,
-a, b 중 더 높은 값을 방학일에서 뺀다면, 놀 수 있는 날의 최댓값이 된다.
-코드: 사용언어 : c
-1 2 3 4 5  main(n,a,b,c,d){ scanf(&#34;%d%d%d%d%d&#34;,&amp;n,&amp;a,&amp;b,&amp;c,&amp;d); a=a/c+(a%c?1:0),b=b/d+(b%d?1:0); printf(&#34;%d&#34;,n-(a&lt;b?b:a)); }   </div><div class="post-footer">
-        <a href="/2020-03-25-5532/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
