@@ -3,7 +3,24 @@
         <title>algorithm - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/algorithm/</link>
         <description>algorithm - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 27 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 28 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]17264 I AM IRONMAN</title>
+    <link>https://jyukki97.github.io/2020-12-28-17264/</link>
+    <pubDate>Mon, 28 Dec 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-12-28-17264/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/17264
+풀이: 이길 수 있는 사람을 set에 모아놓는다.
+만약 만난 사람이 set에 존재한다면, score에 획득 점수를 더해준다.
+만약 만난 사람이 set에 존재하지 않는다면, score에 떨어지는 점수를 빼준다.
+만약 score가 IRON 티어에서 벗어나기 위한 점수보다 높아진다면,
+&ldquo;I AM NOT IRONMAN!!&rdquo; 을 출력한다.
+모든 플레이어를 만났음에도 IRON 티어에서 벗어나기 위한 점수보다 낮다면,
+&ldquo;I AM IRONMAN!!&ldquo;을 출력한다.
+score값은 음수가 될 수 없으므로 주의하자!!!
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;set&gt;using namespace std; int main() { int n, p, w, l, g, c = 0; set&lt;string&gt; s; string t, h; for (cin &gt;&gt; n &gt;&gt; p &gt;&gt; w &gt;&gt; l &gt;&gt; g; p--;s.]]></description>
+</item><item>
     <title>[백준]17263 Sort 마스터 배지훈</title>
     <link>https://jyukki97.github.io/2020-12-27-17263/</link>
     <pubDate>Sun, 27 Dec 2020 00:00:00 &#43;0000</pubDate>
@@ -120,20 +137,5 @@ n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
 전체를 다 탐색 한 후 C를 출력한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !]]></description>
-</item><item>
-    <title>[백준]1236 성 지키기</title>
-    <link>https://jyukki97.github.io/2020-04-24-1236/</link>
-    <pubDate>Fri, 24 Apr 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-04-24-1236/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1236
-풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
-경비병이 없는 행의 갯수를 Sn이라고 하자.
-각 열에 경비병이 있는지 없는지 탐색한다.
-경비병이 없는 열의 갯수를 Sm이라고 하자.
-각 행과 열에는 경비병이 1명씩은 있어야 하므로
-Sn과 Sm 중 최댓값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!]]></description>
 </item></channel>
 </rss>

@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-27T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-28T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,20 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1120/">[백준]1120 문자열</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1120
+풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
+a 와 b의 (1번째 ~ a의 길이) 의 차이의 개수
+.
+.
+.
+a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개수
+중 가장 작은것을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int main() { int c = 51; string a, b; cin &gt;&gt; a &gt;&gt; b; for (int i = 0; i &lt;= b.</div><div class="post-footer">
+        <a href="/2020-03-07-1120/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-07-1158/">[백준]1158 요세푸스 문제</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1158
 풀이: K번째 사람을 출력한다.
@@ -163,15 +177,6 @@ B
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, a[52], b[52], d[52], c; int main(void) { cin &gt;&gt; N; for (int i = 0; i &lt; N; i++) { cin &gt;&gt; a[i]; b[i] = a[i]; } sort(a, a + N); for (int i = 0; i &lt; N; i++) { c = lower_bound(a, a + N, b[i]) - a; while (d[c])	c++; cout &lt;&lt; c &lt;&lt; &#34; &#34;; d[c] = 1; } cout &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2020-03-06-1015/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1024/">[백준]1024 수열의 합</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1024
-풀이: 길이가 적어도 L인 수열은 다음과 같이 나타낼 수 있다.
-1  n	n + 1	n + 2	...	n + L - 2	n + L - 1   즉, 길이가 L인 수열들의 합은
-L * n + Σ k (k = 1 ~ L - 1) = N
-( N - Σ k (k = 1 ~ L - 1) ) % L == 0</div><div class="post-footer">
-        <a href="/2020-03-06-1024/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
