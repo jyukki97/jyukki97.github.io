@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-28T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-29T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2017-12-13-10164/">[백준]10164 격자상의 경로</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-12-13">2017-12-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10164
+풀이:  N X M 행렬에서 K번째 수를 꼭 지나치면서 오른쪽 맨 아래까지 가는 최대 경우의 수 1~K 까지 가는 경우의 수 * K~M*N 까지 가는 경우의 수 DP[i][t] i행 t열로 갈 수 있는 경우의 수 DP[i][t] = DP[i-1][t] + DP[i][t-1]  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  #include &lt;iostream&gt;using namespace std; int a[16][16] = { 0 }; int b[16][16] = { 0 }; int main(void) { int n, m, k, q, w, e, r; cin &gt;&gt; n &gt;&gt; m &gt;&gt; k; q = k / m + 1; w = k%m; if (k !</div><div class="post-footer">
+        <a href="/2017-12-13-10164/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2017-12-12-11053/">[백준]11053 가장 긴 증가하는 부분 수열</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-12-12">2017-12-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11053
 풀이:  1965 상자넣기의 문제와 똑같으므로 링크를 참고  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main(void) { int n, temp; cin &gt;&gt; n; int a[1001] = { 0 }; int b[1001]; for (int i = 0; i &lt; n; i++) { cin &gt;&gt; a[i]; b[i] = 1; } for (int i = 0; i &lt; n; i++) { temp = 0; for (int t = 0; t &lt;= i; t++) { if (a[i] &gt; a[i - t]) temp = max(b[i - t], temp); } b[i] += temp; } for (int i = 0; i &lt; n; i++) { temp = max(b[i], temp); } cout &lt;&lt; temp &lt;&lt; endl; return 0; }   </div><div class="post-footer">
@@ -132,12 +138,6 @@
 풀이:  a[i] 는 길이가 i인 모든 이진수열의 개수 a[i] = a[i - 1] + a[i - 2] 주어진 조건에 맞게 15746 으로 나눈 나머지를 출력  코드: 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int a[1000001] = { 1,2 }; int main(void) { int n; cin &gt;&gt; n; for (int i = 2; i &lt; n; i++) { a[i] = (a[i - 1] % 15746 + a[i - 2] % 15746) % 15746; } cout &lt;&lt; a[n - 1] &lt;&lt; endl; return 0; }   </div><div class="post-footer">
         <a href="/2017-12-08-1904/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2017-12-07-11055/">[백준]11055 가장 큰 증가 부분 수열</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-12-07">2017-12-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11055
-풀이:  배열의 이전을 돌며 가장 합이 큰 값을 더함  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[1002], maxA[1002]; int main(void) { int n; cin &gt;&gt; n; int maximum = 0; for (int i = 0; i &lt; n; i++) { cin &gt;&gt; a[i]; maxA[i] = a[i]; } for (int i = 0; i &lt; n; i++) { int temp = 0; for (int t = i-1; t &gt;= 0; t--) { if (a[t] &lt; a[i]) { temp = max(temp, maxA[t]); } } maxA[i] += temp; maximum = max(maximum, maxA[i]); } cout &lt;&lt; maximum &lt;&lt; endl; return 0; }   </div><div class="post-footer">
-        <a href="/2017-12-07-11055/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -168,7 +168,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/76/">76</a>
+                        <a href="/page/77/">77</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

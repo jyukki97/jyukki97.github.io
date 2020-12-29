@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-28T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-12-29T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2017-11-30-11057/">[백준]11057 오르막수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-11-30">2017-11-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11057
+풀이:  a[i][t] 는 길이가 i인 수에서 1의 자리가 t인 수의 오르막 수의 개수 a[i][t] += max(a[i - 1][t], a[i][t - 1]);  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[1002][1002] = { 0 }; int main(void) { int n, m; cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) { for (int t = 1; t &lt;= m; t++) { cin &gt;&gt; a[i][t]; } } for (int i = 1; i &lt;= n; i++) { for (int t = 1; t &lt;= m; t++) { a[i][t] += max(a[i - 1][t], a[i][t - 1]); } } cout &lt;&lt; a[n][m] &lt;&lt; endl; return 0; }   </div><div class="post-footer">
+        <a href="/2017-11-30-11057/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2017-11-30-11727/">[백준]11727 2xN 타일링2</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-11-30">2017-11-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11727
 풀이:  a[i] 는 타일이 2xi 일때의 경우의 수 a[i] = (2 * a[i - 2] + a[i - 1] 주어진 조건에서 10007으로 나눈 나머지를 출력하라고 하였으므로 나눠줌.  코드: 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int a[1001] = { 1,3,0 }; int main(void) { int n; cin &gt;&gt; n; for (int i = 2; i &lt; n; i++) { a[i] = (2 * a[i - 2] + a[i - 1])%10007; } cout &lt;&lt; a[n - 1] &lt;&lt; endl; return 0; }   </div><div class="post-footer">
@@ -131,12 +137,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-11-30">2017-11-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/9461
 풀이:  a[i] 는 i 번째 수열 a[i] = a[i-1] + a[i-5]  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; long long a[101] = { 1,1,1,2,2,0 }; int main(void) { int T,n; cin &gt;&gt; T; for (int i = 0; i &lt; T; i++) { cin &gt;&gt; n; for (int t = 5; t &lt; n; t++) { a[t] = a[t - 1] + a[t - 5]; } cout &lt;&lt; a[n - 1] &lt;&lt; endl; } return 0; }   </div><div class="post-footer">
         <a href="/2017-11-30-9461/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2017-11-29-2156/">[백준]2156 포도주 시식</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2017-11-29">2017-11-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2156
-풀이:  b[i][0] 은 i번째를 골랐을 때, i-1번째를 안고른 경우의 수 b[i][1] 은 i번째를 골랐을 때, i-1번째를 고른 경우의 수 b[i][2] 은 i번째를 골랐을 때, i-2번째를 안고른 경우의 수  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main(void) { int n; cin &gt;&gt; n; int a[10001]; for (int i = 0; i &lt; n; i++) { cin &gt;&gt; a[i]; } int b[10001][3] = { a[0],a[0],a[0],a[1],a[0] + a[1],a[1],0 }; int temp; for (int i = 2; i &lt; n; i++) { for (int t = 0; t &lt; 3; t++) { if (t == 0) { temp = max(b[i - 2][0], b[i - 2][1]); b[i][t] = max(temp, b[i - 2][2]) + a[i]; } if (t == 1) b[i][t] = max(b[i - 1][0], b[i - 1][2]) + a[i]; if (t == 2) b[i][t] = b[i - 3][1] + a[i]; } } temp = max(b[n - 1][0], b[n - 2][1]); temp = max(temp, b[n - 1][1]); cout &lt;&lt; max(temp, b[n - 1][2]) &lt;&lt; endl; return 0; }   </div><div class="post-footer">
-        <a href="/2017-11-29-2156/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
@@ -168,7 +168,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/76/">76</a>
+                        <a href="/page/77/">77</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
