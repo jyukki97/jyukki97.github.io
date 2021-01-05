@@ -1,11 +1,11 @@
-# [백준]17269 이름궁합 테스트
+# [백준]17271 리그 오브 레전설 (Small)
 
 
-https://www.acmicpc.net/problem/17269
+https://www.acmicpc.net/problem/17271
 
 # 풀이:
 
-[[백준\]2624]: https://jyukki97.github.io/2018-01-11-2624/	"[백준\]2624 참고"
+[[백준\]2624 동전 바꿔주기](https://jyukki97.github.io/2018-01-11-2624/) 참고
 
 
 
