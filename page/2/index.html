@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2020-12-29T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-01-01T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,45 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-12-27-17263/">[백준]17263 Sort 마스터 배지훈</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-27">2020-12-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17263
+풀이: 받아온 수 중 가장 큰 수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-12-27-17263/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-12-26-14614/">[백준]14614 Calculate!</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-26">2020-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14614
+풀이: C가 짝수라면 A를
+C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int main() { int a, b; string c; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((int)(c[c.size() - 1] - &#39;0&#39;) % 2) a ^= b; cout &lt;&lt; a &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-12-26-14614/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-12-25-14612/">[백준]14612 김식당</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-25">2020-12-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14612
+풀이: order를 &lt;주문시간, 테이블번호&gt; 를 변수로 하는 vector에 차곡차곡 쌓는다.
+각 주문이 끝난 후 vector의 들어있는 테이블 번호를 순서대로 출력한다.
+만약 sort가 들어왔다면, 주문시간을 기준으로 vector를 정렬한다
+만약 complete가 들어왔다면, 완성된 테이블 번호를 vector에서 제거한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int main() { int n, m, a, b, i; vector&lt;pair&lt;int, int&gt;&gt; v; cin &gt;&gt; n &gt;&gt; m; while (n--) { string s; cin &gt;&gt; s; if (s == &#34;order&#34;) { cin &gt;&gt; a &gt;&gt; b; v.</div><div class="post-footer">
+        <a href="/2020-12-25-14612/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-12-24-12778/">[백준]12778 CTP공국으로 이민 가자</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-24">2020-12-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/12778
+풀이: 만약 C라면,
+문자열을 숫자로 출력한다.
+만약 N이라면,
+숫자를 문자열로 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt;using namespace std; int main() { int a, i, n; char b; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a &gt;&gt; b; if (b == &#39;C&#39;) { for (i = 0; i &lt; a; i++) { char c; cin &gt;&gt; c; cout &lt;&lt; (int)(c - &#39;A&#39; + 1) &lt;&lt; &#34; &#34;; } } else { for (i = 0; i &lt; a; i++) { int c; cin &gt;&gt; c; cout &lt;&lt; (char)(&#39;A&#39; + c - 1) &lt;&lt; &#34; &#34;; } } cout &lt;&lt; endl; } }   </div><div class="post-footer">
+        <a href="/2020-12-24-12778/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-12-24-12779/">[백준]12779 상품 is 뭔들</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-24">2020-12-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/12779
 풀이: 약수의 갯수가 홀수라는 것은 &ldquo;제곱수&rdquo; 라는 것을 의미한다.
@@ -120,61 +159,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int main() { string s, a; int c = 0; cin &gt;&gt; s &gt;&gt; a; for (int i = 0; i &lt;= s.length() - a.length(); i++) { if (s.substr(i, a.length()) == a) c++; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2020-12-24-12780/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-27-1388/">[백준]1388 바닥 장식</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-27">2020-04-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1388
-풀이: 같은 행에 연속된 &lsquo;-&rsquo; 이 몇 쌍이 있는지 센다.
-같은 방식으로
-같은 열에 연속된 &lsquo;|&rsquo; 이 몇 쌍이 있는지 센다.
-두 수를 더하여 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c; string s[105]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; s[i]; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; m; t++) { if (s[i][t] == &#39;-&#39;)if (t == m - 1 || s[i][t + 1] == &#39;|&#39;)c++; if (s[i][t] == &#39;|&#39;)if (i == n - 1 || s[i + 1][t] == &#39;-&#39;)c++; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-04-27-1388/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%8C%8C%EC%8B%B1/">파싱</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-26-1356/">[백준]1356 유진수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-26">2020-04-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1356
-풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
-1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
-.
-.
-.
-1의 자릿수*&hellip;*n-1자릿수 == n 자릿수
-중 앞의 값과 뒤의 값이 같은 것이 하나라도 있다면, YES를
-하나도 없다면 NO를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.</div><div class="post-footer">
-        <a href="/2020-04-26-1356/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-25-1268/">[백준]1268 임시 반장 정하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-25">2020-04-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1268
-풀이: 현재 상태에서 제일 많은 학생수를 S, 그 학생수를 가진 학생을 C라고 하자.
-1번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
-그 값이 S보다 많다면 S를 교체하고 C에 1을 저장한다.
-.
-.
-.
-n번 학생이 몇 명의 학생과 같은 반을 했었는지를 저장하고,
-그 값이 S보다 많다면 S를 교체하고 C에 n을 저장한다.
-전체를 다 탐색 한 후 C를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t, y, d, s, c, a[1005][5], b[1005][1005]; int main() { cin &gt;&gt; n; for (; i &lt; n; i++) for (t = 0; t &lt; 5; t++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, d = 0) { for (t = 0; t &lt; 5; t++) for (y = 0; y &lt; n; y++) if (a[i][t] == a[y][t])d += !</div><div class="post-footer">
-        <a href="/2020-04-25-1268/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-24-1236/">[백준]1236 성 지키기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-24">2020-04-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1236
-풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
-경비병이 없는 행의 갯수를 Sn이라고 하자.
-각 열에 경비병이 있는지 없는지 탐색한다.
-경비병이 없는 열의 갯수를 Sm이라고 하자.
-각 행과 열에는 경비병이 1명씩은 있어야 하므로
-Sn과 Sm 중 최댓값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!</div><div class="post-footer">
-        <a href="/2020-04-24-1236/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%83%90%EC%83%89/">탐색</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -200,7 +184,7 @@ Sn과 Sm 중 최댓값을 출력한다.
                 </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.78.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2017 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

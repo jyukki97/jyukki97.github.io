@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>조합 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%EC%A1%B0%ED%95%A9/</link>
+        <description>조합 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 31 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%A1%B0%ED%95%A9/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]17268 미팅의 저주</title>
+    <link>https://jyukki97.github.io/2020-12-31-17268/</link>
+    <pubDate>Thu, 31 Dec 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2020-12-31-17268/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/17268
+풀이: n = 2 &hellip;. 1
+n = 4 &hellip;. 2
+n = 6 &hellip;. 5
+n = 8 &hellip;. 14
+.
+.
+.
+1, 2, 5, 14 &hellip; 로 진행되는 수열인 카탈란 수 이다.
+카탈란 수는 $$ C_i = {2i \choose i} - {2i \choose i + 1} $$ 이다.
+이를 점화식으로 표현하면 $$ C_n = \sum_{i=0}^{n-1}C_iC_{n-1-i} $$ 이 된다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; long long dp[5005] = { 1 }, n, i, t; int main() { cin &gt;&gt; n; for (i = 1; i &lt;= n / 2; i++) { for (t = 0; t &lt; i; t++) { dp[i] = (dp[i] + dp[t] * dp[i - 1 - t]) % 987654321; } } cout &lt;&lt; dp[n / 2] &lt;&lt; endl; }   ]]></description>
+</item></channel>
+</rss>
