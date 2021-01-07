@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-02T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-01-04T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,25 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-01-06-longestpalindrome/">[프로그래머스]가장 긴 팰린드롬</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-06">2020-01-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+문제: 앞뒤를 뒤집어도 똑같은 문자열을 팰린드롬(palindrome)이라고 합니다. 문자열 s가 주어질 때, s의 부분문자열(Substring)중 가장 긴 팰린드롬의 길이를 return 하는 solution 함수를 완성해 주세요.
+예를들면, 문자열 s가 abcdcba이면 7을 return하고 abacde이면 3을 return합니다.
+풀이: Manacher&rsquo;s algorithm 을 이용한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  #include &lt;iostream&gt;#include &lt;string&gt;#include &lt;algorithm&gt;using namespace std; int p[5002]; int solution(string s) { string a = &#34;#&#34;; for (char i : s) { a += i; a += &#34;#&#34;; } int m = 0, ed = 0, answer = 0; for (int i = 1; i &lt; a.</div><div class="post-footer">
+        <a href="/2020-01-06-longestpalindrome/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-01-05-waytoschool/">[프로그래머스]등굣길</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-05">2020-01-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+문제: 계속되는 폭우로 일부 지역이 물에 잠겼습니다. 물에 잠기지 않은 지역을 통해 학교를 가려고 합니다. 집에서 학교까지 가는 길은 m x n 크기의 격자모양으로 나타낼 수 있습니다.
+아래 그림은 m = 4, n = 3 인 경우입니다.
+가장 왼쪽 위, 즉 집이 있는 곳의 좌표는 (1, 1)로 나타내고 가장 오른쪽 아래, 즉 학교가 있는 곳의 좌표는 (m, n)으로 나타냅니다.
+격자의 크기 m, n과 물이 잠긴 지역의 좌표를 담은 2차원 배열 puddles이 매개변수로 주어집니다.</div><div class="post-footer">
+        <a href="/2020-01-05-waytoschool/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-01-04-priorityqueue/">[프로그래머스]이중우선순위큐</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-04">2020-01-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
 문제: 이중 우선순위 큐는 다음 연산을 할 수 있는 자료구조를 말합니다.
@@ -133,21 +152,6 @@
 컴퓨터의 개수 n, 연결에 대한 정보가 담긴 2차원 배열 computers가 매개변수로 주어질 때, 네트워크의 개수를 return 하도록 solution 함수를 작성하시오.</div><div class="post-footer">
         <a href="/2020-01-03-network/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-01-03-secretmap/">[프로그래머스]비밀지도</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-03">2020-01-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-문제: 비밀지도 네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.
- 지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 공백(&quot; ) 또는벽(#&quot;) 두 종류로 이루어져 있다. 전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 지도 1과 지도 2라고 하자. 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다.</div><div class="post-footer">
-        <a href="/2020-01-03-secretmap/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-01-03-failurelate/">[프로그래머스]실패율</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-03">2020-01-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-문제: 실패율 슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다. 그녀가 만든 프랜즈 오천성이 대성공을 거뒀지만, 요즘 신규 사용자의 수가 급감한 것이다. 원인은 신규 사용자와 기존 사용자 사이에 스테이지 차이가 너무 큰 것이 문제였다.
-이 문제를 어떻게 할까 고민 한 그녀는 동적으로 게임 시간을 늘려서 난이도를 조절하기로 했다. 역시 슈퍼 개발자라 대부분의 로직은 쉽게 구현했지만, 실패율을 구하는 부분에서 위기에 빠지고 말았다. 오렐리를 위해 실패율을 구하는 코드를 완성하라.
- 실패율은 다음과 같이 정의한다.</div><div class="post-footer">
-        <a href="/2020-01-03-failurelate/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -178,7 +182,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/77/">77</a>
+                        <a href="/page/78/">78</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
