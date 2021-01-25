@@ -103,6 +103,18 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-24-15989/">[백준]15989 1, 2, 3 더하기 4</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/15989
+풀이: a[n][0] : 3을 포함하지 않고, 2를 1개 이상 포함한 n 을 만드는 경우의 수
+a[n][1] : 3을 1개 이상 포함한 n을 만드는 경우의 수
+a[n][0] = a[n - 2][0] + 1
+-&gt; 2를 1개 이상 포함하여 n - 2 를 만드는 경우의 수에 2를 하나씩 더 붙힌 것
++ 1로만 이루어진 수에 2를 하나 붙힌 것)
+a[n][1] = a[n - 3][1] + a[n - 3][0] + 1
+-&gt; 3을 3개 이상 포함하여 n - 3 을 만드는 경우의 수에 3을 하나씩 붙힌 것</div><div class="post-footer">
+        <a href="/2020-03-24-15989/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-24-16673/">[백준]16673 고려대학교에는 공식 와인이 있다</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/16673
 풀이: ΣKn + ΣPn^2 (1 ~ C)
@@ -143,16 +155,6 @@ n(n+1)(3K+P(2n+1))/6
 코드: 사용언어 : c
 1 2 3 4  main(n,m){ scanf(&#34;%d%d&#34;,&amp;n,&amp;m); printf(&#34;%f&#34;,2*(n+m*3.141592)); }   </div><div class="post-footer">
         <a href="/2020-03-23-16486/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-17176/">[백준]17176 암호해독기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17176
-풀이: 암호의 쓰인 알파벳들을 저장한다.
-평문을 살펴보며 암호에 쓰였는지 확인한다.
-암호의 없는 알파벳이 나온다면, n을 아니라면 y를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, m, b, i, s, a[53]; int main() { cin &gt;&gt; n; for (i = 0; i &lt;= n; i++) { cin &gt;&gt; m; a[m]++; } for (i = 0; i &lt; n; i++) { s = getchar(); s -= s &gt; 96 ?</div><div class="post-footer">
-        <a href="/2020-03-23-17176/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

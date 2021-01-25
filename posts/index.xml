@@ -4,6 +4,13 @@
         <link>https://jyukki97.github.io/posts/</link>
         <description>All Posts | JYUKKI&#39;s BLOG</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Jan 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter_sample_note_1</title>
+    <link>https://jyukki97.github.io/flutter_sample_note_1/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_sample_note_1/</guid>
+    <description><![CDATA[Flutter Practice 1. Flutter_sample_note_1 ● 용도 - 노트 ● Flutter 사용 ● Git위치 - Flutter_sample_note_1 ]]></description>
+</item><item>
     <title>[백준]12787 지금 밥이 문제냐</title>
     <link>https://jyukki97.github.io/2021-01-04-12787/</link>
     <pubDate>Mon, 04 Jan 2021 00:00:00 &#43;0000</pubDate>
@@ -119,16 +126,5 @@ score값은 음수가 될 수 없으므로 주의하자!!!
 풀이: 받아온 수 중 가장 큰 수를 출력한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
-</item><item>
-    <title>[백준]14614 Calculate!</title>
-    <link>https://jyukki97.github.io/2020-12-26-14614/</link>
-    <pubDate>Sat, 26 Dec 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-12-26-14614/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/14614
-풀이: C가 짝수라면 A를
-C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int main() { int a, b; string c; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((int)(c[c.size() - 1] - &#39;0&#39;) % 2) a ^= b; cout &lt;&lt; a &lt;&lt; endl; }   ]]></description>
 </item></channel>
 </rss>

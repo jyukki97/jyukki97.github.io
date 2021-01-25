@@ -103,6 +103,16 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-23-nqueen/">[프로그래머스]N-Queen</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-23">2020-02-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+문제: 가로, 세로 길이가 n인 정사각형으로된 체스판이 있습니다. 체스판 위의 n개의 퀸이 서로를 공격할 수 없도록 배치하고 싶습니다.
+예를 들어서 n이 4인경우 다음과 같이 퀸을 배치하면 n개의 퀸은 서로를 한번에 공격 할 수 없습니다.
+체스판의 가로 세로의 세로의 길이 n이 매개변수로 주어질 때, n개의 퀸이 조건에 만족 하도록 배치할 수 있는 방법의 수를 return하는 solution함수를 완성해주세요.
+풀이: 첫번째 줄부터 n번째 줄까지 퀸을 하나 씩 놓을 수 있다.
+i번째 줄에 0 ~ n까지 퀸을 놓는다고 할 때,</div><div class="post-footer">
+        <a href="/2020-02-23-nqueen/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-22-1181/">[백준]1181 단어 정렬</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-22">2020-02-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1181
 풀이: 배열에 들어있는 string을 길이 순서로 정렬 후
@@ -148,14 +158,6 @@ n의 자릿수 * 9를 뺀 수부터 시작하는 이유는 생성자가 n + (n�
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int main() { int n, m, ma = 0; cin &gt;&gt; n &gt;&gt; m; vector&lt;int&gt; a(n, 0); for (int i = 0; i &lt; n; i++) cin &gt;&gt; a[i]; for (int i = 0; i &lt; n - 2; i++) for (int t = i + 1; t &lt; n - 1; t++) for (int y = t + 1; y &lt; n; y++) if (a[i] + a[t] + a[y] &lt;= m) ma = max(ma, a[i] + a[t] + a[y]); cout &lt;&lt; ma &lt;&lt; endl; return 0; }   </div><div class="post-footer">
         <a href="/2020-02-19-2798/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-18-11729/">[백준]11729 하노이 탑 이동 순서</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-18">2020-02-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11729
-풀이: https://jyukki97.github.io/blog/2020-02-18-towerofhanoi/ 를 참고
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;using namespace std; void h(int n, int a, int b, int c) { if (!n) return; else { h(n - 1, a, c, b); printf(&#34;%d %d\n&#34;, a, b); h(n - 1, c, b, a); } } int main() { int n, a = 1; cin &gt;&gt; n; for (int i = 0; i &lt; n; i++) a *= 2; cout &lt;&lt; a - 1 &lt;&lt; endl; h(n, 1, 3, 2); return 0; }   </div><div class="post-footer">
-        <a href="/2020-02-18-11729/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B6%84%ED%95%A0-%EC%A0%95%EB%B3%B5/">분할 정복</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

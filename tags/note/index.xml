@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>note - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/note/</link>
+        <description>note - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://jyukki97.github.io/tags/note/" rel="self" type="application/rss+xml" /><item>
+    <title>Flutter_sample_note_1</title>
+    <link>https://jyukki97.github.io/flutter_sample_note_1/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_sample_note_1/</guid>
+    <description><![CDATA[Flutter Practice 1. Flutter_sample_note_1 ● 용도 - 노트 ● Flutter 사용 ● Git위치 - Flutter_sample_note_1 ]]></description>
+</item></channel>
+</rss>

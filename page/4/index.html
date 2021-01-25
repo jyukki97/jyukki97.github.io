@@ -103,6 +103,19 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-24-1236/">[백준]1236 성 지키기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-24">2020-04-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1236
+풀이: 각 행에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 행의 갯수를 Sn이라고 하자.
+각 열에 경비병이 있는지 없는지 탐색한다.
+경비병이 없는 열의 갯수를 Sm이라고 하자.
+각 행과 열에는 경비병이 1명씩은 있어야 하므로
+Sn과 Sm 중 최댓값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[55], b[55], q, w; char c; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++) for (t = 0; t &lt; m; t++) { cin &gt;&gt; c; if (c == &#39;X&#39;)	q+=!</div><div class="post-footer">
+        <a href="/2020-04-24-1236/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%83%90%EC%83%89/">탐색</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-04-23-17265/">[백준]17265 나의 인생에는 수학과 함께</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-23">2020-04-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17265
 풀이: 최단 거리이므로 오른쪽과 아래쪽으로만 이동한다.
@@ -165,18 +178,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main() { string a, b, c, d; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int m = max(a.</div><div class="post-footer">
         <a href="/2020-04-19-11382/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-18-3056/">[백준]3056 007</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-18">2020-04-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/3056
-풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
-비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
-비트마스크가 1, 10, 100, 1000 &hellip;.. 등 1의 갯수가 1개인 것은 첫 번째 지미 본드가 수행한다고 한다.
-비트마스크가 11, 110, 1100, 11000 &hellip;.. 등 1의 갯수가 2개인 것은 두 번째 지미 본드가 수행한다고 한다.
-&hellip;.
-비트마스크를 0 ~ (1 &laquo; n) 까지 순회한다.
-현재의 비트마스크를 i 라고 하자, 그 비트의 중간에 0이 들어있다면, 그 위치에 1을 넣는다.</div><div class="post-footer">
-        <a href="/2020-04-18-3056/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a>,&nbsp;<a href="/tags/mcmf/">MCMF</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-13-10799/">[백준]10799 쇠막대기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-13">2020-03-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10799
+풀이: [프로그래머스]쇠막대기 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;#include &lt;stack&gt;using namespace std; int n, i, b = 0; stack&lt;char&gt; a;	string s; int main() { cin &gt;&gt; s; for (i = 0; i &lt; s.size() - 1; i++) if (s[i] == &#39;(&#39;) if (s[i + 1] == &#39;)&#39;)	b += a.size(), i++; else a.push(s[i]); else	a.</div><div class="post-footer">
+        <a href="/2020-03-13-10799/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%8A%A4%ED%83%9D/">스택</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-13-11403/">[백준]11403 경로 찾기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-13">2020-03-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11403
 풀이: [C++]플로이드-와샬 알고리즘(Floyd-Warshall Algorithm) 참고
@@ -157,22 +165,6 @@ S - T = 100 이라면
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[9], i, t, s = 0; int main() { for (i = 0; i &lt; 9; i++) { cin &gt;&gt; a[i]; s += a[i]; } sort(a, a + 9); for (i = 0; i &lt; 9; i++) { for (t = i + 1; t &lt; 9; t++)	if (s - a[i] - a[t] == 100)	break; if (s - a[i] - a[t] == 100)	break; } for (s = 0; s &lt; 9; s++)	if (s !</div><div class="post-footer">
         <a href="/2020-03-12-2309/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-12-2442/">[백준]2442 별 찍기 - 5</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-12">2020-03-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2442
-풀이: 1 번째 줄부터 차례대로
-1개
-3개
-5개
-.
-.
-.
-i * 2 - 1 개
-의 별을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, i, t; int main() { cin &gt;&gt; n; for (i = 1; i &lt;= n; i++) { for (t = 0; t &lt; n - i; t++)	cout &lt;&lt; &#34; &#34;; for (t = 0; t &lt; 2 * i - 1; t++) cout &lt;&lt; &#34;*&#34;; cout &lt;&lt; endl; } }   </div><div class="post-footer">
-        <a href="/2020-03-12-2442/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B3%84%EC%B0%8D%EA%B8%B0/">별찍기</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

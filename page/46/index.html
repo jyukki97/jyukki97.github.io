@@ -103,6 +103,15 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-01-02-distinguishstring/">[C&#43;&#43;]대소문자, 숫자 구분함수 </a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-02">2020-01-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">숫자판단, 문자판단, 대소문자 판단 ( isalpha, isupper, islower, isdigit, toupper, tolower )
+isalpha - 알파벳 문자 판별 1  int isalpha(int c);   c가 알파벳 문자인지 아닌지 판별해준다. int형인 이유는 아스키코드를 판별하기 떄문!!
+단, 사용 할 때 알파벳을 직접 넣어줘도 된다.
+1 2 3  int isalpha(97); int isalpha(&#39;a&#39;);   밑에 &lsquo;a&rsquo; 가 아스키코드로 97이므로 결국 두 문장은 같은 문장이다.
+return은 타입이 int형 이기에 알파벳이 아니라면 0 을 알파벳이라면 0이아닌 정수를 리턴한다.</div><div class="post-footer">
+        <a href="/2020-01-02-distinguishstring/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-01-02-jadencasestring/">[프로그래머스]JadenCase 문자열 만들기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-02">2020-01-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
 문제: JadenCase란 모든 단어의 첫 문자가 대문자이고, 그 외의 알파벳은 소문자인 문자열입니다. 문자열 s가 주어졌을 때, s를 JadenCase로 바꾼 문자열을 리턴하는 함수, solution을 완성해주세요.
@@ -146,13 +155,6 @@ a * a 이 n 과 다르다면 n은 제곱근이 아니므로 -1 을 리턴, 같�
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; string solution(int num) { return num % 2 ? &#34;Odd&#34; : &#34;Even&#34;; }   </div><div class="post-footer">
         <a href="/2020-01-02-oddandeven/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-01-02-collatzconjecture/">[프로그래머스]콜라츠 추측</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-02">2020-01-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-문제: 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
-1 2 3  1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다.   예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다. 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.</div><div class="post-footer">
-        <a href="/2020-01-02-collatzconjecture/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

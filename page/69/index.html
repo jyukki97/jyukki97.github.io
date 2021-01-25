@@ -103,6 +103,11 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-03-16-1072/">1072 게임</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1072
+풀이:  게임횟수 : x, 이긴게임 : y, 더해야하는 판수 a 100 * y/x + 1 = 100 * y+a/x+a 100 * y/x + 1 = c 로 놓고 c = 100 * y+a/x+a cx + ca = 100y + 100a (c - 100)a = 100y - cx a = (100y - cx) / (c - 100) 이렇게 나온 a값을 올림을 하면 더해야하는 판수가 나오게된다.  코드: 사용언어 : c++</div><div class="post-footer">
+        <a href="/2018-03-16-1072/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-01-26-1075/">1075 나누기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1075
 풀이:  3자리 이후를 유지한 후 주어진 F로 나누어 지는 최솟값을 구하는 문제 답이 한자리 수일 경우 앞에 0을 붙이는 것을 주의하자.  코드: 사용언어 : Python 3
@@ -130,11 +135,6 @@
 풀이:  모음의 개수를 출력  코드: 사용언어 : Python 3
 1 2  n=input() print(sum(n.count(i)for i in &#39;aeiou&#39;))   </div><div class="post-footer">
         <a href="/2018-02-04-10987/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2017-12-22-1100/">1100 하얀 칸</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1100
-풀이:  8x8 의 체스칸 중 홀수행 홀수열, 짝수행 짝수열인 곳이 하얀 칸이다. 이 하얀칸 위에 말이 몇개있는지 카운트하여 출력한다.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt; using namespace std; char a[8][8]; int main(void){ int cnt = 0; for(int i=0;i&lt;8;i++){ for(int j=0;j&lt;8;j++) cin &gt;&gt; a[i][j]; } for(int i=0;i&lt;8;i++){ for(int j=0;j&lt;8;j++){ if(((j%2 == 0 &amp;&amp; i%2 == 0) || (j%2 == 1 &amp;&amp; i%2 == 1)) &amp;&amp; a[i][j] == &#39;F&#39;) cnt ++; } } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   </div><div class="post-footer">
-        <a href="/2017-12-22-1100/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-24-dijkstra/">[C&#43;&#43;]다익스트라 알고리즘(Dijkstra Algorithm)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">다익스트라 알고리즘(Dijkstra Algorithm)
+다익스트라 알고리즘(Dijkstra Algorithm) 특정 노드에서부터 모든 노드로 가는 최단 경로를 구하는 알고리즘. 가중치가 음수인 간선이 없는 경우에만 사용할 수 있다. 시간복잡도 : O(n + mlog m) (n : 노드의 개수, m : 간선의 갯수) 코드 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  for (i = 0; i &lt;= V; i++) d.push_back(INF); d[k] = 0; p.push({ 0, k }); while (!</div><div class="post-footer">
+        <a href="/2020-02-24-dijkstra/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C/">최단 경로</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-24-11054/">[백준]11054 가장 긴 바이토닉 부분 수열</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11054
 풀이: b[i] = i 위치 왼쪽에 있는 값들 중 m[i] 보다 작은 수들의 최대 갯수
@@ -158,17 +164,6 @@ ex) 45 + 55 - 65 + 45 - 67 + 67
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;string&gt;using namespace std; int main() { string s; vector&lt;int&gt; a; int n = 0; cin &gt;&gt; s; a.</div><div class="post-footer">
         <a href="/2020-02-24-1541/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-24-1676/">[백준]1676 팩도리얼 0의 개수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1676
-풀이: 뒤에서 0이 나오려면 팩토리얼을 곱할때, 5 가 곱해져야한다.
-즉, 5의 배수가 지나간다면, 팩토리얼의 갯수가 1씩 늘어날 것이다.
-팩토리얼을 만드는 동안 5가 몇번 곱해지는지 계산한다면, 0의 갯수를 구할 수 있다.
-(이 문제는 N의 제한이 500 까지이기 때문에, 팩토리얼을 전체 계산해서 구하기는 힘들다.)
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int main() { int n, m = 0; cin &gt;&gt; n; while (n) { n /= 5; m += n; } cout &lt;&lt; m &lt;&lt; endl; return 0; }   </div><div class="post-footer">
-        <a href="/2020-02-24-1676/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
