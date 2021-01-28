@@ -3,13 +3,20 @@
         <title>All Posts - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/posts/</link>
         <description>All Posts | JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Jan 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Jan 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Flutter_sample_note_1</title>
     <link>https://jyukki97.github.io/flutter_sample_note_1/</link>
     <pubDate>Mon, 25 Jan 2021 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/flutter_sample_note_1/</guid>
     <description><![CDATA[Flutter Practice 1. Flutter_sample_note_1 ● 노트 ● Flutter 사용 ● Git 위치 Flutter_sample_note_1 ]]></description>
+</item><item>
+    <title>Flutter_sample_bookstore</title>
+    <link>https://jyukki97.github.io/flutter_sample_bookstore/</link>
+    <pubDate>Wed, 27 Jan 2021 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_sample_bookstore/</guid>
+    <description><![CDATA[Flutter Practice 2. flutter_sample_bookstore ● 용도 - Book Store ● Flutter 사용 ● Git 위치 Flutter_sample_bookstore ]]></description>
 </item><item>
     <title>[백준]12787 지금 밥이 문제냐</title>
     <link>https://jyukki97.github.io/2021-01-04-12787/</link>
@@ -116,15 +123,5 @@ n = 8 &hellip;. 14
 score값은 음수가 될 수 없으므로 주의하자!!!
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;set&gt;using namespace std; int main() { int n, p, w, l, g, c = 0; set&lt;string&gt; s; string t, h; for (cin &gt;&gt; n &gt;&gt; p &gt;&gt; w &gt;&gt; l &gt;&gt; g; p--;s.]]></description>
-</item><item>
-    <title>[백준]17263 Sort 마스터 배지훈</title>
-    <link>https://jyukki97.github.io/2020-12-27-17263/</link>
-    <pubDate>Sun, 27 Dec 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-12-27-17263/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/17263
-풀이: 받아온 수 중 가장 큰 수를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
 </item></channel>
 </rss>

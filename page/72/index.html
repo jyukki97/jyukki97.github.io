@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-25T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-01-30-1568/">1568 새</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1568
+풀이:  처음 새의 수 n에서 숫자 k를 노래할 때 나중 새의 수 = n - k 노래의 숫자 수를 1씩 증가시켜가며 새의 수보다 많아질 경우 1로 돌아간다. 만약 새의 수가 0이되면 카운트를 출력한다.  코드: 사용언어 : Python 3
+1 2 3 4 5 6 7 8 9 10 11  k=int(input()) cnt,s=0,1 while True: if k==0: break if s&gt;k: s=1 cnt+=1 k-=s s+=1 print(cnt)   </div><div class="post-footer">
+        <a href="/2018-01-30-1568/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-02-05-1629/">1629 곱셈</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1629
 풀이:  a, 19 일 때 a*a^18 a*(a^9)^2 a*(a*(a^4)^2)^2 a*(a*((a^2)^2)^2)^2 이런 식으로 풀면 된다.  코드: pow함수 이용 사용언어 : Python 3
@@ -131,12 +137,6 @@
 풀이:  입력받은 숫자를 N 이라고 할 때 (-1 + (1+8*N)^0.5)/2 에 소수점을 버린 값이 최대 개수이다. n(n+1)/2 &gt;= k n^2+n-2k &gt;= 0 n의 최솟값이다.  코드: 사용언어 : Python 3
 1  print(int((-1+(1+8*int(input()))**.5)/2))   </div><div class="post-footer">
         <a href="/2018-02-04-1789/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-05-1834/">1834 나머지와 몫이 같은 수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1834
-풀이:  나머지와 몫이 같은 수는 N+1에 배수의 형태로 나타난다. 3일때 4,8 , 4일때 5,10,15 등 n+1의 배수가 n-1번 나타난다. 즉 (n+1)Σ(n-1) 이다. (n+1)n(n-1)/2 (n^3-n)/2  코드: 사용언어 : Python 3
-1 2  n=int(input()) print((n**3-n)//2)   </div><div class="post-footer">
-        <a href="/2018-02-05-1834/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

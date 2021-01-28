@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-25T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-02-06-1297/">1297 TV 크기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1297
+풀이:  대각선길이, 높이비율, 너비비율을 각각 a,b,c라고 할 때 a^2 = (bx)^2 + (cx)^2 로 나타낼 수 있다. 이때 x 값이 a/((bb+cc)^0.5) 로 나타내지고 진짜 길이를 각각 bx, cx로 나타낼 수 있다.  코드: 사용언어 : Python 3
+1 2 3  a,b,c=map(int,input().split()) x=a/((b*b+c*c)**.5) print(&#34;%d %d&#34;%(int(b*x),int(c*x)))   </div><div class="post-footer">
+        <a href="/2018-02-06-1297/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-01-31-1302/">1302 베스트셀러</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1302
 풀이:  문자열을 하루 동안 팔린 책의 개수 N만큼 받아드린다. 책 제목이 같을경우 책의 개수를 1씩 증가시킨다. 팔린 책의 개수가 가장 많은 책을 출력한다. 만약 팔린 책의 개수가 같다면 사전순으로 먼저 나오는 것을 출력한다.  코드: 사용언어 : Python 3
@@ -129,12 +135,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/14501
 풀이:  남은일이 N일 일때, M일의 상담을 완료하는데 걸리는 기간을 T(M)라고 가정한다. 1일에 상담을 했다면 할 수 있는 상담은 1+T(1) ~ N 까지가 있다. 1+T(1) 일에 상담을 했다면 할 수 있는 삼담은 1 + T(1) + T(1+T(1) ~ N 까지가 있다. N을 넘지않도록 주의하며 반복한 후 받을 수 있는 금액에 최대를 출력한다.  코드: 사용언어 : c++ {% highlight c++ %} #include  using namespace std; int a, b[16], c[16]; int ts(int q) { int max = 0; for (int i = q; i &lt; a; i++) { int w = c[i] + ts(i + b[i]); if (i + b[i] &gt; a) w = 0; max = max &gt; w ?</div><div class="post-footer">
         <a href="/2019-05-25-14501/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-01-30-1568/">1568 새</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1568
-풀이:  처음 새의 수 n에서 숫자 k를 노래할 때 나중 새의 수 = n - k 노래의 숫자 수를 1씩 증가시켜가며 새의 수보다 많아질 경우 1로 돌아간다. 만약 새의 수가 0이되면 카운트를 출력한다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6 7 8 9 10 11  k=int(input()) cnt,s=0,1 while True: if k==0: break if s&gt;k: s=1 cnt+=1 k-=s s+=1 print(cnt)   </div><div class="post-footer">
-        <a href="/2018-01-30-1568/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

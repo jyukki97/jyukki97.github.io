@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-25T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-01-28-10569/">10569 다면체</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/10569
+풀이:  면의수 = 2 - 꼭짓점의 수 + 모서리의 수  코드: 사용언어 : Python 3
+1 2 3 4  t=int(input()) for i in range(t): v,e=map(int, input().split()) print(2-v+e)   </div><div class="post-footer">
+        <a href="/2018-01-28-10569/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-03-16-1072/">1072 게임</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1072
 풀이:  게임횟수 : x, 이긴게임 : y, 더해야하는 판수 a 100 * y/x + 1 = 100 * y+a/x+a 100 * y/x + 1 = c 로 놓고 c = 100 * y+a/x+a cx + ca = 100y + 100a (c - 100)a = 100y - cx a = (100y - cx) / (c - 100) 이렇게 나온 a값을 올림을 하면 더해야하는 판수가 나오게된다.  코드: 사용언어 : c++</div><div class="post-footer">
@@ -129,12 +135,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1094
 풀이:  자른 막대기 중 주어진 막대기보다 작은 값 중 최댓값을 주어진 막대기에 계속 뺀다. 뺄때마다 카운트를 증가시키면서 반복한다  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; using namespace std; int main(void) { int x, temp = 64, cnt = 0; cin &gt;&gt; x; while (x != 0) { if (x &gt;= temp) { cnt++; x -= temp; } else temp /= 2; } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   </div><div class="post-footer">
         <a href="/2018-01-16-1094/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-04-10987/">10987 모음의 개수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/10987
-풀이:  모음의 개수를 출력  코드: 사용언어 : Python 3
-1 2  n=input() print(sum(n.count(i)for i in &#39;aeiou&#39;))   </div><div class="post-footer">
-        <a href="/2018-02-04-10987/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

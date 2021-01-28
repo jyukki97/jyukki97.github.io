@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-25T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-23-9663/">[백준]9663 N-Queen</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-23">2020-02-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/9663
+풀이: https://jyukki97.github.io/blog/2020-02-23-nqueen/ 을 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  #include &lt;iostream&gt;using namespace std; bool visit[16][16]; int n, sum = 0; bool po(int a, int b) { for (int i = 1; i &lt;= a || i &lt;= b; i++) { if ((a - i &gt;= 0 &amp;&amp; b - i &gt;= 0 &amp;&amp; visit[a - i][b - i]) || (a - i &gt;= 0 &amp;&amp; b + i &lt; n &amp;&amp; visit[a - i][b + i]) || (a - i &gt;= 0 &amp;&amp; visit[a - i][b]))	return false; } return true; } void nq(int a) { for (int i = 0; i &lt; n; i++) { if (po(a, i)) { if (a == n - 1)	sum++; else { visit[a][i] = true; nq(a + 1); visit[a][i] = false; } } } } int main() { cin &gt;&gt; n; nq(0); cout &lt;&lt; sum &lt;&lt; endl; return 0; }   </div><div class="post-footer">
+        <a href="/2020-02-23-9663/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/">백트래킹</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-23-nqueen/">[프로그래머스]N-Queen</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-23">2020-02-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
 문제: 가로, 세로 길이가 n인 정사각형으로된 체스판이 있습니다. 체스판 위의 n개의 퀸이 서로를 공격할 수 없도록 배치하고 싶습니다.
@@ -150,14 +158,6 @@ n의 자릿수 * 9를 뺀 수부터 시작하는 이유는 생성자가 n + (n�
 - 기본적으로 두개 모두 &ldquo;이진 탐색(Binary Serch)&rdquo; 기반의 탐색방법 lower_bound 1  lower_bound(arr, arr + n, key);   - key 값의 가장 낮은 위치를 찾는다. - key 값이 없다면 key 값보다 큰 가장 작은 정수의 위치를 반환한다. - 반환값이 &ldquo;iterator&rdquo; 이다. upper_bound 1  upper_bound(arr, arr + n, key);   - key 값을 초과하는 가장 첫번째 원소의 위치. - 반환값이 &ldquo;iterator&rdquo; 이다. </div><div class="post-footer">
         <a href="/2020-02-19-bound/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/">이분 탐색</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-19-2798/">[백준]2798 블랙잭</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-19">2020-02-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2798
-풀이: 3장을 뽑을 수 있는 모든 경우의 수를 확인하여 3장의 합이 M값을 넘지않는 최댓값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int main() { int n, m, ma = 0; cin &gt;&gt; n &gt;&gt; m; vector&lt;int&gt; a(n, 0); for (int i = 0; i &lt; n; i++) cin &gt;&gt; a[i]; for (int i = 0; i &lt; n - 2; i++) for (int t = i + 1; t &lt; n - 1; t++) for (int y = t + 1; y &lt; n; y++) if (a[i] + a[t] + a[y] &lt;= m) ma = max(ma, a[i] + a[t] + a[y]); cout &lt;&lt; ma &lt;&lt; endl; return 0; }   </div><div class="post-footer">
-        <a href="/2020-02-19-2798/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
