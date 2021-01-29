@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-28T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,15 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-12-26-14614/">[백준]14614 Calculate!</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-26">2020-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14614
+풀이: C가 짝수라면 A를
+C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int main() { int a, b; string c; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((int)(c[c.size() - 1] - &#39;0&#39;) % 2) a ^= b; cout &lt;&lt; a &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-12-26-14614/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-12-25-14612/">[백준]14612 김식당</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-25">2020-12-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14612
 풀이: order를 &lt;주문시간, 테이블번호&gt; 를 변수로 하는 vector에 차곡차곡 쌓는다.
@@ -153,21 +162,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int n, m, i, t, c; string s[105]; int main() { cin &gt;&gt; n &gt;&gt; m; for (; i &lt; n; i++)	cin &gt;&gt; s[i]; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; m; t++) { if (s[i][t] == &#39;-&#39;)if (t == m - 1 || s[i][t + 1] == &#39;|&#39;)c++; if (s[i][t] == &#39;|&#39;)if (i == n - 1 || s[i + 1][t] == &#39;-&#39;)c++; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2020-04-27-1388/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%8C%8C%EC%8B%B1/">파싱</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-26-1356/">[백준]1356 유진수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-26">2020-04-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1356
-풀이: 1의 자릿수 == 10의 자릿수*&hellip;*n자릿수
-1의 자릿수 * 10의 자릿수 == 100의 자릿수 *&hellip;*n자릿수
-.
-.
-.
-1의 자릿수*&hellip;*n-1자릿수 == n 자릿수
-중 앞의 값과 뒤의 값이 같은 것이 하나라도 있다면, YES를
-하나도 없다면 NO를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n = 1, m = 1, i, t, f; string s; int main() { cin &gt;&gt; s; for (i = 1; i &lt; s.</div><div class="post-footer">
-        <a href="/2020-04-26-1356/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

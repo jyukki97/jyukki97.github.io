@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-28T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,18 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-24-14889/">[백준]14889 스타트와 링크</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14889
+풀이: n / 2 명의 스타트 팀과 n / 2 팀의 링크팀을 만든다.
+스타트팀만 만든다면, 자동적으로 남는 사람들은 링크팀이된다.
+구하는 팀에 1은 무조건 들어가도록한다. (1을 포함한 팀을 전부 구한다면, 1을 포함하지 않는 팀은 상대팀에 모두 있기 때문에)
+스타트팀의 모든 Sij 값의 합과 링크팀의 모든 Sij 값의 합의 차이를 구한다.
+구한 차이들 중 가장 작은 값을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m[21][21], mn = 100000, start, link; bool s[21]; void st(int a, int b) { if (a == n / 2) { start = 0; link = 0; for (int i = 0; i &lt; n; i++) if (s[i]) { for (int t = i + 1; t &lt; n; t++) if (s[t]) start += m[i][t] + m[t][i]; } else for (int t = i + 1; t &lt; n; t++) if (!</div><div class="post-footer">
+        <a href="/2020-02-24-14889/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-24-1541/">[백준]1541 잃어버린 괄호</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1541
 풀이: 문자열을 하나씩 확인한다.
@@ -163,14 +175,6 @@ D가 나오면 맨 앞 숫자를 버린다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49  #include &lt;iostream&gt;#include &lt;string.</div><div class="post-footer">
         <a href="/2020-02-24-5430/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%8D%B1/">덱</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-24-9375/">[백준]9375 패션왕 신해빈</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/9375
-풀이: 프로그래머스]위장 을 참고
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;string&gt;#include &lt;map&gt;using namespace std; int main() { int n, m, ma; cin &gt;&gt; n; while (n--) { ma = 1; cin &gt;&gt; m; string s; map&lt;string, int&gt; a; for (int i = 0; i &lt; m; i++) { cin &gt;&gt; s &gt;&gt; s; a[s]++; } for (auto i = a.</div><div class="post-footer">
-        <a href="/2020-02-24-9375/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

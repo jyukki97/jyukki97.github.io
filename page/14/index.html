@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-28T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,16 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-23-5523/">[백준]5523 경기 결과</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5523
+풀이: 각 경기마다 a가 이겼다면 a++ 를
+b가 이겼다면 b++를 해준다.
+모든 경기가 끝난 후 a와 b값을 출력해준다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int n, a = 0, b = 0, x, y; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; x &gt;&gt; y; if (x &gt; y)	a++; if (x &lt; y)	b++; } cout &lt;&lt; a &lt;&lt; &#34; &#34; &lt;&lt; b &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-23-5523/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-22-10422/">[백준]10422 괄호</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10422
 풀이: C1=C0C0
@@ -156,14 +166,6 @@ cin, cout 은 시간초과가 나므로 주의 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;math.h&gt;using namespace std; #define ll long long ll n, m, a, b; vector&lt;ll&gt; T, Y; void update(int node, int idx, ll val, int x, int y) { if (idx &lt; x || idx &gt; y) return; T[node] = T[node] &gt; val ?</div><div class="post-footer">
         <a href="/2020-03-22-2357/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/">세그먼트 트리</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-21-10807/">[백준]10807 개수 세기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-21">2020-03-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10807
-풀이: 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.
-코드: 사용언어 : c
-1 2 3 4 5 6 7 8 9 10  n,m,a[202]; main(){ scanf(&#34;%d&#34;,&amp;n); while(n--){ scanf(&#34;%d&#34;,&amp;m); a[m+100]++; } scanf(&#34;%d&#34;,&amp;n); printf(&#34;%d\n&#34;,a[n+100]); }   </div><div class="post-footer">
-        <a href="/2020-03-21-10807/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

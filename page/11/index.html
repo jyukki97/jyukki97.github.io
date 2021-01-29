@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-01-27T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-01-28T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-25-10995/">[백준]10995 별 찍기 - 20</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10995
+풀이: 주어진 규칙대로 별을 찍는다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int n, i, t; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) { for (t = 0; t &lt; n; t++) printf(&#34;%s&#34;, i % 2 ? &#34; *&#34; : &#34;* &#34;); printf(&#34;\n&#34;); } }   </div><div class="post-footer">
+        <a href="/2020-03-25-10995/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-25-1259/">[백준]1259 팰린드롬수</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1259
 풀이: 팰린드롬 이라면 yes 를 아니라면 no를 출력한다.
@@ -145,14 +153,6 @@ a, b 중 더 높은 값을 방학일에서 뺀다면, 놀 수 있는 날의 최�
 코드: 사용언어 : c
 1 2 3 4 5  main(n,a,b,c,d){ scanf(&#34;%d%d%d%d%d&#34;,&amp;n,&amp;a,&amp;b,&amp;c,&amp;d); a=a/c+(a%c?1:0),b=b/d+(b%d?1:0); printf(&#34;%d&#34;,n-(a&lt;b?b:a)); }   </div><div class="post-footer">
         <a href="/2020-03-25-5532/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-24-13699/">[백준]13699 점화식</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/13699
-풀이:  t(0) = 1 t(1) = t(0)*t(0) = 1 t(2) = t(0)*t(1)+t(1)*t(0) = 2 t(3) = t(0)*t(2)+t(1)*t(1)+t(2)*t(0) = 5  주어진 점화식 그대로 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; long long n, t, i = 1, a[36] = { 1 }; int main() { cin &gt;&gt; n; for (; i &lt;= n; i++)	for (t = 0; t &lt; i; t++)	a[i] += a[i - t - 1] * a[t]; cout &lt;&lt; a[n] &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-24-13699/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
