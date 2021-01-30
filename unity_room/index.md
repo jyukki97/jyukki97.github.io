@@ -35,6 +35,6 @@
 
 ### ● apk 파일
 
-[malive.apk](./malive.apk)
+[malive.apk](https://github.com/jyukki97/jyukki97.github.io/releases/download/malive0.1/malive.apk)
 
 
