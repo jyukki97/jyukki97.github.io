@@ -103,6 +103,17 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-20-2231/">[백준]2231 분해합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-20">2020-02-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2231
+풀이: n - (n의 자릿수 * 9) ~ n 까지의 수 중 n의 생성자를 찾아 출력한다.
+없다면 0을 출력
+n의 자릿수 * 9를 뺀 수부터 시작하는 이유는 생성자가 n + (n의 각 자릿수의 합) 이므로
+각 자릿수의 최댓값인 9를 자릿수 만큼 곱한 후 n에서 빼준 값이 생성자의 최소 조건이 된다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int c(int a) { int n = a; while (a) { n += a % 10; a /= 10; } return n; } int main() { string m; bool b = true; cin &gt;&gt; m; int n = stoi(m), a = n - 9 * m.</div><div class="post-footer">
+        <a href="/2020-02-20-2231/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-19-bound/">[C&#43;&#43;]lower_bound, upper_bound</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-19">2020-02-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">lower_bound, upper_bound
 - 기본적으로 두개 모두 &ldquo;이진 탐색(Binary Serch)&rdquo; 기반의 탐색방법 lower_bound 1  lower_bound(arr, arr + n, key);   - key 값의 가장 낮은 위치를 찾는다. - key 값이 없다면 key 값보다 큰 가장 작은 정수의 위치를 반환한다. - 반환값이 &ldquo;iterator&rdquo; 이다. upper_bound 1  upper_bound(arr, arr + n, key);   - key 값을 초과하는 가장 첫번째 원소의 위치. - 반환값이 &ldquo;iterator&rdquo; 이다. </div><div class="post-footer">
@@ -139,17 +150,6 @@
 두 개의 단어 begin, target과 단어의 집합 words가 매개변수로 주어질 때, 최소 몇 단계의 과정을 거쳐 begin을 target으로 변환할 수 있는지 return 하도록 solution 함수를 작성해주세요.</div><div class="post-footer">
         <a href="/2020-02-17-wordtranslation/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-16-setpredicate/">[C&#43;&#43;]set predicate</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-16">2020-02-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">set predicate
-set 이라는 컨테이너는 기본적으로 &ldquo;오름차순&rdquo; 으로 정렬된다.
-이를 바꾸기 위해 정렬 기준을 바꿔 주어야한다.
-정렬기준은
-1 2 3 4 5  bool compare(const key_type key_typeA, const key_type key_typeB){ return key_typeA &lt; key_typeB; }   와 같이 bool 형식을 통해 바꿀 수 있다.
-정렬기준을 적용하는 방법은
-1  set&lt;key_type, decltype(&amp;compare)&gt; a(&amp;compare)   과 같이 하면된다.</div><div class="post-footer">
-        <a href="/2020-02-16-setpredicate/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/set/">set</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

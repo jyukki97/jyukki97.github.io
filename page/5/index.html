@@ -103,6 +103,20 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-21-2089/">[백준]2089 -2진수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-21">2020-04-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2089
+풀이: 2진수를 구하듯이 구한다.
+-2	13
+​	-6	&hellip;	1
+​	3	&hellip;	0
+​	-1	&hellip;	1
+​	1	&hellip;	1
+13 = 11101(-2)
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; int n; void G(int x) { if (!x)	return; G(x % -2 &lt; 0 ? (x / -2) + 1 : x / -2); if (x % -2 &lt; 0) cout &lt;&lt; -1 * (x % -2); else cout &lt;&lt; x % -2; } int main() { cin &gt;&gt; n; G(n); if (!</div><div class="post-footer">
+        <a href="/2020-04-21-2089/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-04-20-16637/">[백준]16637 괄호 추가하기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-20">2020-04-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/16637
 풀이: 순서대로 사칙연산을 진행한다.
@@ -163,17 +177,6 @@ p값이 0이라면 발전소를 킬 필요가 없으므로 0을 출력</div><div
 만약 갈 수 있는 곳이 열쇠(소문자) 라면, 얻은 열쇠를 key값에 적용시켜준다.
 출구(&lsquo;1&rsquo;) 를 만난다면 반복을 중단한다.</div><div class="post-footer">
         <a href="/2020-04-16-1194/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-15-1525/">[백준]1525 퍼즐</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-15">2020-04-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1525
-풀이:    0 1 2     3 4 5   6 7 8    이렇게 퍼즐이 배열되어 있다고 가정하자.
-우리는 이것을 012345678 -&gt; int형으로 바꿔 생각하도록 하자.
-이 때, 0이 맨 앞에 나올 경우 무시되므로 0 -&gt; 9 로 바꿔서
-912345678 로 나타내도록 하자.
-우리가 찾아야 하는 퍼즐의 상태는 123456789 이다.
-주어진 퍼즐에서 9를 오른쪽, 왼쪽, 위, 아래 로 옮기면서, 123456789가 되는 지점 까지 BFS를 돌린다.</div><div class="post-footer">
-        <a href="/2020-04-15-1525/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

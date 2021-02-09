@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-25-1992/">[백준]1992 쿼드트리</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-25">2020-02-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1992
+풀이: [백준]2630 색종이 만들기 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int n; string s, c[65]; void se(int x, int y, int a) { if (x &gt;= n || y &gt;= n || !</div><div class="post-footer">
+        <a href="/2020-02-25-1992/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B6%84%ED%95%A0-%EC%A0%95%EB%B3%B5/">분할 정복</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-02-25-2630/">[백준]2630 색종이 만들기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-25">2020-02-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2630
 풀이: n을 2로 나누어 가며 1로 이루어진 곳인지 0으로 이루어진 곳인지 판단한다.
@@ -151,17 +159,6 @@ DP[i + w] = max(DP[i + w], DP[i] + v)
 ex) 무게가 4이고, 가치가 5일때, DP[4] = 5 가 되지만, DP[8] = DP[4] + 5 가 되어 10이 되는 불상사가 일어날 수 있기 때문에, 두개로 나누어 놓앗다.</div><div class="post-footer">
         <a href="/2020-02-24-12865/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-24-14888/">[백준]14888 연산자 끼워넣기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-24">2020-02-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14888
-풀이: 각 숫자를 순서대로 배열에 넣어놓는다.
-+, -, *, / 를 갯수만큼 각 숫자사이의 끼워넣어 식을 만든다.
-만들 식의 값들을 배열에 저장해놓는다.
-배열에 들어있는 수 중 최댓값, 최솟값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int n, num[101], op[4]; vector&lt;int&gt; sumn; void o(int a, int b) { if (a == n - 1) { sumn.</div><div class="post-footer">
-        <a href="/2020-02-24-14888/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

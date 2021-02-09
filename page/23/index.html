@@ -103,6 +103,15 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-12-11724/">[백준]11724 연결 요소의 개수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-12">2020-03-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11724
+풀이: 방문하지 않은 정점과 연결된 모든 정점을 방문표시하고, 요소의 개수를 +1 해준다.
+더이상 방문할 정점이 없을때까지 반복한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int n, m, i, t, c = 0, b[1002]; vector&lt;vector&lt;int&gt;&gt; a; void T(int x) { if (b[x]) return; b[x] = 1; for (int o : a[x])	T(o); } int main() { cin &gt;&gt; n &gt;&gt; m; a.</div><div class="post-footer">
+        <a href="/2020-03-12-11724/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a>,&nbsp;<a href="/tags/dfs/">DFS</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-12-13458/">[백준]13458 시험 감독</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-12">2020-03-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/13458
 풀이: 각 시험장에 총감독관 1명씩이 꼭 들어간다.
@@ -161,18 +170,6 @@ i * 2 - 1 개
 1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a,b,c,d,e; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; e; a = a &lt; b ? a : b; a = a &lt; c ? a : c; d = d &lt; e ?</div><div class="post-footer">
         <a href="/2020-03-12-5543/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-11-1225/">[백준]1225 이상한 곱셈</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-11">2020-03-11</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1225
-풀이: 123 * 45
--&gt; 1*4 + 1*5 + 2*4 + 2*5 + 3*4 + 3*4
--&gt; 1(4 + 5) + 2(4 + 5) + 3(4 + 5)
--&gt; (1 + 2 + 3)(4 + 5)
-즉, (왼쪽 숫자의 각 자릿수의 합) * (오른쪽 숫자의 각 자릿수의 합) 이다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; long long q = 0, w = 0, i; int main() { string a, b; cin &gt;&gt; a &gt;&gt; b; for (i = 0; i &lt; a.</div><div class="post-footer">
-        <a href="/2020-03-11-1225/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

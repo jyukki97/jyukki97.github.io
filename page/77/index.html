@@ -103,6 +103,11 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2017-12-29-3067/">3067 Coins</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/3067
+풀이:  출처의 문제와 같으므로 출처를 참고.  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt; using namespace std; int main(void) { int T, a, num; cin &gt;&gt; T; for (int y = 0; y &lt; T; y++) { int coin[10001] = { 0 }; cin &gt;&gt; a; int *q = new int[a]; for (int i = 0; i &lt; a; i++) cin &gt;&gt; q[i]; cin &gt;&gt; num; for (int i = 0; i &lt;= num; i++) { if (i%q[0] == 0) coin[i]++; } for (int i = 1; i &lt; a; i++) { for (int t = q[i]; t &lt;= num; t++) coin[t] += coin[t - q[i]]; } cout &lt;&lt; coin[num] &lt;&lt; endl; } return 0; }   **출처 : 2293 동전1 ** https://jyukki97.</div><div class="post-footer">
+        <a href="/2017-12-29-3067/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-03-16-3474/">3474 교수가 된 현우</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/3474
 풀이:  오른쪽 끝에있는 0에 갯수를 알기 위해서는 팩토리얼 안에서 10의 갯수가 얼마나 있는지를 알면된다. 이 때 2의 갯수는 매우 많으므로 팩토리얼 내에서 5가 몇번 곱해지는지를 세면 간단하게 알 수 있다. 주어진 수를 5로 나눈 몫이 5의 갯수이다 그러나 25, 125 등 5가 여러번 들어가는 경우도 있으므로 각각으로 나누어준 값을 더해주어야한다.  코드: 사용언어 : Python 3 {% highlight Python %} for i in range(int(input())): a,b,c=int(input()),5,0 while b&lt;=a: c+=a//b b*=5 print(c) {% endhighlight %}</div><div class="post-footer">
@@ -129,12 +134,6 @@
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/9251
 풀이:  dp[a][b]를 1 ~ a번째 까지의 문자열과 1 ~ b 까지의 문자열로 이루어진 최장 공통 부분수열이라고 하자. a번째 문자와 b번째 문자가 같다면, dp[a - 1][b - 1] 에 1을 더해준다. 즉, dp[a][b] = dp[a - 1][b - 1] + 1 이 된다. a번째 문자와 b번째 문자가 다르다면, a번째 문자를 제거한 문자열과 b번째 문자를 제거한 문자열을 비교하여 최댓값을 받는다. 즉, dp[a][b] = max(dp[a - 1][b], dp[a][b - 1]) 이 된다.</div><div class="post-footer">
         <a href="/2019-05-31-9251/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-02-04-9322/">9322 철벽 보안 알고리즘</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/9322
-풀이:  제 1 공개키에 각각에 단어들이 제 2 공개키에 어디에 있는지 확인한다. 제 1 공개키에 첫번째 단어부터 제 2 공개키에서의 위치에 있는 암호키를 출력한다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6  a,b,c=[],[],[] for i in range(int(input())): n=int(input()) a,b,c=input().split(),input().split(),input().split() for t in range(n): print(c[b.index(a[t])],end=&#34; &#34;)   </div><div class="post-footer">
-        <a href="/2018-02-04-9322/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
