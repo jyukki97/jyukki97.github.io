@@ -28,7 +28,7 @@
 
 ### 	● flutter사용
 
-![Screenshot_1612864128](.\Screenshot_1612864128.png)![Screenshot_1612864165](.\Screenshot_1612864165.png)
+<img src="Screenshot_1612864128.png" alt="Screenshot_1612864128" style="zoom: 25%;" />			<img src="Screenshot_1612864165.png" alt="Screenshot_1612864165" style="zoom:25%;" />
 
 ### ● Git 위치
 
