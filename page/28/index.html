@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-02-08T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-06-17T00:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-03-1865/">[백준]1865 웜홀</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-03">2020-03-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1865
+풀이: [C++]벨만-포드 알고리즘(Bellman-Ford Algorithm) 참고
+벨만-포드 알고리즘으로 모든 정점을 순환 한 뒤, 음수 사이클이 있는지 판단 후 있다면, &ldquo;YES&rdquo; 를 없다면 &ldquo;NO&quot;를 출력한다. 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int	T, n, m, k, i, d[502], a1, a2, a3; int main() { cin &gt;&gt; T; while (T--) { bool b = true; cin &gt;&gt; n &gt;&gt; m &gt;&gt; k; vector&lt;pair&lt;pair&lt;int, int&gt;, int&gt;&gt; a; for (i = 0; i &lt; m; i++) { cin &gt;&gt; a1 &gt;&gt; a2 &gt;&gt; a3; a.</div><div class="post-footer">
+        <a href="/2020-03-03-1865/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C/">최단 경로</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-02-11657/">[백준]11657 타임머신</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-02">2020-03-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11657
 풀이: [C++]벨만-포드 알고리즘(Bellman-Ford Algorithm) 참고
@@ -153,14 +161,6 @@ s -&gt; h -&gt; g -&gt; x
 이때까지 방문을 한적이 없고, i와의 거리가 1차이나는 노드를 배열에 저장한 후 visit을 true로 바꿔준다.</div><div class="post-footer">
         <a href="/2020-03-01-furthestnode/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-3/">Level 3</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-29-1697/">[백준]1697 숨바꼭질</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-29">2020-02-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1697
-풀이: 현재 위치를 x라고 할 때, x + 1, x - 1, x * 2 위치를 BFS 를 통해 하나씩 찾아간다.
-동생의 위치와 같아진다면 몇번 이동했는지 출력한다.
-x + 1 은 동생의 위치보다 커질 필요가없으므로 동생의 위치보다 작을때만 이동한다. x * 2 는 동생의 위치 + 1 보다 크다면 (x - 2) * 2 를 하는 것이 이득이므로 제외한다. 현재 위치는 0보다 작아질 수 없으므로 제외한다. 이미 한번 방문한 위치는 다시 방문할 필요없으므로 제외시킨다.</div><div class="post-footer">
-        <a href="/2020-02-29-1697/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

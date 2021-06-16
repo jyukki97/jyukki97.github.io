@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-02-08T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-06-17T00:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,15 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-20-1547/">[백준]1547 공</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-20">2020-03-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1547
+풀이: 주어진 입력에 따라 컵의 위치를 바꾼다.
+입력이 끝난 후 공이 들어있는 컵의 번호를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, x, y, a[4] = { 0,1 }; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; x &gt;&gt; y; swap(a[x], a[y]); } for (int i = 1; i &lt; 4; i++)	if (a[i])	cout &lt;&lt; i &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-20-1547/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-20-2501/">[백준]2501 약수 구하기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-20">2020-03-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2501
 풀이: n의 약수들 중 k번째로 작은 수를 출력한다.
@@ -143,14 +152,6 @@
 1 2 3 4 5 6 7  #include &lt;iostream&gt;using namespace std; int main() { string a, b; cin &gt;&gt; a &gt;&gt; b; printf(&#34;%s\n&#34;, a.size() &lt; b.size() ? &#34;no&#34; : &#34;go&#34;); }   </div><div class="post-footer">
         <a href="/2020-03-19-4999/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-19-5598/">[백준]5598 카이사르 암호</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-19">2020-03-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5598
-풀이: 입력받은 카이사르 단어를 원래 단어로 고친 걸 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; int main() { string s; cin &gt;&gt; s; for (char c : s) printf(&#34;%c&#34;, c &lt; 68 ? c + 23 : c - 3); cout &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-19-5598/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

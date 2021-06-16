@@ -3,19 +3,19 @@
 
 # 유니티를 이용한 가구배치 앱
 
-### ● 제작 인원 
+### 제작 인원 
 
 #### 	- 1명
 
-### ● 제작 기간 
+### 제작 기간 
 
 #### 	- 1 개월
 
-### ● 용도 
+### 용도 
 
 #### 	- 가구 배치
 
-### ● 기능
+### 기능
 
  - #### 가구 이동(그리드 방식, room 밖으로 가구가 나갈 수 없음)
 
@@ -29,11 +29,11 @@
 
 
 
-### 	● unity 사용
+### 	unity 사용
 
 
 
-### ● apk 파일
+### apk 파일
 
 [malive.apk](https://github.com/jyukki97/jyukki97.github.io/releases/download/malive0.1/malive.apk)
 
