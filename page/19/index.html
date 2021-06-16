@@ -39,7 +39,7 @@
             <a href="/" title="JYUKKI&#39;s BLOG">JYUKKI</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
@@ -82,7 +82,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -103,6 +103,14 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-16-10820/">[백준]10820 문자열 분석</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10820
+풀이: [C++]대소문자, 숫자 구분함수  참고
+따로 종료 조건이 없으므로 EOF 처리를 해주자. 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;#include &lt;string&gt;using namespace std; int main() { string s; while (getline(cin, s)) { int a = 0, b = 0, c = 0, d = 0; for (char i : s) if (islower(i)) a++; else if (isupper(i)) b++; else if (isdigit(i)) c++; else d++; printf(&#34;%d %d %d %d\n&#34;, a, b, c, d); } }   </div><div class="post-footer">
+        <a href="/2020-03-16-10820/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-16-10988/">[백준]10988 팰린드롬인지 확인하기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10988
 풀이: 팰린드롬 : 기러기, 토마토 등 뒤집어도 같은단어 주어진 단어가 팰린드롬이라면 1, 아니라면 0을 출력한다.
@@ -153,18 +161,6 @@ cin, cout 은 시간초과가 나므로 주의하자. 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, m; int main() { scanf(&#34;%d%d&#34;,&amp;n,&amp;m); n += m; priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; a; while (n--) { scanf(&#34;%d&#34;,&amp;m); a.push(m); } while (!a.empty())	printf(&#34;%d &#34;,a.top()), a.pop(); printf(&#34;\n&#34;); }   </div><div class="post-footer">
         <a href="/2020-03-16-11728/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-16-1915/">[백준]1915 가장 큰 정사각형</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1915
-풀이: b[i][t] : i , t 가 오른쪽 아래 꼭짓점인 정사각형의 한 변의 길이
-i, t가 0이라면, 정사각형을 만들 수 없으므로 0
-i, t 의 수가 1이라면,
-b[i][t] = (b[i - 1][t], b[i][t - 1], b[i - 1][t - 1] 의 최솟값) + 1
-넓이 이므로 b[i][t] 중 가장 큰 값을 제곱하여 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a, b[1002][1002], s = 0; int main() { cin &gt;&gt; n &gt;&gt; m; for (i = 0; i &lt; n; i++)	for (t = 0; t &lt; m; t++) { scanf_s(&#34;%1d&#34;,&amp;a); if (a) { if (i &amp;&amp; t) { b[i][t] = b[i - 1][t] &gt; b[i][t - 1] ?</div><div class="post-footer">
-        <a href="/2020-03-16-1915/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -195,7 +191,7 @@ b[i][t] = (b[i - 1][t], b[i][t - 1], b[i - 1][t - 1] 의 최솟값) + 1
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/78/">78</a>
+                        <a href="/page/79/">79</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

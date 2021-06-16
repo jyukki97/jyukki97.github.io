@@ -5,15 +5,27 @@
 
 ### 제작 인원 
 
-#### 	- 1명
+- **1명**
+
+
+
+
 
 ### 제작 기간 
 
-#### 	- 1 개월
+- **1 개월**
+
+
+
+
 
 ### 용도 
 
-#### 	- 가구 배치
+- **가구 배치**
+
+
+
+
 
 ### 기능
 
@@ -33,8 +45,10 @@
 
 
 
+
+
 ### apk 파일
 
-[malive.apk](https://github.com/jyukki97/jyukki97.github.io/releases/download/malive0.1/malive.apk)
+**[malive.apk](https://github.com/jyukki97/jyukki97.github.io/releases/download/malive0.1/malive.apk)**
 
 

@@ -5,15 +5,27 @@
 
 ### 제작 인원 
 
-#### 	- 1명
+- **1명**
+
+
+
+
 
 ### 제작 기간 
 
-#### 	- 일주일
+- **일주일**
+
+
+
+
 
 ### 용도 
 
-#### 	- 영화 찾기
+- **영화 찾기**
+
+
+
+
 
 ### 기능
 
@@ -32,8 +44,10 @@
 
 
 
+
+
 ### Git 위치
 
-#### 			[Flutter_sample_movie](https://github.com/jyukki97/flutter_practice/tree/master/flutter_sample_movie)
+**[Flutter_sample_movie](https://github.com/jyukki97/flutter_practice/tree/master/flutter_sample_movie)**
 
 

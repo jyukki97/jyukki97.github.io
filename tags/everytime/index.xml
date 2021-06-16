@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>EveryTime - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/everytime/</link>
+        <description>EveryTime - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/everytime/" rel="self" type="application/rss+xml" /><item>
+    <title>[에브리타임]시작</title>
+    <link>https://jyukki97.github.io/start/</link>
+    <pubDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/start/</guid>
+    <description><![CDATA[시작 계획  하루에 조금씩이라도 하기!! 한 만큼 블로그에 기록하기 최대 10일을 넘기지 않도록 열심히 해보기  목표  에브리타임에 있는 기능들 구현 flutter를 사용한 겉모습 위주로 구현 시간이 남으면 서버까지 가능할지도&hellip;   ]]></description>
+</item></channel>
+</rss>
