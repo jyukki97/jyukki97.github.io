@@ -3,13 +3,28 @@
         <title>algorithm - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/algorithm/</link>
         <description>algorithm - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]1092 배</title>
+    <link>https://jyukki97.github.io/1092/</link>
+    <pubDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/1092/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1092
+풀이: 크레인과 박스를 정렬한다
+단, 이때 정렬은 내림차순으로 해야한다. 오름차순으로 할 경우 안되는 경우의 수가 존재.
+정렬된 크레인과 박스의 맨 처음을 비교한다. 만약 박스의 무게가 더 크다면, 모든 박스를 옮길 수 없으므로 -1을 출력한다.
+크레인을 한칸씩 오른쪽으로 이동시키면서 박스를 확인한다. 옮긴 박스는 0으로 바꾸고, 이미 0인 박스는 지나친다.
+모든 크레인을 사용했다면 time을 1늘리고, 다시 반복한다.
+모든 박스를 옮길 때까지 반복한 후 time을 출력한다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  a,b,c,d=int(input()),list(map(int, input().]]></description>
+</item><item>
     <title>[백준]1089 스타트링크 타워</title>
     <link>https://jyukki97.github.io/1089/</link>
     <pubDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/1089/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/12787
+    <description><![CDATA[https://www.acmicpc.net/problem/1089
 풀이: 5 * 3 자리에서 각 자리에 &lsquo;#&rsquo; 이 들어올 경우 될 수 없는 숫자를 찾아놓는다.
 ex) (0, 0) 자리에 &lsquo;#&rsquo; 이 올 경우 1은 절대 될 수 없다.
 첫 번 째 숫자 부터 N까지의 숫자를 찾아가면서 가능한 숫자를 저장해놓는다.
@@ -122,15 +137,5 @@ n = 8 &hellip;. 14
 score값은 음수가 될 수 없으므로 주의하자!!!
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;set&gt;using namespace std; int main() { int n, p, w, l, g, c = 0; set&lt;string&gt; s; string t, h; for (cin &gt;&gt; n &gt;&gt; p &gt;&gt; w &gt;&gt; l &gt;&gt; g; p--;s.]]></description>
-</item><item>
-    <title>[백준]17263 Sort 마스터 배지훈</title>
-    <link>https://jyukki97.github.io/2020-12-27-17263/</link>
-    <pubDate>Sun, 27 Dec 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-12-27-17263/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/17263
-풀이: 받아온 수 중 가장 큰 수를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
 </item></channel>
 </rss>

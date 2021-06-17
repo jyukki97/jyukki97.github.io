@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-17T00:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-17T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,22 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-21-11576/">[백준]11576 Base Conversion</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-21">2020-03-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11576
+풀이: A진법으로 나타낸 수를 10진법으로 바꾼 후 바꾼 10진법 수를 다시 B진법으로 바꿔 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int a, b, m, n, s; vector&lt;int&gt; v; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; m; while (m--) { cin &gt;&gt; n; s = s * a + n; } while (s) v.</div><div class="post-footer">
+        <a href="/2020-03-21-11576/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-21-2506/">[백준]2506 점수 계산</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-21">2020-03-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2506
+풀이: 연속으로 맞춘다면 추가 점수가 있게 하여 총점을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int n, s, c = 0, a; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (a) s += a + c, c++; else c = 0; } cout &lt;&lt; s &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-21-2506/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-21-2822/">[백준]2822 점수 계산</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-21">2020-03-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2822
 풀이: 첫째 줄에 참가자의 총점을 출력한다.
@@ -135,22 +151,6 @@
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;#include &lt;set&gt;using namespace std; int main() { int n, a; set&lt;int&gt; s; cin &gt;&gt; n; while (n--) {cin &gt;&gt; a; s.insert(a);} for (auto i : s)	cout &lt;&lt; i &lt;&lt; &#34; &#34;; cout &lt;&lt; endl; }   </div><div class="post-footer">
         <a href="/2020-03-19-10867/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-19-1516/">[백준]1516 게임 개발</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-19">2020-03-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1516
-풀이: [백준]1005 ACM Craft 참고
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include&lt;iostream&gt;#include&lt;vector&gt;#include&lt;algorithm&gt;using namespace std; int N, i, q, a[502], b[502]; vector&lt;vector&lt;int&gt;&gt;v; int A(int x) { if (b[x])	return b[x]; for (int t : v[x])	b[x] = max(b[x], A(t)); b[x] += a[x]; return b[x]; } int main() { cin &gt;&gt; N; v.</div><div class="post-footer">
-        <a href="/2020-03-19-1516/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/">위상 정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-19-4101/">[백준]4101 크냐?</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-19">2020-03-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/4101
-풀이: 첫 번째 수가 두 번째 수보다 크면 Yes를, 아니면 No를 한 줄에 하나씩 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a, b; int main() { while (1) { cin &gt;&gt; a &gt;&gt; b; if (!a &amp;&amp; !b)break; printf(&#34;%s\n&#34;, a &gt; b ? &#34;Yes&#34; : &#34;No&#34;); } }   </div><div class="post-footer">
-        <a href="/2020-03-19-4101/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

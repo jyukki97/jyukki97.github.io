@@ -3,7 +3,22 @@
         <title>정렬 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%A0%95%EB%A0%AC/</link>
         <description>정렬 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%A0%95%EB%A0%AC/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%A0%95%EB%A0%AC/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]1092 배</title>
+    <link>https://jyukki97.github.io/1092/</link>
+    <pubDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/1092/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1092
+풀이: 크레인과 박스를 정렬한다
+단, 이때 정렬은 내림차순으로 해야한다. 오름차순으로 할 경우 안되는 경우의 수가 존재.
+정렬된 크레인과 박스의 맨 처음을 비교한다. 만약 박스의 무게가 더 크다면, 모든 박스를 옮길 수 없으므로 -1을 출력한다.
+크레인을 한칸씩 오른쪽으로 이동시키면서 박스를 확인한다. 옮긴 박스는 0으로 바꾸고, 이미 0인 박스는 지나친다.
+모든 크레인을 사용했다면 time을 1늘리고, 다시 반복한다.
+모든 박스를 옮길 때까지 반복한 후 time을 출력한다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  a,b,c,d=int(input()),list(map(int, input().]]></description>
+</item><item>
     <title>[백준]1213 팰린드롬 만들기</title>
     <link>https://jyukki97.github.io/2020-04-13-1213/</link>
     <pubDate>Mon, 13 Apr 2020 00:00:00 &#43;0000</pubDate>
