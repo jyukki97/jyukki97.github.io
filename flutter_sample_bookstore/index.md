@@ -7,17 +7,13 @@
 
 ### 용도
 
-#### - Book Store   
+- **Book Store**  
 
-
-
-
+___
 
 ### 	Flutter 사용   
 
-
-
-
+___
 
 ### Git 위치
 

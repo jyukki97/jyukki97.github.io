@@ -3,7 +3,14 @@
         <title>Project - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/project/</link>
         <description>Project - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Feb 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/project/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/project/" rel="self" type="application/rss+xml" /><item>
+    <title>[Project] YouChu-유추 유튜브 추천 앱</title>
+    <link>https://jyukki97.github.io/youchu/</link>
+    <pubDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/youchu/</guid>
+    <description><![CDATA[YouChu-유추 유튜브 추천 앱 제작 인원  3명   맡은 역할  추천 알고리즘 제작 추천 알고리즘 작동을 위한 플라스크 서버 제작 안드로이드 앱 제작(플러터 사용)   제작 기간  2 개월   용도  유튜브 채널 추천   기능  사용자의 구독자 정보를 통해 채널을 맞춤 추천해줌 채널에 대한 좋아요 및 싫어요 피드백을 통해 추천의 정확도를 높임 추천 채널 밑에 자신이 구독한 채널과 비슷한 채널을 알려줌 랜덤 채널을 보여주고 사용자가 피드백 함으로써 새로운 채널을 알아갈 수 있음   앱  YouChu  ]]></description>
+</item><item>
     <title>[Project] 웹 크롤링을 이용한 영화 앱</title>
     <link>https://jyukki97.github.io/flutter_movie/</link>
     <pubDate>Mon, 08 Feb 2021 21:57:40 &#43;0800</pubDate>

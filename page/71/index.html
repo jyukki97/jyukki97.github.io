@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-17T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-18T14:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,11 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2018-01-16-1094/">1094 막대기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1094
+풀이:  자른 막대기 중 주어진 막대기보다 작은 값 중 최댓값을 주어진 막대기에 계속 뺀다. 뺄때마다 카운트를 증가시키면서 반복한다  코드: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; using namespace std; int main(void) { int x, temp = 64, cnt = 0; cin &gt;&gt; x; while (x != 0) { if (x &gt;= temp) { cnt++; x -= temp; } else temp /= 2; } cout &lt;&lt; cnt &lt;&lt; endl; return 0; }   </div><div class="post-footer">
+        <a href="/2018-01-16-1094/">Read More</a></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2018-02-04-10987/">10987 모음의 개수</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/10987
 풀이:  모음의 개수를 출력  코드: 사용언어 : Python 3
@@ -132,12 +137,6 @@ https://www.acmicpc.net/problem/11048
 풀이:  접미사를 모두 리스트에 넣는다. 리스트를 사전순으로 정렬하고 출력한다.  코드: 사용언어 : Python 3
 1 2 3 4 5 6 7  n=input() l=[] for i in range(len(n)): l.append(n[i:]) l.sort() for i in range(len(n)): print(l[i])   </div><div class="post-footer">
         <a href="/2018-02-04-11656/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-03-16-1267/">1267 핸드폰 요금</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>xxxx</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content">https://www.acmicpc.net/problem/1267
-풀이:  핸드폰 사용시간을 각각 요금제 시간에 맞게 나눈 몫을 구한다 몫을 요금제에 가격에 곱하고 그 가격을 비교한다.  코드: 사용언어 : Python 3
-1 2 3 4 5 6 7 8 9 10 11  a,c,d=int(input()),0,0 b=list(map(int,input().split())) for i in range(a): c+=b[i]//30+ 1 d+=b[i]//60+ 1 if(c*10&lt;d*15): print(&#34;Y %d&#34; % (c*10)) elif(c*10==d*15): print(&#34;Y M %d&#34; % (c*10)) else: print(&#34;M %d&#34; % (d*15))   </div><div class="post-footer">
-        <a href="/2018-03-16-1267/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

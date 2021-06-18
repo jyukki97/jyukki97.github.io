@@ -3,7 +3,7 @@
 
 # 1 Day
 
-<img src="C:\Hugo\Sites\jyukki97\content\posts\EveryTime_CloneCode\1day\1.jpg" alt="1" style="zoom:25%;" />
+<img src="1.jpg" alt="1" style="zoom:25%;" />
 
 ### 한 것
 
