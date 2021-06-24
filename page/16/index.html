@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-18T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-06-23T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,25 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-22-2217/">[백준]2217 로프</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2217
+풀이: a[i] : i 무게를 들 수 있는 로프의 갯수
+로프의 중량보다 가벼운 물체는 들 수 있으므로 중량보다 낮은 값은 전부 +1 씩 해준다.
+a[i] * i 의 값이 가장 높은 값을 출력한다.
+i 무게를 들 수 있는 로프의 갯수가 a[i] 개 일 때, a[i] 개의 로프를 이용하여 중량이 a[i] * i 인 물체를 들 수 있기 때문에)
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int n, m, i, s = 0, a[10002]; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; m; while (m) a[m--]++; } for (i = 1; i &lt; 10001; i++)	s = s &lt; i * a[i] ?</div><div class="post-footer">
+        <a href="/2020-03-22-2217/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-22-2357/">[백준]2357 최솟값과 최댓값</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2357
+풀이: [백준]2042 구간 합 구하기 참고
+cin, cout 은 시간초과가 나므로 주의 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;math.h&gt;using namespace std; #define ll long long ll n, m, a, b; vector&lt;ll&gt; T, Y; void update(int node, int idx, ll val, int x, int y) { if (idx &lt; x || idx &gt; y) return; T[node] = T[node] &gt; val ?</div><div class="post-footer">
+        <a href="/2020-03-22-2357/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/">세그먼트 트리</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-21-10807/">[백준]10807 개수 세기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-21">2020-03-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10807
 풀이: 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.
@@ -135,23 +154,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int n, m, k, s = 0; int main() { vector&lt;pair&lt;int, int&gt;&gt;a; for (int i = 1; i &lt; 9; i++) { cin &gt;&gt; n; if (i &gt;= 6) { m = 151; for (int t = 0; t &lt; 5; t++) if (a[t].</div><div class="post-footer">
         <a href="/2020-03-21-2822/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-20-1547/">[백준]1547 공</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-20">2020-03-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1547
-풀이: 주어진 입력에 따라 컵의 위치를 바꾼다.
-입력이 끝난 후 공이 들어있는 컵의 번호를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, x, y, a[4] = { 0,1 }; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; x &gt;&gt; y; swap(a[x], a[y]); } for (int i = 1; i &lt; 4; i++)	if (a[i])	cout &lt;&lt; i &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-20-1547/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-20-2501/">[백준]2501 약수 구하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-20">2020-03-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2501
-풀이: n의 약수들 중 k번째로 작은 수를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; int n, k, i, c = 0; int main() { cin &gt;&gt; n &gt;&gt; k; for (i = 1; i &lt;= n; i++) if (!(n % i)) { k--; if (!k) { c = i; break; } } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-20-2501/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

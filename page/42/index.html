@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-18T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-06-23T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,24 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-01-28-matrixmultiplication/">[프로그래머스]행렬의 곱셈</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-28">2020-01-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+문제: 2차원 행렬 arr1과 arr2를 입력받아, arr1에 arr2를 곱한 결과를 반환하는 함수, solution을 완성해주세요.
+풀이: arr1의 가로행과 arr2의 세로열의 값들을 각각 곱한것을 더한 값을 a에 저장한다.
+저장된 배열 a를 answer에 푸쉬 한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; vector&lt;vector&lt;int&gt;&gt; solution(vector&lt;vector&lt;int&gt;&gt; arr1, vector&lt;vector&lt;int&gt;&gt; arr2) { vector&lt;vector&lt;int&gt;&gt; answer; for (int i = 0; i &lt; arr1.</div><div class="post-footer">
+        <a href="/2020-01-28-matrixmultiplication/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-2/">Level 2</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-01-27-stringstream/">[C&#43;&#43;]문자열 분리 </a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-27">2020-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">stringstream - 공백을 기준으로 분리 1  stringstream s_stream(string a);   s_stream에 a에 있는 문장을 공백을 기준으로 분리해서 넣는다.
+1  #include &lt;sstream&gt;  사용하기 위해서는 sstream을 include해서 사용하자.
+1 2 3 4 5 6  string a = &#34;a b c d&#34;; stringstream s_stream(a); string c; while(s_stream &gt;&gt; c){ cout &lt;&lt; c &lt;&lt; endl; }   출력 :
+1 2 3 4  a b c d   strtok - 주어진 문자를 기준으로 분리 1  strtok(char* a, char* b);   a를 b를 기준으로 분리한다.</div><div class="post-footer">
+        <a href="/2020-01-27-stringstream/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%84%EB%A6%AC/">문자열 분리</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-01-27-ramenfactory/">[프로그래머스]라면공장</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-27">2020-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
 문제: 라면 공장에서는 하루에 밀가루를 1톤씩 사용합니다. 원래 밀가루를 공급받던 공장의 고장으로 앞으로 k일 이후에야 밀가루를 공급받을 수 있기 때문에 해외 공장에서 밀가루를 수입해야 합니다.
@@ -141,25 +159,6 @@ string을 long long 값으로 변환 후 리턴한다.
 1 2 3 4 5 6 7 8 9 10  #include &lt;string&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; long long solution(long long n) { string a = to_string(n); sort(a.</div><div class="post-footer">
         <a href="/2020-01-24-integersort/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-01-23-h-index/">[프로그래머스]H-index</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-23">2020-01-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-문제: H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 어느 과학자의 H-Index를 나타내는 값인 h를 구하려고 합니다. 위키백과1에 따르면, H-Index는 다음과 같이 구합니다.
-어떤 과학자가 발표한 논문 n편 중, h번 이상 인용된 논문이 h편 이상이고 나머지 논문이 h번 이하 인용되었다면 h가 이 과학자의 H-Index입니다.
-어떤 과학자가 발표한 논문의 인용 횟수를 담은 배열 citations가 매개변수로 주어질 때, 이 과학자의 H-Index를 return 하도록 solution 함수를 작성해주세요.
-풀이: 논문 n편을 정렬한다.
-1번째 논문이 1보다 크다면 H-index는 1이 된다.</div><div class="post-footer">
-        <a href="/2020-01-23-h-index/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a>,&nbsp;<a href="/tags/level-2/">Level 2</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-01-22-matrixsum/">[프로그래머스]행렬의 덧셈</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-01-22">2020-01-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
-문제: 행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
-풀이: 각 행렬의 같은 행 같은 열을 더한 행렬을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; vector&lt;vector&lt;int&gt;&gt; solution(vector&lt;vector&lt;int&gt;&gt; arr1, vector&lt;vector&lt;int&gt;&gt; arr2) { for (int i = 0; i &lt; arr1.</div><div class="post-footer">
-        <a href="/2020-01-22-matrixsum/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-1/">Level 1</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

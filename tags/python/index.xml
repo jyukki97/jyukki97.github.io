@@ -3,7 +3,34 @@
         <title>python - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/python/</link>
         <description>python - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 19 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]1241 머리 톡톡</title>
+    <link>https://jyukki97.github.io/1241/</link>
+    <pubDate>Sat, 19 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/1241/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1241
+풀이: 1번 부터 N번까지 학생들의 머리 위의 숫자들의 개수를 저장해놓는다
+ex) 2는 2번, 1은 1번&hellip;
+자신의 머리 위의 수를 소인수분해한다.
+소인수분해를 통해 나온 약수들이 나온 개수만큼 모두 더해준다.
+자기 자신과 같은 수 일 때는 자기 자신을 세지않으므로 조심하자.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import math N=int(input()) a=[] d=dict() for i in range(N): a.append(int(input())) d[a[-1]] = d.]]></description>
+</item><item>
+    <title>[백준]1188 음식 평론가</title>
+    <link>https://jyukki97.github.io/1188/</link>
+    <pubDate>Fri, 18 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/1188/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/1188
+풀이: 소시지가 N개 평론가가 M명 있을 때,
+각각의 평론가는 N/M개의 소시지를 가지고 간다. (그러므로 만약, N이 M으로 나누어 떨어진다면 소시지를 자르지 않아도 된다.) =&gt; GCD(N, M) = M
+N개의 소시지를 이어붙여 1개의 소시지로 만든다면, 소시지는 M - 1번 잘라야 한다. =&gt; GCD(N, M) = 1
+즉, M - GCD(N, M) 번 자른다면 평론가들은 모두 동일한 양의 소시지를 얻을 수 있다.
+코드: 사용언어 : python
+1 2 3  import math n,m=map(int,input().]]></description>
+</item><item>
     <title>[백준]1092 배</title>
     <link>https://jyukki97.github.io/1092/</link>
     <pubDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</pubDate>
@@ -85,23 +112,5 @@ ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 
     <description><![CDATA[https://www.acmicpc.net/problem/15552
 풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력 간단한 문제이지만 매우 많은 테스트케이스의 수가 있으므로 input() 대신 sys.stdin().readline()을 사용한다.  코드: 사용언어 : Python 3
 1 2 3  import sys for i in range(int(input())): print(sum(map(int,sys.stdin.readline().split())))   ]]></description>
-</item><item>
-    <title>[백준]10950 A&#43;B - 3</title>
-    <link>https://jyukki97.github.io/2019-06-10-10950/</link>
-    <pubDate>Mon, 10 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-06-10-10950/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/10950
-풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력  코드: 사용언어 : Python 3
-1 2  for i in range(int(input())): print(sum(map(int,input().split())))   ]]></description>
-</item><item>
-    <title>[백준]2164 카드2</title>
-    <link>https://jyukki97.github.io/2019-06-07-2164/</link>
-    <pubDate>Fri, 07 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-06-07-2164/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/2164
-풀이:  카드의 갯수가 2 ^ i 개일 경우 남게 되는 카드의 번호는 2 ^ i 이다. 카드의 갯수가 (2 ^ i) + n 개 일 경우 남게 되는 카드의 번호는 2 * n 이다.  코드: 사용언어 : Python 3
-1 2 3 4  n,s=int(input()),1 while s&lt;n: s*=2 print(s if s==n else 2*n-s)   ]]></description>
 </item></channel>
 </rss>

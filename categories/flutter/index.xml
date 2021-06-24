@@ -3,21 +3,21 @@
         <title>Flutter - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/flutter/</link>
         <description>Flutter - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 17 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/flutter/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/flutter/" rel="self" type="application/rss+xml" /><item>
     <title>[에브리타임] 1 Day</title>
     <link>https://jyukki97.github.io/1day/</link>
-    <pubDate>Thu, 17 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <pubDate>Wed, 23 Jun 2021 23:00:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/1day/</guid>
-    <description><![CDATA[1 Day 한 것  메인 스크린 제작  appbar bottomNavigation   홈 페이지 조금 제작  맨 위에 page view 제작 그 밑에 원으로 된 리스트 제작 광고칸 제작 즐겨찾는 페이지 칸 제작     수업 때매 한 시간밖에 하지 못해서 아쉽다&hellip; 내일은 홈 페이지 완성하고, 서브페이지까지 해봐야겠다.
+    <description><![CDATA[1 Day 한 것 메인 스크린 제작  appbar bottomNavigation  홈 페이지 조금 제작  맨 위에 page view 제작 그 밑에 원으로 된 리스트 제작 광고칸 제작 즐겨찾는 페이지 칸 제작   수업 때매 한 시간밖에 하지 못해서 아쉽다&hellip; 내일은 홈 페이지 완성하고, 서브페이지까지 해봐야겠다.
  깃 허브 주소 에브리타임 클론 코딩]]></description>
 </item><item>
     <title>[에브리타임] 시작</title>
     <link>https://jyukki97.github.io/start/</link>
-    <pubDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</pubDate>
+    <pubDate>Tue, 22 Jun 2021 00:00:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/start/</guid>
-    <description><![CDATA[시작 계획  하루에 조금씩이라도 하기!! 한 만큼 블로그에 기록하기 최대 10일을 넘기지 않도록 열심히 해보기  목표  에브리타임에 있는 기능들 구현 flutter를 사용한 겉모습 위주로 구현 시간이 남으면 서버까지 가능할지도&hellip;   ]]></description>
+    <description><![CDATA[시작 계획  하루에 조금씩이라도 하기!! 한 만큼 블로그에 기록하기 최대 10일을 넘기지 않도록 열심히 해보기  목표  에브리타임에 있는 기능들 구현 flutter를 사용한 겉모습 위주로 구현 시간이 남으면 서버까지 가능할지도&hellip;  ]]></description>
 </item><item>
     <title>Flutter_sample_bookstore</title>
     <link>https://jyukki97.github.io/flutter_sample_bookstore/</link>
