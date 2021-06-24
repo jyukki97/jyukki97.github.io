@@ -3,7 +3,7 @@
         <title>JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/</link>
         <description>JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Jun 2021 23:00:40 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 13:57:40 &#43;0800</lastBuildDate>
             <atom:link href="https://jyukki97.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
@@ -12,6 +12,13 @@
     <author>Author</author>
     <guid>https://jyukki97.github.io/youchu/</guid>
     <description><![CDATA[YouChu-유추 유튜브 추천 앱 제작 인원  3명   맡은 역할  추천 알고리즘 제작 추천 알고리즘 작동을 위한 플라스크 서버 제작 안드로이드 앱 제작(플러터 사용)   제작 기간  2 개월   용도  유튜브 채널 추천   기능  사용자의 구독자 정보를 통해 채널을 맞춤 추천해줌 채널에 대한 좋아요 및 싫어요 피드백을 통해 추천의 정확도를 높임 추천 채널 밑에 자신이 구독한 채널과 비슷한 채널을 알려줌 랜덤 채널을 보여주고 사용자가 피드백 함으로써 새로운 채널을 알아갈 수 있음   앱  YouChu  ]]></description>
+</item><item>
+    <title>[Project] 뮤직 플레이어 앱(kotlin) - 프로그래머스 과제</title>
+    <link>https://jyukki97.github.io/music_player_app/</link>
+    <pubDate>Thu, 24 Jun 2021 13:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/music_player_app/</guid>
+    <description><![CDATA[뮤직 플레이어 앱(kotlin)  프로그래머스 과제관 [앱-Android] 뮤직 플레이어 앱  요구사항 스플래시 스크린  ✅ 제공되는 이미지를 2초간 노출 후 음악 재생 화면으로 전환시킵니다.   음악 재생 화면  ✅ 재생 중인 음악 정보(제목, 가수, 앨범 커버 이미지, 앨범명) ✅ 현재 재생 중인 부분의 가사 하이라이팅 ✅ Seekbar ✅ Play/Stop 버튼   전체 가사 보기 화면  ✅ 특정 가사로 이동할 수 있는 토글 버튼 ✅ 전체 가사 화면 닫기 버튼 ✅ Seekbar ✅ Play/Stop 버튼   ]]></description>
 </item><item>
     <title>[Project] 웹 크롤링을 이용한 영화 앱</title>
     <link>https://jyukki97.github.io/flutter_movie/</link>
@@ -96,12 +103,5 @@ ex) (0, 0) 자리에 &lsquo;#&rsquo; 이 올 경우 1은 절대 될 수 없다.
 가능한 숫자를 모두 조합한다면, 너무 많은 조합이 가능하므로 다른 방법을 사용한다.
 ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 조합은
 121, 128, 129, 131, 138, 139 로 총 6가지 이다.]]></description>
-</item><item>
-    <title>Flutter_sample_bookstore</title>
-    <link>https://jyukki97.github.io/flutter_sample_bookstore/</link>
-    <pubDate>Wed, 27 Jan 2021 21:57:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/flutter_sample_bookstore/</guid>
-    <description><![CDATA[Flutter Practice 2. flutter_sample_bookstore 용도  Book Store   Flutter 사용  Git 위치 Flutter_sample_bookstore ]]></description>
 </item></channel>
 </rss>

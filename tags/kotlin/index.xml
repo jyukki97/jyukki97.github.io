@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Kotlin - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/kotlin/</link>
+        <description>Kotlin - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 13:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/kotlin/" rel="self" type="application/rss+xml" /><item>
+    <title>[Project] 뮤직 플레이어 앱(kotlin) - 프로그래머스 과제</title>
+    <link>https://jyukki97.github.io/music_player_app/</link>
+    <pubDate>Thu, 24 Jun 2021 13:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/music_player_app/</guid>
+    <description><![CDATA[뮤직 플레이어 앱(kotlin)  프로그래머스 과제관 [앱-Android] 뮤직 플레이어 앱  요구사항 스플래시 스크린  ✅ 제공되는 이미지를 2초간 노출 후 음악 재생 화면으로 전환시킵니다.   음악 재생 화면  ✅ 재생 중인 음악 정보(제목, 가수, 앨범 커버 이미지, 앨범명) ✅ 현재 재생 중인 부분의 가사 하이라이팅 ✅ Seekbar ✅ Play/Stop 버튼   전체 가사 보기 화면  ✅ 특정 가사로 이동할 수 있는 토글 버튼 ✅ 전체 가사 화면 닫기 버튼 ✅ Seekbar ✅ Play/Stop 버튼   ]]></description>
+</item></channel>
+</rss>

@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-23T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-24T14:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,13 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2019-06-04-2352/">[백준]2352 반도체 설계</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-04">2019-06-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2352
+풀이:  맨 처음 값부터 하나 하나 입력받는다. 입력받은 값이 벡터 안에 있는 값들 보다 크다면 벡터에 맨 뒤에 넣는다. 벡터의 처음부터 검색했을 때, 입력받은 값보다 큰 값이 있다면, 그 값과 교체한다. 벡터의 원소 갯수를 출력한다. 일반적으로 for문을 두개 쓴 O(n^2)의 코드는 시간초과가 나므로 주의하자  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;vector&gt;using namespace std; vector&lt;int&gt;d; int main(void) { int n, s, l; cin &gt;&gt; n; while(n--) { cin &gt;&gt; s; l = lower_bound(d.</div><div class="post-footer">
+        <a href="/2019-06-04-2352/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/lis/">LIS</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2019-06-02-1495/">[백준]1495 기타리스트</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-02">2019-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1495
 풀이:  dp[a][b]를 a 번째 곡을 연주 할 때, b 볼륨으로 연주 할 수 있는가? 라고 하자. dp[0][S]는 0 번째 곡을 연주 할 때, S 볼륨으로 연주할 수 있으므로(시작지점) 1을 할당한다. 0번째 곡을 연주할 때, S볼륨으로 연주가 가능하다면, 1번째 곡을 연주할 때, S+s[1] or S-s[1] 볼륨도 연주 가능하다(0&lt;=볼륨&lt;=m 일때) 즉, dp[i][t + s[i]] = dp[i - 1][t] or dp[i][t - s[i]] = dp[i - 1][t] 마지막에 dp[N]값을 모두 순환하며, 가장 높은 값을 출력하고, 가능한 볼륨이 없다면 -1을 출력한다.</div><div class="post-footer">
@@ -136,13 +143,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;using namespace std; int s[15][21][21]; int dy[] = { 0,0,1,1,-1,-1 }; int dx[] = { 1,-1,1,0,-1,0 }; int main(void) { int T, a; cin &gt;&gt; T; s[0][10][10] = 1; for (int i = 1; i &lt; 15; i++) for (int t = 1; t &lt; 21; t++) for (int y = 1; y &lt; 21; y++) for (int u = 0; u &lt; 6; u++) if (t + dx[u] &gt; 0 &amp;&amp; t + dx[u] &lt; 21 &amp;&amp; y + dy[u] &gt; 0 &amp;&amp; y + dy[u] &lt; 21) s[i][t][y] += s[i - 1][t + dx[u]][y + dy[u]]; while (T--) { cin &gt;&gt; a; cout &lt;&lt; s[a][10][10] &lt;&lt; endl; } return 0; }   </div><div class="post-footer">
         <a href="/2019-05-27-5069/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-03-29-1351/">[백준]1351 무한 수열</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-03-29">2019-03-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1351
-풀이:  N번째 수열부터 차례대로 찾아나간다. N번째 수열이 map 에 존재한다면 그대로 리턴, 없다면 N = a/b + a/c 로 돌아가서 찾기 N이 0이라면 1을 리턴 각각의 값이 매우 크므로 long long 사용 실패 코드 예시처럼 map을 쓰지않고 리턴을 할 경우 같은 수열이 여러번 중복되어 계산되기 때문에 시간초과가 날 수 있다.  코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;#include &lt;map&gt;using namespace std; long long a, b, c; map&lt;long long, long long&gt; n; long long infi(long long q) { if (q == 0) return 1; if (n.</div><div class="post-footer">
-        <a href="/2019-03-29-1351/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -173,7 +173,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/79/">79</a>
+                        <a href="/page/80/">80</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
