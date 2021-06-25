@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-24T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-06-24T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,34 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-16-2420/">[백준]2420 사파리월드</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2420
+풀이: 두 유명도의 차이를 절댓값으로 출력한다.
+두 도메인의 크기가 매우 크므로 long long 으로 받자. long long 형으로 받았으므로 abs 가 아닌 llabs를 쓰자 코드: 사용언어 : c++
+1 2 3 4 5 6 7  #include &lt;iostream&gt;using namespace std; long long a, b; int main() { cin &gt;&gt; a &gt;&gt; b; cout &lt;&lt; llabs(a - b) &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-16-2420/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-16-2530/">[백준]2530 인공지능 시계</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2530
+풀이: 요리에 필요한 시간 D를 초에 더한다.
+초 C를 60으로 나눈 몫을 분에 더한다.	초는 나눈 나머지가 된다.
+분 B를 60으로 나눈 몫을 시에 더하다.	분은 나눈 나머지가 된다.
+시를 24로 나눈 나머지로 바꾼다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; int a, b, c, d; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d; c += d, b += c / 60, c %= 60, a += b / 60, b %= 60, a %= 24; printf(&#34;%d %d %d&#34;, a, b, c); }   </div><div class="post-footer">
+        <a href="/2020-03-16-2530/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-16-5597/">[백준]5597 과제 안 내신 분..?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5597
+풀이: 과제를 낸 28 명을 기록한다.
+30 명 중 기록이 안돼어있는 학생 2명을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a[31], i = 28, b; int main() { while (i--) { cin &gt;&gt; b; a[b] = 1; } for (i = 1; i &lt;= 30; i++)	if (!a[i])	cout &lt;&lt; i &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-16-5597/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-15-10824/">[백준]10824 네 수</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-15">2020-03-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10824
 풀이: A, B, C, D 를 각각 string으로 받아 붙힌 후
@@ -125,30 +153,6 @@ stoi 는 int형식으로 각각 1,000,000 까지 가능 한 두 수를 붙힌다
 위상 정렬 방향 그래프의 노드에 대해 순서를 매겨 정렬하는 방법 정렬 후에 각 노드에 대해 순서가 위배되지 않아야한다. 사이클이 있다면 불가능하다. 들어오는 간선이 없는 노드를 삭제하면서, 정렬한다. </div><div class="post-footer">
         <a href="/2020-03-14-topologicalsort/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9C%84%EC%83%81-%EC%A0%95%EB%A0%AC/">위상 정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-14-10797/">[백준]10797 10부제</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-14">2020-03-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10797
-풀이: 날짜의 일의 자리 숫자와 자동차의 일의 자리 숫자가 같다면 차량의 대수를 +1 해준다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, m, i, s = 0; int main() { cin &gt;&gt; n; for (i = 0; i &lt; 5; i++) { cin &gt;&gt; m; if (n == m)	s++; } cout &lt;&lt; s &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-14-10797/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-14-10815/">[백준]10815 숫자 카드</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-14">2020-03-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10815
-풀이: [C++]lower_bound, upper_bound 참고
-cin, cout 은 시간초과가 날 수 있으므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, i, k, a[500002]; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++)	cin &gt;&gt; a[i]; sort(a, a + n); cin &gt;&gt; m; while (m--) { cin &gt;&gt; k; if (*lower_bound(a, a + n, k) == k)	cout &lt;&lt; &#34;1 &#34;; else	cout &lt;&lt; &#34;0 &#34;; } cout &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-14-10815/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/">이분 탐색</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-14-10974/">[백준]10974 모든 순열</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-14">2020-03-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10974
-풀이: [C++]순열  참고
-cin, cout 은 시간초과가 날 수 있으므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int n, i; vector&lt;int&gt; v; int main() { scanf(&#34;%d&#34;,&amp;n); for (i = 1; i &lt;= n; i++) v.push_back(i); do { for (int i : v) printf(&#34;%d &#34;,i); printf(&#34;\n&#34;); } while (next_permutation(v.begin(), v.end())); }   </div><div class="post-footer">
-        <a href="/2020-03-14-10974/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%9C%EC%97%B4/">순열</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
