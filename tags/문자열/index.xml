@@ -3,7 +3,15 @@
         <title>문자열 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/</link>
         <description>문자열 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 22 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]9252 LCS 2</title>
+    <link>https://jyukki97.github.io/9252/</link>
+    <pubDate>Tue, 22 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/9252/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/9252
+풀이:    0 A C A Y K P     C 0 1 1 1 1 1   A 1 1 2 2 2 2   P 1 1 2 2 2 2   C 1 2 2 2 2 3   A 1 2 3 3 3 3   K 1 2 3 3 4 4    첫 번째 문자열을 : A]]></description>
+</item><item>
     <title>[백준]1334 다음 팰린드롬 수</title>
     <link>https://jyukki97.github.io/2020-04-12-1334/</link>
     <pubDate>Sun, 12 Apr 2020 00:00:00 &#43;0000</pubDate>
@@ -118,17 +126,5 @@ a, c, i, n, t 다섯개의 글자는 무조건 들어가므로 넣고 시작하�
 풀이: n번째 글자를 기준으로 오름차순 정렬을 한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;string&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; vector&lt;string&gt; solution(vector&lt;string&gt; strings, int n) { vector&lt;string&gt; answer; for (int i = 0; i &lt; strings.]]></description>
-</item><item>
-    <title>[C&#43;&#43;]transform</title>
-    <link>https://jyukki97.github.io/2020-02-07-transform/</link>
-    <pubDate>Fri, 07 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-07-transform/</guid>
-    <description><![CDATA[transform
-1  #include&lt;algorithm&gt;  사용하기 위해서는 algorithm을 include해준다.
-기본적인 사용법은 이렇게된다.
-1 2  transform(a.begin(), a.end(), a.begin(), fuc()); // transform(시작주소, 끝 주소, 저장할 곳의 시작 주소, 함수);   ex)
-배열 a의 모든 값을 3씩 증가시키기
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt; #include &lt;vector&gt;#include &lt;algorithm&gt; using namespace std; int func(int n) { return n + 3; } int main() { vector&lt;int&gt; a; for(int i = 0; i &lt; 5; i++) a.]]></description>
 </item></channel>
 </rss>

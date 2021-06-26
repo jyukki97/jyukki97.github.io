@@ -1,7 +1,7 @@
 # [에브리타임] 2 Day
 
 
-# 1 Day
+# 2 Day
 
 {{< admonition contents >}}
 

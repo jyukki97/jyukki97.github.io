@@ -3,13 +3,25 @@
         <title>EveryTime - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/everytime/</link>
         <description>EveryTime - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/everytime/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 25 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/everytime/" rel="self" type="application/rss+xml" /><item>
+    <title>[에브리타임] 3 Day</title>
+    <link>https://jyukki97.github.io/3day/</link>
+    <pubDate>Fri, 25 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/3day/</guid>
+    <description><![CDATA[3 Day Contents[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+  깃 허브 주소
+ 한 것 게시판 모음 페이지  ✅ Icon과 글 있는 Widget 추가 ✅ 핀과 글 있는 Widget 추가  모델  ✅ Board 모델 추가  게시판 제목, 즐겨찾기 추가 여부, new 게시물이 있는지 여부, Icon 등이 들어있는 모델을 추가.   ✅ Sample 모델 제작   주절주절.]]></description>
+</item><item>
     <title>[에브리타임] 2 Day</title>
     <link>https://jyukki97.github.io/2day/</link>
     <pubDate>Thu, 24 Jun 2021 23:00:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/2day/</guid>
-    <description><![CDATA[1 Day Contents[에브리타임] 시작
+    <description><![CDATA[2 Day Contents[에브리타임] 시작
 [에브리타임] 1 Day
 [에브리타임] 2 Day
   깃 허브 주소

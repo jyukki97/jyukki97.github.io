@@ -1,6 +1,10 @@
 # [Project] 뮤직 플레이어 앱(kotlin) - 프로그래머스 과제
 
 
+**코틀린을 사용하여 만들어본 프로그래머스 과제관 뮤직 플레이어 앱**
+
+<!--more-->
+
 # 뮤직 플레이어 앱(kotlin)
 
 - 프로그래머스 과제관 [[앱-Android] 뮤직 플레이어 앱](https://programmers.co.kr/skill_check_assignments/3)

@@ -9,6 +9,6 @@
     <pubDate>Thu, 28 Jan 2021 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/unity_room/</guid>
-    <description><![CDATA[유니티를 이용한 가구배치 앱 제작 인원  1명   제작 기간  1 개월   용도  가구 배치   기능  가구 이동(그리드 방식, room 밖으로 가구가 나갈 수 없음) 가구가 놓을 수 없는 상황일 때에는 놓을 수 없음.(빨간색 외곽선이 생김) place, undo, rotate 버튼을 통해 가구 조작 가능 캐릭터 이동 가능(가구를 통과할 수 없음)  벽면에 가구를 놓을 수 있음(왼쪽 벽에서 오른쪽 벽으로 이동하는 등 벽 사이에 이동 시 자동으로 회전됨.]]></description>
+    <description><![CDATA[<p><strong>유니티 처음 사용해본 사람의 유니티를 이용한 가구배치 앱</strong></p>]]></description>
 </item></channel>
 </rss>

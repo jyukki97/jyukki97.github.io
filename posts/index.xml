@@ -3,41 +3,53 @@
         <title>All Posts - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/posts/</link>
         <description>All Posts | JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 25 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
     <link>https://jyukki97.github.io/youchu/</link>
     <pubDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/youchu/</guid>
-    <description><![CDATA[YouChu-유추 유튜브 추천 앱 제작 인원  3명   맡은 역할  추천 알고리즘 제작 추천 알고리즘 작동을 위한 플라스크 서버 제작 안드로이드 앱 제작(플러터 사용)   제작 기간  2 개월   용도  유튜브 채널 추천   기능  사용자의 구독자 정보를 통해 채널을 맞춤 추천해줌 채널에 대한 좋아요 및 싫어요 피드백을 통해 추천의 정확도를 높임 추천 채널 밑에 자신이 구독한 채널과 비슷한 채널을 알려줌 랜덤 채널을 보여주고 사용자가 피드백 함으로써 새로운 채널을 알아갈 수 있음   앱  YouChu  ]]></description>
+    <description><![CDATA[<p><strong>유튜브 추천 어플</strong></p>]]></description>
 </item><item>
     <title>[Project] 뮤직 플레이어 앱(kotlin) - 프로그래머스 과제</title>
     <link>https://jyukki97.github.io/music_player_app/</link>
     <pubDate>Thu, 24 Jun 2021 13:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/music_player_app/</guid>
-    <description><![CDATA[뮤직 플레이어 앱(kotlin)  프로그래머스 과제관 [앱-Android] 뮤직 플레이어 앱  요구사항 스플래시 스크린  ✅ 제공되는 이미지를 2초간 노출 후 음악 재생 화면으로 전환시킵니다.   음악 재생 화면  ✅ 재생 중인 음악 정보(제목, 가수, 앨범 커버 이미지, 앨범명) ✅ 현재 재생 중인 부분의 가사 하이라이팅 ✅ Seekbar ✅ Play/Stop 버튼   전체 가사 보기 화면  ✅ 특정 가사로 이동할 수 있는 토글 버튼 ✅ 전체 가사 화면 닫기 버튼 ✅ Seekbar ✅ Play/Stop 버튼   ]]></description>
+    <description><![CDATA[<p><strong>코틀린을 사용하여 만들어본 프로그래머스 과제관 뮤직 플레이어 앱</strong></p>]]></description>
 </item><item>
     <title>[Project] 웹 크롤링을 이용한 영화 앱</title>
     <link>https://jyukki97.github.io/flutter_movie/</link>
     <pubDate>Mon, 08 Feb 2021 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/flutter_movie/</guid>
-    <description><![CDATA[웹 크롤링을 이용한 영화 앱 제작 인원  1명   제작 기간  일주일   용도  영화 찾기   기능  영화 찾기 현재 상영 중인 영화 및 개봉 예정 영화들 확인 가능 개별 영화를 클릭하면, 예고편 감상 및 출연진 확인 가능   flutter사용  Git 위치 Flutter_sample_movie]]></description>
+    <description><![CDATA[<p><strong>크롤링 연습 차원에서 만들어본 Flutter를 이용한 영화 앱</strong></p>]]></description>
 </item><item>
     <title>[Project] 유니티를 이용한 가구배치 앱</title>
     <link>https://jyukki97.github.io/unity_room/</link>
     <pubDate>Thu, 28 Jan 2021 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/unity_room/</guid>
-    <description><![CDATA[유니티를 이용한 가구배치 앱 제작 인원  1명   제작 기간  1 개월   용도  가구 배치   기능  가구 이동(그리드 방식, room 밖으로 가구가 나갈 수 없음) 가구가 놓을 수 없는 상황일 때에는 놓을 수 없음.(빨간색 외곽선이 생김) place, undo, rotate 버튼을 통해 가구 조작 가능 캐릭터 이동 가능(가구를 통과할 수 없음)  벽면에 가구를 놓을 수 있음(왼쪽 벽에서 오른쪽 벽으로 이동하는 등 벽 사이에 이동 시 자동으로 회전됨.]]></description>
+    <description><![CDATA[<p><strong>유니티 처음 사용해본 사람의 유니티를 이용한 가구배치 앱</strong></p>]]></description>
+</item><item>
+    <title>[에브리타임] 3 Day</title>
+    <link>https://jyukki97.github.io/3day/</link>
+    <pubDate>Fri, 25 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/3day/</guid>
+    <description><![CDATA[3 Day Contents[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+  깃 허브 주소
+ 한 것 게시판 모음 페이지  ✅ Icon과 글 있는 Widget 추가 ✅ 핀과 글 있는 Widget 추가  모델  ✅ Board 모델 추가  게시판 제목, 즐겨찾기 추가 여부, new 게시물이 있는지 여부, Icon 등이 들어있는 모델을 추가.   ✅ Sample 모델 제작   주절주절.]]></description>
 </item><item>
     <title>[에브리타임] 2 Day</title>
     <link>https://jyukki97.github.io/2day/</link>
     <pubDate>Thu, 24 Jun 2021 23:00:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/2day/</guid>
-    <description><![CDATA[1 Day Contents[에브리타임] 시작
+    <description><![CDATA[2 Day Contents[에브리타임] 시작
 [에브리타임] 1 Day
 [에브리타임] 2 Day
   깃 허브 주소
@@ -63,46 +75,24 @@
 [에브리타임] 1 Day
  계획  하루에 조금씩이라도 하기!! 한 만큼 블로그에 기록하기 최대 10일을 넘기지 않도록 열심히 해보기  목표  에브리타임에 있는 기능들 구현 flutter를 사용한 겉모습 위주로 구현 시간이 남으면 서버까지 가능할지도&hellip;  ]]></description>
 </item><item>
-    <title>[백준]2493 탑</title>
-    <link>https://jyukki97.github.io/2493/</link>
-    <pubDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <title>[백준]4811 알약</title>
+    <link>https://jyukki97.github.io/4811/</link>
+    <pubDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/2493/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/2493
-풀이: 현재 탑의 높이보다 더 높은 위치에 있는 탑을 찾아야 하므로 스택을 이용하도록 한다.
-탑의 맨 오른쪽 부터 계산을 시작한다.
-현재 위치에 탑의 높이가 스택의 top에 있는 탑의 높이보다 높다면, 스택의 top을 pop 하고, 그 탑의 수신탑의 위치값을 현재 탑의 위치로 바꿔준다.
-스택의 top의 있는 탑의 높이가 현재 위치의 탑의 높이보다 작거나 같을 때까지 반복하고,
-스택에 현재 탑을 push해준다.
-왼쪽 끝까지 모든 탑을 확인했다면, 수신탑의 위치값을 출력해준다. 만약 수신탑을 찾지 못한 탑들은 0으로 출력한다.]]></description>
-</item><item>
-    <title>[백준]1323 숫자 연결하기</title>
-    <link>https://jyukki97.github.io/1323/</link>
-    <pubDate>Sun, 20 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1323/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1323
-풀이: 나머지 연산의 성질을 이용한다.
-나머지 연산의 경우 연산에 어디에 나머지 연산을 추가하든 나머지 연산의 값만 동일하다면, 최종 값도 동일하게 나온다.
-그러므로 주어진 N을 K로 나눈 나머지를 확인하고,
-0이 아니라면, 나온 나머지를 N과 연결하여 다시 K로 나눈 나머지를 확인한다.
-0이 나올 때까지 반복한다.
-나머지 연산 특성상 일정 개수 이상일 경우 반복하기 때문에 무한루프에 빠질 수 있다. 그러므로 최대 K번을 넘기지 않는다.
+    <guid>https://jyukki97.github.io/4811/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/4811
+풀이: 카탈란 수 문제이다.
+깔끔하게 카탈란 수로 풀어주자.
+$${2nCn \over n + 1}$$
 코드: 사용언어 : python
-1 2 3 4 5 6 7  n,k=map(int,input().]]></description>
+1 2  from math import factorial as f while a:=int(input()): print(f(2*a)//(f(a)*f(a+1)))   ]]></description>
 </item><item>
-    <title>[백준]1241 머리 톡톡</title>
-    <link>https://jyukki97.github.io/1241/</link>
-    <pubDate>Sat, 19 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <title>[백준]9252 LCS 2</title>
+    <link>https://jyukki97.github.io/9252/</link>
+    <pubDate>Tue, 22 Jun 2021 22:00:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://jyukki97.github.io/1241/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1241
-풀이: 1번 부터 N번까지 학생들의 머리 위의 숫자들의 개수를 저장해놓는다
-ex) 2는 2번, 1은 1번&hellip;
-자신의 머리 위의 수를 소인수분해한다.
-소인수분해를 통해 나온 약수들이 나온 개수만큼 모두 더해준다.
-자기 자신과 같은 수 일 때는 자기 자신을 세지않으므로 조심하자.
-코드: 사용언어 : python
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import math N=int(input()) a=[] d=dict() for i in range(N): a.append(int(input())) d[a[-1]] = d.]]></description>
+    <guid>https://jyukki97.github.io/9252/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/9252
+풀이:    0 A C A Y K P     C 0 1 1 1 1 1   A 1 1 2 2 2 2   P 1 1 2 2 2 2   C 1 2 2 2 2 3   A 1 2 3 3 3 3   K 1 2 3 3 4 4    첫 번째 문자열을 : A]]></description>
 </item></channel>
 </rss>

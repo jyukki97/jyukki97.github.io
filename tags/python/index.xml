@@ -3,7 +3,27 @@
         <title>python - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/python/</link>
         <description>python - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]4811 알약</title>
+    <link>https://jyukki97.github.io/4811/</link>
+    <pubDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/4811/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/4811
+풀이: 카탈란 수 문제이다.
+깔끔하게 카탈란 수로 풀어주자.
+$${2nCn \over n + 1}$$
+코드: 사용언어 : python
+1 2  from math import factorial as f while a:=int(input()): print(f(2*a)//(f(a)*f(a+1)))   ]]></description>
+</item><item>
+    <title>[백준]9252 LCS 2</title>
+    <link>https://jyukki97.github.io/9252/</link>
+    <pubDate>Tue, 22 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/9252/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/9252
+풀이:    0 A C A Y K P     C 0 1 1 1 1 1   A 1 1 2 2 2 2   P 1 1 2 2 2 2   C 1 2 2 2 2 3   A 1 2 3 3 3 3   K 1 2 3 3 4 4    첫 번째 문자열을 : A]]></description>
+</item><item>
     <title>[백준]2493 탑</title>
     <link>https://jyukki97.github.io/2493/</link>
     <pubDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</pubDate>
@@ -104,23 +124,5 @@ ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 
     <description><![CDATA[https://www.acmicpc.net/problem/10826
 풀이:  n을 입력받는다 n번째 피보나치 수를 출력한다  코드: 사용언어 : Python 3
 1 2 3 4  s,t=0,1 for i in range(int(input())): t,s=s,s+t print(s)   ]]></description>
-</item><item>
-    <title>[백준]11050 이항 계수 1</title>
-    <link>https://jyukki97.github.io/2019-06-14-11050/</link>
-    <pubDate>Fri, 14 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-06-14-11050/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/11050
-풀이:  n, k 를 입력받고, nCk를 출력한다  코드: 사용언어 : Python 3
-1 2 3 4  n,k=map(int,input().split()) r=1 for i in range(k): r*=(n-i)/(i+1) print((int)(r))   ]]></description>
-</item><item>
-    <title>[백준]11365 !밀비 급일</title>
-    <link>https://jyukki97.github.io/2019-06-13-11365/</link>
-    <pubDate>Thu, 13 Jun 2019 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2019-06-13-11365/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/11365
-풀이:  문자열을 입력받고, 그 문자열을 뒤집어서 출력한다. 문자열이 END라면 반복을 중지한다.  코드: 사용언어 : Python 3
-1 2 3 4  while 1: a=input() if a==&#39;END&#39;:break print(a[::-1])   ]]></description>
 </item></channel>
 </rss>

@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-24T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-25T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,39 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-08-1261/">[백준]1261 알고스팟</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-08">2020-03-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1261
+풀이: [C++]다익스트라 알고리즘(Dijkstra Algorithm) 참고
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;#include &lt;algorithm&gt;using namespace std; int N, M, b[102][102], q, w, e, dp[102][102]; int main() { cin &gt;&gt; M &gt;&gt; N; fill(dp[0], dp[0] + 10201, 987654321); vector&lt;string&gt; v(N); priority_queue&lt;pair&lt;int, pair&lt;int, int&gt;&gt;&gt; p; p.</div><div class="post-footer">
+        <a href="/2020-03-08-1261/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC/">다익스트라</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1120/">[백준]1120 문자열</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1120
+풀이: a 와 b의 (0번째 ~ a의 길이) 의 차이의 개수
+a 와 b의 (1번째 ~ a의 길이) 의 차이의 개수
+.
+.
+.
+a 와 b의 ()(b의 길이 - a의 길이)번째 ~ a의 길이) 의 차이의 개수
+중 가장 작은것을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int main() { int c = 51; string a, b; cin &gt;&gt; a &gt;&gt; b; for (int i = 0; i &lt;= b.</div><div class="post-footer">
+        <a href="/2020-03-07-1120/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-07-1158/">[백준]1158 요세푸스 문제</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1158
+풀이: K번째 사람을 출력한다.
+K번째 사람을 배열에서 삭제한다.
+삭제한 지점을 기준으로 K번째 사람을 출력한다.
+반복한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, K, c; int main() { cin &gt;&gt; N &gt;&gt; K; vector&lt;int&gt; a; for (int i = 1; i &lt;= N; i++)	a.push_back(i); c = K - 1; cout &lt;&lt; &#34;&lt;&#34;; while (a.</div><div class="post-footer">
+        <a href="/2020-03-07-1158/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-07-1159/">[백준]1159 농구 경기</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-07">2020-03-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1159
 풀이: 각 선수의 성의 첫글자를 확인한다.
@@ -136,41 +169,6 @@ a의 부분수열을 모두 탐색하여 그 합이 S가 되는 갯수를 출력
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;vector&gt;using namespace std; typedef pair&lt;int, int&gt; P; int N, E, q, w, e, b[10002] = { 1,1 }; vector&lt;priority_queue&lt;P, vector&lt;P&gt;, greater&lt;P&gt;&gt;&gt; a; int main() { cin &gt;&gt; N &gt;&gt; E; a.</div><div class="post-footer">
         <a href="/2020-03-07-1197/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%B5%9C%EC%86%8C-%EC%8A%A4%ED%8C%A8%EB%8B%9D-%ED%8A%B8%EB%A6%AC/">최소 스패닝 트리</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1015/">[백준]1015 수열 정렬</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1015
-풀이: 배열 A를 정렬한 배열을 배열 B라고 하자.
-현재 위치가 i 일 때, A[i] 값이 배열 B의 어디에 위치해 있는지 찾아서 출력한다.
-ex)
-A
-2 3 1
-B
-1 2 3
-답:
-1 2 0
-수의 중복이 있을 수 있으므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, a[52], b[52], d[52], c; int main(void) { cin &gt;&gt; N; for (int i = 0; i &lt; N; i++) { cin &gt;&gt; a[i]; b[i] = a[i]; } sort(a, a + N); for (int i = 0; i &lt; N; i++) { c = lower_bound(a, a + N, b[i]) - a; while (d[c])	c++; cout &lt;&lt; c &lt;&lt; &#34; &#34;; d[c] = 1; } cout &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-06-1015/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1024/">[백준]1024 수열의 합</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1024
-풀이: 길이가 적어도 L인 수열은 다음과 같이 나타낼 수 있다.
-1  n	n + 1	n + 2	...	n + L - 2	n + L - 1   즉, 길이가 L인 수열들의 합은
-L * n + Σ k (k = 1 ~ L - 1) = N
-( N - Σ k (k = 1 ~ L - 1) ) % L == 0</div><div class="post-footer">
-        <a href="/2020-03-06-1024/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-06-1051/">[백준]1051 숫자 정사각형</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-06">2020-03-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1051
-풀이: N, M 중 더 작은 값이 정사각형의 한 변의 길이의 최댓값이 된다.
-최댓값을 1씩 줄여 가면서, 만들 수 있는 정사각형이 있는지 확인한다.
-만들 수 있다면, 반복을 중지하고, 변을 제곱한 넓이를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int N, M, b, c = 1; int main(void) { cin &gt;&gt; N &gt;&gt; M; vector&lt;string&gt; a(N); for (int i = 0; i &lt; N; i++) cin &gt;&gt; a[i]; b = N &gt; M ?</div><div class="post-footer">
-        <a href="/2020-03-06-1051/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -201,7 +199,7 @@ L * n + Σ k (k = 1 ~ L - 1) = N
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/80/">80</a>
+                        <a href="/page/81/">81</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
