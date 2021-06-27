@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-25T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-26T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,48 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/2493/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/2493/featured-image.png"
+        data-srcset="/2493/featured-image.png, /2493/featured-image.png 1.5x, /2493/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/2493/featured-image.png"
+        title="/2493/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/2493/">[백준]2493 탑</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-21">2021-06-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2493
+풀이: 현재 탑의 높이보다 더 높은 위치에 있는 탑을 찾아야 하므로 스택을 이용하도록 한다.
+탑의 맨 오른쪽 부터 계산을 시작한다.
+현재 위치에 탑의 높이가 스택의 top에 있는 탑의 높이보다 높다면, 스택의 top을 pop 하고, 그 탑의 수신탑의 위치값을 현재 탑의 위치로 바꿔준다.
+스택의 top의 있는 탑의 높이가 현재 위치의 탑의 높이보다 작거나 같을 때까지 반복하고,
+스택에 현재 탑을 push해준다.
+왼쪽 끝까지 모든 탑을 확인했다면, 수신탑의 위치값을 출력해준다. 만약 수신탑을 찾지 못한 탑들은 0으로 출력한다.</div><div class="post-footer">
+        <a href="/2493/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0/">자료 구조</a>,&nbsp;<a href="/tags/%EC%8A%A4%ED%83%9D/">스택</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/1323/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1323/featured-image.png"
+        data-srcset="/1323/featured-image.png, /1323/featured-image.png 1.5x, /1323/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/1323/featured-image.png"
+        title="/1323/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/1323/">[백준]1323 숫자 연결하기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-20">2021-06-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1323
+풀이: 나머지 연산의 성질을 이용한다.
+나머지 연산의 경우 연산에 어디에 나머지 연산을 추가하든 나머지 연산의 값만 동일하다면, 최종 값도 동일하게 나온다.
+그러므로 주어진 N을 K로 나눈 나머지를 확인하고,
+0이 아니라면, 나온 나머지를 N과 연결하여 다시 K로 나눈 나머지를 확인한다.
+0이 나올 때까지 반복한다.
+나머지 연산 특성상 일정 개수 이상일 경우 반복하기 때문에 무한루프에 빠질 수 있다. 그러므로 최대 K번을 넘기지 않는다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7  n,k=map(int,input().</div><div class="post-footer">
+        <a href="/1323/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/1241/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -185,34 +227,6 @@ ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 
 121, 128, 129, 131, 138, 139 로 총 6가지 이다.</div><div class="post-footer">
         <a href="/1089/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/flutter_sample_bookstore/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/flutter_sample_bookstore/featured-image.png"
-        data-srcset="/flutter_sample_bookstore/featured-image.png, /flutter_sample_bookstore/featured-image.png 1.5x, /flutter_sample_bookstore/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/flutter_sample_bookstore/featured-image.png"
-        title="Flutter Practice" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/flutter_sample_bookstore/">Flutter_sample_bookstore</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-27">2021-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/flutter/"><i class="far fa-folder fa-fw"></i>Flutter</a></span></div><div class="content">Flutter Practice 2. flutter_sample_bookstore 용도  Book Store   Flutter 사용  Git 위치 Flutter_sample_bookstore </div><div class="post-footer">
-        <a href="/flutter_sample_bookstore/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/bookstore/">bookstore</a>,&nbsp;<a href="/tags/app/">app</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/flutter_sample_note_1/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/flutter_sample_note_1/featured-image.png"
-        data-srcset="/flutter_sample_note_1/featured-image.png, /flutter_sample_note_1/featured-image.png 1.5x, /flutter_sample_note_1/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/flutter_sample_note_1/featured-image.png"
-        title="Flutter Practice" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/flutter_sample_note_1/">Flutter_sample_note_1</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-25">2021-01-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/flutter/"><i class="far fa-folder fa-fw"></i>Flutter</a></span></div><div class="content">Flutter Practice 1. Flutter_sample_note_1 노트  Flutter 사용  Git 위치 Flutter_sample_note_1 </div><div class="post-footer">
-        <a href="/flutter_sample_note_1/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/note/">note</a>,&nbsp;<a href="/tags/app/">app</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

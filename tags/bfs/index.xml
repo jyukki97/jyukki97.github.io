@@ -3,7 +3,19 @@
         <title>BFS - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/bfs/</link>
         <description>BFS - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/bfs/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]6593 상범 빌딩</title>
+    <link>https://jyukki97.github.io/6593/</link>
+    <pubDate>Thu, 24 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/6593/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/6593
+풀이: BFS 문제이다.
+현재 위치에서 오른쪽, 왼쪽, 위, 아래, 앞, 뒤 6방향을 모두 검사하고 갈 수 있다면, 큐에 집어넣는 방식으로 풀 수 있다.
+주의사항  이미 방문한 위치는 표시하여 다시 방문하지 않게 해주도록 하자.
+  출력 형식을 주의 깊게 보자. 틀렸습니다의 절반 이상이 이 문제일 가능성이 높다.
+   처음에 파이썬으로 풀었는데 답 제출에서 IndexOutOfBound가 뜨더라&hellip; 분명히 정답이 뜬 c++ 코드와 같은 코드인데 문제를 모르겠다.]]></description>
+</item><item>
     <title>[백준]17267 상남자</title>
     <link>https://jyukki97.github.io/2020-12-30-17267/</link>
     <pubDate>Wed, 30 Dec 2020 00:00:00 &#43;0000</pubDate>
@@ -126,16 +138,5 @@ S가 G와 같다면 0을 출력한다.
 안전한 영역의 최대치를 출력한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  #include &lt;iostream&gt;#define F(i,n)for(int i=0;i&lt;n;i++) using namespace std; int n, m = 0, a[102][102], b[102][102], s, r = 0; void A(int x, int y) { b[x][y] = 0; if (x &gt; 0 &amp;&amp; b[x - 1][y])	A(x - 1, y); if (y &gt; 0 &amp;&amp; b[x][y - 1])	A(x, y - 1); if (x + 1 &lt; n &amp;&amp; b[x + 1][y])	A(x + 1, y); if (y + 1 &lt; n &amp;&amp; b[x][y + 1])	A(x, y + 1); } int main() { cin &gt;&gt; n; F(i,n)F(t,n){ cin &gt;&gt; a[i][t]; m = m &lt; a[i][t] ?]]></description>
-</item><item>
-    <title>[백준]11724 연결 요소의 개수</title>
-    <link>https://jyukki97.github.io/2020-03-12-11724/</link>
-    <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-12-11724/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/11724
-풀이: 방문하지 않은 정점과 연결된 모든 정점을 방문표시하고, 요소의 개수를 +1 해준다.
-더이상 방문할 정점이 없을때까지 반복한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;vector&gt;using namespace std; int n, m, i, t, c = 0, b[1002]; vector&lt;vector&lt;int&gt;&gt; a; void T(int x) { if (b[x]) return; b[x] = 1; for (int o : a[x])	T(o); } int main() { cin &gt;&gt; n &gt;&gt; m; a.]]></description>
 </item></channel>
 </rss>

@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-25T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-26T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,29 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-19-11382/">[백준]11382 꼬마 정민</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-19">2020-04-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11382
+풀이: A, B, C 를 각각 문자열로 변환한다.
+변환된 문자열을 한자리씩 더한다.
+만약 각 자릿수의 숫자가 10이 넘어간다면 다음 자릿수에 올림을 해준다.
+더해진 문자열을 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int main() { string a, b, c, d; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int m = max(a.</div><div class="post-footer">
+        <a href="/2020-04-19-11382/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-04-18-3056/">[백준]3056 007</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-18">2020-04-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/3056
+풀이: d[x] : 비트마스크가 x인 미션을 완료 할 확률
+비트마스크 x : 나누어 준 미션은 1, 아직 나누어 주지 않은 미션은 0
+비트마스크가 1, 10, 100, 1000 &hellip;.. 등 1의 갯수가 1개인 것은 첫 번째 지미 본드가 수행한다고 한다.
+비트마스크가 11, 110, 1100, 11000 &hellip;.. 등 1의 갯수가 2개인 것은 두 번째 지미 본드가 수행한다고 한다.
+&hellip;.
+비트마스크를 0 ~ (1 &laquo; n) 까지 순회한다.
+현재의 비트마스크를 i 라고 하자, 그 비트의 중간에 0이 들어있다면, 그 위치에 1을 넣는다.</div><div class="post-footer">
+        <a href="/2020-04-18-3056/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a>,&nbsp;<a href="/tags/mcmf/">MCMF</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-04-17-1102/">[백준]1102 발전소</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-17">2020-04-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1102
 풀이: 발전소의 현재 상태를 2진수로 표현한다.
@@ -154,33 +177,6 @@ p값이 0이라면 발전소를 킬 필요가 없으므로 0을 출력</div><div
 코드: 사용언어 : c++</div><div class="post-footer">
         <a href="/2020-04-14-1254/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-13-1213/">[백준]1213 팰린드롬 만들기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-13">2020-04-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1213
-풀이: 주어진 문자열에서 알파벳이 각각 몇개 들어있는지 저장한다.
-A~Z 까지 갯수를 확인한 후
-앞뒤로 하나씩 넣는다.
-홀수개인 알파벳이 2개 이상 이라면, 문자열을 만들 수 없으므로 &ldquo;I&rsquo;m Sorry Hansoo&quot;를 출력한다.
-문자열의 길이가 홀수라면, 가운데에 1개남은 글자를 넣어준다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;using namespace std; int i, c = -1, f, t, b[26]; string s; int main() { cin &gt;&gt; s; for (; i &lt; s.</div><div class="post-footer">
-        <a href="/2020-04-13-1213/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B8%8C%EB%A3%A8%ED%8A%B8-%ED%8F%AC%EC%8A%A4/">브루트 포스</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-04-12-1334/">[백준]1334 다음 팰린드롬 수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-04-12">2020-04-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1334
-풀이: 문자열 S를 받아온다.
-S의 길이를 N이라고 하자.
-S의 오른쪽 절반의 값을 왼쪽 절반의 값으로 덮어쓰자.
-그렇게 만들어진 문자열을 A라고 하자.
-A는 이미 펠린드롬 수 인데, 이 수가 S보다 크다면 A를 그대로 출력한다.
-만약 S보다 작다면,
-가운데 수를 1씩 증가시킨다.
-가운데 수가 9가 됐다면, 0으로 바꾸고 오른쪽, 왼쪽 수를 1씩 증가시킨다.
-더 커질 때까지 반복한 후 A를 출력한다.
-만약 S가 9로만 이루어진 수라면, 맨 앞수를 1로 바꾸고 그 것을 제외한 모든수를 0으로 바꾼 후 1을 추가한 후 출력한다.</div><div class="post-footer">
-        <a href="/2020-04-12-1334/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

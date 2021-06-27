@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-25T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-06-26T23:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,24 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-17-2953/">[백준]2953 나는 요리사다</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-17">2020-03-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2953
+풀이: 첫째 줄부터 다섯번쨰 줄까지의 사람 중 점수의 합이 가장 높은 사람과 그 점수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int i, a, b, c, d, s, t = 0; int main() { for (i = 1; i &lt; 6; i++) { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d; a += b + c + d; if (a &gt; t)	t = a, s = i; } printf(&#34;%d %d&#34;, s, t); }   </div><div class="post-footer">
+        <a href="/2020-03-17-2953/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B0%B0%EC%97%B4/">배열</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-17-5063/">[백준]5063 TGN</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-17">2020-03-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5063
+풀이: 광고를 했을 때의 수익 - 광고 비용 이 광고를 했을 떄 얻을 수 있는 순이익이다.
+즉, 광고를 하지않았을 때의 수익과 광고를 했을 때 얻을 수 있는 순 이익을 비교하여,
+해야 하면 &ldquo;advertise&rdquo;, 하지 않아야 하면 &ldquo;do not advertise&rdquo;, 광고를 해도 수익이 차이가 없다면 &ldquo;does not matter&quot;를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int T, k, n, m; int main() { cin &gt;&gt; T; while (T--) { cin &gt;&gt; k &gt;&gt; n &gt;&gt; m; n -= m; if (k == n)	cout &lt;&lt; &#34;does not matter&#34; &lt;&lt; endl; else if (k &lt; n) cout &lt;&lt; &#34;advertise&#34; &lt;&lt; endl; else cout &lt;&lt; &#34;do not advertise&#34; &lt;&lt; endl; } }   </div><div class="post-footer">
+        <a href="/2020-03-17-5063/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2020-03-16-10820/">[백준]10820 문자열 분석</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10820
 풀이: [C++]대소문자, 숫자 구분함수  참고
@@ -143,24 +161,6 @@ i번째 줄에는 N - i 칸 띄고, &ldquo;&rdquo; 한개, 2 * i - 1 칸 띄고,
 1 2 3 4 5 6 7 8 9 10 11 12 13  #include &lt;iostream&gt;using namespace std; int N, i, t; int main() { cin &gt;&gt; N; for (i = 0; i &lt; N; i++) { for (t = 1; t &lt; N - i; t++)	cout &lt;&lt; &#34; &#34;; cout &lt;&lt; &#34;*&#34;; for (t = 0; t &lt; 2 * i - 1; t++) printf(&#34;%s&#34;, i == N - 1 ?</div><div class="post-footer">
         <a href="/2020-03-16-10992/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/">별 찍기</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-16-11659/">[백준]11659 구간 합 구하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11659
-풀이: a[i] : 1 ~ i 까지의 구간 합
-i ~ j 까지의 구간 합 = 1 ~ j 까지의 구간 합 - 1 ~ i - 1 까지의 구간 합
-cin, cout 은 시간초과가 나므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int N, M, q, w, i, a[100002]; int main() { scanf(&#34;%d%d&#34;,&amp;N,&amp;M); for (i = 1; i &lt;= N; i++){ scanf(&#34;%d&#34;,&amp;q); a[i] = a[i - 1] + q; }	while (M--) { scanf(&#34;%d%d&#34;,&amp;q,&amp;w); printf(&#34;%d\n&#34;, a[w] - a[q - 1]); } }   </div><div class="post-footer">
-        <a href="/2020-03-16-11659/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-16-11728/">[백준]11728 배열 합치기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-16">2020-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11728
-풀이: n + m 만큼의 숫자를 받아온다.
-받아온 숫자를 정렬하여 출력한다.
-cin, cout 은 시간초과가 나므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, m; int main() { scanf(&#34;%d%d&#34;,&amp;n,&amp;m); n += m; priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; a; while (n--) { scanf(&#34;%d&#34;,&amp;m); a.push(m); } while (!a.empty())	printf(&#34;%d &#34;,a.top()), a.pop(); printf(&#34;\n&#34;); }   </div><div class="post-footer">
-        <a href="/2020-03-16-11728/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

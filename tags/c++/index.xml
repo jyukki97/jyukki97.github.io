@@ -3,7 +3,19 @@
         <title>C&#43;&#43; - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/c&#43;&#43;/</link>
         <description>C&#43;&#43; - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 04 Jan 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/c&#43;&#43;/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/c&#43;&#43;/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]6593 상범 빌딩</title>
+    <link>https://jyukki97.github.io/6593/</link>
+    <pubDate>Thu, 24 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/6593/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/6593
+풀이: BFS 문제이다.
+현재 위치에서 오른쪽, 왼쪽, 위, 아래, 앞, 뒤 6방향을 모두 검사하고 갈 수 있다면, 큐에 집어넣는 방식으로 풀 수 있다.
+주의사항  이미 방문한 위치는 표시하여 다시 방문하지 않게 해주도록 하자.
+  출력 형식을 주의 깊게 보자. 틀렸습니다의 절반 이상이 이 문제일 가능성이 높다.
+   처음에 파이썬으로 풀었는데 답 제출에서 IndexOutOfBound가 뜨더라&hellip; 분명히 정답이 뜬 c++ 코드와 같은 코드인데 문제를 모르겠다.]]></description>
+</item><item>
     <title>[백준]12787 지금 밥이 문제냐</title>
     <link>https://jyukki97.github.io/2021-01-04-12787/</link>
     <pubDate>Mon, 04 Jan 2021 00:00:00 &#43;0000</pubDate>
@@ -119,16 +131,5 @@ score값은 음수가 될 수 없으므로 주의하자!!!
 풀이: 받아온 수 중 가장 큰 수를 출력한다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   ]]></description>
-</item><item>
-    <title>[백준]14614 Calculate!</title>
-    <link>https://jyukki97.github.io/2020-12-26-14614/</link>
-    <pubDate>Sat, 26 Dec 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-12-26-14614/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/14614
-풀이: C가 짝수라면 A를
-C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int main() { int a, b; string c; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((int)(c[c.size() - 1] - &#39;0&#39;) % 2) a ^= b; cout &lt;&lt; a &lt;&lt; endl; }   ]]></description>
 </item></channel>
 </rss>
