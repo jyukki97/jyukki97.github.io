@@ -3,7 +3,7 @@
         <title>app - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/app/</link>
         <description>app - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 26 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/app/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 28 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/app/" rel="self" type="application/rss+xml" /><item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
     <link>https://jyukki97.github.io/youchu/</link>
     <pubDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</pubDate>
@@ -31,6 +31,35 @@
     <author>Author</author>
     <guid>https://jyukki97.github.io/unity_room/</guid>
     <description><![CDATA[<p><strong>유니티 처음 사용해본 사람의 유니티를 이용한 가구배치 앱</strong></p>]]></description>
+</item><item>
+    <title>[에브리타임] 6 Day</title>
+    <link>https://jyukki97.github.io/6day/</link>
+    <pubDate>Mon, 28 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/6day/</guid>
+    <description><![CDATA[6 Day 에브리타임 목록[에브리타임] 깃 허브 주소
+[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+[에브리타임] 4 Day
+[에브리타임] 5 Day
+[에브리타임] 6 Day
+ 한 것 위젯  ✅ 어제 개편한 위젯들로 모든 페이지를 수정  모델  ✅ 개편된 위젯들로 인해 mainPage에 들어갈 모델들 추가   주절주절.. 오늘도 마찬가지로 만들어 놓은 것을 수정하는 작업을 해서 보여지는 것은 없음. 그래서인지 사진으로도 안가져왔음.]]></description>
+</item><item>
+    <title>[에브리타임] 5 Day</title>
+    <link>https://jyukki97.github.io/5day/</link>
+    <pubDate>Sun, 27 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/5day/</guid>
+    <description><![CDATA[5 Day 에브리타임 목록[에브리타임] 깃 허브 주소
+[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+[에브리타임] 4 Day
+[에브리타임] 5 Day
+ 한 것 위젯  ✅ 싹 다 개편  모든 위젯을 생성하는 방식에서 하나의 틀을 만들고 부품을 추가하는 방식으로 변경.    메인페이지  ✅ 맨 위에 있는 pageView 수정  page를 넘길 때마다 좌, 우 비율이 바뀌던 것 수정 pageView의 좌, 우 보이는 비율이 오른쪽이 더 크게 만듦     주절주절.]]></description>
 </item><item>
     <title>[에브리타임] 4 Day</title>
     <link>https://jyukki97.github.io/4day/</link>
@@ -83,25 +112,5 @@
 [에브리타임] 3 Day
 [에브리타임] 4 Day
  한 것 메인 스크린 제작  ✅ appbar ✅ bottomNavigation  홈 페이지 조금 제작  ✅ 맨 위에 page view 제작 ✅ 그 밑에 원으로 된 리스트 제작 ✅ 광고칸 제작 ✅ 즐겨찾는 페이지 칸 제작   수업 때매 한 시간밖에 하지 못해서 아쉽다&hellip; 내일은 홈 페이지 완성하고, 서브페이지까지 해봐야겠다.]]></description>
-</item><item>
-    <title>[에브리타임] 시작</title>
-    <link>https://jyukki97.github.io/start/</link>
-    <pubDate>Tue, 22 Jun 2021 00:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/start/</guid>
-    <description><![CDATA[시작 에브리타임 목록[에브리타임] 깃 허브 주소
-[에브리타임] 시작
-[에브리타임] 1 Day
-[에브리타임] 2 Day
-[에브리타임] 3 Day
-[에브리타임] 4 Day
- 계획  하루에 조금씩이라도 하기!! 한 만큼 블로그에 기록하기 최대 10일을 넘기지 않도록 열심히 해보기  목표  에브리타임에 있는 기능들 구현 flutter를 사용한 겉모습 위주로 구현 시간이 남으면 서버까지 가능할지도&hellip;  ]]></description>
-</item><item>
-    <title>Flutter_sample_bookstore</title>
-    <link>https://jyukki97.github.io/flutter_sample_bookstore/</link>
-    <pubDate>Wed, 27 Jan 2021 21:57:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/flutter_sample_bookstore/</guid>
-    <description><![CDATA[Flutter Practice 2. flutter_sample_bookstore 용도  Book Store   Flutter 사용  Git 위치 Flutter_sample_bookstore ]]></description>
 </item></channel>
 </rss>

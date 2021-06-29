@@ -3,7 +3,36 @@
         <title>Flutter - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/flutter/</link>
         <description>Flutter - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 26 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/flutter/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 28 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/flutter/" rel="self" type="application/rss+xml" /><item>
+    <title>[에브리타임] 6 Day</title>
+    <link>https://jyukki97.github.io/6day/</link>
+    <pubDate>Mon, 28 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/6day/</guid>
+    <description><![CDATA[6 Day 에브리타임 목록[에브리타임] 깃 허브 주소
+[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+[에브리타임] 4 Day
+[에브리타임] 5 Day
+[에브리타임] 6 Day
+ 한 것 위젯  ✅ 어제 개편한 위젯들로 모든 페이지를 수정  모델  ✅ 개편된 위젯들로 인해 mainPage에 들어갈 모델들 추가   주절주절.. 오늘도 마찬가지로 만들어 놓은 것을 수정하는 작업을 해서 보여지는 것은 없음. 그래서인지 사진으로도 안가져왔음.]]></description>
+</item><item>
+    <title>[에브리타임] 5 Day</title>
+    <link>https://jyukki97.github.io/5day/</link>
+    <pubDate>Sun, 27 Jun 2021 23:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/5day/</guid>
+    <description><![CDATA[5 Day 에브리타임 목록[에브리타임] 깃 허브 주소
+[에브리타임] 시작
+[에브리타임] 1 Day
+[에브리타임] 2 Day
+[에브리타임] 3 Day
+[에브리타임] 4 Day
+[에브리타임] 5 Day
+ 한 것 위젯  ✅ 싹 다 개편  모든 위젯을 생성하는 방식에서 하나의 틀을 만들고 부품을 추가하는 방식으로 변경.    메인페이지  ✅ 맨 위에 있는 pageView 수정  page를 넘길 때마다 좌, 우 비율이 바뀌던 것 수정 pageView의 좌, 우 보이는 비율이 오른쪽이 더 크게 만듦     주절주절.]]></description>
+</item><item>
     <title>[에브리타임] 4 Day</title>
     <link>https://jyukki97.github.io/4day/</link>
     <pubDate>Sat, 26 Jun 2021 23:00:40 &#43;0800</pubDate>
