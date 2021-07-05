@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>가장 긴 증가하는 부분 수열 - Tag - JYUKKI&#39;s BLOG</title>
+        <link>https://jyukki97.github.io/tags/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4/</link>
+        <description>가장 긴 증가하는 부분 수열 - Tag - JYUKKI&#39;s BLOG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]2550 전구</title>
+    <link>https://jyukki97.github.io/2550/</link>
+    <pubDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2550/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2550
+풀이: 전기줄 - 2 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import bisect d,q,c,e={},[],[],[] n=int(input()) for i in map(int,input().split()): d[i]=0 for k,i in enumerate(map(int,input().split())): d[i]=k for k,i in d.items(): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] c+=[s] s=len(q) print(s) for i in range(n-1,-1,-1): if c[i]==s-1:e+=[list(d)[i]];s-=1 print(&#39; &#39;.join(map(str,sorted(e))))   ]]></description>
+</item><item>
+    <title>[백준]18353 병사 배치하기</title>
+    <link>https://jyukki97.github.io/18353/</link>
+    <pubDate>Sat, 03 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/18353/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/18353
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+정확히 말하면 가장 긴 감소하는 부분 수열이지 않을까? 라는 생각이 드는 문제이다.
+말 그대로 감소하는 것이기에 뒤에서부터 증가하는 수열을 찾을까? 라는 생각이 들었지만,
+귀찮은 관계로 모든 수에 음수 처리를 해주어 가장 긴 증가하는 부분 수열을 찾게되었다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8  import bisect n=int(input()) q=[] for i in map(int,input().split()): s=bisect.bisect_left(q,-i) if s!=len(q):q[s]=-i else:q+=[-i] print(n-len(q))   ]]></description>
+</item><item>
+    <title>[백준]3745 오름세</title>
+    <link>https://jyukki97.github.io/3745/</link>
+    <pubDate>Fri, 02 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/3745/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/3745
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+파이썬에서 EOF 처리하는 방법을 알게되었다.
+C++ 에서는 while문 내부에서 cin이나 scanf의 return 값으로 알 수 있었지만, 파이썬은 안되더라.
+그냥 단순하게 try catch 문에서 EOF를 감지해서 EOF 일 때 exit() 하는 방법으로 하는 것 같다.
+다른 의견으로는 그냥 무한루프를 돌리면 알아서 중지되면서 맞았습니다가 떴다고 하는데, 나는 안되서 잘 모르겠다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10  import bisect try: while input(): q=[] for i in map(int,input().]]></description>
+</item><item>
+    <title>[백준]12738 가장 긴 증가하는 부분 수열 3</title>
+    <link>https://jyukki97.github.io/12738/</link>
+    <pubDate>Thu, 01 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/12738/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/12738
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8  import bisect input() q=[] for i in map(int,input().split()): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] print(len(q))   ]]></description>
+</item><item>
+    <title>[백준]2568 전깃줄 - 2</title>
+    <link>https://jyukki97.github.io/2568/</link>
+    <pubDate>Mon, 28 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2568/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2568
+풀이: 가장 긴 증가하는 부분수열 문제이다.
+B번 전깃줄의 위치를 A번 전깃줄의 위치를 기준으로 정렬한 뒤, B를 기준으로 가장 긴 증가하는 부분수열을 찾으면 되는 문제이다.
+예를들어 예시에서
+   A 1 2 3 4 6 7 9 10     B 8 2 9 1 4 6 7 10    위와 같이 정렬된다.
+이렇게 정렬 되었을 때, B를 기준으로 가장 긴 증가하는 부분수열은 1, 4, 6, 7, 10 이 되고 남은 8, 2, 9 에 대응되는 A값은 1, 2, 3 3개이다.]]></description>
+</item><item>
+    <title>[백준]14003 가장 긴 증가하는 부분 수열 5</title>
+    <link>https://jyukki97.github.io/14003/</link>
+    <pubDate>Sun, 27 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/14003/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/14003
+풀이: 가장 긴 증가하는 부분 수열을 구하는 문제이다.
+수열의 0 ~ N 번째 까지 숫자들 중 가장 길게 증가하는 부분 수열을 만들면 된다.
+배열을 하나 만든 후 수열의 숫자를 배열에 하나 씩 넣는다.
+넣을 때에는 규칙이 있는데, 현재 숫자가 배열의 맨 오른쪽의 숫자보다 크다면, 가장 오른쪽에 추가해 주고, 만약 배열의 숫자 중 현재 숫자가 더 작은 숫자가 있다면, 현재 숫자로 교채해 준다.
+이렇게 된다면, 배열은 자동적으로 정렬되게 되고, 최종적으로 만들어진 배열의 크기가 가장 긴 증가하는 부분 수열의 길이가 된다.]]></description>
+</item></channel>
+</rss>

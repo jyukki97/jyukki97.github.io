@@ -3,7 +3,44 @@
         <title>DP - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/dp/</link>
         <description>DP - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/dp/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]2550 전구</title>
+    <link>https://jyukki97.github.io/2550/</link>
+    <pubDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2550/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2550
+풀이: 전기줄 - 2 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import bisect d,q,c,e={},[],[],[] n=int(input()) for i in map(int,input().split()): d[i]=0 for k,i in enumerate(map(int,input().split())): d[i]=k for k,i in d.items(): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] c+=[s] s=len(q) print(s) for i in range(n-1,-1,-1): if c[i]==s-1:e+=[list(d)[i]];s-=1 print(&#39; &#39;.join(map(str,sorted(e))))   ]]></description>
+</item><item>
+    <title>[백준]18353 병사 배치하기</title>
+    <link>https://jyukki97.github.io/18353/</link>
+    <pubDate>Sat, 03 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/18353/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/18353
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+정확히 말하면 가장 긴 감소하는 부분 수열이지 않을까? 라는 생각이 드는 문제이다.
+말 그대로 감소하는 것이기에 뒤에서부터 증가하는 수열을 찾을까? 라는 생각이 들었지만,
+귀찮은 관계로 모든 수에 음수 처리를 해주어 가장 긴 증가하는 부분 수열을 찾게되었다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8  import bisect n=int(input()) q=[] for i in map(int,input().split()): s=bisect.bisect_left(q,-i) if s!=len(q):q[s]=-i else:q+=[-i] print(n-len(q))   ]]></description>
+</item><item>
+    <title>[백준]4198 열차정렬</title>
+    <link>https://jyukki97.github.io/4198/</link>
+    <pubDate>Wed, 30 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/4198/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/4198
+풀이: 가장 긴 증가하는 부분수열 문제와 비슷하게 풀 수 있다.
+가장 긴 증가하는 부분 수열 5 참고
+1 ~ N 까지의 모든 차량을 살펴보면서 진행한다.
+현재 차량이 i 일 때, i번째 차량을 기준으로 생각한다.
+i+1 ~ N 까지의 차량 중 i 번째 차량을 시작점으로 가장 긴 증가하는 부분수열의 길이를 구하고, 반대로 가장 긴 감소하는 부분수열의 길이를 구한다.
+두 부분수열의 길이를 합한 값 중 가장 큰 값을 찾는다.
+코드: 사용언어 : python]]></description>
+</item><item>
     <title>[백준]4811 알약</title>
     <link>https://jyukki97.github.io/4811/</link>
     <pubDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</pubDate>
@@ -98,45 +135,5 @@ p값이 0이라면 발전소를 킬 필요가 없으므로 0을 출력]]></descr
 짝수 팰린드롬을 만들 수 있다면, 2 * ( i - 1 ) 을 출력한다.
 홀수 팰린드롬을 만들 수 있다면, 2 * i - 1 을 출력한다.
 코드: 사용언어 : c++]]></description>
-</item><item>
-    <title>[백준]1915 가장 큰 정사각형</title>
-    <link>https://jyukki97.github.io/2020-03-16-1915/</link>
-    <pubDate>Mon, 16 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-16-1915/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1915
-풀이: b[i][t] : i , t 가 오른쪽 아래 꼭짓점인 정사각형의 한 변의 길이
-i, t가 0이라면, 정사각형을 만들 수 없으므로 0
-i, t 의 수가 1이라면,
-b[i][t] = (b[i - 1][t], b[i][t - 1], b[i - 1][t - 1] 의 최솟값) + 1
-넓이 이므로 b[i][t] 중 가장 큰 값을 제곱하여 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a, b[1002][1002], s = 0; int main() { cin &gt;&gt; n &gt;&gt; m; for (i = 0; i &lt; n; i++)	for (t = 0; t &lt; m; t++) { scanf_s(&#34;%1d&#34;,&amp;a); if (a) { if (i &amp;&amp; t) { b[i][t] = b[i - 1][t] &gt; b[i][t - 1] ?]]></description>
-</item><item>
-    <title>[백준]10942 팰린드롬?</title>
-    <link>https://jyukki97.github.io/2020-02-27-10942/</link>
-    <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-27-10942/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/10942
-풀이: DP[i][t] : i 번쨰 수 부터 t 번째 까지 수가 팰린드롬을 이룬다면 1, 아니라면 0
-a[i] == a[t] 라면,
-DP[i][t] = DP[i + 1][t - 1]
-a[i] != a[t] 라면,
-DP[i][t] = 0
-테스트 케이스가 많아 시간초과가 날 수 있으므로 메모이제이션을 하자! 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;string.]]></description>
-</item><item>
-    <title>[백준]1520 내리막 길</title>
-    <link>https://jyukki97.github.io/2020-02-27-1520/</link>
-    <pubDate>Thu, 27 Feb 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-02-27-1520/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1520
-풀이: DP[i][t] : (1,1) ~ (i, t) 까지 내리막으로 갈 수 있는 경우의 수
-현재 값에서 왼쪽, 오른쪽, 위, 아래 값이 각각 현재 값보다 크다면,
-DP[현재] += DP[왼쪽, 오른쪽, 위, 아래] 로 구할 수 있다.
-시간초과가 날 수 있으므로 메모이제이션을 하자! 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  #include &lt;iostream&gt;#include &lt;string.]]></description>
 </item></channel>
 </rss>

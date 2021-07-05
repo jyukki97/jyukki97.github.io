@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-28T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-07-04T22:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,75 +103,68 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-27-2618/">[백준]2618 경찰차</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-27">2020-02-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2618
-풀이: DP[i][t] : 첫번째 경찰차가 i 번째 사건을, 두번째 경찰차가 t 번째 사건을 처리했을 때, 이동하는 거리의 합의 최소값
-i 와 t 의 차이가 1 이라면,
-DP[i][t] = DP[i][0 ~ t - 1] (t 번째와 0 ~ t - 1 번째 사이의 거리)까지의 최소값
-1이 아니라면,
-DP[i][t] = DP[i][t - 1] + (t 번째와 t - 1 번째 사이의 거리)
-을 통해 최솟값을 구할 수 있다.
-최솟값을 구한 후, 최솟값을 구한 경로를 역순으로 추적하여, 맡겨진 경찰차의 번호를 구한다.</div><div class="post-footer">
-        <a href="/2020-02-27-2618/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+        <a href="/2020-02-28-bitoperator/">[C&#43;&#43;]비트연산자</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">비트연산자
+비트연산자 DP문제를 푸는데 있어, 연산속도를 빠르게 하기 위해 사용 &laquo; , &raquo; 시프트 연산자. 비트의 자리를 옮겨줌 ex)
+1 &laquo; 3
+ 1000
+ NOT - ( ~ ) 0 은 1로 1은 0으로 반대로 바꿔준다. ex)
+0000000
+ 1111111
+ AND - ( &amp; ) 둘 다 1 일때만 1, 아니면 0 ex)
+1100110
+&amp; 1011001
+ 1000110
+ OR - ( | ) 둘 중 하나라도 1이라면 1, 아니면 0 ex)</div><div class="post-footer">
+        <a href="/2020-02-28-bitoperator/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-27-2667/">[백준]2667 단지번호붙이기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-27">2020-02-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2667
-풀이: 전체를 순회한다.
-만약 집이있는 곳 ( 배열에 1인 곳 ) 을 찾았다면, 연결된 모든 단지를 찾아 단지 크기를 배열에 저장한다.
-순회가 끝났다면, 배열의 사이즈 (총 단지수) 를 출력한다.
-그 후 단지내 집의 수를 오름차순으로 정렬하여 출력하여야하므로
-배열을 정렬한 후 배열의 원소를 출력한다.
+        <a href="/2020-02-28-1012/">[백준]1012 유기농 배추</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1012
+풀이: [백준]2667 단지번호붙이기 참고
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;string&gt;#include &lt;algorithm&gt;using namespace std; int n; bool b[26][26]; vector&lt;string&gt; a; vector&lt;int&gt; c; void num(int x, int y) { b[x][y] = true; c.</div><div class="post-footer">
-        <a href="/2020-02-27-2667/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;string.h&gt;using namespace std; int n, T, m, k, q, w, sum, a[52][52]; bool b[52][52]; void num(int x, int y) { b[x][y] = true; if (x + 1 &lt; n &amp;&amp; a[x + 1][y] &amp;&amp; !</div><div class="post-footer">
+        <a href="/2020-02-28-1012/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-26-10816/">[백준]10816 숫자 카드2</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-26">2020-02-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10816
-풀이: 배열에 숫자 카드들을 넣는다.
-배열을 정렬한다.
-몇 개 가지고 있는지 구해야 할 카드를 k 라고 할 때,
-k가 최초로 나오는 위치 = lower_bound,
-k보다 큰 값이 최초로 나오는 위치 = upper_bound
-로 구할 수 있다.
-즉 upper_bound - lower_bound를 실행한다면 답을 구할 수 있다.
-cout과 cin 을 쓰면 시간초과가 나므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, k, a[500001]; int main() { scanf(&#34;%d&#34;, &amp;n); for (int i = 0; i &lt; n; i++) scanf(&#34;%d&#34;, &amp;a[i]); sort(a, a + n); scanf(&#34;%d&#34;, &amp;m); for (int i = 0; i &lt; m; i++) { scanf(&#34;%d&#34;, &amp;k); auto l = lower_bound(a, a + n, k); auto r = upper_bound(a, a + n, k); printf(&#34;%d &#34;, r - l); } printf(&#34;\n&#34;); return 0; }   </div><div class="post-footer">
-        <a href="/2020-02-26-10816/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/">이분 탐색</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-26-11049/">[백준]11049 행렬 곱셈 순서</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-26">2020-02-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11049
-풀이: DP[i][t] : i ~ t 까지의 행렬을 곱하는데 필요한 곱셈 연산 횟수의 최솟값
-dp[x][y] = min(dp[x][y], f(x, i) + f(i + 1, y) + a[x] * b[i] * b[y])
-x ~ i 까지의 행렬 곱셈 + (i + 1) ~ y 까지의 행렬 곱셈 + 그 둘의 곱셈
+        <a href="/2020-02-28-2178/">[백준]2178 미로 탐색</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2178
+풀이: 이동횟수가 i 일때,
+이동횟수가 i - 1 인 값들에서 왼쪽, 오른쪽, 위, 아래 중 값이 1이고, 방문한적 없는 곳을 찾아 좌표를 큐에 넣는다.
+만약 현재 좌표가 도착위치라면, 이동횟수 i를 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; long long n, a[502], b[502], dp[502][502] = {}; long long f(int x, int y) { if (x == y || dp[x][y])	return dp[x][y]; dp[x][y] = f(x, x) + f(x + 1, y) + a[x] * b[x] * b[y]; for (int i = x + 1; i &lt; y; i++) dp[x][y] = min(dp[x][y], f(x, i) + f(i + 1, y) + a[x] * b[i] * b[y]); return dp[x][y]; } int main() { cin &gt;&gt; n; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i] &gt;&gt; b[i]; cout &lt;&lt; f(1, n) &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-02-26-11049/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, k, q, w; vector&lt;string&gt; a; queue&lt;pair&lt;int, int&gt;&gt; dp2; bool b[102][102]; int main() { cin &gt;&gt; n &gt;&gt; m; a.</div><div class="post-footer">
+        <a href="/2020-02-28-2178/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-26-11066/">[백준]11066 파일 합치기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-26">2020-02-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11066
-풀이: dp[i][t] = i 장 부터 t 장까지 수록한 파일을 합쳤을 때, 필요한 최소비용
-sum[i] = 1 ~ i 까지의 파일 크기의 합
-dp[i][t] = min(dp[i][t], dp[i][i] ~ dp[i][t - 1] + dp[i + 1][t] ~ dp[t][t]) 로 구할 수 있다.
-겹치는 숫자들이 있으므로,
-dp를 구할 때 마다, dp[i][t] += sum[t] - sum[i - 1] 을 해주어야 한다.
+        <a href="/2020-02-28-7576/">[백준]7576 토마토</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/7576
+풀이: [백준]2178 미로 탐색 참고
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int T, n, a[502], dp[502][502] = {}, sum[502]; int f(int a, int b) { if (dp[a][b] !</div><div class="post-footer">
-        <a href="/2020-02-26-11066/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, m, k, q, w, a[1002][1002]; queue&lt;pair&lt;int, int&gt;&gt; dp2; int main() { cin &gt;&gt; m &gt;&gt; n; for (int i = 0; i &lt; n; i++) for (int t = 0; t &lt; m; t++) { cin &gt;&gt; a[i][t]; if (a[i][t] == 1)	dp2.</div><div class="post-footer">
+        <a href="/2020-02-28-7576/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-26-11286/">[백준]11286 절댓값 힘</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-26">2020-02-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11286
-풀이: 0이 나온다면, 배열에 있는 값중 절댓값이 가장 작은 값을 출력한다.(절댓값이 같다면, 가장 작은 값을 출력한다.) 그 값을 배열에서 제외시킨다.
-만약 배열이 비어있다면, 0을 출력한다.
-0이 아닌 다른 숫자가 나온다면, 그 값을 배열에 넣는다.
-cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, i, m; bool com(int a, int b) { if (abs(a) == abs(b)) return a &gt; b; return abs(a) &gt; abs(b); } int main() { priority_queue&lt;int, vector&lt;int&gt;, decltype(&amp;com)&gt; a(&amp;com); scanf(&#34;%d&#34;, &amp;n); for (i = 0; i &lt; n; i++) { scanf(&#34;%d&#34;, &amp;m); if (!</div><div class="post-footer">
-        <a href="/2020-02-26-11286/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%9E%99/">힙</a></div></div>
+        <a href="/2020-02-27-floydwarshall/">[C&#43;&#43;]플로이드-와샬 알고리즘(Floyd-Warshall Algorithm)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-27">2020-02-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">플로이드-와샬 알고리즘(Floyd-Warshall Algorithm)
+플로이드-와샬 알고리즘(Floyd-Warshall Algorithm) 한번의 실행으로 &ldquo;모든 노드&rdquo; 간 최단 경로를 구하는 알고리즘. 시간복잡도 $$ O(n^3) $$
+위 그림의 초기값은 다음과 같다.
+   0 5 ∞ 9 1     5 0 2 ∞ ∞   ∞ 2 0 7 ∞   9 ∞ 7 0 2   1 ∞ ∞ 2 0    이때,
+1 번 노드를 중간 노드로 한다면,</div><div class="post-footer">
+        <a href="/2020-02-27-floydwarshall/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C/">최단 경로</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-02-27-10942/">[백준]10942 팰린드롬?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-27">2020-02-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10942
+풀이: DP[i][t] : i 번쨰 수 부터 t 번째 까지 수가 팰린드롬을 이룬다면 1, 아니라면 0
+a[i] == a[t] 라면,
+DP[i][t] = DP[i + 1][t - 1]
+a[i] != a[t] 라면,
+DP[i][t] = 0
+테스트 케이스가 많아 시간초과가 날 수 있으므로 메모이제이션을 하자! 코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;string.</div><div class="post-footer">
+        <a href="/2020-02-27-10942/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -202,7 +195,7 @@ cout, cin 을 사용하면, 시간초과가 나므로 주의하자. 코드: 사�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/82/">82</a>
+                        <a href="/page/83/">83</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

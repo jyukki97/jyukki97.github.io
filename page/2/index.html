@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-06-28T23:00:40+08:00" />
+<meta property="og:updated_time" content="2021-07-04T22:00:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -185,26 +185,22 @@
         <a href="/start/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/everytime/">EveryTime</a>,&nbsp;<a href="/tags/app/">app</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/11000/"><img
+            <a href="/2550/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/11000/featured-image.png"
-        data-srcset="/11000/featured-image.png, /11000/featured-image.png 1.5x, /11000/featured-image.png 2x"
+        data-src="/2550/featured-image.png"
+        data-srcset="/2550/featured-image.png, /2550/featured-image.png 1.5x, /2550/featured-image.png 2x"
         data-sizes="auto"
-        alt="/11000/featured-image.png"
-        title="/11000/featured-image.png" /></a>
+        alt="/2550/featured-image.png"
+        title="/2550/featured-image.png" /></a>
         </div><h1 class="single-title" itemprop="name headline">
-        <a href="/11000/">[백준]11000 강의실 배정</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-26">2021-06-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11000
-풀이: 그리디 문제이다.
-강의 시간을 시작 시간 기준으로 정렬해 놓는다.
-맨 처음 우선순위 큐에 0을 넣어놓는다.
-강의 시작 시간이 제일 적은 것부터 우선순위 큐의 맨 앞의 값과 비교한다. 만약, 강의 시작 시간이 큐의 맨 앞의 값보다 크다면, 큐에서 pop해준다.
-강의 끝나는 시간을 우선순위 큐에 pop 해준다.
-이렇게 되면, 만약, 강의를 연달아 할 수 있다면, 강의실 개수(큐의 크기)는 유지되고, 연달아 할 수 없다면, 강의실 개수는 늘어나게 된다.
-마지막으로 강의실 개수를 출력하고 끝낸다.</div><div class="post-footer">
-        <a href="/11000/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/greedy/">greedy</a>,&nbsp;<a href="/tags/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/">우선순위큐</a></div></div>
+        <a href="/2550/">[백준]2550 전구</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-07-04">2021-07-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2550
+풀이: 전기줄 - 2 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import bisect d,q,c,e={},[],[],[] n=int(input()) for i in map(int,input().split()): d[i]=0 for k,i in enumerate(map(int,input().split())): d[i]=k for k,i in d.items(): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] c+=[s] s=len(q) print(s) for i in range(n-1,-1,-1): if c[i]==s-1:e+=[list(d)[i]];s-=1 print(&#39; &#39;.join(map(str,sorted(e))))   </div><div class="post-footer">
+        <a href="/2550/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4/">가장 긴 증가하는 부분 수열</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EC%9D%B4%EB%B6%84-%ED%83%90%EC%83%89/">이분 탐색</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -225,7 +221,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/82/">82</a>
+                        <a href="/page/83/">83</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -3,7 +3,106 @@
         <title>python - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/python/</link>
         <description>python - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 26 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]2550 전구</title>
+    <link>https://jyukki97.github.io/2550/</link>
+    <pubDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2550/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2550
+풀이: 전기줄 - 2 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  import bisect d,q,c,e={},[],[],[] n=int(input()) for i in map(int,input().split()): d[i]=0 for k,i in enumerate(map(int,input().split())): d[i]=k for k,i in d.items(): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] c+=[s] s=len(q) print(s) for i in range(n-1,-1,-1): if c[i]==s-1:e+=[list(d)[i]];s-=1 print(&#39; &#39;.join(map(str,sorted(e))))   ]]></description>
+</item><item>
+    <title>[백준]18353 병사 배치하기</title>
+    <link>https://jyukki97.github.io/18353/</link>
+    <pubDate>Sat, 03 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/18353/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/18353
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+정확히 말하면 가장 긴 감소하는 부분 수열이지 않을까? 라는 생각이 드는 문제이다.
+말 그대로 감소하는 것이기에 뒤에서부터 증가하는 수열을 찾을까? 라는 생각이 들었지만,
+귀찮은 관계로 모든 수에 음수 처리를 해주어 가장 긴 증가하는 부분 수열을 찾게되었다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8  import bisect n=int(input()) q=[] for i in map(int,input().split()): s=bisect.bisect_left(q,-i) if s!=len(q):q[s]=-i else:q+=[-i] print(n-len(q))   ]]></description>
+</item><item>
+    <title>[백준]3745 오름세</title>
+    <link>https://jyukki97.github.io/3745/</link>
+    <pubDate>Fri, 02 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/3745/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/3745
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+파이썬에서 EOF 처리하는 방법을 알게되었다.
+C++ 에서는 while문 내부에서 cin이나 scanf의 return 값으로 알 수 있었지만, 파이썬은 안되더라.
+그냥 단순하게 try catch 문에서 EOF를 감지해서 EOF 일 때 exit() 하는 방법으로 하는 것 같다.
+다른 의견으로는 그냥 무한루프를 돌리면 알아서 중지되면서 맞았습니다가 떴다고 하는데, 나는 안되서 잘 모르겠다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10  import bisect try: while input(): q=[] for i in map(int,input().]]></description>
+</item><item>
+    <title>[백준]12738 가장 긴 증가하는 부분 수열 3</title>
+    <link>https://jyukki97.github.io/12738/</link>
+    <pubDate>Thu, 01 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/12738/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/12738
+풀이: 가장 긴 증가하는 부분 수열 5 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8  import bisect input() q=[] for i in map(int,input().split()): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] print(len(q))   ]]></description>
+</item><item>
+    <title>[백준]4198 열차정렬</title>
+    <link>https://jyukki97.github.io/4198/</link>
+    <pubDate>Wed, 30 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/4198/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/4198
+풀이: 가장 긴 증가하는 부분수열 문제와 비슷하게 풀 수 있다.
+가장 긴 증가하는 부분 수열 5 참고
+1 ~ N 까지의 모든 차량을 살펴보면서 진행한다.
+현재 차량이 i 일 때, i번째 차량을 기준으로 생각한다.
+i+1 ~ N 까지의 차량 중 i 번째 차량을 시작점으로 가장 긴 증가하는 부분수열의 길이를 구하고, 반대로 가장 긴 감소하는 부분수열의 길이를 구한다.
+두 부분수열의 길이를 합한 값 중 가장 큰 값을 찾는다.
+코드: 사용언어 : python]]></description>
+</item><item>
+    <title>[백준]11003 최솟값 찾기</title>
+    <link>https://jyukki97.github.io/11003/</link>
+    <pubDate>Tue, 29 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/11003/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11003
+풀이: dequeue를 사용하는 문제이다.
+간단하게 풀 수 있다.
+0 번째 숫자부터 N번째 숫자까지 진행한다.
+현재 위치가 i일 때, 큐에 마지막에 들어있는 값이 현재 위치의 값보다 크다면, pop한다. 이 것을 현재 위치의 값이 더 클 때까지 반복한다.
+즉, 큐의 마지막 값이 현재 값보다 작은 값이 나올때까지 반복하게 된다.
+큐의 마지막 값이 현재 값보다 작거나, 큐가 비어있다면, 큐에 마지막에 현재 값을 push해준다.
+맨 앞이 가장 작은 값이기에 맨 앞의 값을 출력해줄 것이나, 맨 앞에 값이 i-L+1 ~ i 사이에 오는 값인지 확인하는 작업이 필요하다.]]></description>
+</item><item>
+    <title>[백준]2568 전깃줄 - 2</title>
+    <link>https://jyukki97.github.io/2568/</link>
+    <pubDate>Mon, 28 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/2568/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/2568
+풀이: 가장 긴 증가하는 부분수열 문제이다.
+B번 전깃줄의 위치를 A번 전깃줄의 위치를 기준으로 정렬한 뒤, B를 기준으로 가장 긴 증가하는 부분수열을 찾으면 되는 문제이다.
+예를들어 예시에서
+   A 1 2 3 4 6 7 9 10     B 8 2 9 1 4 6 7 10    위와 같이 정렬된다.
+이렇게 정렬 되었을 때, B를 기준으로 가장 긴 증가하는 부분수열은 1, 4, 6, 7, 10 이 되고 남은 8, 2, 9 에 대응되는 A값은 1, 2, 3 3개이다.]]></description>
+</item><item>
+    <title>[백준]14003 가장 긴 증가하는 부분 수열 5</title>
+    <link>https://jyukki97.github.io/14003/</link>
+    <pubDate>Sun, 27 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/14003/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/14003
+풀이: 가장 긴 증가하는 부분 수열을 구하는 문제이다.
+수열의 0 ~ N 번째 까지 숫자들 중 가장 길게 증가하는 부분 수열을 만들면 된다.
+배열을 하나 만든 후 수열의 숫자를 배열에 하나 씩 넣는다.
+넣을 때에는 규칙이 있는데, 현재 숫자가 배열의 맨 오른쪽의 숫자보다 크다면, 가장 오른쪽에 추가해 주고, 만약 배열의 숫자 중 현재 숫자가 더 작은 숫자가 있다면, 현재 숫자로 교채해 준다.
+이렇게 된다면, 배열은 자동적으로 정렬되게 되고, 최종적으로 만들어진 배열의 크기가 가장 긴 증가하는 부분 수열의 길이가 된다.]]></description>
+</item><item>
     <title>[백준]11000 강의실 배정</title>
     <link>https://jyukki97.github.io/11000/</link>
     <pubDate>Sat, 26 Jun 2021 22:00:40 &#43;0800</pubDate>
@@ -31,108 +130,5 @@
 &lsquo;D 1&rsquo; 이 입력되어 최댓값을 삭제해야 하는 경우에는 오름차순에서,
 &lsquo;D -1&rsquo;이 입력되어 최솟값을 삭제해야 하는 경우에는 내림차순에서 삭제한다.
 이때, 삭제되었음을 visit변수에 나타내준다.]]></description>
-</item><item>
-    <title>[백준]4811 알약</title>
-    <link>https://jyukki97.github.io/4811/</link>
-    <pubDate>Wed, 23 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/4811/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/4811
-풀이: 카탈란 수 문제이다.
-깔끔하게 카탈란 수로 풀어주자.
-$${2nCn \over n + 1}$$
-코드: 사용언어 : python
-1 2  from math import factorial as f while a:=int(input()): print(f(2*a)//(f(a)*f(a+1)))   ]]></description>
-</item><item>
-    <title>[백준]9252 LCS 2</title>
-    <link>https://jyukki97.github.io/9252/</link>
-    <pubDate>Tue, 22 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/9252/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/9252
-풀이:    0 A C A Y K P     C 0 1 1 1 1 1   A 1 1 2 2 2 2   P 1 1 2 2 2 2   C 1 2 2 2 2 3   A 1 2 3 3 3 3   K 1 2 3 3 4 4    첫 번째 문자열을 : A]]></description>
-</item><item>
-    <title>[백준]2493 탑</title>
-    <link>https://jyukki97.github.io/2493/</link>
-    <pubDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2493/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/2493
-풀이: 현재 탑의 높이보다 더 높은 위치에 있는 탑을 찾아야 하므로 스택을 이용하도록 한다.
-탑의 맨 오른쪽 부터 계산을 시작한다.
-현재 위치에 탑의 높이가 스택의 top에 있는 탑의 높이보다 높다면, 스택의 top을 pop 하고, 그 탑의 수신탑의 위치값을 현재 탑의 위치로 바꿔준다.
-스택의 top의 있는 탑의 높이가 현재 위치의 탑의 높이보다 작거나 같을 때까지 반복하고,
-스택에 현재 탑을 push해준다.
-왼쪽 끝까지 모든 탑을 확인했다면, 수신탑의 위치값을 출력해준다. 만약 수신탑을 찾지 못한 탑들은 0으로 출력한다.]]></description>
-</item><item>
-    <title>[백준]1323 숫자 연결하기</title>
-    <link>https://jyukki97.github.io/1323/</link>
-    <pubDate>Sun, 20 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1323/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1323
-풀이: 나머지 연산의 성질을 이용한다.
-나머지 연산의 경우 연산에 어디에 나머지 연산을 추가하든 나머지 연산의 값만 동일하다면, 최종 값도 동일하게 나온다.
-그러므로 주어진 N을 K로 나눈 나머지를 확인하고,
-0이 아니라면, 나온 나머지를 N과 연결하여 다시 K로 나눈 나머지를 확인한다.
-0이 나올 때까지 반복한다.
-나머지 연산 특성상 일정 개수 이상일 경우 반복하기 때문에 무한루프에 빠질 수 있다. 그러므로 최대 K번을 넘기지 않는다.
-코드: 사용언어 : python
-1 2 3 4 5 6 7  n,k=map(int,input().]]></description>
-</item><item>
-    <title>[백준]1241 머리 톡톡</title>
-    <link>https://jyukki97.github.io/1241/</link>
-    <pubDate>Sat, 19 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1241/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1241
-풀이: 1번 부터 N번까지 학생들의 머리 위의 숫자들의 개수를 저장해놓는다
-ex) 2는 2번, 1은 1번&hellip;
-자신의 머리 위의 수를 소인수분해한다.
-소인수분해를 통해 나온 약수들이 나온 개수만큼 모두 더해준다.
-자기 자신과 같은 수 일 때는 자기 자신을 세지않으므로 조심하자.
-코드: 사용언어 : python
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import math N=int(input()) a=[] d=dict() for i in range(N): a.append(int(input())) d[a[-1]] = d.]]></description>
-</item><item>
-    <title>[백준]1188 음식 평론가</title>
-    <link>https://jyukki97.github.io/1188/</link>
-    <pubDate>Fri, 18 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1188/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1188
-풀이: 소시지가 N개 평론가가 M명 있을 때,
-각각의 평론가는 N/M개의 소시지를 가지고 간다. (그러므로 만약, N이 M으로 나누어 떨어진다면 소시지를 자르지 않아도 된다.) =&gt; GCD(N, M) = M
-N개의 소시지를 이어붙여 1개의 소시지로 만든다면, 소시지는 M - 1번 잘라야 한다. =&gt; GCD(N, M) = 1
-즉, M - GCD(N, M) 번 자른다면 평론가들은 모두 동일한 양의 소시지를 얻을 수 있다.
-코드: 사용언어 : python
-1 2 3  import math n,m=map(int,input().]]></description>
-</item><item>
-    <title>[백준]1092 배</title>
-    <link>https://jyukki97.github.io/1092/</link>
-    <pubDate>Thu, 17 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1092/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1092
-풀이: 크레인과 박스를 정렬한다
-단, 이때 정렬은 내림차순으로 해야한다. 오름차순으로 할 경우 안되는 경우의 수가 존재.
-정렬된 크레인과 박스의 맨 처음을 비교한다. 만약 박스의 무게가 더 크다면, 모든 박스를 옮길 수 없으므로 -1을 출력한다.
-크레인을 한칸씩 오른쪽으로 이동시키면서 박스를 확인한다. 옮긴 박스는 0으로 바꾸고, 이미 0인 박스는 지나친다.
-모든 크레인을 사용했다면 time을 1늘리고, 다시 반복한다.
-모든 박스를 옮길 때까지 반복한 후 time을 출력한다.
-코드: 사용언어 : python
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  a,b,c,d=int(input()),list(map(int, input().]]></description>
-</item><item>
-    <title>[백준]1089 스타트링크 타워</title>
-    <link>https://jyukki97.github.io/1089/</link>
-    <pubDate>Thu, 17 Jun 2021 00:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1089/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/1089
-풀이: 5 * 3 자리에서 각 자리에 &lsquo;#&rsquo; 이 들어올 경우 될 수 없는 숫자를 찾아놓는다.
-ex) (0, 0) 자리에 &lsquo;#&rsquo; 이 올 경우 1은 절대 될 수 없다.
-첫 번 째 숫자 부터 N까지의 숫자를 찾아가면서 가능한 숫자를 저장해놓는다.
-가능한 숫자를 모두 조합한다면, 너무 많은 조합이 가능하므로 다른 방법을 사용한다.
-ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 조합은
-121, 128, 129, 131, 138, 139 로 총 6가지 이다.]]></description>
 </item></channel>
 </rss>

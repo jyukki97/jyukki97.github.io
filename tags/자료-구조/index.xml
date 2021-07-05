@@ -3,7 +3,21 @@
         <title>자료 구조 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0/</link>
         <description>자료 구조 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Jun 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]11003 최솟값 찾기</title>
+    <link>https://jyukki97.github.io/11003/</link>
+    <pubDate>Tue, 29 Jun 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/11003/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11003
+풀이: dequeue를 사용하는 문제이다.
+간단하게 풀 수 있다.
+0 번째 숫자부터 N번째 숫자까지 진행한다.
+현재 위치가 i일 때, 큐에 마지막에 들어있는 값이 현재 위치의 값보다 크다면, pop한다. 이 것을 현재 위치의 값이 더 클 때까지 반복한다.
+즉, 큐의 마지막 값이 현재 값보다 작은 값이 나올때까지 반복하게 된다.
+큐의 마지막 값이 현재 값보다 작거나, 큐가 비어있다면, 큐에 마지막에 현재 값을 push해준다.
+맨 앞이 가장 작은 값이기에 맨 앞의 값을 출력해줄 것이나, 맨 앞에 값이 i-L+1 ~ i 사이에 오는 값인지 확인하는 작업이 필요하다.]]></description>
+</item><item>
     <title>[백준]2493 탑</title>
     <link>https://jyukki97.github.io/2493/</link>
     <pubDate>Mon, 21 Jun 2021 22:00:40 &#43;0800</pubDate>
