@@ -3,7 +3,14 @@
         <title>web - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/web/</link>
         <description>web - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/web/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 28 Jul 2021 13:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>[Project] 음원 순위 웹 - Music Rank web</title>
+    <link>https://jyukki97.github.io/music_rank_web/</link>
+    <pubDate>Wed, 28 Jul 2021 13:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/music_rank_web/</guid>
+    <description><![CDATA[<p><strong>Flutter, Flask를 이용해 만든 음원 순위 웹</strong></p>]]></description>
+</item><item>
     <title>[Flutter] 무작정 만드는 웹(1)</title>
     <link>https://jyukki97.github.io/flutter_web_1/</link>
     <pubDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</pubDate>

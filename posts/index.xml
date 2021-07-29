@@ -3,13 +3,20 @@
         <title>All Posts - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/posts/</link>
         <description>All Posts | JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 28 Jul 2021 13:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
     <link>https://jyukki97.github.io/youchu/</link>
     <pubDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/youchu/</guid>
     <description><![CDATA[<p><strong>유튜브 추천 어플</strong></p>]]></description>
+</item><item>
+    <title>[Project] 음원 순위 웹 - Music Rank web</title>
+    <link>https://jyukki97.github.io/music_rank_web/</link>
+    <pubDate>Wed, 28 Jul 2021 13:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/music_rank_web/</guid>
+    <description><![CDATA[<p><strong>Flutter, Flask를 이용해 만든 음원 순위 웹</strong></p>]]></description>
 </item><item>
     <title>[Flutter] 무작정 만드는 웹(1)</title>
     <link>https://jyukki97.github.io/flutter_web_1/</link>
@@ -93,18 +100,5 @@
 [에브리타임] 3 Day
 [에브리타임] 4 Day
  한 것 게시판 모음 페이지  ✅ Icon과 글 있는 Widget 추가 ✅ 핀과 글 있는 Widget 추가  모델  ✅ Board 모델 추가  게시판 제목, 즐겨찾기 추가 여부, new 게시물이 있는지 여부, Icon 등이 들어있는 모델을 추가.   ✅ Sample 모델 제작   주절주절.]]></description>
-</item><item>
-    <title>[에브리타임] 2 Day</title>
-    <link>https://jyukki97.github.io/2day/</link>
-    <pubDate>Thu, 24 Jun 2021 23:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2day/</guid>
-    <description><![CDATA[2 Day 에브리타임 목록[에브리타임] 깃 허브 주소
-[에브리타임] 시작
-[에브리타임] 1 Day
-[에브리타임] 2 Day
-[에브리타임] 3 Day
-[에브리타임] 4 Day
- 한 것 메인 스크린  ✅ 실시간 인기 글 추가 ✅ HOT 게시물 추가 ✅ 스크롤이 움직이지 않았을 경우에는 Appbar의 그림자가 없지만, 스크롤이 작동한다면 Appbar에 그림자가 생기도록 설정  게시판 내부  ✅ 하단 광고 배너칸 추가 ✅ 하단 글 쓰기 버튼 추가 ✅ 내부 리스트 틀 제작 ✅ Appbar 버튼을 꾹 누르면 버튼의 설명이 Toast로 나옴  시간표 페이지  ✅ 기본적인 틀만 제작   페이지가 너무많다~ 많은 만큼 열심히 해야하는데, 두시간 밖에 못한 것이 많이 아쉽다.]]></description>
 </item></channel>
 </rss>

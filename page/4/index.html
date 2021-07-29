@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-13T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,27 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/4198/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/4198/featured-image.png"
+        data-srcset="/4198/featured-image.png, /4198/featured-image.png 1.5x, /4198/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/4198/featured-image.png"
+        title="/4198/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/4198/">[백준]4198 열차정렬</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-30">2021-06-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/4198
+풀이: 가장 긴 증가하는 부분수열 문제와 비슷하게 풀 수 있다.
+가장 긴 증가하는 부분 수열 5 참고
+1 ~ N 까지의 모든 차량을 살펴보면서 진행한다.
+현재 차량이 i 일 때, i번째 차량을 기준으로 생각한다.
+i+1 ~ N 까지의 차량 중 i 번째 차량을 시작점으로 가장 긴 증가하는 부분수열의 길이를 구하고, 반대로 가장 긴 감소하는 부분수열의 길이를 구한다.
+두 부분수열의 길이를 합한 값 중 가장 큰 값을 찾는다.
+코드: 사용언어 : python</div><div class="post-footer">
+        <a href="/4198/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/11003/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -203,25 +224,6 @@ B번 전깃줄의 위치를 A번 전깃줄의 위치를 기준으로 정렬한 �
 이때, 삭제되었음을 visit변수에 나타내준다.</div><div class="post-footer">
         <a href="/7662/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/">우선순위큐</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/6593/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/6593/featured-image.png"
-        data-srcset="/6593/featured-image.png, /6593/featured-image.png 1.5x, /6593/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/6593/featured-image.png"
-        title="/6593/featured-image.png" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/6593/">[백준]6593 상범 빌딩</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-24">2021-06-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/6593
-풀이: BFS 문제이다.
-현재 위치에서 오른쪽, 왼쪽, 위, 아래, 앞, 뒤 6방향을 모두 검사하고 갈 수 있다면, 큐에 집어넣는 방식으로 풀 수 있다.
-주의사항  이미 방문한 위치는 표시하여 다시 방문하지 않게 해주도록 하자.
-  출력 형식을 주의 깊게 보자. 틀렸습니다의 절반 이상이 이 문제일 가능성이 높다.
-   처음에 파이썬으로 풀었는데 답 제출에서 IndexOutOfBound가 뜨더라&hellip; 분명히 정답이 뜬 c++ 코드와 같은 코드인데 문제를 모르겠다.</div><div class="post-footer">
-        <a href="/6593/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

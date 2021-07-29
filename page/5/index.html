@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-13T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,25 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/6593/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/6593/featured-image.png"
+        data-srcset="/6593/featured-image.png, /6593/featured-image.png 1.5x, /6593/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/6593/featured-image.png"
+        title="/6593/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/6593/">[백준]6593 상범 빌딩</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-24">2021-06-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/6593
+풀이: BFS 문제이다.
+현재 위치에서 오른쪽, 왼쪽, 위, 아래, 앞, 뒤 6방향을 모두 검사하고 갈 수 있다면, 큐에 집어넣는 방식으로 풀 수 있다.
+주의사항  이미 방문한 위치는 표시하여 다시 방문하지 않게 해주도록 하자.
+  출력 형식을 주의 깊게 보자. 틀렸습니다의 절반 이상이 이 문제일 가능성이 높다.
+   처음에 파이썬으로 풀었는데 답 제출에서 IndexOutOfBound가 뜨더라&hellip; 분명히 정답이 뜬 c++ 코드와 같은 코드인데 문제를 모르겠다.</div><div class="post-footer">
+        <a href="/6593/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/4811/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -199,26 +218,6 @@ ex) 2는 2번, 1은 1번&hellip;
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import math N=int(input()) a=[] d=dict() for i in range(N): a.append(int(input())) d[a[-1]] = d.</div><div class="post-footer">
         <a href="/1241/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a>,&nbsp;<a href="/tags/%EC%A0%95%EC%88%98%EB%A1%A0/">정수론</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/1188/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/1188/featured-image.png"
-        data-srcset="/1188/featured-image.png, /1188/featured-image.png 1.5x, /1188/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/1188/featured-image.png"
-        title="/1188/featured-image.png" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/1188/">[백준]1188 음식 평론가</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-18">2021-06-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1188
-풀이: 소시지가 N개 평론가가 M명 있을 때,
-각각의 평론가는 N/M개의 소시지를 가지고 간다. (그러므로 만약, N이 M으로 나누어 떨어진다면 소시지를 자르지 않아도 된다.) =&gt; GCD(N, M) = M
-N개의 소시지를 이어붙여 1개의 소시지로 만든다면, 소시지는 M - 1번 잘라야 한다. =&gt; GCD(N, M) = 1
-즉, M - GCD(N, M) 번 자른다면 평론가들은 모두 동일한 양의 소시지를 얻을 수 있다.
-코드: 사용언어 : python
-1 2 3  import math n,m=map(int,input().</div><div class="post-footer">
-        <a href="/1188/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

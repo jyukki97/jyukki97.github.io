@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-13T16:45:40+08:00" />
+<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,12 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2019-06-02-1495/">[백준]1495 기타리스트</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-02">2019-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1495
+풀이:  dp[a][b]를 a 번째 곡을 연주 할 때, b 볼륨으로 연주 할 수 있는가? 라고 하자. dp[0][S]는 0 번째 곡을 연주 할 때, S 볼륨으로 연주할 수 있으므로(시작지점) 1을 할당한다. 0번째 곡을 연주할 때, S볼륨으로 연주가 가능하다면, 1번째 곡을 연주할 때, S+s[1] or S-s[1] 볼륨도 연주 가능하다(0&lt;=볼륨&lt;=m 일때) 즉, dp[i][t + s[i]] = dp[i - 1][t] or dp[i][t - s[i]] = dp[i - 1][t] 마지막에 dp[N]값을 모두 순환하며, 가장 높은 값을 출력하고, 가능한 볼륨이 없다면 -1을 출력한다.</div><div class="post-footer">
+        <a href="/2019-06-02-1495/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2019-05-30-4781/">[백준]4781 사탕 가게</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-05-30">2019-05-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/4781
 풀이:  dp[a]를 a원으로 구매할 수 있는 가장 높은 칼로리라고 한다. 사탕의 칼로리를 s, 가격을 d라고 했을 때, 현제 a원으로 구매할 수 있는 가장 높은 칼로리와 a-d원 으로 구매할 수 있는 가장높을칼로리 + s 를 비교하여 높은 값으로 교체한다. 즉, dp[t] = max(dp[t], dp[t - d] + s) 를 반복하여 do[m]값을 구한다.  코드: 사용언어 : c++
@@ -137,13 +143,6 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;iostream&gt;#include &lt;map&gt;using namespace std; long long a, b, c; map&lt;long long, long long&gt; n; long long infi(long long q) { if (q == 0) return 1; if (n.</div><div class="post-footer">
         <a href="/2019-03-29-1351/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2018-03-16-1712/">[백준]1712 손익분기점</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2018-03-16">2018-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1712
-풀이:  고정비용을 노트북 가격에서 생산비인 가변 비용을 뺀 값으로 나눈 몫을 출력한다. 만약 가변비용이 노트북의 가격보다 높다면 -1을 출력한다.  코드: 사용언어 : Python 3
-1 2 3 4 5  a,b,c=map(int,input().split()) if b&gt;=c: print(&#34;-1&#34;) else: print(a//(c-b)+1)   </div><div class="post-footer">
-        <a href="/2018-03-16-1712/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
