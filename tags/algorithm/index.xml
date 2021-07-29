@@ -3,7 +3,17 @@
         <title>algorithm - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/algorithm/</link>
         <description>algorithm - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]13711 LCS 4</title>
+    <link>https://jyukki97.github.io/13711/</link>
+    <pubDate>Mon, 05 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/13711/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/13711
+풀이: 전기줄 - 2 참고
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9  import bisect input() d,q=dict.fromkeys(map(int,input().split()),0),[] for k,i in enumerate(map(int,input().split())):d[i]=k for k,i in d.items(): s=bisect.bisect_left(q,i) if s!=len(q):q[s]=i else:q+=[i] print(len(q))   ]]></description>
+</item><item>
     <title>[백준]2550 전구</title>
     <link>https://jyukki97.github.io/2550/</link>
     <pubDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</pubDate>
@@ -116,19 +126,5 @@ B번 전깃줄의 위치를 A번 전깃줄의 위치를 기준으로 정렬한 �
 강의 끝나는 시간을 우선순위 큐에 pop 해준다.
 이렇게 되면, 만약, 강의를 연달아 할 수 있다면, 강의실 개수(큐의 크기)는 유지되고, 연달아 할 수 없다면, 강의실 개수는 늘어나게 된다.
 마지막으로 강의실 개수를 출력하고 끝낸다.]]></description>
-</item><item>
-    <title>[백준]7662 이중 우선순위 큐</title>
-    <link>https://jyukki97.github.io/7662/</link>
-    <pubDate>Fri, 25 Jun 2021 22:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/7662/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/7662
-풀이: 우선순위 큐를 이용한 문제이다.
-먼저, 우선순위 큐를 두개를 만든다.
-만들어진 두 개의 우선순위 큐는 한 개는 오름차순, 한 개는 내림차순으로 정렬하여 사용한다.
-다만 이 때, 하나의 우선순위 큐에서 하나의 변수를 삭제했을 때, 다른 우선순위 큐에서 이 변수가 삭제됬는지를 모르므로, Visit 변수를 두어 이 변수가 삭제됐음을 알 수 있게 해준다.
-&lsquo;D 1&rsquo; 이 입력되어 최댓값을 삭제해야 하는 경우에는 오름차순에서,
-&lsquo;D -1&rsquo;이 입력되어 최솟값을 삭제해야 하는 경우에는 내림차순에서 삭제한다.
-이때, 삭제되었음을 visit변수에 나타내준다.]]></description>
 </item></channel>
 </rss>

@@ -3,7 +3,14 @@
         <title>Flutter - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/flutter/</link>
         <description>Flutter - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 28 Jun 2021 23:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/flutter/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/flutter/" rel="self" type="application/rss+xml" /><item>
+    <title>[Flutter] 무작정 만드는 웹(1)</title>
+    <link>https://jyukki97.github.io/flutter_web_1/</link>
+    <pubDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_web_1/</guid>
+    <description><![CDATA[<p><strong>무작정 만드는 웹 시리즈</strong></p>]]></description>
+</item><item>
     <title>[Project] 웹 크롤링을 이용한 영화 앱</title>
     <link>https://jyukki97.github.io/flutter_movie/</link>
     <pubDate>Mon, 08 Feb 2021 21:57:40 &#43;0800</pubDate>
@@ -111,12 +118,5 @@
     <author>Author</author>
     <guid>https://jyukki97.github.io/flutter_sample_bookstore/</guid>
     <description><![CDATA[Flutter Practice 2. flutter_sample_bookstore 용도  Book Store   Flutter 사용  Git 위치 Flutter_sample_bookstore ]]></description>
-</item><item>
-    <title>Flutter_sample_note_1</title>
-    <link>https://jyukki97.github.io/flutter_sample_note_1/</link>
-    <pubDate>Mon, 25 Jan 2021 21:57:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/flutter_sample_note_1/</guid>
-    <description><![CDATA[Flutter Practice 1. Flutter_sample_note_1 노트  Flutter 사용  Git 위치 Flutter_sample_note_1 ]]></description>
 </item></channel>
 </rss>

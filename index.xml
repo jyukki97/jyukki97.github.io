@@ -3,7 +3,7 @@
         <title>JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/</link>
         <description>JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 04 Jul 2021 22:00:40 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</lastBuildDate>
             <atom:link href="https://jyukki97.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
@@ -12,6 +12,13 @@
     <author>Author</author>
     <guid>https://jyukki97.github.io/youchu/</guid>
     <description><![CDATA[<p><strong>유튜브 추천 어플</strong></p>]]></description>
+</item><item>
+    <title>[Flutter] 무작정 만드는 웹(1)</title>
+    <link>https://jyukki97.github.io/flutter_web_1/</link>
+    <pubDate>Tue, 13 Jul 2021 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_web_1/</guid>
+    <description><![CDATA[<p><strong>무작정 만드는 웹 시리즈</strong></p>]]></description>
 </item><item>
     <title>[Project] 뮤직 플레이어 앱(kotlin) - 프로그래머스 과제</title>
     <link>https://jyukki97.github.io/music_player_app/</link>
@@ -101,18 +108,5 @@
 [에브리타임] 3 Day
 [에브리타임] 4 Day
  한 것 메인 스크린  ✅ 실시간 인기 글 추가 ✅ HOT 게시물 추가 ✅ 스크롤이 움직이지 않았을 경우에는 Appbar의 그림자가 없지만, 스크롤이 작동한다면 Appbar에 그림자가 생기도록 설정  게시판 내부  ✅ 하단 광고 배너칸 추가 ✅ 하단 글 쓰기 버튼 추가 ✅ 내부 리스트 틀 제작 ✅ Appbar 버튼을 꾹 누르면 버튼의 설명이 Toast로 나옴  시간표 페이지  ✅ 기본적인 틀만 제작   페이지가 너무많다~ 많은 만큼 열심히 해야하는데, 두시간 밖에 못한 것이 많이 아쉽다.]]></description>
-</item><item>
-    <title>[에브리타임] 1 Day</title>
-    <link>https://jyukki97.github.io/1day/</link>
-    <pubDate>Wed, 23 Jun 2021 23:00:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/1day/</guid>
-    <description><![CDATA[1 Day 에브리타임 목록[에브리타임] 깃 허브 주소
-[에브리타임] 시작
-[에브리타임] 1 Day
-[에브리타임] 2 Day
-[에브리타임] 3 Day
-[에브리타임] 4 Day
- 한 것 메인 스크린 제작  ✅ appbar ✅ bottomNavigation  홈 페이지 조금 제작  ✅ 맨 위에 page view 제작 ✅ 그 밑에 원으로 된 리스트 제작 ✅ 광고칸 제작 ✅ 즐겨찾는 페이지 칸 제작   수업 때매 한 시간밖에 하지 못해서 아쉽다&hellip; 내일은 홈 페이지 완성하고, 서브페이지까지 해봐야겠다.]]></description>
 </item></channel>
 </rss>

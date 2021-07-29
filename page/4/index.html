@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-04T22:00:40+08:00" />
+<meta property="og:updated_time" content="2021-07-13T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,6 +103,46 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/11003/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/11003/featured-image.png"
+        data-srcset="/11003/featured-image.png, /11003/featured-image.png 1.5x, /11003/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/11003/featured-image.png"
+        title="/11003/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/11003/">[백준]11003 최솟값 찾기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-29">2021-06-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11003
+풀이: dequeue를 사용하는 문제이다.
+간단하게 풀 수 있다.
+0 번째 숫자부터 N번째 숫자까지 진행한다.
+현재 위치가 i일 때, 큐에 마지막에 들어있는 값이 현재 위치의 값보다 크다면, pop한다. 이 것을 현재 위치의 값이 더 클 때까지 반복한다.
+즉, 큐의 마지막 값이 현재 값보다 작은 값이 나올때까지 반복하게 된다.
+큐의 마지막 값이 현재 값보다 작거나, 큐가 비어있다면, 큐에 마지막에 현재 값을 push해준다.
+맨 앞이 가장 작은 값이기에 맨 앞의 값을 출력해줄 것이나, 맨 앞에 값이 i-L+1 ~ i 사이에 오는 값인지 확인하는 작업이 필요하다.</div><div class="post-footer">
+        <a href="/11003/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0/">자료 구조</a>,&nbsp;<a href="/tags/%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84-%ED%81%90/">우선순위 큐</a>,&nbsp;<a href="/tags/%EB%8D%B1/">덱</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/2568/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/2568/featured-image.png"
+        data-srcset="/2568/featured-image.png, /2568/featured-image.png 1.5x, /2568/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/2568/featured-image.png"
+        title="/2568/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/2568/">[백준]2568 전깃줄 - 2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-28">2021-06-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2568
+풀이: 가장 긴 증가하는 부분수열 문제이다.
+B번 전깃줄의 위치를 A번 전깃줄의 위치를 기준으로 정렬한 뒤, B를 기준으로 가장 긴 증가하는 부분수열을 찾으면 되는 문제이다.
+예를들어 예시에서
+   A 1 2 3 4 6 7 9 10     B 8 2 9 1 4 6 7 10    위와 같이 정렬된다.
+이렇게 정렬 되었을 때, B를 기준으로 가장 긴 증가하는 부분수열은 1, 4, 6, 7, 10 이 되고 남은 8, 2, 9 에 대응되는 A값은 1, 2, 3 3개이다.</div><div class="post-footer">
+        <a href="/2568/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EA%B0%80%EC%9E%A5-%EA%B8%B4-%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94-%EB%B6%80%EB%B6%84-%EC%88%98%EC%97%B4/">가장 긴 증가하는 부분 수열</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
             <a href="/14003/"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -182,40 +222,6 @@
    처음에 파이썬으로 풀었는데 답 제출에서 IndexOutOfBound가 뜨더라&hellip; 분명히 정답이 뜬 c++ 코드와 같은 코드인데 문제를 모르겠다.</div><div class="post-footer">
         <a href="/6593/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/4811/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/4811/featured-image.png"
-        data-srcset="/4811/featured-image.png, /4811/featured-image.png 1.5x, /4811/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/4811/featured-image.png"
-        title="/4811/featured-image.png" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/4811/">[백준]4811 알약</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-23">2021-06-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/4811
-풀이: 카탈란 수 문제이다.
-깔끔하게 카탈란 수로 풀어주자.
-$${2nCn \over n + 1}$$
-코드: 사용언어 : python
-1 2  from math import factorial as f while a:=int(input()): print(f(2*a)//(f(a)*f(a+1)))   </div><div class="post-footer">
-        <a href="/4811/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/dp/">DP</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
-            <a href="/9252/"><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/9252/featured-image.png"
-        data-srcset="/9252/featured-image.png, /9252/featured-image.png 1.5x, /9252/featured-image.png 2x"
-        data-sizes="auto"
-        alt="/9252/featured-image.png"
-        title="/9252/featured-image.png" /></a>
-        </div><h1 class="single-title" itemprop="name headline">
-        <a href="/9252/">[백준]9252 LCS 2</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-22">2021-06-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/9252
-풀이:    0 A C A Y K P     C 0 1 1 1 1 1   A 1 1 2 2 2 2   P 1 1 2 2 2 2   C 1 2 2 2 2 3   A 1 2 3 3 3 3   K 1 2 3 3 4 4    첫 번째 문자열을 : A</div><div class="post-footer">
-        <a href="/9252/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/dp/">DP</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
