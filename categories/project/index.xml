@@ -3,13 +3,20 @@
         <title>Project - Category - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/categories/project/</link>
         <description>Project - Category - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 28 Jul 2021 13:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/project/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Aug 2021 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/categories/project/" rel="self" type="application/rss+xml" /><item>
     <title>[Project] YouChu-유추 유튜브 추천 앱</title>
     <link>https://jyukki97.github.io/youchu/</link>
     <pubDate>Fri, 18 Jun 2021 13:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jyukki97.github.io/youchu/</guid>
     <description><![CDATA[<p><strong>유튜브 추천 어플</strong></p>]]></description>
+</item><item>
+    <title>[Flutter] 무작정 만드는 웹(2)</title>
+    <link>https://jyukki97.github.io/flutter_web_2/</link>
+    <pubDate>Sun, 01 Aug 2021 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/flutter_web_2/</guid>
+    <description><![CDATA[<p><strong>무작정 만드는 웹 시리즈</strong></p>]]></description>
 </item><item>
     <title>[Project] 음원 순위 웹 - Music Rank web</title>
     <link>https://jyukki97.github.io/music_rank_web/</link>

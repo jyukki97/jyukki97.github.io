@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-08-01T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,66 +103,62 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-2523/">[백준]2523 별 찍기 - 13</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2523
-풀이: 증가하는 순서로 별을찍다가 n+1 번쨰 줄부터 감소하는 순서로 별을 찍는다.
+        <a href="/2020-03-25-17173/">[백준]17173 배수들의 합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17173
+풀이: 2 ~ n 까지 수들 중 ki 중 하나의 배수인 수를 모두 찾아 더한 후 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, i, t; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) {	for (t = 0; t &lt;= i; t++)	cout &lt;&lt; &#34;*&#34;; cout &lt;&lt; endl; } while (n--) { for (t = 0; t &lt; n; t++)	cout &lt;&lt; &#34;*&#34;; cout &lt;&lt; endl; } }   </div><div class="post-footer">
-        <a href="/2020-03-23-2523/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/">별 찍기</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-2959/">[백준]2959 거북이</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2959
-풀이: 거북이가 만들 수 있는 가장 큰 직사각형의 면적을 출력한다
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int a[4], i = 4; int main() { while (i--)	cin &gt;&gt; a[i]; sort(a, a + 4); cout &lt;&lt; a[0] * a[2] &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-23-2959/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, m, i, t, s = 0, a[1001]; int main() { cin &gt;&gt; n &gt;&gt; m; for (i = 0; i &lt; m; i++) cin &gt;&gt; a[i]; for (i = 2; i &lt;= n; i++) for (t = 0; t &lt; m; t++) if (!</div><div class="post-footer">
+        <a href="/2020-03-25-17173/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-5523/">[백준]5523 경기 결과</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5523
-풀이: 각 경기마다 a가 이겼다면 a++ 를
-b가 이겼다면 b++를 해준다.
-모든 경기가 끝난 후 a와 b값을 출력해준다.
+        <a href="/2020-03-25-2460/">[백준]2460 지능형 기차 2</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2460
+풀이: 기차에 사람이 가장 많을 때의 사람 수를 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int n, a = 0, b = 0, x, y; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; x &gt;&gt; y; if (x &gt; y)	a++; if (x &lt; y)	b++; } cout &lt;&lt; a &lt;&lt; &#34; &#34; &lt;&lt; b &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-23-5523/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a, b, i, s = 0, t = 0; int main() { for (i = 0; i &lt; 10; i++) { cin &gt;&gt; a &gt;&gt; b; s += b - a, t = t &lt; s ? s : t; } cout &lt;&lt; t &lt;&lt; endl;	}   </div><div class="post-footer">
+        <a href="/2020-03-25-2460/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-22-10422/">[백준]10422 괄호</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10422
-풀이: C1=C0C0
-C2=C0C1+C1C0
-C3=C0C2+C1C1+C2C0
-C4=C0C3+C1C2+C2C1+C3C0
-.
-.
-.
-Cn = ΣCiC(n - i - 1)
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;iostream&gt;using namespace std; long long T, n, t, i = 2, a[3000] = { 1,1 }; int main() { cin &gt;&gt; T; while (T--) { cin &gt;&gt; n; if (n % 2)	cout &lt;&lt; &#34;0&#34; &lt;&lt; endl; else { for (; i &lt;= n / 2; i++)	for (t = 0; t &lt; i; t++)	a[i] = (a[i] + a[i - t - 1] * a[t]) % 1000000007; cout &lt;&lt; a[n / 2] &lt;&lt; endl; } } }   </div><div class="post-footer">
-        <a href="/2020-03-22-10422/">Read More</a><div class="post-tags">
+        <a href="/2020-03-25-5532/">[백준]5532 방학 숙제</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5532
+풀이: 국어를 풀어야 하는 날짜와 수학을 풀어야 하는 날짜를 각각 a, b라고 했을 때,
+a, b 중 더 높은 값을 방학일에서 뺀다면, 놀 수 있는 날의 최댓값이 된다.
+코드: 사용언어 : c
+1 2 3 4 5  main(n,a,b,c,d){ scanf(&#34;%d%d%d%d%d&#34;,&amp;n,&amp;a,&amp;b,&amp;c,&amp;d); a=a/c+(a%c?1:0),b=b/d+(b%d?1:0); printf(&#34;%d&#34;,n-(a&lt;b?b:a)); }   </div><div class="post-footer">
+        <a href="/2020-03-25-5532/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-22-11505/">[백준]11505 구간 곱 구하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11505
-풀이: [백준]2042 구간 합 구하기 참고
-cin, cout 은 시간초과가 나므로 주의 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;math.h&gt;using namespace std; #define ll long long ll n, m, k, a, b, c; vector&lt;ll&gt; T; ll update(int node, int idx, ll val, int x, int y) { if (idx &lt; x || idx &gt; y) return T[node]; if (x == y) return T[node] = val; return T[node] = (update(node * 2, idx, val, x, (x + y) / 2) * update(node * 2 + 1, idx, val, (x + y) / 2 + 1, y)) % 1000000007; } ll mul(int node, int x, int y, int s, int e) { if (e &lt; x || s &gt; y)	return 1; if (s &lt;= x &amp;&amp; e &gt;= y)	return T[node]; return (mul(node * 2, x, (x + y) / 2, s, e) * mul(node * 2 + 1, (x + y) / 2 + 1, y, s, e)) % 1000000007; } int main() { scanf(&#34;%d%d%d&#34;,&amp;n,&amp;m,&amp;k); T.</div><div class="post-footer">
-        <a href="/2020-03-22-11505/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/">세그먼트 트리</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-22-2042/">[백준]2042 구간 합 구하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-22">2020-03-22</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2042
-풀이: https://www.acmicpc.net/blog/view/9 참고
-크기가 2 ^ (log2(n) + 1) 인 트리를 하나 만든다.
-N개의 값을 트리에 모두 저장한다.
-a 가 1 이라면, b번째 값을 c로 수정한다.
-a 가 2 라면, 2 ~ 5 까지의 모든 수의 합을 출력한다.
+        <a href="/2020-03-24-13699/">[백준]13699 점화식</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/13699
+풀이:  t(0) = 1 t(1) = t(0)*t(0) = 1 t(2) = t(0)*t(1)+t(1)*t(0) = 2 t(3) = t(0)*t(2)+t(1)*t(1)+t(2)*t(0) = 5  주어진 점화식 그대로 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;math.</div><div class="post-footer">
-        <a href="/2020-03-22-2042/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8-%ED%8A%B8%EB%A6%AC/">세그먼트 트리</a></div></div>
+1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; long long n, t, i = 1, a[36] = { 1 }; int main() { cin &gt;&gt; n; for (; i &lt;= n; i++)	for (t = 0; t &lt; i; t++)	a[i] += a[i - t - 1] * a[t]; cout &lt;&lt; a[n] &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-24-13699/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-24-15657/">[백준]15657 N과 M (8)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/15657
+풀이: 수열을 배열에 저장한다.
+비내림차순으로 출력해야 하므로 배열을 정렬한다.
+현재 배열에 있는 수를 새로운 배열에 옮겨 담는다.
+옮긴 수가 M개가 된다면 출력하고, 다른 수를 담는다.
+모든 수를 사전 순으로 출력했다면 종료한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int n, m, a[8], b[8]; void N(int x, int y) { if (!</div><div class="post-footer">
+        <a href="/2020-03-24-15657/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-24-15989/">[백준]15989 1, 2, 3 더하기 4</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-24">2020-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/15989
+풀이: a[n][0] : 3을 포함하지 않고, 2를 1개 이상 포함한 n 을 만드는 경우의 수
+a[n][1] : 3을 1개 이상 포함한 n을 만드는 경우의 수
+a[n][0] = a[n - 2][0] + 1
+-&gt; 2를 1개 이상 포함하여 n - 2 를 만드는 경우의 수에 2를 하나씩 더 붙힌 것
++ 1로만 이루어진 수에 2를 하나 붙힌 것)
+a[n][1] = a[n - 3][1] + a[n - 3][0] + 1
+-&gt; 3을 3개 이상 포함하여 n - 3 을 만드는 경우의 수에 3을 하나씩 붙힌 것</div><div class="post-footer">
+        <a href="/2020-03-24-15989/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -193,7 +189,7 @@ a 가 2 라면, 2 ~ 5 까지의 모든 수의 합을 출력한다.
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/83/">83</a>
+                        <a href="/page/86/">86</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

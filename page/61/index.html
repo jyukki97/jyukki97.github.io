@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-08-01T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,47 +103,50 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-15-10826/">[백준]10826 피보나치 수 4</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-15">2019-06-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10826
-풀이:  n을 입력받는다 n번째 피보나치 수를 출력한다  코드: 사용언어 : Python 3
-1 2 3 4  s,t=0,1 for i in range(int(input())): t,s=s,s+t print(s)   </div><div class="post-footer">
-        <a href="/2019-06-15-10826/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+        <a href="/2019-12-19-findpnum/">[프로그래머스]소수 찾기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-19">2019-12-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  2이상 n이하의 수들 중 소수의 갯수를 구하여 출력한다.  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  #include &lt;string&gt;#include &lt;vector&gt;#include &lt;math.h&gt;using namespace std; int solution(int n) { vector&lt;int&gt; q = { 2 }; for (int i = 3;i &lt;= n;i++) { bool w = true; for (int t : q) { if (t &gt; sqrt(i)) { break; } if (i % t == 0) { w = false; break; } } if (w == true) { q.</div><div class="post-footer">
+        <a href="/2019-12-19-findpnum/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%86%8C%EC%88%98/">소수</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-14-11050/">[백준]11050 이항 계수 1</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-14">2019-06-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11050
-풀이:  n, k 를 입력받고, nCk를 출력한다  코드: 사용언어 : Python 3
-1 2 3 4  n,k=map(int,input().split()) r=1 for i in range(k): r*=(n-i)/(i+1) print((int)(r))   </div><div class="post-footer">
-        <a href="/2019-06-14-11050/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+        <a href="/2019-12-19-subaksubak/">[프로그래머스]수박수박수박수박수박수?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-19">2019-12-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  &ldquo;수박수박수&hellip;&rdquo; 의 패턴을 유지하는 n만큼의 길이의 문자열을 리턴한다.  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  #include &lt;stdio.h&gt;#include &lt;stdbool.h&gt;#include &lt;stdlib.h&gt;#include &lt;string.h&gt; char* solution(int n) { bool c = true; char a[] = &#34;수&#34;; char b[] = &#34;박&#34;; char* answer = (char*)malloc(sizeof(char)*3*n + 1); for (int i = 0;i &lt; 3*n;i+=3) { if (c) { strcpy(answer + i, a); c = false; } else { strcpy(answer + i, b); c = true; } } return answer; }   </div><div class="post-footer">
+        <a href="/2019-12-19-subaksubak/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-13-11365/">[백준]11365 !밀비 급일</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-13">2019-06-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11365
-풀이:  문자열을 입력받고, 그 문자열을 뒤집어서 출력한다. 문자열이 END라면 반복을 중지한다.  코드: 사용언어 : Python 3
-1 2 3 4  while 1: a=input() if a==&#39;END&#39;:break print(a[::-1])   </div><div class="post-footer">
-        <a href="/2019-06-13-11365/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
+        <a href="/2019-12-18-findkim/">[프로그래머스]서울에서 김서방 찾기</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-18">2019-12-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  string 배열 seoul의 원소 중 &ldquo;Kim&quot;의 위치를 찾아 반환한다.  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; string solution(vector&lt;string&gt; seoul) { for (int i = 0;i &lt; seoul.size();i++) if (seoul[i] == &#34;Kim&#34;) return &#34;김서방은 &#34; + to_string(i) + &#34;에 있다&#34;; }   </div><div class="post-footer">
+        <a href="/2019-12-18-findkim/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-12-10952/">[백준]10952 A&#43;B - 5</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-12">2019-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10952
-풀이:  반복 횟수를 무한히 한 후 입력받은 두 수의 합을 출력 입력받은 두 수가 0 0 이라면 반복문을 빠져나간다.  코드: 사용언어 : Python 3
-1 2 3 4  while 1: a,b=map(int,input().split()) if a==0:break print(a+b)   </div><div class="post-footer">
-        <a href="/2019-06-12-10952/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+        <a href="/2019-12-17-stringbase/">[프로그래머스]문자열 다루기 기본</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-17">2019-12-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  문자열 s의 길이가 4 또는 6 이고, 숫자로만 구성되어있는지 확인 후 아니라면 false를 리턴  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  #include &lt;string&gt;#include &lt;vector&gt; using namespace std; bool solution(string s) { bool answer = true; if (s.length() != 4 &amp;&amp; s.length() != 6) { answer = false; } else { for (int i = 0;i &lt; s.</div><div class="post-footer">
+        <a href="/2019-12-17-stringbase/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/">문자열</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-11-15552/">[백준]15552 빠른 A&#43;B</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-11">2019-06-11</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/15552
-풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력 간단한 문제이지만 매우 많은 테스트케이스의 수가 있으므로 input() 대신 sys.stdin().readline()을 사용한다.  코드: 사용언어 : Python 3
-1 2 3  import sys for i in range(int(input())): print(sum(map(int,sys.stdin.readline().split())))   </div><div class="post-footer">
-        <a href="/2019-06-11-15552/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+        <a href="/2019-12-16-py/">[프로그래머스]문자열 내 p와 y의 개수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-16">2019-12-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:  문자열 s의 모든 원소를 보고 p,P 이면 p의 갯수를 올리고, y,Y이면 y의 갯수를 올린다. p의 갯수와 y의 갯수가 같다면 true 다르다면 false 를 리턴한다.  코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  #include &lt;string&gt;#include &lt;iostream&gt;using namespace std; bool solution(string s) { bool answer = true; int p = 0; int y = 0; for (int i = 0;i &lt; s.</div><div class="post-footer">
+        <a href="/2019-12-16-py/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2019-06-10-10950/">[백준]10950 A&#43;B - 3</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-06-10">2019-06-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10950
-풀이:  반복 횟수를 입력받은 후 입력받은 두 수의 합을 출력  코드: 사용언어 : Python 3
-1 2  for i in range(int(input())): print(sum(map(int,input().split())))   </div><div class="post-footer">
-        <a href="/2019-06-10-10950/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+        <a href="/2019-12-15-gymclothes/">[프로그래머스]체육복</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2019-12-15">2019-12-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+풀이:   학생 전체 중 체육복을 잃어버린 학생과 체육복을 추가로 가져온 학생을 정리한다.(체육복을 추가로 가져온 학생들 중 체육복을 잃어버린 학생이 있을 수 있기 때문에)
+  체육복이 없는 학생 중 양 옆에 여벌의 체육복을 가져온 학생이 있는경우 빌려입는다.
+  전체 학생 중 체육복이 1개 이상 있는 학생들의 수를 리턴한다.
+  주의 사항:   체육복을 추가로 가져온 학생들 중 체육복을 잃어버린 학생이 있을 수 있다.
+  체육복을 추가로 가져오지 않았을 경우, 옆 사람에게 체육복을 추가로 얻어도 다른 사람에게 양도할 수 없다.</div><div class="post-footer">
+        <a href="/2019-12-15-gymclothes/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -174,7 +177,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/83/">83</a>
+                        <a href="/page/86/">86</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

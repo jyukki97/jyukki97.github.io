@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-08-01T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -102,70 +102,117 @@
         data-sizes="auto"
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-28-17264/">[백준]17264 I AM IRONMAN</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-28">2020-12-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17264
-풀이: 이길 수 있는 사람을 set에 모아놓는다.
-만약 만난 사람이 set에 존재한다면, score에 획득 점수를 더해준다.
-만약 만난 사람이 set에 존재하지 않는다면, score에 떨어지는 점수를 빼준다.
-만약 score가 IRON 티어에서 벗어나기 위한 점수보다 높아진다면,
-&ldquo;I AM NOT IRONMAN!!&rdquo; 을 출력한다.
-모든 플레이어를 만났음에도 IRON 티어에서 벗어나기 위한 점수보다 낮다면,
-&ldquo;I AM IRONMAN!!&ldquo;을 출력한다.
-score값은 음수가 될 수 없으므로 주의하자!!!
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;#include &lt;set&gt;using namespace std; int main() { int n, p, w, l, g, c = 0; set&lt;string&gt; s; string t, h; for (cin &gt;&gt; n &gt;&gt; p &gt;&gt; w &gt;&gt; l &gt;&gt; g; p--;s.</div><div class="post-footer">
-        <a href="/2020-12-28-17264/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%95%B4%EC%8B%9C/">해시</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-27-17263/">[백준]17263 Sort 마스터 배지훈</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-27">2020-12-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17263
-풀이: 받아온 수 중 가장 큰 수를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { int n, a, c = 0; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a; if (c &lt; a) c = a; } cout &lt;&lt; c &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-12-27-17263/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-26-14614/">[백준]14614 Calculate!</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-26">2020-12-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14614
-풀이: C가 짝수라면 A를
-C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int main() { int a, b; string c; cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; if ((int)(c[c.size() - 1] - &#39;0&#39;) % 2) a ^= b; cout &lt;&lt; a &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-12-26-14614/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-25-14612/">[백준]14612 김식당</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-25">2020-12-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14612
-풀이: order를 &lt;주문시간, 테이블번호&gt; 를 변수로 하는 vector에 차곡차곡 쌓는다.
-각 주문이 끝난 후 vector의 들어있는 테이블 번호를 순서대로 출력한다.
-만약 sort가 들어왔다면, 주문시간을 기준으로 vector를 정렬한다
-만약 complete가 들어왔다면, 완성된 테이블 번호를 vector에서 제거한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std; int main() { int n, m, a, b, i; vector&lt;pair&lt;int, int&gt;&gt; v; cin &gt;&gt; n &gt;&gt; m; while (n--) { string s; cin &gt;&gt; s; if (s == &#34;order&#34;) { cin &gt;&gt; a &gt;&gt; b; v.</div><div class="post-footer">
-        <a href="/2020-12-25-14612/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-24-12778/">[백준]12778 CTP공국으로 이민 가자</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-24">2020-12-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/12778
-풀이: 만약 C라면,
-문자열을 숫자로 출력한다.
-만약 N이라면,
-숫자를 문자열로 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  #include &lt;iostream&gt;using namespace std; int main() { int a, i, n; char b; cin &gt;&gt; n; while (n--) { cin &gt;&gt; a &gt;&gt; b; if (b == &#39;C&#39;) { for (i = 0; i &lt; a; i++) { char c; cin &gt;&gt; c; cout &lt;&lt; (int)(c - &#39;A&#39; + 1) &lt;&lt; &#34; &#34;; } } else { for (i = 0; i &lt; a; i++) { int c; cin &gt;&gt; c; cout &lt;&lt; (char)(&#39;A&#39; + c - 1) &lt;&lt; &#34; &#34;; } } cout &lt;&lt; endl; } }   </div><div class="post-footer">
-        <a href="/2020-12-24-12778/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-12-24-12779/">[백준]12779 상품 is 뭔들</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-12-24">2020-12-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/12779
-풀이: 약수의 갯수가 홀수라는 것은 &ldquo;제곱수&rdquo; 라는 것을 의미한다.
-그러므로 제곱수의 갯수 / 전체 갯수를 한다면 답을 구할 수 있다.
-주의
- 확률이 0일 경우 0을 출력해야한다. 2^60 까지의 숫자이므로 int형에 들어갈 수 없다. 기약분수로 출력해야하므로 최대 공약수로 나누어주는 작업을 해주자.  코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  #include &lt;iostream&gt;#include &lt;math.</div><div class="post-footer">
-        <a href="/2020-12-24-12779/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/1241/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1241/featured-image.png"
+        data-srcset="/1241/featured-image.png, /1241/featured-image.png 1.5x, /1241/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/1241/featured-image.png"
+        title="/1241/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/1241/">[백준]1241 머리 톡톡</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-19">2021-06-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1241
+풀이: 1번 부터 N번까지 학생들의 머리 위의 숫자들의 개수를 저장해놓는다
+ex) 2는 2번, 1은 1번&hellip;
+자신의 머리 위의 수를 소인수분해한다.
+소인수분해를 통해 나온 약수들이 나온 개수만큼 모두 더해준다.
+자기 자신과 같은 수 일 때는 자기 자신을 세지않으므로 조심하자.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  import math N=int(input()) a=[] d=dict() for i in range(N): a.append(int(input())) d[a[-1]] = d.</div><div class="post-footer">
+        <a href="/1241/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a>,&nbsp;<a href="/tags/%EC%A0%95%EC%88%98%EB%A1%A0/">정수론</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/1188/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1188/featured-image.png"
+        data-srcset="/1188/featured-image.png, /1188/featured-image.png 1.5x, /1188/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/1188/featured-image.png"
+        title="/1188/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/1188/">[백준]1188 음식 평론가</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-18">2021-06-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1188
+풀이: 소시지가 N개 평론가가 M명 있을 때,
+각각의 평론가는 N/M개의 소시지를 가지고 간다. (그러므로 만약, N이 M으로 나누어 떨어진다면 소시지를 자르지 않아도 된다.) =&gt; GCD(N, M) = M
+N개의 소시지를 이어붙여 1개의 소시지로 만든다면, 소시지는 M - 1번 잘라야 한다. =&gt; GCD(N, M) = 1
+즉, M - GCD(N, M) 번 자른다면 평론가들은 모두 동일한 양의 소시지를 얻을 수 있다.
+코드: 사용언어 : python
+1 2 3  import math n,m=map(int,input().</div><div class="post-footer">
+        <a href="/1188/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/1092/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1092/featured-image.png"
+        data-srcset="/1092/featured-image.png, /1092/featured-image.png 1.5x, /1092/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/1092/featured-image.png"
+        title="/1092/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/1092/">[백준]1092 배</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-17">2021-06-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1092
+풀이: 크레인과 박스를 정렬한다
+단, 이때 정렬은 내림차순으로 해야한다. 오름차순으로 할 경우 안되는 경우의 수가 존재.
+정렬된 크레인과 박스의 맨 처음을 비교한다. 만약 박스의 무게가 더 크다면, 모든 박스를 옮길 수 없으므로 -1을 출력한다.
+크레인을 한칸씩 오른쪽으로 이동시키면서 박스를 확인한다. 옮긴 박스는 0으로 바꾸고, 이미 0인 박스는 지나친다.
+모든 크레인을 사용했다면 time을 1늘리고, 다시 반복한다.
+모든 박스를 옮길 때까지 반복한 후 time을 출력한다.
+코드: 사용언어 : python
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  a,b,c,d=int(input()),list(map(int, input().</div><div class="post-footer">
+        <a href="/1092/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EA%B7%B8%EB%A6%AC%EB%94%94/">그리디</a>,&nbsp;<a href="/tags/%EC%A0%95%EB%A0%AC/">정렬</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/1089/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1089/featured-image.png"
+        data-srcset="/1089/featured-image.png, /1089/featured-image.png 1.5x, /1089/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/1089/featured-image.png"
+        title="/1089/featured-image.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/1089/">[백준]1089 스타트링크 타워</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-06-17">2021-06-17</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1089
+풀이: 5 * 3 자리에서 각 자리에 &lsquo;#&rsquo; 이 들어올 경우 될 수 없는 숫자를 찾아놓는다.
+ex) (0, 0) 자리에 &lsquo;#&rsquo; 이 올 경우 1은 절대 될 수 없다.
+첫 번 째 숫자 부터 N까지의 숫자를 찾아가면서 가능한 숫자를 저장해놓는다.
+가능한 숫자를 모두 조합한다면, 너무 많은 조합이 가능하므로 다른 방법을 사용한다.
+ex) 각 자리에 [1], [2, 3], [1, 8, 9] 가 가능하다면, 만들 수 있는 조합은
+121, 128, 129, 131, 138, 139 로 총 6가지 이다.</div><div class="post-footer">
+        <a href="/1089/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/python/">python</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/flutter_sample_bookstore/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/flutter_sample_bookstore/featured-image.png"
+        data-srcset="/flutter_sample_bookstore/featured-image.png, /flutter_sample_bookstore/featured-image.png 1.5x, /flutter_sample_bookstore/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/flutter_sample_bookstore/featured-image.png"
+        title="Flutter Practice" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/flutter_sample_bookstore/">Flutter_sample_bookstore</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-27">2021-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/flutter/"><i class="far fa-folder fa-fw"></i>Flutter</a></span></div><div class="content">Flutter Practice 2. flutter_sample_bookstore 용도  Book Store   Flutter 사용  Git 위치 Flutter_sample_bookstore </div><div class="post-footer">
+        <a href="/flutter_sample_bookstore/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/bookstore/">bookstore</a>,&nbsp;<a href="/tags/app/">app</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/flutter_sample_note_1/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/flutter_sample_note_1/featured-image.png"
+        data-srcset="/flutter_sample_note_1/featured-image.png, /flutter_sample_note_1/featured-image.png 1.5x, /flutter_sample_note_1/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/flutter_sample_note_1/featured-image.png"
+        title="Flutter Practice" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/flutter_sample_note_1/">Flutter_sample_note_1</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://jyukki97.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-01-25">2021-01-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/flutter/"><i class="far fa-folder fa-fw"></i>Flutter</a></span></div><div class="content">Flutter Practice 1. Flutter_sample_note_1 노트  Flutter 사용  Git 위치 Flutter_sample_note_1 </div><div class="post-footer">
+        <a href="/flutter_sample_note_1/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/flutter/">Flutter</a>,&nbsp;<a href="/tags/note/">note</a>,&nbsp;<a href="/tags/app/">app</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -196,7 +243,7 @@ C가 홀수라면 A 와 B를 XOR한 값을 출력한다.
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/83/">83</a>
+                        <a href="/page/86/">86</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

@@ -3,7 +3,18 @@
         <title>구현 - Tag - JYUKKI&#39;s BLOG</title>
         <link>https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/</link>
         <description>구현 - Tag - JYUKKI&#39;s BLOG</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Dec 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 10 Jul 2021 22:00:40 &#43;0800</lastBuildDate><atom:link href="https://jyukki97.github.io/tags/%EA%B5%AC%ED%98%84/" rel="self" type="application/rss+xml" /><item>
+    <title>[백준]11283 한글 2</title>
+    <link>https://jyukki97.github.io/11283/</link>
+    <pubDate>Sat, 10 Jul 2021 22:00:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://jyukki97.github.io/11283/</guid>
+    <description><![CDATA[https://www.acmicpc.net/problem/11283
+풀이: 한글을 유니코드 값으로 변환시켜주는 ord() 함수를 사용하여 푼다.
+&lsquo;가&rsquo;의 값이 44032이므로 값에 44031을 뺀 값을 출력해준다.
+코드: 사용언어 : python
+1  print(ord(input())-44031)   ]]></description>
+</item><item>
     <title>[백준]12778 CTP공국으로 이민 가자</title>
     <link>https://jyukki97.github.io/2020-12-24-12778/</link>
     <pubDate>Thu, 24 Dec 2020 00:00:00 &#43;0000</pubDate>
@@ -107,15 +118,5 @@ Y사의 기본요금 + (Y사의 1리터당 추가요금 * (한 달간의 수도�
 i가 n이 될때까지 반복 후 경우의 수를 출력해준다.
 코드: 사용언어 : c++
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  #include &lt;iostream&gt;using namespace std; int n, m, i, t, a[10002], s, c = 0; int main() { scanf(&#34;%d%d&#34;,&amp;n,&amp;m); for (i = 0; i &lt; n; i++)	scanf(&#34;%d&#34;,&amp;a[i]); for (i = 0; i &lt; n; i++) { s = 0; for (t = i; t &lt; n; t++) { s += a[t]; if (s == m) c++; if (s &gt;= m)	break; } } printf(&#34;%d\n&#34;,c); }   ]]></description>
-</item><item>
-    <title>[백준]5543 상근날드</title>
-    <link>https://jyukki97.github.io/2020-03-12-5543/</link>
-    <pubDate>Thu, 12 Mar 2020 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://jyukki97.github.io/2020-03-12-5543/</guid>
-    <description><![CDATA[https://www.acmicpc.net/problem/5543
-풀이: 햅버거 중 가장 싼 것 + 음료 중 가장 싼 것 - 50원
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int a,b,c,d,e; int main() { cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d &gt;&gt; e; a = a &lt; b ? a : b; a = a &lt; c ? a : c; d = d &lt; e ?]]></description>
 </item></channel>
 </rss>

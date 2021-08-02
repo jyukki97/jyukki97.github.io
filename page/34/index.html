@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-08-01T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,63 +103,77 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-29-1697/">[백준]1697 숨바꼭질</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-29">2020-02-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1697
-풀이: 현재 위치를 x라고 할 때, x + 1, x - 1, x * 2 위치를 BFS 를 통해 하나씩 찾아간다.
-동생의 위치와 같아진다면 몇번 이동했는지 출력한다.
-x + 1 은 동생의 위치보다 커질 필요가없으므로 동생의 위치보다 작을때만 이동한다. x * 2 는 동생의 위치 + 1 보다 크다면 (x - 2) * 2 를 하는 것이 이득이므로 제외한다. 현재 위치는 0보다 작아질 수 없으므로 제외한다. 이미 한번 방문한 위치는 다시 방문할 필요없으므로 제외시킨다.</div><div class="post-footer">
-        <a href="/2020-02-29-1697/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-29-2206/">[백준]2206 벽 부수고 이동하기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-29">2020-02-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2206
-풀이: [백준]2178 미로 탐색 참고
+        <a href="/2020-03-05-1049/">[백준]1049 기타줄</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1049
+풀이: 여러 브랜드 중 6줄 패키지 가격의 최솟값과 낱개 가격의 최솟값을 저장해 놓는다.
+낱개 * 6 보다 패키지 가격이 더 높다면, 패키지로 살 이유가 없으므로 낱개 가격을 출력한다.
+필요한 줄의 갯수가 6개 이하라면, 낱개 가격과 패키지 가격 중 낮은 가격을 출력한다.
+둘 다 아니라면, (전체를 패키지로 사는 것) 과 (6개로 나눠지는 만큼 패키지로 사고 나머지는 낱개로 사는 것) 둘 중 낮은 가격을 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, k = -1, q, w, e, dps; vector&lt;string&gt; a; queue&lt;pair&lt;int, pair&lt;int, int&gt;&gt;&gt; dp; bool b[2][1002][1002]; int main() { cin &gt;&gt; n &gt;&gt; m; a.</div><div class="post-footer">
-        <a href="/2020-02-29-2206/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  #include &lt;iostream&gt;#include &lt;algorithm&gt;using namespace std; int N, M, q, w, a = 1001, b = 1001, dp[102] = { 0 }; int main(void) { cin &gt;&gt; N &gt;&gt; M; for (int i = 0; i &lt; M; i++) { cin &gt;&gt; q &gt;&gt; w; a = min(a, q); b = min(b, w); } for (int i = 1; i &lt;= N; i++) { dp[i] = (((i - 1) / 6) + 1) * a; dp[i] = min(dp[i], dp[i - 1] + b); } cout &lt;&lt; dp[N] &lt;&lt; endl; }   코드: 사용언어 : c++</div><div class="post-footer">
+        <a href="/2020-03-05-1049/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/greedy/">greedy</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-29-7569/">[백준]7569 토마토</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-29">2020-02-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/7569
-풀이: [백준]7576 토마토 참고
+        <a href="/2020-03-05-1068/">[백준]1068 트리</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-05">2020-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1068
+풀이: v[i] : i의 자식 노드들이 들어있다.
+삭제 해야하는 노드가 w 라면,
+w를 큐에 푸쉬한다.
+w의 자식노드를 큐에 푸쉬한 후 w를 삭제한다.
+자식노드가 없어질 때까지 반복한다.
+v[ 0 ~ N - 1 ] 까지 모두 순환한다.
+노드가 현제 존재하며, 자식노드가 없다면, 리프 노드이므로 +1 해준다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60  #include &lt;iostream&gt;#include &lt;queue&gt;using namespace std; int n, m, h, k, q, w, e, a[102][102][102]; queue&lt;pair&lt;int, pair&lt;int, int&gt;&gt;&gt; dp2; int main() { cin &gt;&gt; m &gt;&gt; n &gt;&gt; h; for (int y = 0; y &lt; h; y++) for (int i = 0; i &lt; n; i++) for (int t = 0; t &lt; m; t++) { cin &gt;&gt; a[y][i][t]; if (a[y][i][t] == 1)	dp2.</div><div class="post-footer">
-        <a href="/2020-02-29-7569/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  #include &lt;iostream&gt;#include &lt;queue&gt;#include &lt;vector&gt;using namespace std; int N, a; bool b[52], c; int main(void) { cin &gt;&gt; N; vector&lt;vector&lt;int&gt;&gt; v(N); queue&lt;int&gt; q; for (int i = 0; i &lt; N; i++) { cin &gt;&gt; a; if(a !</div><div class="post-footer">
+        <a href="/2020-03-05-1068/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%ED%8A%B8%EB%A6%AC/">트리</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-28-bitoperator/">[C&#43;&#43;]비트연산자</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div><div class="content">비트연산자
-비트연산자 DP문제를 푸는데 있어, 연산속도를 빠르게 하기 위해 사용 &laquo; , &raquo; 시프트 연산자. 비트의 자리를 옮겨줌 ex)
-1 &laquo; 3
- 1000
- NOT - ( ~ ) 0 은 1로 1은 0으로 반대로 바꿔준다. ex)
-0000000
- 1111111
- AND - ( &amp; ) 둘 다 1 일때만 1, 아니면 0 ex)
-1100110
-&amp; 1011001
- 1000110
- OR - ( | ) 둘 중 하나라도 1이라면 1, 아니면 0 ex)</div><div class="post-footer">
-        <a href="/2020-02-28-bitoperator/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/learn/">Learn</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a></div></div>
+        <a href="/2020-03-04-1057/">[백준]1057 토너먼트</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-04">2020-03-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1057
+풀이: ​	1	2
+​	1	2	3	4
+1	2	3	4	5	6	7	8
+현재 번호가 i 라고 할 때,
+위로 갈 수록 배정받는 번호는 (i + 1) / 2 가 된다.
+즉, 김지민과 임한수의 번호가 x, y 라고 할 때,
+( x + 1 ) / 2 == ( y + 1 ) / 2
+가 되는 순간이 둘이 대결하는 순간이다.
+토너먼트가 끝날 때까지 둘이 대결하지 않는 경우는 없으므로 -1 출력은 하지않는다.</div><div class="post-footer">
+        <a href="/2020-03-04-1057/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-28-1012/">[백준]1012 유기농 배추</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1012
-풀이: [백준]2667 단지번호붙이기 참고
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36  #include &lt;iostream&gt;#include &lt;string.h&gt;using namespace std; int n, T, m, k, q, w, sum, a[52][52]; bool b[52][52]; void num(int x, int y) { b[x][y] = true; if (x + 1 &lt; n &amp;&amp; a[x + 1][y] &amp;&amp; !</div><div class="post-footer">
-        <a href="/2020-02-28-1012/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
+        <a href="/2020-03-04-1074/">[백준]1074 집합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-04">2020-03-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1074
+풀이: 배열의 크기를 점차 줄여가면서,
+위에 방문할 수 있는 배열의 크기를 계산하여, 더해가면서 구한다.
+ex)
+3 7 7
+8 * 8 배열에서
+왼쪽위, 오른쪽 위, 왼쪽 아래 4 * 4 배열은 필요없으니까 48 만큼 뺀 후,
+오른쪽 아래 배열로만 4 * 4 배열로 줄여서 다시 만든다.
+그렇다면, ( 7, 7 ) 은 ( 3, 3 )이 되어야 하므로 (7 % 4, 7 % 4) 가 된다.
+배열의 크기가 0이 될때까지 반복한다.</div><div class="post-footer">
+        <a href="/2020-03-04-1074/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EC%88%98%ED%95%99/">수학</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-02-28-2178/">[백준]2178 미로 탐색</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-02-28">2020-02-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2178
-풀이: 이동횟수가 i 일때,
-이동횟수가 i - 1 인 값들에서 왼쪽, 오른쪽, 위, 아래 중 값이 1이고, 방문한적 없는 곳을 찾아 좌표를 큐에 넣는다.
-만약 현재 좌표가 도착위치라면, 이동횟수 i를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47  #include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;queue&gt;using namespace std; int n, m, k, q, w; vector&lt;string&gt; a; queue&lt;pair&lt;int, int&gt;&gt; dp2; bool b[102][102]; int main() { cin &gt;&gt; n &gt;&gt; m; a.</div><div class="post-footer">
-        <a href="/2020-02-28-2178/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/dfs/">DFS</a>,&nbsp;<a href="/tags/bfs/">BFS</a></div></div>
+        <a href="/2020-03-04-11723/">[백준]11723 집합</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-04">2020-03-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/11723
+풀이: [C++]비트연산자 참고
+add : or 연산을 통해 값을 추가한다.
+remove : 값이 있는지 확인 후 있다면, xor 연산으로 삭제한다.
+check : 값이 있는지 and 연산으로 확인 후 있다면 1, 없다면 0을 출력한다.
+toggle : 값이 있다면 삭제하고, 없다면 추가한다.
+all : 비트값을 (2^20) - 1 로 바꿔주어, 1 ~ 20 까지 채워놓는다.
+empty : 비트값을 0으로 바꿔주어, 공집합으로 만들어놓는다.
+시간제한이있으므로 비트마스크를 통해 연산하도록한다. cin, cout 을 사용할 경우 시간초과가 나므로 주의하자.</div><div class="post-footer">
+        <a href="/2020-03-04-11723/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B9%84%ED%8A%B8%EB%A7%88%EC%8A%A4%ED%81%AC/">비트마스크</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-04-listofmatches/">[프로그래머스]예상 대진표</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-04">2020-03-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><i class="far fa-folder fa-fw"></i>프로그래머스</a></span></div><div class="content">https://programmers.co.kr
+문제: △△ 게임대회가 개최되었습니다. 이 대회는 N명이 참가하고, 토너먼트 형식으로 진행됩니다. N명의 참가자는 각각 1부터 N번을 차례대로 배정받습니다. 그리고, 1번↔2번, 3번↔4번, &hellip; , N-1번↔N번의 참가자끼리 게임을 진행합니다. 각 게임에서 이긴 사람은 다음 라운드에 진출할 수 있습니다. 이때, 다음 라운드에 진출할 참가자의 번호는 다시 1번부터 N/2번을 차례대로 배정받습니다. 만약 1번↔2번 끼리 겨루는 게임에서 2번이 승리했다면 다음 라운드에서 1번을 부여받고, 3번↔4번에서 겨루는 게임에서 3번이 승리했다면 다음 라운드에서 2번을 부여받게 됩니다. 게임은 최종 한 명이 남을 때까지 진행됩니다.</div><div class="post-footer">
+        <a href="/2020-03-04-listofmatches/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/level-2/">Level 2</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -190,7 +204,7 @@ x + 1 은 동생의 위치보다 커질 필요가없으므로 동생의 위치�
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/83/">83</a>
+                        <a href="/page/86/">86</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

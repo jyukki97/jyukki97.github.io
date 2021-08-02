@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jyukki97.github.io/" />
 <meta property="og:image" content="https://jyukki97.github.io/logo.png"/>
-<meta property="og:updated_time" content="2021-07-28T14:45:40+08:00" />
+<meta property="og:updated_time" content="2021-08-01T16:45:40+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://jyukki97.github.io/logo.png"/>
 
@@ -103,54 +103,61 @@
         alt="/images/logo.png"
         title="/images/logo.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/jyukki97" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="mailto:jyukki97@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-10996/">[백준]10996 별 찍기 - 21</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10996
-풀이: 지그제그로 n번 별을 찍는다.
+        <a href="/2020-03-26-1748/">[백준]1748 수 이어 쓰기 1</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-26">2020-03-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1748
+풀이: 1 ~ N 까지의 1의 자릿수의 갯수
++ 1 ~ N 까지의 10의 자릿수의 갯수
+.
+.
+.
++ 1 ~ N 까지의 N의 최대 자릿수의 갯수
+= 1 ~ N 까지의 수를 이어서 썻을 때의 자릿수
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, i, t; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n * 2; i++) {	for (t = 0; t &lt; n / 2 + (i % 2 ? 0 : n % 2); t++)	printf(&#34;%s&#34;, i % 2 ?</div><div class="post-footer">
-        <a href="/2020-03-23-10996/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EB%B3%84-%EC%B0%8D%EA%B8%B0/">별 찍기</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-1453/">[백준]1453 피시방 알바</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1453
-풀이: 거절당하는 사람의 수를 출력한다.
-코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, m, s = 0, a[101]; int main() { cin &gt;&gt; n; while (n--) { cin &gt;&gt; m; a[m]?s++:a[m]++; } cout &lt;&lt; s &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-23-1453/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7  #include &lt;iostream&gt;using namespace std; int n, a, b = 1; int main() { for (cin &gt;&gt; n; n &gt; b; b *= 10)	a += n - b + 1; cout &lt;&lt; a &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-26-1748/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-14681/">[백준]14681 사분면 고르기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14681
-풀이: 점 (x, y)의 사분면 번호를 출력한다.
+        <a href="/2020-03-26-5533/">[백준]5533 유니크</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-26">2020-03-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5533
+풀이: 각 플레이어가 3번의 게임에서 얻은 총 점수를 입력으로 주어진 순서대로 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int x, y; int main() { cin &gt;&gt; x &gt;&gt; y; if (x &gt; 0 &amp;&amp; y &gt; 0)	cout &lt;&lt; &#34;1&#34; &lt;&lt; endl; if (x &lt; 0 &amp;&amp; y &gt; 0)	cout &lt;&lt; &#34;2&#34; &lt;&lt; endl; if (x &lt; 0 &amp;&amp; y &lt; 0)	cout &lt;&lt; &#34;3&#34; &lt;&lt; endl; if (x &gt; 0 &amp;&amp; y &lt; 0)	cout &lt;&lt; &#34;4&#34; &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-23-14681/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int n, a[201][3], i, t, b[3][101], s; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) for (t = 0; t &lt; 3; b[t][a[i][t++]]++) cin &gt;&gt; a[i][t]; for (i = 0; i &lt; n; i++, s = 0) { for (t = 0; t &lt; 3; t++) s += b[t][a[i][t]] &gt; 1 ?</div><div class="post-footer">
+        <a href="/2020-03-26-5533/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>,&nbsp;<a href="/tags/%EA%B5%AC%ED%98%84/">구현</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/2020-03-26-5586/">[백준]5586 JOI와 IOI</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-26">2020-03-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/5586
+풀이: 문자열에 포함되어 있는 JOI의 개수, 둘째 줄에 IOI의 개수를 출력한다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10 11  #include &lt;iostream&gt;using namespace std; int a, b, i; string s; int main() { cin &gt;&gt; s; for (i = 0; i &lt; s.size() - 2; i++) if (s.substr(i, 3) == &#34;JOI&#34;)	a++; else if (s.substr(i, 3) == &#34;IOI&#34;)	b++; printf(&#34;%d\n%d&#34;, a, b); }   </div><div class="post-footer">
+        <a href="/2020-03-26-5586/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-16486/">[백준]16486 운동장 한 바퀴</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/16486
-풀이: 원 둘레 + 직사각형 가로길이 * 2
-코드: 사용언어 : c
-1 2 3 4  main(n,m){ scanf(&#34;%d%d&#34;,&amp;n,&amp;m); printf(&#34;%f&#34;,2*(n+m*3.141592)); }   </div><div class="post-footer">
-        <a href="/2020-03-23-16486/">Read More</a><div class="post-tags">
+        <a href="/2020-03-25-10995/">[백준]10995 별 찍기 - 20</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/10995
+풀이: 주어진 규칙대로 별을 찍는다.
+코드: 사용언어 : c++
+1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int n, i, t; int main() { cin &gt;&gt; n; for (i = 0; i &lt; n; i++) { for (t = 0; t &lt; n; t++) printf(&#34;%s&#34;, i % 2 ? &#34; *&#34; : &#34;* &#34;); printf(&#34;\n&#34;); } }   </div><div class="post-footer">
+        <a href="/2020-03-25-10995/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-17176/">[백준]17176 암호해독기</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/17176
-풀이: 암호의 쓰인 알파벳들을 저장한다.
-평문을 살펴보며 암호에 쓰였는지 확인한다.
-암호의 없는 알파벳이 나온다면, n을 아니라면 y를 출력한다.
+        <a href="/2020-03-25-1259/">[백준]1259 팰린드롬수</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/1259
+풀이: 팰린드롬 이라면 yes 를 아니라면 no를 출력한다.
+맨 첫 글자와 맨 마지막글자 가 같은지
+i번째 글자와 size() - i - 1 번째 글자가 같은지
+를 판단하여, 만약 하나라도 다르다면 no를 전부 같다면 yes를 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10 11 12 13 14  #include &lt;iostream&gt;using namespace std; int n, m, b, i, s, a[53]; int main() { cin &gt;&gt; n; for (i = 0; i &lt;= n; i++) { cin &gt;&gt; m; a[m]++; } for (i = 0; i &lt; n; i++) { s = getchar(); s -= s &gt; 96 ?</div><div class="post-footer">
-        <a href="/2020-03-23-17176/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8 9 10 11 12  #include &lt;iostream&gt;using namespace std; int main() { while (1) { string s; int i, t = 0; cin &gt;&gt; s; if (s == &#34;0&#34;)	break; for (i = 0; i &lt; s.</div><div class="post-footer">
+        <a href="/2020-03-25-1259/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2020-03-23-2475/">[백준]2475 검증수</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-23">2020-03-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/2475
-풀이: 고유번호의 각 자릿수를 제곱한 값을 더한 후 10으로 나눈 나머지를 출력한다.
+        <a href="/2020-03-25-14920/">[백준]14920 3n&#43;1 수열</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>jyukki</a></span>&nbsp;<span class="post-publish">published on <time datetime="2020-03-25">2020-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%EB%B0%B1%EC%A4%80/"><i class="far fa-folder fa-fw"></i>백준</a></span></div><div class="content">https://www.acmicpc.net/problem/14920
+풀이: 1 2  C(n+1) = C(n)/2 (C(n)이 짝수일 때) = 3*C(n)+1 (C(n)이 홀수일 때)   주어진 점화식대로 진행하다가 C(n)이 1이되었을 때, n을 출력한다.
 코드: 사용언어 : c++
-1 2 3 4 5 6 7 8 9 10  #include &lt;iostream&gt;using namespace std; int x, i, s = 0; int main() { for (i = 0; i &lt; 5; i++) { cin &gt;&gt; x; s += x * x; } cout &lt;&lt; s % 10 &lt;&lt; endl; }   </div><div class="post-footer">
-        <a href="/2020-03-23-2475/">Read More</a><div class="post-tags">
+1 2 3 4 5 6 7 8  #include &lt;iostream&gt;using namespace std; int a, i = 1; int main() { for (cin &gt;&gt; a;a!=1; i++) a = a % 2 ? 3 * a + 1 : a / 2; cout &lt;&lt; i &lt;&lt; endl; }   </div><div class="post-footer">
+        <a href="/2020-03-25-14920/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/algorithm/">algorithm</a>,&nbsp;<a href="/tags/c&#43;&#43;/">C&#43;&#43;</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
@@ -182,7 +189,7 @@
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/83/">83</a>
+                        <a href="/page/86/">86</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
